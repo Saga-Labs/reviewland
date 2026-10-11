@@ -1,0 +1,13 @@
+# Reviewland
+
+> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. Run by Saga Labs; when a Saga Labs app is ranked it is listed first and labelled as ours.
+
+## Rankings
+
+- [Best apps to hide photos on iPhone in 2026](https://reviewland.io/best-apps-to-hide-photos-iphone/) (en, updated 2026-10-11): Compares seven ways to hide photos on iPhone by price, App Store privacy label, account and cloud requirements and disguise options. Our app on this page: Photo Vault: Hide Pics Video.
+- [Mejores apps para ocultar fotos en iPhone en 2026](https://reviewland.io/es/mejores-apps-para-ocultar-fotos-iphone/) (es, updated 2026-10-11): Compara siete formas de ocultar fotos en iPhone por precio en euros, etiqueta de privacidad del App Store, cuenta o nube y camuflaje. Our app on this page: Photo Vault (Bóveda: Ocultar Fotos y Video).
+
+## About
+
+- [How we check and disclose](https://reviewland.io/about/)
+- Publisher: Saga Labs, https://aisagalab.com/, sagalabs@proton.me

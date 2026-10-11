@@ -1,0 +1,9 @@
+# reviewland.io
+
+Rankings of iPhone apps by task, served by GitHub Pages. Run by Saga Labs.
+
+- Edit or add a ranking in `pages/*.py` (add the module to `PAGE_MODULES` in `build.py`), then `python3 build.py` and commit the generated HTML.
+- After publishing: `python3 build.py --indexnow`.
+- Rules: our app first with "Our app" label and a disclosure; competitors named but not linked; every price, version and rating copied from the App Store on the `checked` date. Recheck monthly and only change `updated` when the data was actually rechecked.
+- Analytics: Umami at analytics.kilmaru.com (`umami.js`; empty WEBSITE_ID means off). App Store campaign links use `ct=rl-<slug>`.
+- Common know-how: `Saga-Labs/ios-playbook` → PLAYBOOK.md.
