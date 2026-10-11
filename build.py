@@ -98,6 +98,7 @@ def head(p, alternates, extra_ld):
 <meta property="og:type" content="article">
 <meta property="og:url" content="{esc(page_url(p))}">
 <meta property="og:site_name" content="{NAME}">
+{f'<meta property="og:image" content="{SITE}/img/{p["group"]}.jpg"><meta name="twitter:card" content="summary_large_image">' if p.get("group") else ""}
 <meta name="robots" content="index, follow, max-snippet:-1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,7 +152,7 @@ def ranking_html(p, alternates):
     }
     article = {
         "@context": "https://schema.org", "@type": "Article",
-        "headline": p["h1"], "description": p["description"],
+        "headline": p["h1"], "description": p["description"], "image": f"{SITE}/img/{p['group']}.jpg",
         "inLanguage": lang, "datePublished": p["published"], "dateModified": p["updated"],
         "mainEntityOfPage": page_url(p),
         "author": {"@type": "Organization", "name": NAME, "url": SITE},
@@ -175,6 +176,7 @@ def ranking_html(p, alternates):
     out = [head(p, alternates, [article, item_list, faq, crumbs])]
     out.append(f'<article>\n<div class="hero"><p class="kicker">{len(apps)} apps · {"Ranking" if lang == "en" else "Ranking"}</p><h1>{esc(p["h1"])}</h1>\n')
     out.append(f'<p class="meta">{t["updated"]} <time datetime="{p["updated"]}">{upd}</time> · {t["checked"]} {chk}</p></div>\n')
+    out.append(f'<figure class="cover"><img src="/img/{p["group"]}.jpg" alt="" width="1600" height="900" fetchpriority="high"></figure>\n')
     out.append('<div class="answer">' + "".join(f"<p>{x}</p>\n" for x in p["answer"]) + "</div>\n")
 
     out.append(f'<h2 id="table">{t["table"]}</h2>\n<div class="scroll"><table>\n<thead><tr>')
@@ -256,7 +258,7 @@ def main():
                      "<p>Una página por cada pregunta: qué app usar para ocultar fotos, para dormir o para una lista de tareas sencilla. "
                      "Cada precio, versión y etiqueta de privacidad está copiado del App Store en la fecha que pone cada página.</p>")
         items = "".join(
-            f'<li><a href="/{p["path"]}"><span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} apps · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
+            f'<li><a href="/{p["path"]}"><img src="/img/{p["group"]}.jpg" alt="" width="1600" height="900" loading="lazy"><span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} apps · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
             for p in own
         )
         write(path, simple_page(lang, path, title, desc, '<div class="hero home">' + intro + f'</div><ul class="cards">{items}</ul>',
