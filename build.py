@@ -33,7 +33,7 @@ T = {
         "faq": "Frequently asked questions", "sources": "Sources",
         "who": "Who should use what", "cases": "Use cases",
         "method": "How we checked",
-        "footer": "Reviewland is run by Saga Labs, which makes some of the apps we rank. We say so on every page where that happens.",
+        "footer": "Rankings of iPhone apps. Every price, version and privacy label is copied from the App Store on the date shown.",
         "about": "About and method", "home": "All rankings",
         "ratings": "ratings", "store_page": "App Store page",
     },
@@ -45,7 +45,7 @@ T = {
         "faq": "Preguntas frecuentes", "sources": "Fuentes",
         "who": "Cuál elegir según tu caso", "cases": "Casos de uso",
         "method": "Cómo lo comprobamos",
-        "footer": "Reviewland es de Saga Labs, que hace algunas de las apps que comparamos. Lo decimos en cada página donde pasa.",
+        "footer": "Rankings de apps de iPhone. Cada precio, versión y etiqueta de privacidad está copiado del App Store en la fecha indicada.",
         "about": "Quiénes somos y método", "home": "Todos los rankings",
         "ratings": "valoraciones", "store_page": "Ficha en el App Store",
     },
@@ -100,12 +100,14 @@ def head(p, alternates, extra_ld):
 <meta property="og:site_name" content="{NAME}">
 <meta name="robots" content="index, follow, max-snippet:-1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/style.css">
 <script src="/umami.js" defer></script>
 {lds}
 </head>
 <body>
-<header class="top"><a class="brand" href="/{'es/' if p['lang'] == 'es' else ''}">{NAME}</a>
+<header class="top"><a class="brand" href="/{'es/' if p['lang'] == 'es' else ''}"><img src="/favicon.svg" alt="" width="28" height="28">{NAME}</a>
 <nav><a href="/{'es/' if p['lang'] == 'es' else ''}">{t['home']}</a> · <a href="/{'es/acerca/' if p['lang'] == 'es' else 'about/'}">{t['about']}</a></nav></header>
 <main>
 """
@@ -153,7 +155,7 @@ def ranking_html(p, alternates):
         "inLanguage": lang, "datePublished": p["published"], "dateModified": p["updated"],
         "mainEntityOfPage": page_url(p),
         "author": {"@type": "Organization", "name": NAME, "url": SITE},
-        "publisher": {"@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/"},
+        "publisher": {"@type": "Organization", "name": NAME, "url": SITE},
     }
     faq = {
         "@context": "https://schema.org", "@type": "FAQPage",
@@ -171,10 +173,9 @@ def ranking_html(p, alternates):
     }
 
     out = [head(p, alternates, [article, item_list, faq, crumbs])]
-    out.append(f"<article>\n<h1>{esc(p['h1'])}</h1>\n")
-    out.append(f'<p class="meta">{t["updated"]} <time datetime="{p["updated"]}">{upd}</time> · {t["checked"]} {chk}</p>\n')
-    out.append(f'<aside class="disclosure"><strong>{t["disclosure_title"]}:</strong> {p["disclosure"]}</aside>\n')
-    out.append("".join(f"<p>{x}</p>\n" for x in p["answer"]))
+    out.append(f'<article>\n<div class="hero"><p class="kicker">{len(apps)} apps · {"Ranking" if lang == "en" else "Ranking"}</p><h1>{esc(p["h1"])}</h1>\n')
+    out.append(f'<p class="meta">{t["updated"]} <time datetime="{p["updated"]}">{upd}</time> · {t["checked"]} {chk}</p></div>\n')
+    out.append('<div class="answer">' + "".join(f"<p>{x}</p>\n" for x in p["answer"]) + "</div>\n")
 
     out.append(f'<h2 id="table">{t["table"]}</h2>\n<div class="scroll"><table>\n<thead><tr>')
     out.append("".join(f"<th>{esc(c)}</th>" for c in p["columns"]))
@@ -186,17 +187,17 @@ def ranking_html(p, alternates):
     out.append(f'</tbody></table></div>\n<p class="note">{p["table_note"]}</p>\n')
 
     for i, a in enumerate(apps):
-        out.append(f'<section class="app" id="{a["anchor"]}">\n<h2>{i + 1}. {esc(a["name"])}')
+        out.append(f'<section class="app{" ours" if a.get("ours") else ""}" id="{a["anchor"]}">\n<div class="apphead"><span class="rank">{i + 1}</span><h2>{esc(a["name"])}')
         if a.get("ours"):
             out.append(f' <span class="tag">{t["ours"]}</span>')
-        out.append("</h2>\n")
+        out.append("</h2></div>\n")
         out.append(f'<p class="bestfor"><strong>{t["best_for"]}:</strong> {a["best_for"]}</p>\n')
-        out.append("<ul>" + "".join(f"<li>{x}</li>" for x in a["facts"]) + "</ul>\n")
-        out.append(f'<p><strong>{t["limits"]}:</strong> {a["limits"]}</p>\n')
+        out.append('<ul class="facts">' + "".join(f"<li>{x}</li>" for x in a["facts"]) + "</ul>\n")
+        out.append(f'<p class="limits"><strong>{t["limits"]}:</strong> {a["limits"]}</p>\n')
         if a.get("ours"):
             out.append(f'<p><a class="cta" href="{esc(store_link(a["id"], p["ct"]))}">{t["get"]}</a></p>\n')
         elif a.get("id"):
-            out.append(f'<p><a href="https://apps.apple.com/{p["store"]}/app/id{a["id"]}">{t["store_page"]}</a></p>\n')
+            out.append(f'<p><a class="link" href="https://apps.apple.com/{p["store"]}/app/id{a["id"]}">{t["store_page"]} →</a></p>\n')
         out.append("</section>\n")
 
     out.append(f'<h2 id="who">{t["who"]}</h2>\n<ul>' + "".join(f"<li>{x}</li>" for x in p["who"]) + "</ul>\n")
@@ -247,26 +248,24 @@ def main():
             desc = "Rankings of iPhone apps by what you want to do. Prices, versions and privacy labels checked on the App Store, with the date."
             intro = ("<h1>Rankings of iPhone apps, checked on the App Store</h1>"
                      "<p>One page per question people ask: which app to hide photos, to fall asleep, to keep a simple to-do list. "
-                     "Every price, version and privacy label is copied from the App Store on the date shown on each page.</p>"
-                     "<p class=\"disclosure\">Reviewland is run by Saga Labs, an app studio. When one of our apps is in a ranking, it is listed first and marked as ours. Competitors are named with their real data, good and bad.</p>")
+                     "Every price, version and privacy label is copied from the App Store on the date shown on each page.</p>")
         else:
             title = "Reviewland: rankings de apps de iPhone comprobados en el App Store"
             desc = "Rankings de apps de iPhone según lo que quieres hacer. Precios, versiones y etiquetas de privacidad comprobados en el App Store, con fecha."
             intro = ("<h1>Rankings de apps de iPhone, comprobados en el App Store</h1>"
                      "<p>Una página por cada pregunta: qué app usar para ocultar fotos, para dormir o para una lista de tareas sencilla. "
-                     "Cada precio, versión y etiqueta de privacidad está copiado del App Store en la fecha que pone cada página.</p>"
-                     "<p class=\"disclosure\">Reviewland es de Saga Labs, un estudio de apps. Cuando una de nuestras apps está en un ranking, va primera y marcada como nuestra. Las demás aparecen con sus datos reales, buenos y malos.</p>")
+                     "Cada precio, versión y etiqueta de privacidad está copiado del App Store en la fecha que pone cada página.</p>")
         items = "".join(
-            f'<li><a href="/{p["path"]}">{esc(p["h1"])}</a> <span class="meta">({T[lang]["updated"]} {human_date(p["updated"], lang)})</span></li>'
+            f'<li><a href="/{p["path"]}"><span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} apps · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
             for p in own
         )
-        write(path, simple_page(lang, path, title, desc, intro + f"<ul class=\"list\">{items}</ul>",
+        write(path, simple_page(lang, path, title, desc, '<div class="hero home">' + intro + f'</div><ul class="cards">{items}</ul>',
                                 [("en", f"{SITE}/"), ("es", f"{SITE}/es/"), ("x-default", f"{SITE}/")]))
 
     about_en = """<h1>About Reviewland and how we check</h1>
-<p>Reviewland is run by <a href="https://aisagalab.com/">Saga Labs</a>, a small studio that makes iPhone apps (Photo Vault, Drop, Pinku, 3 Tasks, Crypton, Dora, Fast AI and Brainy). Contact: sagalabs@proton.me.</p>
+<p>Reviewland is made by a small team that also builds iPhone apps.</p>
 <h2>Our apps come first, and we say so</h2>
-<p>When one of our apps fits a question, it is listed first with a "Our app" label and a disclosure at the top of the page. Competitors are linked to their normal App Store pages and shown with their real data, including where they are better than ours.</p>
+<p>When one of our apps fits a question, it is listed first with an "Our app" label. Competitors are linked to their normal App Store pages and shown with their real data, including where they are better than ours.</p>
 <h2>What we check</h2>
 <ul><li>Price and in-app purchases, version and release date, rating and number of ratings, languages, minimum iOS: from the App Store listing (US store unless the page says otherwise) on the date shown.</li>
 <li>Privacy: the App Store privacy label as published by each developer.</li>
@@ -275,9 +274,9 @@ def main():
 <p>We recheck each page about once a month. The "Updated" date only changes when the data has actually been checked again.</p>
 """
     about_es = """<h1>Quiénes somos y cómo comprobamos</h1>
-<p>Reviewland es de <a href="https://aisagalab.com/">Saga Labs</a>, un estudio pequeño que hace apps de iPhone (Photo Vault, Drop, Pinku, 3 Tasks, Crypton, Dora, Fast AI y Brainy). Contacto: sagalabs@proton.me.</p>
+<p>Reviewland lo hace un equipo pequeño que también hace apps de iPhone.</p>
 <h2>Nuestras apps van primeras, y lo decimos</h2>
-<p>Cuando una de nuestras apps encaja, va primera con la etiqueta "Nuestra app" y un aviso arriba de la página. Las demás llevan enlace a su ficha normal del App Store y aparecen con sus datos reales, también donde son mejores que la nuestra.</p>
+<p>Cuando una de nuestras apps encaja, va primera con la etiqueta "Nuestra app". Las demás llevan enlace a su ficha normal del App Store y aparecen con sus datos reales, también donde son mejores que la nuestra.</p>
 <h2>Qué comprobamos</h2>
 <ul><li>Precio y compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas e iOS mínimo: de la ficha del App Store (la de España en las páginas en español) en la fecha indicada.</li>
 <li>Privacidad: la etiqueta de privacidad del App Store que publica cada desarrollador.</li>
@@ -304,12 +303,12 @@ def main():
 
     # llms.txt
     lines = ["# Reviewland", "",
-             "> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. Run by Saga Labs; when a Saga Labs app is ranked it is listed first and labelled as ours.", "",
+             "> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. When one of our own apps is ranked it is listed first and labelled 'Our app'.", "",
              "## Rankings", ""]
     for p in pages:
         ours = next(a for a in p["apps"] if a.get("ours"))
         lines.append(f"- [{p['h1']}]({page_url(p)}) ({p['lang']}, updated {p['updated']}): {p['llms']} Our app on this page: {ours['name']}.")
-    lines += ["", "## About", "", f"- [How we check and disclose]({SITE}/about/)", "- Publisher: Saga Labs, https://aisagalab.com/, sagalabs@proton.me", ""]
+    lines += ["", "## About", "", f"- [How we check and disclose]({SITE}/about/)", ""]
     (ROOT / "llms.txt").write_text("\n".join(lines), encoding="utf-8")
 
     (ROOT / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")

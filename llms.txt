@@ -1,6 +1,6 @@
 # Reviewland
 
-> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. Run by Saga Labs; when a Saga Labs app is ranked it is listed first and labelled as ours.
+> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. When one of our own apps is ranked it is listed first and labelled 'Our app'.
 
 ## Rankings
 
@@ -16,4 +16,3 @@
 ## About
 
 - [How we check and disclose](https://reviewland.io/about/)
-- Publisher: Saga Labs, https://aisagalab.com/, sagalabs@proton.me
