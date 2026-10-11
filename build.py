@@ -4,8 +4,8 @@
     python3 build.py --indexnow # also pings IndexNow with every URL
 
 Each ranking lives in pages/*.py as a dict (see pages/hide_photos.py).
-Rules: our app goes first and says it is ours; competitors are named but
-never linked (their App Store URL appears as plain text under Sources);
+Rules: our app goes first and says it is ours; our apps link to the App
+Store with pt+ct for campaign stats, competitors with a plain App Store link;
 every price, version and rating comes from the App Store on the date in
 `checked`, and that date is shown on the page and in the JSON-LD.
 """
@@ -35,7 +35,7 @@ T = {
         "method": "How we checked",
         "footer": "Reviewland is run by Saga Labs, which makes some of the apps we rank. We say so on every page where that happens.",
         "about": "About and method", "home": "All rankings",
-        "ratings": "ratings",
+        "ratings": "ratings", "store_page": "App Store page",
     },
     "es": {
         "updated": "Actualizado el", "checked": "Datos comprobados en el App Store el",
@@ -47,7 +47,7 @@ T = {
         "method": "Cómo lo comprobamos",
         "footer": "Reviewland es de Saga Labs, que hace algunas de las apps que comparamos. Lo decimos en cada página donde pasa.",
         "about": "Quiénes somos y método", "home": "Todos los rankings",
-        "ratings": "valoraciones",
+        "ratings": "valoraciones", "store_page": "Ficha en el App Store",
     },
 }
 
@@ -138,7 +138,7 @@ def ranking_html(p, alternates):
                     "@type": "SoftwareApplication", "name": a["name"],
                     "operatingSystem": "iOS",
                     "applicationCategory": p.get("category", "UtilitiesApplication"),
-                    **({"url": f"https://apps.apple.com/app/id{a['id']}"} if a.get("ours") else {}),
+                    **({"url": f"https://apps.apple.com/app/id{a['id']}"} if a.get("id") else {}),
                     **({"author": {"@type": "Organization", "name": a["developer"]}} if a.get("developer") else {}),
                     **({"aggregateRating": {"@type": "AggregateRating", "ratingValue": a["rating"][0], "ratingCount": a["rating"][1]}}
                        if a.get("rating") and a["rating"][1] >= 5 else {}),
@@ -195,6 +195,8 @@ def ranking_html(p, alternates):
         out.append(f'<p><strong>{t["limits"]}:</strong> {a["limits"]}</p>\n')
         if a.get("ours"):
             out.append(f'<p><a class="cta" href="{esc(store_link(a["id"], p["ct"]))}">{t["get"]}</a></p>\n')
+        elif a.get("id"):
+            out.append(f'<p><a href="https://apps.apple.com/{p["store"]}/app/id{a["id"]}">{t["store_page"]}</a></p>\n')
         out.append("</section>\n")
 
     out.append(f'<h2 id="who">{t["who"]}</h2>\n<ul>' + "".join(f"<li>{x}</li>" for x in p["who"]) + "</ul>\n")
@@ -204,11 +206,8 @@ def ranking_html(p, alternates):
     for q, a in p["faq"]:
         out.append(f"<h3>{esc(q)}</h3>\n<p>{esc(a)}</p>\n")
     out.append(f'<h2 id="sources">{t["sources"]}</h2>\n<ul class="sources">')
-    for label, url, linked in p["sources"]:
-        if linked:
-            out.append(f'<li>{esc(label)}: <a href="{esc(url)}">{esc(url)}</a> ({chk})</li>')
-        else:
-            out.append(f"<li>{esc(label)}: <span class=\"url\">{esc(url)}</span> ({chk})</li>")
+    for label, url, *_ in p["sources"]:
+        out.append(f'<li>{esc(label)}: <a href="{esc(url)}">{esc(url)}</a> ({chk})</li>')
     out.append("</ul>\n</article>\n")
     out.append(foot(lang))
     return "".join(out)
@@ -267,7 +266,7 @@ def main():
     about_en = """<h1>About Reviewland and how we check</h1>
 <p>Reviewland is run by <a href="https://aisagalab.com/">Saga Labs</a>, a small studio that makes iPhone apps (Photo Vault, Drop, Pinku, 3 Tasks, Crypton, Dora, Fast AI and Brainy). Contact: sagalabs@proton.me.</p>
 <h2>Our apps come first, and we say so</h2>
-<p>When one of our apps fits a question, it is listed first with a "Our app" label and a disclosure at the top of the page. Only our apps have a download button. Competitors are named with their real App Store data, including where they are better than ours.</p>
+<p>When one of our apps fits a question, it is listed first with a "Our app" label and a disclosure at the top of the page. Competitors are linked to their normal App Store pages and shown with their real data, including where they are better than ours.</p>
 <h2>What we check</h2>
 <ul><li>Price and in-app purchases, version and release date, rating and number of ratings, languages, minimum iOS: from the App Store listing (US store unless the page says otherwise) on the date shown.</li>
 <li>Privacy: the App Store privacy label as published by each developer.</li>
@@ -278,7 +277,7 @@ def main():
     about_es = """<h1>Quiénes somos y cómo comprobamos</h1>
 <p>Reviewland es de <a href="https://aisagalab.com/">Saga Labs</a>, un estudio pequeño que hace apps de iPhone (Photo Vault, Drop, Pinku, 3 Tasks, Crypton, Dora, Fast AI y Brainy). Contacto: sagalabs@proton.me.</p>
 <h2>Nuestras apps van primeras, y lo decimos</h2>
-<p>Cuando una de nuestras apps encaja, va primera con la etiqueta "Nuestra app" y un aviso arriba de la página. Solo nuestras apps llevan botón de descarga. Las demás aparecen con sus datos reales del App Store, también donde son mejores que la nuestra.</p>
+<p>Cuando una de nuestras apps encaja, va primera con la etiqueta "Nuestra app" y un aviso arriba de la página. Las demás llevan enlace a su ficha normal del App Store y aparecen con sus datos reales, también donde son mejores que la nuestra.</p>
 <h2>Qué comprobamos</h2>
 <ul><li>Precio y compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas e iOS mínimo: de la ficha del App Store (la de España en las páginas en español) en la fecha indicada.</li>
 <li>Privacidad: la etiqueta de privacidad del App Store que publica cada desarrollador.</li>
