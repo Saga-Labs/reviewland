@@ -2,7 +2,7 @@
    Dashboard: https://analytics.kilmaru.com  Site: reviewland.io
    WEBSITE_ID is empty until the site is added in Umami; then paste it here. */
 (function () {
-  var WEBSITE_ID = '';
+  var WEBSITE_ID = '8a2eff76-9ec5-4d68-a050-9dee5c4cd495';
   var UMAMI_SRC = 'https://analytics.kilmaru.com/script.js';
   if (!WEBSITE_ID) return;
   var s = document.createElement('script');
