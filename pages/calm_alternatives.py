@@ -1,8 +1,11 @@
 """Calm alternatives for iPhone. EN. Our app: Drop (id1462269642), sold as "Sleep Sounds & Focus: Drop".
 
 Checked 2026-10-16: iTunes lookup API + App Store web pages (US). Drop 2.9 was
-live that day; its listing describes breathing sessions and nature sounds only.
+live that day. Its listing names five nature sounds; the app itself has 32 sounds
+(10 free), per the 2.9 code and aisagalab.com/drop.html. ES page: Spain store, same day.
 """
+
+from pages.store_1016 import refresh
 
 CHECKED = "2026-10-16"
 
@@ -40,17 +43,18 @@ EN = {
         {
             "name": "Sleep Sounds & Focus: Drop", "id": 1462269642, "ours": True, "anchor": "drop",
             "developer": "Saga Ltd.", "rating": (4.42, 12),
-            "row": ["Free; Drop Pro listed as monthly $4.99, access $14.99 and lifetime options", "Short guided-breathing sessions (2 to 20 minutes) with nature sounds", "Nature sounds (rain, dewdrops, campfire, forest, ocean); no white noise listed",
+            "row": ["Free (10 sounds); Drop Pro listed as monthly $4.99, access $14.99 and lifetime options", "Short guided-breathing sessions (2 to 20 minutes) and calming sounds with a sleep timer", "32 nature, ambient and noise sounds (fan, bus), 10 free; no white, pink or brown noise",
                     "Data Not Linked to You (usage data)", "2.9 (16 Oct 2026)", "4.4 (12 ratings)"],
-            "best_for": "a quiet, ad-free breathing timer with nature sounds, when a full meditation library is more than you need.",
+            "best_for": "a quiet, ad-free app with calming sounds, a sleep timer and short breathing sessions, when a full meditation library is more than you need.",
             "facts": [
                 "Breathing sessions of 2, 5, 10 and 20 minutes with visual breathing guides.",
-                "Five nature soundscapes: gentle rain, crystal dewdrops, crackling campfire, mystical forest and ocean waves.",
+                "32 sounds in three groups (nature, ambient, noise); 10 are free: rain, dewdrops, fire, forest, river, coffee shop, ocean waves, thunderstorm, bus and fan.",
+                "Sleep timer of 15, 30 or 45 minutes, 1, 2 or 8 hours, with a 30-second fade-out.",
                 "A plant grows through five stages as you practise; streaks and achievements.",
                 "Home screen widgets, works offline, no ads.",
                 "3 languages (English, Japanese, Chinese), iOS 18 or later, 204 MB.",
             ],
-            "limits": "no sleep stories, no teacher-led meditation library, no sleep tracking and no white or brown noise in its listing. Only 12 ratings so far, and it needs iOS 18.",
+            "limits": "no sleep stories, no teacher-led meditation library, no sleep tracking and no white, pink or brown noise (its noise sounds are a fan, a bus and an electric hum). Only 12 ratings so far, and it needs iOS 18.",
         },
         {
             "name": "Calm", "id": 571800810, "anchor": "calm",
@@ -141,7 +145,7 @@ EN = {
         "<strong>You want bedtime stories and a polished library:</strong> Calm, or BetterSleep if sleep is your main goal.",
         "<strong>You want courses, and maybe a therapist or coach:</strong> Headspace.",
         "<strong>You only need white noise or brown noise:</strong> White Noise Lite.",
-        "<strong>You want a short breathing session with nature sounds and no clutter:</strong> Drop (ours).",
+        "<strong>You want calming sounds with a sleep timer, short breathing sessions and no clutter:</strong> Drop (ours).",
     ],
     "cases": [
         "Falling asleep: Sleep Stories (Calm), sleep tracker and mixer (BetterSleep), constant white noise (White Noise Lite).",
@@ -150,7 +154,7 @@ EN = {
         "Masking street or household noise at night (White Noise Lite, BetterSleep).",
     ],
     "method": [
-        "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page. We did not invent ratings or reviews, and we did not test the audio quality of each app.",
+        "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; for Drop, which is ours, the sound list comes from the app itself (version 2.9), because its listing only names five. We did not invent ratings or reviews, and we did not test the audio quality of each app.",
     ],
     "faq": [
         ("What is the best alternative to Calm on iPhone?",
@@ -158,13 +162,15 @@ EN = {
         ("Is there a free alternative to Calm?",
          "Yes. Medito is free with no in-app purchases, Insight Timer has a large free library with an optional Premium, and White Noise Lite is free for sounds."),
         ("Which Calm alternative has white noise?",
-         "White Noise Lite has white, pink, brown, blue and violet noise. BetterSleep lists white noise among 300+ sounds. Medito lists white noise in its soundscapes. Drop does not list white noise; it has nature sounds."),
+         "White Noise Lite has white, pink, brown, blue and violet noise. BetterSleep lists white noise among 300+ sounds. Medito lists white noise in its soundscapes. Drop has fan and bus sounds but no white, pink or brown noise."),
         ("Does Drop have sleep stories like Calm?",
-         "No. Drop offers short guided-breathing sessions and five nature soundscapes. It has no sleep stories and no meditation library."),
+         "No. Drop offers short guided-breathing sessions and 32 calming sounds (10 free) with a sleep timer. It has no sleep stories and no meditation library."),
         ("How much does Calm cost?",
          "Calm is free to download and lists Premium subscription prices from $14.99 to $79.99 on the US App Store, depending on the plan. Check the in-app offer before you subscribe."),
     ],
     "sources": src("us"),
 }
+
+refresh(EN, "us")
 
 PAGES = [EN]

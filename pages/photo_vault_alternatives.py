@@ -138,4 +138,8 @@ EN = {
     "sources": src("us"),
 }
 
+from pages.store_1016 import refresh
+
+refresh(EN, "us")
+
 PAGES = [EN]

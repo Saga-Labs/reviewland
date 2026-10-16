@@ -319,3 +319,8 @@ ES = {
 }
 
 PAGES = [EN, ES]
+
+
+from pages.store_1016 import refresh_ours
+for _p in PAGES:
+    refresh_ours(_p, _p["store"], 2, 4, 5)
