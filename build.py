@@ -24,7 +24,8 @@ INDEXNOW_KEY = "c4d07eeae4e92377bc72adeeaf0d7e39"
 PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
-                "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives"]
+                "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
+                "es_alternativas"]
 
 T = {
     "en": {
