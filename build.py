@@ -25,7 +25,7 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas"]
+                "es_alternativas", "generic_1016"]
 
 T = {
     "en": {
