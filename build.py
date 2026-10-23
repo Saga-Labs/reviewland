@@ -28,7 +28,7 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas", "generic_1016", "local_models"]
+                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps"]
 
 T = {
     "en": {
@@ -68,7 +68,7 @@ HOME_SECTIONS = [
 ]
 HOME_GROUPS = {
     "photos": {"hide-photos", "photo-vault-alternatives", "vault-no-data"},
-    "ai": {"ai-chat", "local-models"},
+    "ai": {"ai-chat", "local-models", "chatgpt-apps"},
     "sleep": {"calm-alternatives", "free-sleep-sounds"},
     "tasks": {"simple-todo", "todoist-alternatives"},
     "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers"},
@@ -206,9 +206,9 @@ def ranking_html(p, alternates):
                 "@type": "ListItem", "position": i + 1,
                 "item": {
                     "@type": "SoftwareApplication", "name": a["name"],
-                    "operatingSystem": "iOS",
+                    "operatingSystem": p.get("os", "iOS"),
                     "applicationCategory": p.get("category", "UtilitiesApplication"),
-                    **({"url": f"https://apps.apple.com/app/id{a['id']}"} if a.get("id") else {}),
+                    **({"url": a["url"]} if a.get("url") else {"url": f"https://apps.apple.com/app/id{a['id']}"} if a.get("id") else {}),
                     **({"author": {"@type": "Organization", "name": a["developer"]}} if a.get("developer") else {}),
                     **({"aggregateRating": {"@type": "AggregateRating", "ratingValue": a["rating"][0], "ratingCount": a["rating"][1]}}
                        if a.get("rating") and a["rating"][1] >= 5 else {}),
@@ -242,7 +242,7 @@ def ranking_html(p, alternates):
 
     out = [head(p, alternates, [article, item_list, faq, crumbs])]
     out.append(f'<article>\n<div class="hero"><p class="kicker">{len(apps)} apps · {"Ranking" if lang == "en" else "Ranking"}</p><h1>{esc(p["h1"])}</h1>\n')
-    out.append(f'<p class="meta">{t["updated"]} <time datetime="{p["updated"]}">{upd}</time> · {t["checked"]} {chk}</p></div>\n')
+    out.append(f'<p class="meta">{t["updated"]} <time datetime="{p["updated"]}">{upd}</time> · {p.get("checked_label", t["checked"])} {chk}</p></div>\n')
     out.append(f'<figure class="cover"><img src="/img/{p.get("cover", p["group"])}.jpg" alt="" width="1600" height="900" fetchpriority="high"></figure>\n')
     if p.get("disclosure"):
         out.append(f'<aside class="disclosure"><strong>{t["disclosure_title"]}:</strong> {p["disclosure"]}</aside>\n')
@@ -263,7 +263,9 @@ def ranking_html(p, alternates):
         out.append(f'<p class="bestfor"><strong>{t["best_for"]}:</strong> {a["best_for"]}</p>\n')
         out.append('<ul class="facts">' + "".join(f"<li>{x}</li>" for x in a["facts"]) + "</ul>\n")
         out.append(f'<p class="limits"><strong>{t["limits"]}:</strong> {a["limits"]}</p>\n')
-        if a.get("ours"):
+        if a.get("url"):
+            out.append(f'<p><a class="link" href="{esc(a["url"])}">{esc(p.get("link_label", t["store_page"]))} →</a></p>\n')
+        elif a.get("ours"):
             out.append(f'<p><a class="link" href="{esc(store_link(a["id"], p["ct"]))}">{t["store_page"]} →</a></p>\n')
         elif a.get("id"):
             out.append(f'<p><a class="link" href="{esc(tag_ours(f"https://apps.apple.com/{p['store']}/app/id{a['id']}", p["ct"]))}">{t["store_page"]} →</a></p>\n')
