@@ -356,14 +356,14 @@ VAULT = dict(COMMON, **{
     "llms": "Compara Private Photo Vault - Pic Safe (en España «Ocultar Fotos - Photo Vault») con cuatro alternativas para iPhone (Keepsafe, PV, Secret Photo Album SA, Photo Vault) por precio, copia en la nube, funciones de señuelo y alerta de intrusos y etiqueta de privacidad.",
     "disclosure": "Photo Vault: Hide Pics Video (en España, «Boveda: Ocultar Fotos y Video») es de Saga Labs, la empresa que hace Reviewland. Va primera porque es nuestra. Ojo: es una app distinta de «Private Photo Vault - Pic Safe», que no es nuestra. Las demás tampoco son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store.",
     "answer": [
-        "Private Photo Vault - Pic Safe es la app de bóveda más grande del App Store (más de un millón de valoraciones en total, 4,8 estrellas en EE. UU.). Si buscas alternativa, Keepsafe es la grande más parecida con nube privada opcional, PV - Secret Photo Album tiene más funciones y la suscripción más barata, y Photo Vault: Hide Pics Video (nuestra) lo guarda todo en el teléfono, sin cuenta y sin nube.",
+        "Private Photo Vault - Pic Safe es la app de bóveda más grande del App Store (más de un millón de valoraciones en total, 4,8 estrellas en EE. UU.). Si buscas alternativa, Keepsafe es la grande más parecida con nube privada opcional, PV - Secret Photo Album tiene más funciones y la suscripción más barata, y Photo Vault: Hide Pics Video (nuestra) no pide cuenta y lo guarda todo en el teléfono salvo que actives su copia cifrada opcional en iCloud.",
         "iOS ya trae un álbum Oculto gratis en Fotos; para una privacidad casual puede bastar. La guía de Apple está enlazada en las fuentes.",
     ],
     "columns": ["App", "Precio (España)", "Copia en la nube", "Funciones de privacidad", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
     "table_note": "Las cinco se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 16 de octubre de 2026 (las apps listan varios precios para el mismo plan, y la de Photo Vault aún incluye un producto antiguo llamado «Keeper Pro»). Valoración: media y número de valoraciones en España ese día; en España las apps pequeñas tienen muy pocas.",
     "apps": [
         app(en(P.EN, 0), name="Boveda: Ocultar Fotos y Video",
-            row=["Gratis; Premium anual (listado a 22,99 € y 34,99 €) o de por vida (17,99 €, 34,99 € y 69,99 €)", "No: sin nube y sin cuenta; un archivo cifrado que exportas tú", "Face ID, contraseña por álbum, icono disfrazado, salida boca abajo, cámara privada", "", "", ""],
+            row=["Gratis; Premium anual (listado a 22,99 € y 34,99 €) o de por vida (17,99 €, 34,99 € y 69,99 €)", "Opcional: una copia cifrada de extremo a extremo en tu propio iCloud, desactivada por defecto; sin cuenta; o un archivo cifrado que exportas tú", "Face ID, contraseña por álbum, icono disfrazado, salida boca abajo, cámara privada", "", "", ""],
             best_for="quien quiere las fotos solo en el iPhone, sin cuenta y sin subir nada.",
             facts=[
                 "Se abre con Face ID, Touch ID o código, y cada álbum puede tener su propia contraseña.",
@@ -421,7 +421,7 @@ VAULT = dict(COMMON, **{
         "<strong>Solo necesitas esconder unas fotos de miradas casuales:</strong> el álbum Oculto de iOS, que no necesita app.",
     ],
     "cases": [
-        "Mantener las fotos privadas fuera del carrete compartido y fuera de iCloud (una app sin nube, como la nuestra).",
+        "Mantener las fotos privadas fuera del carrete compartido y fuera de iCloud (una app sin cuenta y con nube solo si la activas, como la nuestra).",
         "Hacer copia de la bóveda para no perder las fotos si pierdes el teléfono (la nube de Keepsafe o de Private Photo Vault).",
         "Dejar el teléfono a alguien sin que vea la app (iconos disfrazados y salida boca abajo).",
         "Cambiar de iPhone: con la nuestra exportas y restauras un archivo tú; las apps con nube restauran desde su nube.",
@@ -431,7 +431,7 @@ VAULT = dict(COMMON, **{
     ],
     "faq": [
         ("¿Cuál es la mejor alternativa a Private Photo Vault?",
-         "Keepsafe es la grande más parecida, con nube privada opcional. PV - Secret Photo Album tiene más funciones por la suscripción más barata. Photo Vault: Hide Pics Video es la opción sin nube y sin cuenta."),
+         "Keepsafe es la grande más parecida, con nube privada opcional. PV - Secret Photo Album tiene más funciones por la suscripción más barata. Photo Vault: Hide Pics Video es la opción sin cuenta, y su copia en iCloud es opcional y viene desactivada."),
         ("¿Photo Vault: Hide Pics Video es lo mismo que Private Photo Vault?",
          "No. Son apps distintas de desarrolladores distintos. Photo Vault: Hide Pics Video es de Saga Ltd.; Private Photo Vault - Pic Safe es de Legendary Software Labs."),
         ("¿Qué bóveda de fotos no usa la nube?",

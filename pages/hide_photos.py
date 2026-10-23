@@ -44,9 +44,9 @@ EN = {
         {
             "name": "Photo Vault: Hide Pics Video", "id": 1532670722, "ours": True, "anchor": "photo-vault",
             "developer": "Saga Ltd.", "rating": (4.17, 6),
-            "row": ["Free for 1 item; Premium $19.99 or $29.99 a year; lifetime $59.99", "No account, no cloud", "Data Not Collected",
+            "row": ["Free for 1 item; Premium $19.99 or $29.99 a year; lifetime $59.99", "No account; iCloud copy optional (encrypted, off by default)", "Data Not Collected",
                     "Icon can look like Calculator, Notes or Weather", "1.2.7 (7 Oct 2026)", "4.2 (6 ratings)"],
-            "best_for": "people who want photos only on their iPhone, with no account and nothing uploaded.",
+            "best_for": "people who want photos only on their iPhone, with no account and nothing uploaded unless they turn on the optional encrypted iCloud copy.",
             "facts": [
                 "Opens with Face ID, Touch ID or a passcode, and each album can have its own password.",
                 "Private Camera takes photos straight into the vault, so they never reach the camera roll.",
@@ -192,7 +192,7 @@ ES = {
         {
             "name": "Photo Vault (Bóveda: Ocultar Fotos y Video)", "id": 1532670722, "ours": True, "anchor": "photo-vault",
             "developer": "Saga Ltd.", "rating": (1.0, 1),
-            "row": ["Gratis con 1 elemento; Premium 22,99 € o 34,99 € al año; de por vida 69,99 €", "Sin cuenta y sin nube", "No se recopilan datos",
+            "row": ["Gratis con 1 elemento; Premium 22,99 € o 34,99 € al año; de por vida 69,99 €", "Sin cuenta; copia en iCloud opcional (cifrada, desactivada por defecto)", "No se recopilan datos",
                     "Icono como Calculadora, Notas o Tiempo", "1.2.7 (7 oct 2026)", "1,0 (1 valoración)"],
             "best_for": "quien quiere las fotos solo en su iPhone, sin cuenta y sin subir nada.",
             "facts": [

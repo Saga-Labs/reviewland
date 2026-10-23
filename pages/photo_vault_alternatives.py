@@ -30,7 +30,7 @@ EN = {
     "llms": "Compares Private Photo Vault - Pic Safe with four alternatives for iPhone (Keepsafe, PV - Secret Photo Album, Secret Photo Album - SA, Photo Vault: Hide Pics Video) by price, cloud backup, decoy or break-in features and App Store privacy label.",
     "disclosure": "Photo Vault: Hide Pics Video is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours. Note that it is a different app from \"Private Photo Vault - Pic Safe\", which is not ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
-        "Private Photo Vault - Pic Safe is the biggest vault app on the App Store (about 1 million ratings, 4.8 stars). If you want an alternative, Keepsafe is the closest big one with an optional private cloud, PV - Secret Photo Album has the most features and the cheapest subscription, and Photo Vault: Hide Pics Video (ours) keeps everything on the phone with no account and no cloud.",
+        "Private Photo Vault - Pic Safe is the biggest vault app on the App Store (about 1 million ratings, 4.8 stars). If you want an alternative, Keepsafe is the closest big one with an optional private cloud, PV - Secret Photo Album has the most features and the cheapest subscription, and Photo Vault: Hide Pics Video (ours) needs no account and keeps everything on the phone unless you turn on its optional encrypted iCloud copy.",
         "iOS already has a free Hidden album in Photos; for casual privacy that may be enough. Apple's own guide is linked in the sources.",
     ],
     "columns": ["App", "Price (US)", "Cloud backup", "Privacy features", "App Store privacy label", "Version (date)", "Rating (US)"],
@@ -39,7 +39,7 @@ EN = {
         {
             "name": "Photo Vault: Hide Pics Video", "id": 1532670722, "ours": True, "anchor": "photo-vault",
             "developer": "Saga Ltd.", "rating": (4.17, 6),
-            "row": ["Free to download; Premium yearly (listed $19.99 and $29.99) or lifetime (listed $14.99, $29.99 and $59.99)", "No: no cloud and no account; one encrypted file you export yourself", "Face ID, per-album passwords, disguised icon, face-down exit, private camera",
+            "row": ["Free to download; Premium yearly (listed $19.99 and $29.99) or lifetime (listed $14.99, $29.99 and $59.99)", "Optional: an end-to-end encrypted copy in your own iCloud, off by default; no account; or one encrypted file you export yourself", "Face ID, per-album passwords, disguised icon, face-down exit, private camera",
                     "Data Not Collected", "1.2.8 (13 Oct 2026)", "4.2 (6 ratings)"],
             "best_for": "people who want photos only on their iPhone, with no account and nothing uploaded.",
             "facts": [
@@ -115,7 +115,7 @@ EN = {
         "<strong>You only need to hide a few photos from casual snooping:</strong> iOS's own Hidden album, which needs no app.",
     ],
     "cases": [
-        "Keeping private photos out of the shared camera roll and out of iCloud (an app with no cloud, such as ours).",
+        "Keeping private photos out of the shared camera roll and out of iCloud (an app with no account and cloud only if you opt in, such as ours).",
         "Backing up a vault so a lost phone does not lose photos (Keepsafe or Private Photo Vault cloud).",
         "Handing your phone to someone without them seeing the app (disguised icons and face-down exit).",
         "Moving to a new iPhone: with ours you export and restore a file yourself; cloud-backed apps restore from their cloud.",
@@ -125,7 +125,7 @@ EN = {
     ],
     "faq": [
         ("What is the best alternative to Private Photo Vault?",
-         "Keepsafe is the closest large alternative, with an optional private cloud. PV - Secret Photo Album has the most features for the lowest subscription price. Photo Vault: Hide Pics Video is the option with no cloud and no account."),
+         "Keepsafe is the closest large alternative, with an optional private cloud. PV - Secret Photo Album has the most features for the lowest subscription price. Photo Vault: Hide Pics Video is the option with no account, and its iCloud copy is optional and off by default."),
         ("Is Photo Vault: Hide Pics Video the same as Private Photo Vault?",
          "No. They are different apps by different developers. Photo Vault: Hide Pics Video is by Saga Ltd.; Private Photo Vault - Pic Safe is by Legendary Software Labs."),
         ("Which photo vault does not use the cloud?",
