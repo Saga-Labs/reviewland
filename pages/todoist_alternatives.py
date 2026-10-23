@@ -24,9 +24,9 @@ EN = {
     "ct": "rl-todoist-alt",
     "category": "ProductivityApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Todoist alternatives for iPhone (2026): 5 to-do apps compared",
+    "title": "Best Todoist alternatives for iPhone users (2026)",
     "h1": "Todoist alternatives for iPhone in 2026",
-    "description": "Five alternatives to Todoist on iPhone compared: TickTick, Things 3, Microsoft To Do, Structured and 3 Tasks. Prices, ratings and privacy labels checked on the App Store on 16 October 2026.",
+    "description": "Five alternatives to Todoist on iPhone compared: TickTick, Things 3, Microsoft To Do, Structured and 3 Tasks. Prices, ratings and privacy labels.",
     "llms": "Compares Todoist with five alternatives for iPhone (TickTick, Things 3, Microsoft To Do, Structured, 3 Tasks) by price, account needs, key features and App Store privacy label.",
     "disclosure": "3 Tasks is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours, and it is a deliberately tiny app, not a full Todoist replacement. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [

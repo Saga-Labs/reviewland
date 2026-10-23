@@ -30,9 +30,9 @@ EN = {
     "ct": "rl-ai-chat",
     "category": "ProductivityApplication",
     "published": CHECKED, "updated": "2026-10-23", "checked": CHECKED,
-    "title": "Best AI chat apps for iPhone without an account (2026): 6 compared",
+    "title": "Best AI chat apps for iPhone users without an account (2026)",
     "h1": "Best AI chat apps for iPhone without an account in 2026",
-    "description": "Seven AI chat apps for iPhone compared by whether you need an account, free use, price and privacy: Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek and Ask AI. Checked on the App Store on 11 October 2026.",
+    "description": "Seven AI chat apps for iPhone compared by account, free use, price and privacy: Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek and Ask AI.",
     "llms": "Compares seven AI chat apps for iPhone (Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek, Ask AI) by account requirement, free use, subscription price and App Store privacy label. Says which model Brainy really uses.",
     "disclosure": "Brainy is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages. Ask AI is also ours (added on 23 October 2026, from its App Store listing).",
     "answer": [
@@ -173,9 +173,9 @@ ES = {
     "ct": "rl-ai-chat-es",
     "category": "ProductivityApplication",
     "published": CHECKED, "updated": "2026-10-23", "checked": CHECKED,
-    "title": "Mejores apps de chat con IA para iPhone sin cuenta (2026): 6 comparadas",
+    "title": "Mejores apps de chat con IA para usar en iPhone sin cuenta (2026)",
     "h1": "Mejores apps de chat con IA para iPhone sin cuenta en 2026",
-    "description": "Siete apps de chat con IA para iPhone comparadas por si piden cuenta, uso gratis, precio y privacidad: Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek y Ask AI. Comprobado en el App Store de España el 11 de octubre de 2026.",
+    "description": "Siete apps de chat con IA para iPhone comparadas por cuenta, uso gratis, precio y privacidad: Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek y Ask AI.",
     "llms": "Compara siete apps de chat con IA para iPhone (Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek, Ask AI) por cuenta, uso gratis, precio en euros y etiqueta de privacidad. Dice qué modelo usa de verdad Brainy.",
     "disclosure": "Brainy es de Saga Labs, la empresa que hace Reviewland. Va primera porque es nuestra. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store. Ask AI también es nuestra (añadida el 23 de octubre de 2026, con los datos de su ficha del App Store).",
     "answer": [

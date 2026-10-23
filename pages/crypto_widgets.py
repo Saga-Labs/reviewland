@@ -28,9 +28,9 @@ EN = {
     "ct": "rl-crypto-widgets",
     "category": "FinanceApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best crypto price tracker apps for iPhone (2026): widgets, alerts and ads compared",
+    "title": "Best crypto price widget apps for iPhone home screens (2026)",
     "h1": "Best crypto price tracker apps for iPhone in 2026: widgets, alerts and ads",
-    "description": "Six crypto price apps for iPhone compared by widgets, price alerts, how fresh the prices are, price and privacy: Crypton, CoinGecko, CoinMarketCap, Crypto Pro, CoinStats and HODL. Checked on the App Store on 11 October 2026.",
+    "description": "Six crypto price apps for iPhone compared by widgets, price alerts, how fresh prices are, ads and privacy: Crypton, CoinGecko, CoinMarketCap and more.",
     "llms": "Compares six crypto price tracker apps for iPhone (Crypton, CoinGecko, CoinMarketCap, Crypto Pro, CoinStats, HODL) by widgets, price alerts, real-time data, price and privacy label. States that Crypton has no widgets, no alerts and delayed prices.",
     "disclosure": "Crypton is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages. None of these apps is financial advice.",
     "answer": [
@@ -156,9 +156,9 @@ ES = {
     "ct": "rl-crypto-widgets-es",
     "category": "FinanceApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Mejores apps de precios de cripto para iPhone (2026): widgets, alertas y anuncios",
+    "title": "Mejores apps de widgets de precios cripto para iPhone (2026)",
     "h1": "Mejores apps de precios de cripto para iPhone en 2026: widgets, alertas y anuncios",
-    "description": "Seis apps de precios de cripto para iPhone comparadas por widgets, alertas, si los precios van al momento, precio y privacidad: Crypton, CoinGecko, CoinMarketCap, Crypto Pro, CoinStats y HODL. Comprobado en el App Store de España el 11 de octubre de 2026.",
+    "description": "Seis apps de precios de cripto para iPhone comparadas por widgets, alertas, precios al momento, anuncios y privacidad: Crypton, CoinGecko y más.",
     "llms": "Compara seis apps de precios de cripto para iPhone (Crypton, CoinGecko, CoinMarketCap, Crypto Pro, CoinStats, HODL) por widgets, alertas, datos en tiempo real, precio en euros y privacidad. Dice que Crypton no tiene widgets ni alertas y que sus precios llevan horas de retraso.",
     "disclosure": "Crypton es de Saga Labs, la empresa que hace Reviewland. Va primera porque es nuestra. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store. Nada de esto es asesoramiento financiero.",
     "answer": [

@@ -25,9 +25,9 @@ EN = {
     "ct": "rl-simple-todo",
     "category": "ProductivityApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best simple to-do list apps for iPhone (2026): 6 options compared",
+    "title": "Best simple to-do list apps for iPhone users who want less (2026)",
     "h1": "Best simple to-do list apps for iPhone in 2026",
-    "description": "Six simple to-do list apps for iPhone compared: 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do and Todoist. Prices, account needs and privacy labels checked on the App Store on 11 October 2026.",
+    "description": "Six simple to-do apps for iPhone compared: 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do and Todoist. Price, account and privacy checked.",
     "llms": "Compares six simple to-do list apps for iPhone (3 Tasks, Do!, MinimaList, Clear, Microsoft To Do, Todoist) by price, whether they need an account, reminders and widgets, and privacy label.",
     "disclosure": "3 Tasks is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
@@ -157,9 +157,9 @@ ES = {
     "ct": "rl-simple-todo-es",
     "category": "ProductivityApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Mejores apps de listas de tareas sencillas para iPhone (2026): 6 comparadas",
+    "title": "Mejores apps de tareas sencillas para iPhone (2026)",
     "h1": "Mejores apps de listas de tareas sencillas para iPhone en 2026",
-    "description": "Seis apps de tareas sencillas para iPhone comparadas: 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do y Todoist. Precios, cuenta y privacidad comprobados en el App Store de España el 11 de octubre de 2026.",
+    "description": "Seis apps de tareas sencillas para iPhone comparadas: 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do y Todoist. Precio, cuenta y privacidad.",
     "llms": "Compara seis apps de listas de tareas sencillas para iPhone (3 Tasks, Do!, MinimaList, Clear, Microsoft To Do, Todoist) por precio en euros, si piden cuenta, recordatorios y widgets, y privacidad.",
     "disclosure": "3 Tasks (en España, «3 Tareas - Diario») es de Saga Labs, la empresa que hace Reviewland. Va primera porque es nuestra. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store.",
     "answer": [

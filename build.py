@@ -55,6 +55,23 @@ T = {
 }
 
 
+# Home page sections: every ranking group must be in one of them (build fails otherwise).
+HOME_SECTIONS = [
+    ("photos", {"en": "Hide photos and photo vaults", "es": "Ocultar fotos y bóvedas de fotos"}),
+    ("ai", {"en": "AI chat and AI models", "es": "Chat con IA y modelos de IA"}),
+    ("sleep", {"en": "Sleep, calm and white noise", "es": "Dormir, calma y ruido blanco"}),
+    ("tasks", {"en": "To-do lists", "es": "Listas de tareas"}),
+    ("crypto", {"en": "Crypto prices and portfolio trackers", "es": "Precios y carteras de criptomonedas"}),
+]
+HOME_GROUPS = {
+    "photos": {"hide-photos", "photo-vault-alternatives", "vault-no-data"},
+    "ai": {"ai-chat", "local-models"},
+    "sleep": {"calm-alternatives", "free-sleep-sounds"},
+    "tasks": {"simple-todo", "todoist-alternatives"},
+    "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers"},
+}
+
+
 def esc(s):
     return html.escape(str(s), quote=True)
 
@@ -275,22 +292,30 @@ def main():
     for lang, path in (("en", ""), ("es", "es/")):
         own = [p for p in pages if p["lang"] == lang]
         if lang == "en":
-            title = "Reviewland: rankings of iPhone apps, checked on the App Store"
-            desc = "Rankings of iPhone apps by what you want to do. Prices, versions and privacy labels checked on the App Store, with the date."
+            title = "Best iPhone apps for every task (2026): Reviewland rankings"
+            desc = "Best iPhone apps by task: hide photos, AI chat, sleep sounds, to-do lists and crypto trackers. Prices and privacy labels checked on the App Store."
             intro = ("<h1>Rankings of iPhone apps, checked on the App Store</h1>"
                      "<p>One page per question people ask: which app to hide photos, to fall asleep, to keep a simple to-do list. "
                      "Every price, version and privacy label is copied from the App Store on the date shown on each page.</p>")
         else:
-            title = "Reviewland: rankings de apps de iPhone comprobados en el App Store"
-            desc = "Rankings de apps de iPhone según lo que quieres hacer. Precios, versiones y etiquetas de privacidad comprobados en el App Store, con fecha."
+            title = "Mejores apps de iPhone para cada tarea (2026): rankings de Reviewland"
+            desc = "Mejores apps de iPhone por tarea: ocultar fotos, chat con IA, sonidos para dormir, tareas y cripto. Precios y privacidad comprobados en el App Store."
             intro = ("<h1>Rankings de apps de iPhone, comprobados en el App Store</h1>"
                      "<p>Una página por cada pregunta: qué app usar para ocultar fotos, para dormir o para una lista de tareas sencilla. "
                      "Cada precio, versión y etiqueta de privacidad está copiado del App Store en la fecha que pone cada página.</p>")
-        items = "".join(
-            f'<li><a href="/{p["path"]}"><img src="/img/{p.get("cover", p["group"])}.jpg" alt="" width="1600" height="900" loading="lazy"><span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} apps · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
-            for p in own
-        )
-        write(path, simple_page(lang, path, title, desc, '<div class="hero home">' + intro + f'</div><ul class="cards">{items}</ul>',
+        sections = ""
+        for sec_id, names in HOME_SECTIONS:
+            group_pages = [p for p in own if p["group"] in HOME_GROUPS[sec_id]]
+            if not group_pages:
+                continue
+            cards = "".join(
+                f'<li><a href="/{p["path"]}"><img src="/img/{p.get("cover", p["group"])}.jpg" alt="" width="1600" height="900" loading="lazy"><span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} apps · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
+                for p in group_pages
+            )
+            sections += f'<h2 id="{sec_id}">{esc(names[lang])} <span class="meta">({len(group_pages)})</span></h2><ul class="cards">{cards}</ul>'
+        missing = [p["path"] for p in own if not any(p["group"] in g for g in HOME_GROUPS.values())]
+        assert not missing, f"home: add these groups to HOME_GROUPS: {missing}"
+        write(path, simple_page(lang, path, title, desc, '<div class="hero home">' + intro + f'</div>{sections}',
                                 [("en", f"{SITE}/"), ("es", f"{SITE}/es/"), ("x-default", f"{SITE}/")]))
 
     about_en = """<h1>About Reviewland and how we check</h1>

@@ -23,9 +23,9 @@ EN = {
     "ct": "rl-coinstats-alt",
     "category": "FinanceApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "CoinStats and Delta alternatives for iPhone (2026): 5 crypto trackers compared",
+    "title": "Best CoinStats and Delta alternatives for iPhone crypto investors (2026)",
     "h1": "CoinStats and Delta alternatives for iPhone in 2026",
-    "description": "Five crypto portfolio trackers for iPhone compared: CoinStats, Delta, CoinGecko, CoinMarketCap and Crypton. Prices, ratings and privacy labels checked on the App Store on 16 October 2026.",
+    "description": "Five crypto portfolio trackers for iPhone compared: CoinStats, Delta, CoinGecko, CoinMarketCap and Crypton. Prices, ratings and privacy labels.",
     "llms": "Compares CoinStats and Delta with three alternatives for iPhone (CoinGecko, CoinMarketCap, Crypton) by price, wallet and exchange sync, alerts, free-plan limits and App Store privacy label.",
     "disclosure": "Crypton is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours, and it is much simpler than CoinStats or Delta. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [

@@ -24,9 +24,9 @@ EN = {
     "ct": "rl-vault-alt",
     "category": "PhotographyApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Private Photo Vault alternatives for iPhone (2026): 5 apps compared",
+    "title": "Best Private Photo Vault alternatives for iPhone (2026)",
     "h1": "Private Photo Vault alternatives for iPhone in 2026",
-    "description": "Five alternatives to Private Photo Vault on iPhone compared: Keepsafe, PV Secret Photo Album, Secret Photo Album SA and Photo Vault: Hide Pics Video. Prices, cloud backup and privacy labels checked on the App Store on 16 October 2026.",
+    "description": "Five alternatives to Private Photo Vault on iPhone: Keepsafe, PV Secret Photo Album, Secret Photo Album SA and Photo Vault. Prices and privacy checked.",
     "llms": "Compares Private Photo Vault - Pic Safe with four alternatives for iPhone (Keepsafe, PV - Secret Photo Album, Secret Photo Album - SA, Photo Vault: Hide Pics Video) by price, cloud backup, decoy or break-in features and App Store privacy label.",
     "disclosure": "Photo Vault: Hide Pics Video is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours. Note that it is a different app from \"Private Photo Vault - Pic Safe\", which is not ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [

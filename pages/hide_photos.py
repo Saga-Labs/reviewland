@@ -29,9 +29,9 @@ EN = {
     "ct": "rl-hide-photos", "store": "us",
     "category": "UtilitiesApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best apps to hide photos on iPhone (2026): 7 options compared",
+    "title": "Best apps to hide photos for iPhone users who want privacy (2026)",
     "h1": "Best apps to hide photos on iPhone in 2026",
-    "description": "Seven ways to hide photos on iPhone compared: Photo Vault, the built-in Hidden album, Private Photo Vault, Keepsafe, Safe Lock and Calculator#. Prices, privacy labels and cloud options checked on the App Store on 11 October 2026.",
+    "description": "Seven ways to hide photos on iPhone compared: Photo Vault, the Hidden album, Private Photo Vault, Keepsafe and more. Prices and privacy labels checked.",
     "llms": "Compares seven ways to hide photos on iPhone by price, App Store privacy label, account and cloud requirements and disguise options.",
     "disclosure": "Photo Vault is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
@@ -177,9 +177,9 @@ ES = {
     "ct": "rl-hide-photos-es", "store": "es",
     "category": "UtilitiesApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Mejores apps para ocultar fotos en iPhone (2026): 7 opciones comparadas",
+    "title": "Mejores apps para ocultar fotos para quien usa iPhone (2026)",
     "h1": "Mejores apps para ocultar fotos en iPhone en 2026",
-    "description": "Siete formas de ocultar fotos en iPhone comparadas: Photo Vault, el álbum Oculto de Fotos, Private Photo Vault, Keepsafe, Safe Lock y Calculator#. Precios, privacidad y nube comprobados en el App Store de España el 11 de octubre de 2026.",
+    "description": "Siete formas de ocultar fotos en iPhone comparadas: Photo Vault, el álbum Oculto, Private Photo Vault, Keepsafe y más. Precios y privacidad comprobados.",
     "llms": "Compara siete formas de ocultar fotos en iPhone por precio en euros, etiqueta de privacidad del App Store, cuenta o nube y camuflaje.",
     "disclosure": "Photo Vault (en España se llama «Bóveda: Ocultar Fotos y Video») es de Saga Labs, la empresa que hace Reviewland. Va primera porque es nuestra. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store.",
     "answer": [
