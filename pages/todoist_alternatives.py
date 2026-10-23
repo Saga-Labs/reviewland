@@ -28,9 +28,9 @@ EN = {
     "h1": "Todoist alternatives for iPhone in 2026",
     "description": "Five alternatives to Todoist on iPhone compared: TickTick, Things 3, Microsoft To Do, Structured and 3 Tasks. Prices, ratings and privacy labels.",
     "llms": "Compares Todoist with five alternatives for iPhone (TickTick, Things 3, Microsoft To Do, Structured, 3 Tasks) by price, account needs, key features and App Store privacy label.",
-    "disclosure": "3 Tasks is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours, and it is a deliberately tiny app, not a full Todoist replacement. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
+    "disclosure": "3 Tasks is made by Saga Labs, the company behind Reviewland. It is one more option in this list, not placed first because it is ours, and it is a deliberately tiny app, not a full Todoist replacement. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
-        "If you want a full Todoist replacement, TickTick is the closest (free plan, Premium $4.99 a month or $49.99 a year, with habits, a calendar and a Pomodoro timer), Things 3 is the polished one-time purchase ($9.99, no subscription) and Microsoft To Do is free. If Todoist feels like too much, 3 Tasks (ours) does the opposite: three tasks a day, a timer on each, free.",
+        "If you want a full Todoist replacement, TickTick is the closest (free plan, Premium $4.99 a month or $49.99 a year, with habits, a calendar and a Pomodoro timer), Things 3 is the polished one-time purchase ($9.99, no subscription) and Microsoft To Do is free. If Todoist feels like too much, 3 Tasks does the opposite: three tasks a day, a timer on each, free.",
         "Todoist Pro costs $6.99 a month or $59.99 a year in the US; the free plan is still a normal Todoist account.",
     ],
     "columns": ["App", "Price (US)", "What it is best at", "Account", "App Store privacy label", "Version (date)", "Rating (US)"],
@@ -123,7 +123,7 @@ EN = {
         "<strong>You want to pay once and never subscribe:</strong> Things 3.",
         "<strong>You want everything free and you use Outlook:</strong> Microsoft To Do.",
         "<strong>Your day is a schedule of time blocks:</strong> Structured.",
-        "<strong>Your lists keep growing and you never finish them:</strong> 3 Tasks (ours), three a day and nothing more.",
+        "<strong>Your lists keep growing and you never finish them:</strong> 3 Tasks, three a day and nothing more.",
     ],
     "cases": [
         "Moving from a project-heavy Todoist setup to something with a one-time price (Things 3).",

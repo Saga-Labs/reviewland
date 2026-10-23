@@ -32,9 +32,9 @@ EN = {
     "h1": "Calm alternatives for iPhone in 2026",
     "description": "Seven alternatives to Calm on iPhone: Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite and Drop. Prices, ratings and privacy checked.",
     "llms": "Compares Calm with six alternatives for iPhone (Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite, Drop) by price, content type (meditations, sleep stories, sleep sounds, white noise), privacy label and App Store rating.",
-    "disclosure": "Drop is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours, and it is a much smaller app than Calm. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
+    "disclosure": "Drop is made by Saga Labs, the company behind Reviewland. It is one more option in this list, not placed first because it is ours, and it is a much smaller app than Calm. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
-        "The best Calm alternative depends on what you use Calm for. For guided meditation without paying, Medito is completely free and Insight Timer has a large free library. For sleep sounds and stories, BetterSleep is the closest paid match. For plain white noise, White Noise Lite is free with 50+ sounds. If you only want short breathing sessions with nature sounds and no ads, Drop (ours) does that, and nothing else.",
+        "The best Calm alternative depends on what you use Calm for. For guided meditation without paying, Medito is completely free and Insight Timer has a large free library. For sleep sounds and stories, BetterSleep is the closest paid match. For plain white noise, White Noise Lite is free with 50+ sounds. If you only want short breathing sessions with nature sounds and no ads, Drop does that, and nothing else.",
         "Calm itself is a free download with a Premium subscription; Headspace charges $12.99 a month or $69.99 a year in the US. All prices below are the ones listed on the App Store on 16 October 2026.",
     ],
     "columns": ["App", "Price (US)", "What it is best at", "Sleep sounds / white noise", "App Store privacy label", "Version (date)", "Rating (US)"],
@@ -145,7 +145,7 @@ EN = {
         "<strong>You want bedtime stories and a polished library:</strong> Calm, or BetterSleep if sleep is your main goal.",
         "<strong>You want courses, and maybe a therapist or coach:</strong> Headspace.",
         "<strong>You only need white noise or brown noise:</strong> White Noise Lite.",
-        "<strong>You want calming sounds with a sleep timer, short breathing sessions and no clutter:</strong> Drop (ours).",
+        "<strong>You want calming sounds with a sleep timer, short breathing sessions and no clutter:</strong> Drop.",
     ],
     "cases": [
         "Falling asleep: Sleep Stories (Calm), sleep tracker and mixer (BetterSleep), constant white noise (White Noise Lite).",

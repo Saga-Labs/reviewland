@@ -29,9 +29,9 @@ EN = {
     "h1": "Best simple to-do list apps for iPhone in 2026",
     "description": "Six simple to-do apps for iPhone compared: 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do and Todoist. Price, account and privacy checked.",
     "llms": "Compares six simple to-do list apps for iPhone (3 Tasks, Do!, MinimaList, Clear, Microsoft To Do, Todoist) by price, whether they need an account, reminders and widgets, and privacy label.",
-    "disclosure": "3 Tasks is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
+    "disclosure": "3 Tasks is made by Saga Labs, the company behind Reviewland. It is one more option in this list, not placed first because it is ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
-        "The simplest to-do list on iPhone is one that limits you: 3 Tasks (ours) lets you write only three priorities a day and times each one, free, with no account and no in-app purchases. If you want a normal list that stays simple, Do! and MinimaList add reminders and widgets, and Microsoft To Do is completely free with sync through a Microsoft account.",
+        "The simplest to-do list on iPhone is one that limits you: 3 Tasks lets you write only three priorities a day and times each one, free, with no account and no in-app purchases. If you want a normal list that stays simple, Do! and MinimaList add reminders and widgets, and Microsoft To Do is completely free with sync through a Microsoft account.",
         "Todoist is the most complete of the six, but its Pro plan is a subscription ($6.99 a month or $59.99 a year in the US).",
     ],
     "columns": ["App", "Price (US)", "What makes it simple", "Account", "App Store privacy label", "Version (date)", "Rating (US)"],
@@ -121,7 +121,7 @@ EN = {
         },
     ],
     "who": [
-        "<strong>You keep writing lists you never finish:</strong> 3 Tasks (ours), three a day and nothing more.",
+        "<strong>You keep writing lists you never finish:</strong> 3 Tasks, three a day and nothing more.",
         "<strong>You want reminders and repeating tasks but a calm design:</strong> Do! or MinimaList.",
         "<strong>You want everything free and synced:</strong> Microsoft To Do.",
         "<strong>You like gestures and no buttons:</strong> Clear.",
@@ -161,9 +161,9 @@ ES = {
     "h1": "Mejores apps de listas de tareas sencillas para iPhone en 2026",
     "description": "Seis apps de tareas sencillas para iPhone comparadas: 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do y Todoist. Precio, cuenta y privacidad.",
     "llms": "Compara seis apps de listas de tareas sencillas para iPhone (3 Tasks, Do!, MinimaList, Clear, Microsoft To Do, Todoist) por precio en euros, si piden cuenta, recordatorios y widgets, y privacidad.",
-    "disclosure": "3 Tasks (en España, «3 Tareas - Diario») es de Saga Labs, la empresa que hace Reviewland. Va primera porque es nuestra. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store.",
+    "disclosure": "3 Tasks (en España, «3 Tareas - Diario») es de Saga Labs, la empresa que hace Reviewland. Es una opción más de la lista, no va primera por ser nuestra. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store.",
     "answer": [
-        "La lista de tareas más sencilla del iPhone es la que te limita: 3 Tasks (nuestra) solo te deja apuntar tres prioridades al día y cronometra cada una, gratis, sin cuenta y sin compras dentro. Si quieres una lista normal que siga siendo sencilla, Do! y MinimaList añaden recordatorios y widgets, y Microsoft To Do es totalmente gratis y sincroniza con una cuenta de Microsoft.",
+        "La lista de tareas más sencilla del iPhone es la que te limita: 3 Tasks solo te deja apuntar tres prioridades al día y cronometra cada una, gratis, sin cuenta y sin compras dentro. Si quieres una lista normal que siga siendo sencilla, Do! y MinimaList añaden recordatorios y widgets, y Microsoft To Do es totalmente gratis y sincroniza con una cuenta de Microsoft.",
         "Todoist es la más completa de las seis, pero su plan Pro es una suscripción (6,99 € al mes o 59,99 € al año en España).",
     ],
     "columns": ["App", "Precio (España)", "Qué la hace sencilla", "Cuenta", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
@@ -253,7 +253,7 @@ ES = {
         },
     ],
     "who": [
-        "<strong>Siempre escribes listas que no terminas:</strong> 3 Tasks (nuestra), tres al día y nada más.",
+        "<strong>Siempre escribes listas que no terminas:</strong> 3 Tasks, tres al día y nada más.",
         "<strong>Quieres recordatorios y tareas repetidas con un diseño tranquilo:</strong> Do! o MinimaList.",
         "<strong>Quieres todo gratis y sincronizado:</strong> Microsoft To Do.",
         "<strong>Te gustan los gestos sin botones:</strong> Clear.",

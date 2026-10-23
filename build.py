@@ -4,8 +4,11 @@
     python3 build.py --indexnow # also pings IndexNow with every URL
 
 Each ranking lives in pages/*.py as a dict (see pages/hide_photos.py).
-Rules: our app goes first and says it is ours; our apps link to the App
-Store with pt+ct for campaign stats, competitors with a plain App Store link;
+Rules (Marta, 20 Oct 2026): our app is one more option, never first by
+default. place_ours() moves it to the middle of the list (or to "ours_rank"
+if a page sets it) and the page says it is ours only in the disclosure line
+at the top, with no label in the table, the cards or "who should use what".
+Our apps link to the App Store with pt+ct for campaign stats, competitors with a plain App Store link;
 every price, version and rating comes from the App Store on the date in
 `checked`, and that date is shown on the page and in the JSON-LD.
 """
@@ -84,6 +87,18 @@ OUR_IDS = {"1667947372", "6754878073", "1143691286", "6754180384",
            "1553693943", "1462269642", "1662608035", "1532670722"}
 
 
+def place_ours(p):
+    """Our app goes where it honestly fits: the middle of the list unless the page sets ours_rank (1-based)."""
+    apps = list(p["apps"])
+    idx = [i for i, a in enumerate(apps) if a.get("ours")]
+    if not idx or idx[0] != 0:
+        return apps
+    a = apps.pop(0)
+    pos = p.get("ours_rank", (len(apps) + 2) // 2) - 1
+    apps.insert(max(1, min(pos, len(apps))), a)
+    return apps
+
+
 def tag_ours(url, ct):
     """Enlace a una app nuestra: le pone pt y el ct de la pagina (max 40). Los de otros, sin tocar."""
     m = re.search(r"/id(\d+)", url)
@@ -159,7 +174,7 @@ def foot(lang):
 def ranking_html(p, alternates):
     t = T[p["lang"]]
     lang = p["lang"]
-    apps = p["apps"]
+    apps = place_ours(p)
     upd = human_date(p["updated"], lang)
     chk = human_date(p["checked"], lang)
 
@@ -209,6 +224,8 @@ def ranking_html(p, alternates):
     out.append(f'<article>\n<div class="hero"><p class="kicker">{len(apps)} apps · {"Ranking" if lang == "en" else "Ranking"}</p><h1>{esc(p["h1"])}</h1>\n')
     out.append(f'<p class="meta">{t["updated"]} <time datetime="{p["updated"]}">{upd}</time> · {t["checked"]} {chk}</p></div>\n')
     out.append(f'<figure class="cover"><img src="/img/{p.get("cover", p["group"])}.jpg" alt="" width="1600" height="900" fetchpriority="high"></figure>\n')
+    if p.get("disclosure"):
+        out.append(f'<aside class="disclosure"><strong>{t["disclosure_title"]}:</strong> {p["disclosure"]}</aside>\n')
     out.append('<div class="answer">' + "".join(f"<p>{x}</p>\n" for x in p["answer"]) + "</div>\n")
 
     out.append(f'<h2 id="table">{t["table"]}</h2>\n<div class="scroll"><table>\n<thead><tr>')
@@ -216,20 +233,18 @@ def ranking_html(p, alternates):
     out.append("</tr></thead>\n<tbody>\n")
     for a in apps:
         cells = a["row"]
-        name = esc(a["name"]) + (f' <span class="tag">{t["ours"]}</span>' if a.get("ours") else "")
+        name = esc(a["name"])
         out.append(f"<tr><td>{name}</td>" + "".join(f"<td>{c}</td>" for c in cells) + "</tr>\n")
     out.append(f'</tbody></table></div>\n<p class="note">{p["table_note"]}</p>\n')
 
     for i, a in enumerate(apps):
-        out.append(f'<section class="app{" ours" if a.get("ours") else ""}" id="{a["anchor"]}">\n<div class="apphead"><span class="rank">{i + 1}</span><h2>{esc(a["name"])}')
-        if a.get("ours"):
-            out.append(f' <span class="tag">{t["ours"]}</span>')
+        out.append(f'<section class="app" id="{a["anchor"]}">\n<div class="apphead"><span class="rank">{i + 1}</span><h2>{esc(a["name"])}')
         out.append("</h2></div>\n")
         out.append(f'<p class="bestfor"><strong>{t["best_for"]}:</strong> {a["best_for"]}</p>\n')
         out.append('<ul class="facts">' + "".join(f"<li>{x}</li>" for x in a["facts"]) + "</ul>\n")
         out.append(f'<p class="limits"><strong>{t["limits"]}:</strong> {a["limits"]}</p>\n')
         if a.get("ours"):
-            out.append(f'<p><a class="cta" href="{esc(store_link(a["id"], p["ct"]))}">{t["get"]}</a></p>\n')
+            out.append(f'<p><a class="link" href="{esc(store_link(a["id"], p["ct"]))}">{t["store_page"]} →</a></p>\n')
         elif a.get("id"):
             out.append(f'<p><a class="link" href="{esc(tag_ours(f"https://apps.apple.com/{p['store']}/app/id{a['id']}", p["ct"]))}">{t["store_page"]} →</a></p>\n')
         out.append("</section>\n")
@@ -320,8 +335,8 @@ def main():
 
     about_en = """<h1>About Reviewland and how we check</h1>
 <p>Reviewland is made by a small team that also builds iPhone apps.</p>
-<h2>Our apps come first, and we say so</h2>
-<p>When one of our apps fits a question, it is listed first with an "Our app" label. Competitors are linked to their normal App Store pages and shown with their real data, including where they are better than ours.</p>
+<h2>Our apps are one more option, and we say so</h2>
+<p>When one of our apps fits a question, it is included as one more option, placed where it fits rather than first, and a single line at the top of the page says it is ours. Competitors are linked to their normal App Store pages and shown with their real data, including where they are better than ours.</p>
 <h2>What we check</h2>
 <ul><li>Price and in-app purchases, version and release date, rating and number of ratings, languages, minimum iOS: from the App Store listing (US store unless the page says otherwise) on the date shown.</li>
 <li>Privacy: the App Store privacy label as published by each developer.</li>
@@ -331,8 +346,8 @@ def main():
 """
     about_es = """<h1>Quiénes somos y cómo comprobamos</h1>
 <p>Reviewland lo hace un equipo pequeño que también hace apps de iPhone.</p>
-<h2>Nuestras apps van primeras, y lo decimos</h2>
-<p>Cuando una de nuestras apps encaja, va primera con la etiqueta "Nuestra app". Las demás llevan enlace a su ficha normal del App Store y aparecen con sus datos reales, también donde son mejores que la nuestra.</p>
+<h2>Nuestras apps son una opción más, y lo decimos</h2>
+<p>Cuando una de nuestras apps encaja, aparece como una opción más, en el puesto que le corresponde y no primera, y una sola línea arriba de la página dice que es nuestra. Las demás llevan enlace a su ficha normal del App Store y aparecen con sus datos reales, también donde son mejores que la nuestra.</p>
 <h2>Qué comprobamos</h2>
 <ul><li>Precio y compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas e iOS mínimo: de la ficha del App Store (la de España en las páginas en español) en la fecha indicada.</li>
 <li>Privacidad: la etiqueta de privacidad del App Store que publica cada desarrollador.</li>
@@ -359,7 +374,7 @@ def main():
 
     # llms.txt
     lines = ["# Reviewland", "",
-             "> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. When one of our own apps is ranked it is listed first and labelled 'Our app'.", "",
+             "> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. When one of our own apps is ranked it is one more option, not first by default, and the page says so at the top.", "",
              "## Rankings", ""]
     for p in pages:
         ours = next((a for a in p["apps"] if a.get("ours")), None)

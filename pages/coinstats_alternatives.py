@@ -27,9 +27,9 @@ EN = {
     "h1": "CoinStats and Delta alternatives for iPhone in 2026",
     "description": "Five crypto portfolio trackers for iPhone compared: CoinStats, Delta, CoinGecko, CoinMarketCap and Crypton. Prices, ratings and privacy labels.",
     "llms": "Compares CoinStats and Delta with three alternatives for iPhone (CoinGecko, CoinMarketCap, Crypton) by price, wallet and exchange sync, alerts, free-plan limits and App Store privacy label.",
-    "disclosure": "Crypton is made by Saga Labs, the company behind Reviewland. It is listed first because it is ours, and it is much simpler than CoinStats or Delta. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
+    "disclosure": "Crypton is made by Saga Labs, the company behind Reviewland. It is one more option in this list, not placed first because it is ours, and it is much simpler than CoinStats or Delta. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
-        "If you want a tracker that connects to your exchanges and wallets, CoinStats and Delta are the heavy options, and both have paid plans (CoinStats lists Premium subscriptions from $65.99 to $164.99; Delta's free plan tracks 10 assets). If you only want prices, news and a watchlist, CoinGecko and CoinMarketCap are free and far larger. If you just want a fast, free, ad-free list of the top coins with your holdings typed in, Crypton (ours) does that and nothing else.",
+        "If you want a tracker that connects to your exchanges and wallets, CoinStats and Delta are the heavy options, and both have paid plans (CoinStats lists Premium subscriptions from $65.99 to $164.99; Delta's free plan tracks 10 assets). If you only want prices, news and a watchlist, CoinGecko and CoinMarketCap are free and far larger. If you just want a fast, free, ad-free list of the top coins with your holdings typed in, Crypton does that and nothing else.",
         "Crypton does not connect to wallets or exchanges and has no price alerts, so it is not a replacement for CoinStats or Delta for people who need automatic sync.",
     ],
     "columns": ["App", "Price (US)", "What it is best at", "Wallet / exchange sync", "App Store privacy label", "Version (date)", "Rating (US)"],
@@ -108,7 +108,7 @@ EN = {
         "<strong>You hold coins on several exchanges and wallets:</strong> CoinStats or Delta.",
         "<strong>You track stocks and crypto together:</strong> Delta.",
         "<strong>You research coins and want a free portfolio:</strong> CoinGecko or CoinMarketCap.",
-        "<strong>You just want to glance at the top coins and your holdings, free and with no ads:</strong> Crypton (ours).",
+        "<strong>You just want to glance at the top coins and your holdings, free and with no ads:</strong> Crypton.",
     ],
     "cases": [
         "Seeing the total value of wallets and exchanges in one place (CoinStats, Delta).",

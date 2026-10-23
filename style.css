@@ -56,3 +56,4 @@ footer a{color:var(--muted)}
 .cover img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow)}
 .cards img{display:block;width:calc(100% + 40px);margin:-20px -20px 4px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px 16px 0 0}
 .cards a{overflow:hidden}
+.disclosure{background:var(--soft);border-radius:12px;padding:12px 16px;margin:18px 0;font-size:14px;color:var(--muted)}

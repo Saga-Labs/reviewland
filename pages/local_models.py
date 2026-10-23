@@ -3,7 +3,7 @@
 Checked 2026-10-20: iTunes lookup API (US) for version, date, price, rating,
 minimum iOS and size; App Store web pages for in-app purchases and privacy
 labels (19-20 Oct); each app's App Store description for the model families it
-lists. Pinku (ours) is listed as one more option, not first and without the
+lists. Pinku is listed as one more option, not first and without the
 "Our app" tag, per Marta (20 Oct 2026); the transparency note is in "method".
 Ranked by model choice and freshness for this question.
 """

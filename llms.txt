@@ -1,6 +1,6 @@
 # Reviewland
 
-> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. When one of our own apps is ranked it is listed first and labelled 'Our app'.
+> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. When one of our own apps is ranked it is one more option, not first by default, and the page says so at the top.
 
 ## Rankings
 
