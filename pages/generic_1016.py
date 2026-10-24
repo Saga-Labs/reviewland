@@ -110,7 +110,7 @@ SLEEP = {
                 "limits": "pide iOS 26 o posterior, así que muchos iPhone no pueden instalarla, y es la descarga más grande de la lista."}},
     ],
     "en": {
-        "title": "Best free sleep sound apps for iPhone users (2026)",
+        "title": "Best Free Sleep Sound Apps for iPhone (2026)",
         "h1": "Best free sleep sound apps for iPhone in 2026",
         "description": "Six sleep sound and white noise apps for iPhone compared by what is really free: Drop, White Noise Lite, Rain Rain and more. Checked on the App Store.",
         "llms": "Compares six sleep sound apps for iPhone (Drop, White Noise Lite, Rain Rain, White Noise Deep Sleep Sounds, Sleep Pillow, Dark Noise) by how much is free, ads, timers, price of the paid tier and App Store privacy label.",
@@ -212,7 +212,7 @@ CRYPTO = {
                 "limits": "su cartera pide cuenta, su etiqueta de privacidad incluye datos usados para rastrearte y sus planes de pago llegan a 129,99 € al mes."}},
     ],
     "en": {
-        "title": "Best free crypto portfolio trackers for iPhone users (2026)",
+        "title": "Best Free Crypto Portfolio Trackers for iPhone (2026)",
         "h1": "Best free crypto portfolio trackers for iPhone in 2026",
         "description": "Six crypto portfolio trackers for iPhone compared by what the free plan includes: Crypton, Crypto Pro, Delta, HODL, CoinGecko and CoinMarketCap.",
         "llms": "Compares six free crypto portfolio tracker apps for iPhone (Crypton, Crypto Pro, Delta, HODL, CoinGecko, CoinMarketCap) by free-plan limits, paid tiers, sign-up needs and App Store privacy label. Not financial advice.",
@@ -314,7 +314,7 @@ VAULT = {
                 "limits": "la versión gratis muestra anuncios, y su etiqueta tiene datos de rastreo, vinculados y no vinculados."}},
     ],
     "en": {
-        "title": "Best photo vault apps for iPhone users who want no data collected (2026)",
+        "title": "Best Photo Vault Apps for iPhone That Collect No Data (2026)",
         "h1": "Best photo vault apps with no data collection for iPhone in 2026",
         "description": "Six photo vault apps for iPhone compared by App Store privacy label; only two say Data Not Collected. Photo Vault, Safe Lock, Keepsafe and more.",
         "llms": "Compares six photo vault apps for iPhone (Photo Vault, Safe Lock, Keepsafe, Private Photo Vault, Privault, PV) by App Store privacy label, price and cloud backup. Only Photo Vault and Safe Lock declare Data Not Collected.",

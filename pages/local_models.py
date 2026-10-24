@@ -18,7 +18,7 @@ EN = {
     "ct": "rl-local-models",
     "category": "ProductivityApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best apps to run open-source AI models for iPhone users (2026)",
+    "title": "Best Apps to Run Llama, Gemma and Qwen on iPhone (2026)",
     "h1": "Best apps to run open-source AI models on iPhone in 2026",
     "description": "Five iPhone apps that download open models (Gemma, Qwen, Llama, DeepSeek) and run them offline, compared by models, size limits, price and privacy.",
     "llms": "Compares five iPhone apps that run open-weight AI models on the device (PocketPal AI, Locally AI, Enclave, Pinku, Private LLM) by the model families each one can load, minimum iOS, price, privacy label and version date. Notes that none of their App Store descriptions lists Gemma 4 or Qwen3.5 yet.",

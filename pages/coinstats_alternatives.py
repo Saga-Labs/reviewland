@@ -23,7 +23,7 @@ EN = {
     "ct": "rl-coinstats-alt",
     "category": "FinanceApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best CoinStats and Delta alternatives for iPhone crypto investors (2026)",
+    "title": "Best CoinStats and Delta Alternatives for iPhone (2026)",
     "h1": "CoinStats and Delta alternatives for iPhone in 2026",
     "description": "Five crypto portfolio trackers for iPhone compared: CoinStats, Delta, CoinGecko, CoinMarketCap and Crypton. Prices, ratings and privacy labels.",
     "llms": "Compares CoinStats and Delta with three alternatives for iPhone (CoinGecko, CoinMarketCap, Crypton) by price, wallet and exchange sync, alerts, free-plan limits and App Store privacy label.",

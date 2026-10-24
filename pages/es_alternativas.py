@@ -254,7 +254,7 @@ COIN = dict(COMMON, **{
     "group": "coinstats-alternatives", "cover": "crypto-widgets",
     "path": "es/alternativas-a-coinstats-y-delta-iphone/", "ct": "rl-coinstats-alt-es",
     "category": "FinanceApplication",
-    "title": "Mejores alternativas a CoinStats y Delta para seguir cripto en iPhone (2026)",
+    "title": "Alternativas a CoinStats y Delta para iPhone (2026)",
     "h1": "Alternativas a CoinStats y Delta para iPhone en 2026",
     "description": "Cinco apps para seguir tu cartera cripto en iPhone comparadas: CoinStats, Delta, CoinGecko, CoinMarketCap y Crypton. Precios y privacidad.",
     "llms": "Compara CoinStats y Delta con tres alternativas para iPhone (CoinGecko, CoinMarketCap, Crypton) por precio en euros, conexión con carteras y exchanges, alertas, límites del plan gratis y etiqueta de privacidad.",

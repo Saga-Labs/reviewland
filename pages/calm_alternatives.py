@@ -28,7 +28,7 @@ EN = {
     "ct": "rl-calm-alt",
     "category": "HealthApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best Calm alternatives for iPhone users who want sleep and meditation (2026)",
+    "title": "Best Calm Alternatives for Sleep on iPhone (2026)",
     "h1": "Calm alternatives for iPhone in 2026",
     "description": "Seven alternatives to Calm on iPhone: Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite and Drop. Prices, ratings and privacy checked.",
     "llms": "Compares Calm with six alternatives for iPhone (Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite, Drop) by price, content type (meditations, sleep stories, sleep sounds, white noise), privacy label and App Store rating.",

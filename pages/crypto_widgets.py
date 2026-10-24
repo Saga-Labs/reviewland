@@ -28,7 +28,7 @@ EN = {
     "ct": "rl-crypto-widgets",
     "category": "FinanceApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best crypto price widget apps for iPhone home screens (2026)",
+    "title": "Best Crypto Price Widget Apps for iPhone (2026)",
     "h1": "Best crypto price tracker apps for iPhone in 2026: widgets, alerts and ads",
     "description": "Six crypto price apps for iPhone compared by widgets, price alerts, how fresh prices are, ads and privacy: Crypton, CoinGecko, CoinMarketCap and more.",
     "llms": "Compares six crypto price tracker apps for iPhone (Crypton, CoinGecko, CoinMarketCap, Crypto Pro, CoinStats, HODL) by widgets, price alerts, real-time data, price and privacy label. States that Crypton has no widgets, no alerts and delayed prices.",

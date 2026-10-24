@@ -25,7 +25,7 @@ EN = {
     "ct": "rl-simple-todo",
     "category": "ProductivityApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best simple to-do list apps for iPhone users who want less (2026)",
+    "title": "Best Simple To-Do List Apps for iPhone (2026)",
     "h1": "Best simple to-do list apps for iPhone in 2026",
     "description": "Six simple to-do apps for iPhone compared: 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do and Todoist. Price, account and privacy checked.",
     "llms": "Compares six simple to-do list apps for iPhone (3 Tasks, Do!, MinimaList, Clear, Microsoft To Do, Todoist) by price, whether they need an account, reminders and widgets, and privacy label.",

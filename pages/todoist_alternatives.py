@@ -24,7 +24,7 @@ EN = {
     "ct": "rl-todoist-alt",
     "category": "ProductivityApplication",
     "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best Todoist alternatives for iPhone users (2026)",
+    "title": "Best Todoist Alternatives for iPhone (2026)",
     "h1": "Todoist alternatives for iPhone in 2026",
     "description": "Five alternatives to Todoist on iPhone compared: TickTick, Things 3, Microsoft To Do, Structured and 3 Tasks. Prices, ratings and privacy labels.",
     "llms": "Compares Todoist with five alternatives for iPhone (TickTick, Things 3, Microsoft To Do, Structured, 3 Tasks) by price, account needs, key features and App Store privacy label.",
