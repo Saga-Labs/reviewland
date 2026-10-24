@@ -11,10 +11,10 @@ DATA = {
    "price": "Free",
    "rating": 4.42,
    "n": 12,
-   "ver": "2.10",
+   "ver": "2.11",
    "date": "2026-10-24",
-   "mb": 204,
-   "langs": 6,
+   "mb": 138,
+   "langs": 33,
    "ios": "18.0",
    "iap": [
     "Drop Pro Access $14.99",
@@ -294,10 +294,10 @@ DATA = {
    "price": "Free",
    "rating": 5,
    "n": 5,
-   "ver": "1.2.0",
-   "date": "2026-10-13",
-   "mb": 16,
-   "langs": 1,
+   "ver": "1.4.1",
+   "date": "2026-10-24",
+   "mb": 21,
+   "langs": 33,
    "ios": "18.0",
    "iap": [
     "3 Tasks Pro $4.99",
@@ -968,10 +968,10 @@ DATA = {
    "price": "Gratis",
    "rating": 5,
    "n": 7,
-   "ver": "2.10",
+   "ver": "2.11",
    "date": "2026-10-24",
-   "mb": 204,
-   "langs": 6,
+   "mb": 138,
+   "langs": 33,
    "ios": "18.0",
    "iap": [
     "Drop Pro Access 17,99 €",
@@ -1248,10 +1248,10 @@ DATA = {
    "price": "Gratis",
    "rating": 5,
    "n": 2,
-   "ver": "1.2.0",
-   "date": "2026-10-13",
-   "mb": 16,
-   "langs": 1,
+   "ver": "1.4.1",
+   "date": "2026-10-24",
+   "mb": 21,
+   "langs": 33,
    "ios": "18.0",
    "iap": [
     "3 Tasks Pro 5,99 €",
@@ -1994,7 +1994,7 @@ def refresh_ours(page, cc, priv_col, ver_col, rating_col):
             a["rating"] = rating(cc, i)
             changed = True
     if changed:
-        note = (" La fila de nuestra app se actualizó el 16 de octubre de 2026." if cc == "es"
-                else " The row for our own app was updated on 16 October 2026.")
+        note = (" La fila de nuestra app se actualizó el 24 de octubre de 2026." if cc == "es"
+                else " The row for our own app was updated on 24 October 2026.")
         page["table_note"] = page.get("table_note", "") + note
     return page
