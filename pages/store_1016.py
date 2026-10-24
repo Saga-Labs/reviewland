@@ -1981,12 +1981,18 @@ def refresh(page, cc, priv_col=3, ver_col=4, rating_col=5):
 OURS = {1462269642, 1143691286, 1553693943, 1532670722, 1667947372, 6754180384, 6754878073}
 
 
+# Rows of ours re-checked after 16 Oct (app id -> day of the check)
+CHECKED = {1462269642: 24, 1553693943: 24}
+
+
 def refresh_ours(page, cc, priv_col, ver_col, rating_col):
     """Old pages: update only our own app's row (privacy label, version, rating) from the 16 Oct data."""
     changed = False
+    day = 16
     for a in page["apps"]:
         if a.get("ours") and a.get("id") and int(a["id"]) in DATA[cc]:
             i = int(a["id"])
+            day = CHECKED.get(i, 16)
             a["row"][priv_col] = priv(cc, i)
             if ver_col is not None:
                 a["row"][ver_col] = version_cell(cc, i)
@@ -1994,7 +2000,7 @@ def refresh_ours(page, cc, priv_col, ver_col, rating_col):
             a["rating"] = rating(cc, i)
             changed = True
     if changed:
-        note = (" La fila de nuestra app se actualizó el 24 de octubre de 2026." if cc == "es"
-                else " The row for our own app was updated on 24 October 2026.")
+        note = (f" La fila de nuestra app se actualizó el {day} de octubre de 2026." if cc == "es"
+                else f" The row for our own app was updated on {day} October 2026.")
         page["table_note"] = page.get("table_note", "") + note
     return page
