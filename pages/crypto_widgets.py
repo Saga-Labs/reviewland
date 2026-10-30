@@ -52,7 +52,7 @@ EN = {
                 "Favourites and watchlist; account optional (only to sync), no ads, nothing to buy.",
                 "Version 2.0.8 (24 Oct 2026), iOS 18 or later, 29 MB, English only.",
             ],
-            "limits": "no Lock Screen widget or Apple Watch app; no price alerts; prices are refreshed every 3 to 7 hours, so it is not for trading; only the top 249 coins; and price charts load from Binance, which blocks the US, so charts fail there. No profit and loss by purchase price yet.",
+            "limits": "no Lock Screen widget or Apple Watch app; no price alerts; prices are refreshed every 3 to 7 hours, so it is not for trading; the list covers the top 249 coins (search finds others on CoinGecko). No profit and loss by purchase price yet.",
         },
         {
             "name": "CoinGecko: Crypto Tracker", "id": 1390323960, "anchor": "coingecko",
@@ -180,7 +180,7 @@ ES = {
                 "Favoritas y lista de seguimiento; cuenta opcional (solo para sincronizar), sin anuncios y sin nada que comprar.",
                 "Versión 2.0.8 (24 oct 2026), iOS 18 o posterior, 29 MB. La app está solo en inglés.",
             ],
-            "limits": "no tiene widget en la pantalla bloqueada ni app para Apple Watch; no tiene alertas de precio; los precios se actualizan cada 3 a 7 horas, así que no sirve para hacer trading; solo cubre las 249 primeras monedas; y los gráficos se cargan de Binance, que bloquea EE. UU. (allí fallan). Aún no calcula ganancias y pérdidas por precio de compra.",
+            "limits": "no tiene widget en la pantalla bloqueada ni app para Apple Watch; no tiene alertas de precio; los precios se actualizan cada 3 a 7 horas, así que no sirve para hacer trading; la lista cubre las 249 primeras monedas (el buscador encuentra otras de CoinGecko). Aún no calcula ganancias y pérdidas por precio de compra.",
         },
         {
             "name": "CoinGecko: Crypto Tracker, NFT", "id": 1390323960, "anchor": "coingecko",

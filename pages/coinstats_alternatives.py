@@ -47,7 +47,7 @@ EN = {
                 "Account optional (only to sync), no ads, nothing to buy.",
                 "English only, iOS 18 or later, 29 MB.",
             ],
-            "limits": "no wallet or exchange connection, no price alerts and no Apple Watch app (it has two free Home Screen widgets, Coin List and Portfolio, since version 2.0.6); prices are refreshed every few hours, so it is not for trading; and price charts load from Binance, which blocks US connections, so charts may fail in the US (found when we checked on 11 October). No profit and loss by purchase price.",
+            "limits": "no wallet or exchange connection, no price alerts and no Apple Watch app (it has two free Home Screen widgets, Coin List and Portfolio, since version 2.0.6); prices are refreshed every few hours, so it is not for trading. No profit and loss by purchase price.",
         },
         {
             "name": "CoinStats: Crypto Portfolio", "id": 1247849330, "anchor": "coinstats",
