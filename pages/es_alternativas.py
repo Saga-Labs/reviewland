@@ -275,7 +275,7 @@ COIN = dict(COMMON, **{
                 "Cuenta opcional (solo para sincronizar), sin anuncios y nada que comprar.",
                 "Solo en inglés, iOS 18 o posterior, 29 MB.",
             ],
-            limits="no se conecta a carteras ni exchanges, no tiene alertas de precio y en la versión actual no tiene widgets ni app para Apple Watch; los precios se actualizan cada pocas horas, así que no sirve para operar; y los gráficos cargan desde Binance, que bloquea conexiones desde EE. UU., por lo que allí pueden fallar (lo vimos al comprobarlo el 11 de octubre). No calcula ganancias y pérdidas por precio de compra."),
+            limits="no se conecta a carteras ni exchanges, no tiene alertas de precio ni app para Apple Watch (sí dos widgets gratis en la pantalla de inicio, Coin List y Portfolio, desde la 2.0.6); los precios se actualizan cada pocas horas, así que no sirve para operar; y los gráficos cargan desde Binance, que bloquea conexiones desde EE. UU., por lo que allí pueden fallar (lo vimos al comprobarlo el 11 de octubre). No calcula ganancias y pérdidas por precio de compra."),
         app(en(K.EN, 1), name="Crypto Tracker - Coin Stats",
             row=["Gratis; Premium listado de 134,99 € a 184,99 € al año o 17,99 € a 21,99 € al mes; Pro desde 41,99 € al año", "Cartera con más de 300 carteras y exchanges, con ganancias y pérdidas e información con IA", "Sí: más de 300 carteras y exchanges, o pegando la dirección de una cartera", "", "", ""],
             best_for="quien tiene varias carteras y exchanges y quiere verlo todo en una sola cartera.",

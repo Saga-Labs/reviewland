@@ -49,7 +49,7 @@ EN = {
                 "No ads and no account. The app uses Firebase Analytics to count how tasks and timers are used, which is why its privacy label lists tracking data.",
                 "33 languages, iOS 18 or later, 21 MB.",
             ],
-            "limits": "no reminders, no recurring tasks, no widgets and no sync between devices: it is deliberately a one-day list of three. Only 5 ratings in the US so far.",
+            "limits": "no reminders and no sync between devices: it is deliberately a one-day list of three (it does have Repeat Daily and a Home Screen widget, free). Only 5 ratings in the US so far.",
         },
         {
             "name": "Do! – Simple To Do List", "id": 421819675, "anchor": "do",
@@ -146,7 +146,7 @@ EN = {
         ("Why limit yourself to three tasks a day?",
          "A short list forces you to choose what matters most, so the list gets finished instead of growing. That is the idea behind 3 Tasks."),
         ("Which simple to-do app has widgets?",
-         "MinimaList has Home Screen and Lock Screen widgets. 3 Tasks does not have widgets."),
+         "MinimaList has Home Screen and Lock Screen widgets. 3 Tasks has a free Home Screen widget."),
     ],
     "sources": src("us"),
 }
@@ -181,7 +181,7 @@ ES = {
                 "Sin anuncios y sin cuenta. Usa Firebase Analytics para contar cómo se usan las tareas y los cronómetros; por eso su etiqueta de privacidad habla de rastreo.",
                 "33 idiomas, español incluido. iOS 18 o posterior, 21 MB.",
             ],
-            "limits": "no tiene recordatorios, tareas repetidas, widgets ni sincronización: a propósito es una lista de tres para un día. La app está en inglés y en España tiene solo 2 valoraciones.",
+            "limits": "no tiene recordatorios ni sincronización: a propósito es una lista de tres para un día (sí tiene «Repetir a diario» y un widget gratis). En España tiene solo 2 valoraciones.",
         },
         {
             "name": "Do! – Simple To Do List", "id": 421819675, "anchor": "do",
@@ -278,7 +278,7 @@ ES = {
         ("¿Por qué limitarse a tres tareas al día?",
          "Una lista corta te obliga a elegir lo que más importa, así que se termina en vez de crecer. Esa es la idea de 3 Tasks."),
         ("¿Qué app de tareas sencilla tiene widgets?",
-         "MinimaList tiene widgets en la pantalla de inicio y en la bloqueada. 3 Tasks no tiene widgets."),
+         "MinimaList tiene widgets en la pantalla de inicio y en la bloqueada. 3 Tasks tiene un widget gratis en la pantalla de inicio."),
     ],
     "sources": src("es"),
 }
