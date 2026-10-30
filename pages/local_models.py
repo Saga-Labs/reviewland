@@ -21,12 +21,12 @@ EN = {
     "title": "Best Apps to Run Llama, Gemma and Qwen on iPhone (2026)",
     "h1": "Best apps to run open-source AI models on iPhone in 2026",
     "description": "Five iPhone apps that download open models (Gemma, Qwen, Llama, DeepSeek) and run them offline, compared by models, size limits, price and privacy.",
-    "llms": "Compares five iPhone apps that run open-weight AI models on the device (PocketPal AI, Locally AI, Enclave, Pinku, Private LLM) by the model families each one can load, minimum iOS, price, privacy label and version date. Notes that none of their App Store descriptions lists Gemma 4 or Qwen3.5 yet.",
+    "llms": "Compares five iPhone apps that run open-weight AI models on the device (PocketPal AI, Locally AI, Enclave, Pinku, Private LLM) by the model families each one can load, minimum iOS, price, privacy label and version date. Notes that only Pinku's description lists Gemma 4 (E2B, since 24 October 2026) and none lists Qwen3.5 yet.",
     "disclosure": "Pinku is made by Saga Labs, the company behind Reviewland. It is ranked on the same criteria as the others.",
     "llms_note": "Pinku, one of the five, is made by Saga Labs, which runs Reviewland.",
     "answer": [
         "To run an open model such as Gemma, Qwen or Llama on an iPhone, you need an app that downloads the model once and then answers on the phone with no server. For the widest choice, PocketPal AI loads any GGUF model from Hugging Face and its code is public. For a free, simple app with a curated list, Locally AI. On iOS 27, Enclave offers the most models in an app with optional cloud models. Pinku and Private LLM have shorter curated lists.",
-        "On 20 October 2026, none of these five App Store descriptions lists the newest families, Gemma 4 or Qwen3.5. PocketPal can load them anyway if you pick a GGUF file that fits your phone's memory. Phone-sized models (about 0.4 to 5 GB) are much weaker than ChatGPT or Claude; see <a href=\"" + AISAGALAB + "\">the guide to open-weight models</a> for what each family is good at.",
+        "On 20 October 2026, none of these five App Store descriptions listed the newest families, Gemma 4 or Qwen3.5; since version 1.2 (24 October), Pinku's lists Gemma 4 E2B. PocketPal can load them anyway if you pick a GGUF file that fits your phone's memory. Phone-sized models (about 0.4 to 5 GB) are much weaker than ChatGPT or Claude; see <a href=\"" + AISAGALAB + "\">the guide to open-weight models</a> for what each family is good at.",
     ],
     "columns": ["App", "Models it can load", "Price (US)", "Min iOS", "App Store privacy label", "Version (date)", "Rating (US)"],
     "table_note": "Model families are the ones each App Store description lists on 20 October 2026. Prices are the US App Store; all except Private LLM are free to download. Ratings are the App Store average and number of ratings that day.",
@@ -65,15 +65,15 @@ EN = {
             "limits": "needs iOS 27 (iPhone 11 or later on the newest iOS); its label declares analytics and identifiers, not linked to you; cloud chats leave the device.",
         },
         {
-            "name": "Pinku: Private Offline AI Chat", "id": 6754878073, "anchor": "pinku", "developer": "Saga Ltd.", "rating": (4.67, 12),
-            "row": ["Gemma 3 and 3n, Llama 3.2, Qwen3, DeepSeek-R1 Distill, SmolLM3, LFM2 (12 models)", "Free; Pinku Pro in-app purchase", "18.6, Metal 3 (iPhone 12+)", "Purchase history and an anonymous user ID (for Pro); chats stay on the device", "1.0.9 (16 Oct 2026)", "4.7 (12 ratings)"],
+            "name": "Private Offline AI Chat: Pinku", "id": 6754878073, "anchor": "pinku", "developer": "Saga Ltd.", "rating": (4.67, 12),
+            "row": ["Llama 3.2, Gemma 3, 3n and 4, Qwen3, SmolLM3, LFM2 (11 models)", "Free with Llama 3.2 1B; Pinku Pro $16.99 a year or a one-time purchase", "18.6, Metal 3 (iPhone 12+)", "Purchase history and an anonymous user ID (for Pro); chats stay on the device", "1.3 (26 Oct 2026)", "4.7 (12 ratings)"],
             "best_for": "a short, tested list where the app hides models your iPhone cannot run.",
             "facts": [
                 "Checks free memory before loading a model; no account.",
-                "Interface in 8 languages, including Russian and Chinese; downloads from ModelScope where Hugging Face is blocked.",
+                "Interface in 33 languages, including Russian and Chinese; downloads from ModelScope where Hugging Face is blocked.",
                 "Also on Mac with Apple silicon.",
             ],
-            "limits": "12 curated models only (0.4 to 4.7 GB); larger models need Pinku Pro; no image or document input; few ratings.",
+            "limits": "11 curated models only (0.4 to 4.7 GB); every model except Llama 3.2 1B needs Pinku Pro; no image or document input; few ratings.",
         },
         {
             "name": "Private LLM - Local AI Chat", "id": 6448106860, "anchor": "privatellm", "developer": "Numen Technologies", "rating": (4.15, 736),
@@ -109,7 +109,7 @@ EN = {
         ("Can I run Gemma or Qwen on my iPhone?", "Yes. Apps such as PocketPal AI, Locally AI, Enclave, Pinku and Private LLM download an open model once and run it on the phone. Phone-sized versions (up to about 4B parameters) are the realistic choice."),
         ("Which app can run any Hugging Face model on iPhone?", "PocketPal AI loads any GGUF model from Hugging Face. The others offer curated lists."),
         ("Do these apps work offline?", "Yes, after the first model download. Enclave also has optional cloud models in Pro; those need the internet."),
-        ("Is there an app that runs Gemma 4 on iPhone?", "On 20 October 2026 none of these five App Store descriptions lists Gemma 4. PocketPal can load a Gemma 4 GGUF file if one fits your phone's memory."),
+        ("Is there an app that runs Gemma 4 on iPhone?", "On 20 October 2026 none of these five App Store descriptions listed Gemma 4. Since version 1.2 (24 October 2026) Pinku offers Gemma 4 E2B, with Pinku Pro and enough memory (about 6 GB). PocketPal can load a Gemma 4 GGUF file if one fits your phone's memory."),
     ],
     "sources": [
         ("PocketPal AI (App Store)", "https://apps.apple.com/us/app/id6502579498"),

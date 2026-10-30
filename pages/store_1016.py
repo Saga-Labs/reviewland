@@ -11,8 +11,8 @@ DATA = {
    "price": "Free",
    "rating": 4.42,
    "n": 12,
-   "ver": "2.11",
-   "date": "2026-10-24",
+   "ver": "2.13",
+   "date": "2026-10-26",
    "mb": 138,
    "langs": 33,
    "ios": "18.0",
@@ -289,13 +289,13 @@ DATA = {
    }
   },
   "1553693943": {
-   "name": "3 Tasks: To Do List & Focus",
+   "name": "To Do List & Focus: 3 Tasks",
    "dev": "Saga Ltd.",
    "price": "Free",
    "rating": 5,
    "n": 5,
-   "ver": "1.4.1",
-   "date": "2026-10-24",
+   "ver": "1.4.3",
+   "date": "2026-10-26",
    "mb": 21,
    "langs": 33,
    "ios": "18.0",
@@ -390,14 +390,14 @@ DATA = {
    }
   },
   "1143691286": {
-   "name": "Crypton: Crypto Tracker",
+   "name": "Crypto Tracker: Crypton",
    "dev": "Saga Ltd.",
    "price": "Free",
    "rating": 4.72,
-   "n": 183,
-   "ver": "2.0.4",
-   "date": "2026-10-09",
-   "mb": 19,
+   "n": 184,
+   "ver": "2.0.8",
+   "date": "2026-10-24",
+   "mb": 29,
    "langs": 1,
    "ios": "18.0",
    "iap": [],
@@ -583,9 +583,9 @@ DATA = {
    "price": "Free",
    "rating": 4.17,
    "n": 6,
-   "ver": "1.2.8",
-   "date": "2026-10-13",
-   "mb": 17,
+   "ver": "1.3.0",
+   "date": "2026-10-26",
+   "mb": 20,
    "langs": 19,
    "ios": "17.0",
    "iap": [
@@ -968,8 +968,8 @@ DATA = {
    "price": "Gratis",
    "rating": 5,
    "n": 7,
-   "ver": "2.11",
-   "date": "2026-10-24",
+   "ver": "2.13",
+   "date": "2026-10-26",
    "mb": 138,
    "langs": 33,
    "ios": "18.0",
@@ -1243,13 +1243,13 @@ DATA = {
    }
   },
   "1553693943": {
-   "name": "3 Tasks: Lista de Tareas",
+   "name": "Lista de Tareas: 3 Tasks",
    "dev": "Saga Ltd.",
    "price": "Gratis",
    "rating": 5,
    "n": 2,
-   "ver": "1.4.1",
-   "date": "2026-10-24",
+   "ver": "1.4.3",
+   "date": "2026-10-26",
    "mb": 21,
    "langs": 33,
    "ios": "18.0",
@@ -1345,14 +1345,14 @@ DATA = {
    }
   },
   "1143691286": {
-   "name": "Crypton: Precios Cripto",
+   "name": "Criptomonedas: Crypton",
    "dev": "Saga Ltd.",
    "price": "Gratis",
    "rating": 4.6,
    "n": 35,
-   "ver": "2.0.4",
-   "date": "2026-10-09",
-   "mb": 19,
+   "ver": "2.0.8",
+   "date": "2026-10-24",
+   "mb": 29,
    "langs": 1,
    "ios": "18.0",
    "iap": [],
@@ -1538,9 +1538,9 @@ DATA = {
    "price": "Gratis",
    "rating": 1,
    "n": 1,
-   "ver": "1.2.8",
-   "date": "2026-10-13",
-   "mb": 17,
+   "ver": "1.3.0",
+   "date": "2026-10-26",
+   "mb": 20,
    "langs": 19,
    "ios": "17.0",
    "iap": [
@@ -1982,7 +1982,7 @@ OURS = {1462269642, 1143691286, 1553693943, 1532670722, 1667947372, 6754180384, 
 
 
 # Rows of ours re-checked after 16 Oct (app id -> day of the check)
-CHECKED = {1462269642: 24, 1553693943: 24}
+CHECKED = {1462269642: 30, 1553693943: 30, 1532670722: 30, 1143691286: 30}
 
 
 def refresh_ours(page, cc, priv_col, ver_col, rating_col):

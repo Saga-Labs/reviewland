@@ -44,7 +44,7 @@ EN = {
             "name": "Sleep Sounds & Focus: Drop", "id": 1462269642, "ours": True, "anchor": "drop",
             "developer": "Saga Ltd.", "rating": (4.42, 12),
             "row": ["Free (9 sounds); Drop Pro listed as monthly $4.99, access $14.99 and lifetime options", "Short guided-breathing sessions (2 to 20 minutes) and calming sounds with a sleep timer", "53 nature, ambient and noise sounds, 9 free; white noise free, pink and brown noise with Drop Pro",
-                    "Data Not Linked to You (usage data)", "2.10 (24 Oct 2026)", "4.4 (12 ratings)"],
+                    "Data Not Linked to You (usage data)", "2.13 (26 Oct 2026)", "4.4 (12 ratings)"],
             "best_for": "a quiet, ad-free app with calming sounds, a sleep timer and short breathing sessions, when a full meditation library is more than you need.",
             "facts": [
                 "Breathing sessions of 2, 5, 10 and 20 minutes with visual breathing guides.",
@@ -52,7 +52,7 @@ EN = {
                 "Sleep timer of 15, 30 or 45 minutes, 1, 2 or 8 hours, with a 30-second fade-out.",
                 "A plant grows through five stages as you practise; streaks and achievements.",
                 "Home screen widgets, works offline, no ads.",
-                "6 languages (English, Japanese, Chinese, French, German, Turkish), iOS 18 or later.",
+                "33 languages, iOS 18 or later, 138 MB.",
             ],
             "limits": "no sleep stories, no teacher-led meditation library, no sleep tracking and no mixer: one sound at a time, and pink and brown noise need Drop Pro. Only 12 ratings so far, and it needs iOS 18.",
         },

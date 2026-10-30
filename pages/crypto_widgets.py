@@ -41,15 +41,15 @@ EN = {
     "table_note": "Prices are the US App Store in-app purchases on 11 October 2026; all six are free to download. Widgets, alerts and real-time data are as each developer describes them on its App Store page (for Crypton, as the app works today). Ratings are the App Store average and number of ratings that day.",
     "apps": [
         {
-            "name": "Crypton: Crypto Tracker", "id": 1143691286, "ours": True, "anchor": "crypton",
-            "developer": "Saga Ltd.", "rating": (4.72, 183),
+            "name": "Crypto Tracker: Crypton", "id": 1143691286, "ours": True, "anchor": "crypton",
+            "developer": "Saga Ltd.", "rating": (4.72, 184),
             "row": ["Free, no ads, no in-app purchases", "No", "No",
-                    "Top 249 coins, refreshed every 3 to 7 hours", "Data Used to Track You; Data Not Linked to You", "4.7 (183 ratings)"],
+                    "Top 249 coins, refreshed every 3 to 7 hours", "Data Used to Track You; Data Not Linked to You", "4.7 (184 ratings)"],
             "best_for": "a free, ad-free look at the top coins and your holdings, once or twice a day.",
             "facts": [
                 "Portfolio with amounts, value, a 1D to 1Y portfolio chart and the change per coin.",
                 "Favourites and watchlist; account optional (only to sync), no ads, nothing to buy.",
-                "Version 2.0.4 (9 Oct 2026), iOS 18 or later, 18 MB, English only.",
+                "Version 2.0.8 (24 Oct 2026), iOS 18 or later, 29 MB, English only.",
             ],
             "limits": "no widgets and no Apple Watch app in the current version; no price alerts; prices are refreshed every 3 to 7 hours, so it is not for trading; only the top 249 coins; and price charts load from Binance, which blocks the US, so charts fail there. No profit and loss by purchase price yet.",
         },
@@ -169,7 +169,7 @@ ES = {
     "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026; las seis se descargan gratis. Widgets, alertas y datos en tiempo real según la ficha de cada desarrollador (en Crypton, según cómo funciona hoy). Valoración: media y número de valoraciones en España ese día.",
     "apps": [
         {
-            "name": "Crypton: Precios Cripto", "id": 1143691286, "ours": True, "anchor": "crypton",
+            "name": "Criptomonedas: Crypton", "id": 1143691286, "ours": True, "anchor": "crypton",
             "developer": "Saga Ltd.", "rating": (4.6, 35),
             "row": ["Gratis, sin anuncios ni compras dentro", "No", "No",
                     "Las 249 primeras monedas, cada 3 a 7 horas", "Datos utilizados para rastrearte; datos no vinculados a ti", "4,6 (35 valoraciones)"],
@@ -177,7 +177,7 @@ ES = {
             "facts": [
                 "Cartera con cantidades, valor, gráfico de 1 día a 1 año y cambio por moneda.",
                 "Favoritas y lista de seguimiento; cuenta opcional (solo para sincronizar), sin anuncios y sin nada que comprar.",
-                "Versión 2.0.4 (9 oct 2026), iOS 18 o posterior, 18 MB. La app está solo en inglés.",
+                "Versión 2.0.8 (24 oct 2026), iOS 18 o posterior, 29 MB. La app está solo en inglés.",
             ],
             "limits": "la versión actual no tiene widgets ni app para Apple Watch; no tiene alertas de precio; los precios se actualizan cada 3 a 7 horas, así que no sirve para hacer trading; solo cubre las 249 primeras monedas; y los gráficos se cargan de Binance, que bloquea EE. UU. (allí fallan). Aún no calcula ganancias y pérdidas por precio de compra.",
         },
