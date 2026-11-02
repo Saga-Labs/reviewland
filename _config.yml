@@ -1,0 +1,3 @@
+# El diario interno (docs/) no se publica en reviewland.io
+exclude:
+  - docs
