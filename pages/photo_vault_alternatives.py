@@ -28,7 +28,6 @@ EN = {
     "h1": "Private Photo Vault alternatives for iPhone in 2026",
     "description": "Five alternatives to Private Photo Vault on iPhone: Keepsafe, PV Secret Photo Album, Secret Photo Album SA and Photo Vault. Prices and privacy checked.",
     "llms": "Compares Private Photo Vault - Pic Safe with four alternatives for iPhone (Keepsafe, PV - Secret Photo Album, Secret Photo Album - SA, Photo Vault: Hide Pics Video) by price, cloud backup, decoy or break-in features and App Store privacy label.",
-    "disclosure": "Photo Vault: Hide Pics Video is made by Saga Labs, the company behind Reviewland. It is one more option in this list, not placed first because it is ours. Note that it is a different app from \"Private Photo Vault - Pic Safe\", which is not ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
         "Private Photo Vault - Pic Safe is the biggest vault app on the App Store (about 1 million ratings, 4.8 stars). If you want an alternative, Keepsafe is the closest big one with an optional private cloud, PV - Secret Photo Album has the most features and the cheapest subscription, and Photo Vault: Hide Pics Video needs no account and keeps everything on the phone unless you turn on its optional encrypted iCloud copy.",
         "iOS already has a free Hidden album in Photos; for casual privacy that may be enough. Apple's own guide is linked in the sources.",
@@ -49,7 +48,7 @@ EN = {
                 "Left out of iCloud backups; to move to a new iPhone you export one password-locked file and restore it. Works offline.",
                 "19 languages, iOS 17 or later, 20 MB.",
             ],
-            "limits": "without the optional iCloud copy there is no automatic backup: if you delete the app without exporting the vault, it is gone. The free version is limited (it held a single item when we checked on 11 October), so in practice it is a paid app. Only 6 ratings so far, and a much younger app than the others here.",
+            "limits": "without the optional iCloud copy there is no automatic backup: if you delete the app without exporting the vault, it is gone. The free version is limited (it held a single item when we checked on 11 October), so in practice it is a paid app. A much younger app than the others here.",
         },
         {
             "name": "Private Photo Vault - Pic Safe", "id": 417571834, "anchor": "private-photo-vault",
@@ -115,10 +114,10 @@ EN = {
         "<strong>You only need to hide a few photos from casual snooping:</strong> iOS's own Hidden album, which needs no app.",
     ],
     "cases": [
-        "Keeping private photos out of the shared camera roll and out of iCloud (an app with no account and cloud only if you opt in, such as ours).",
+        "Keeping private photos out of the shared camera roll and out of iCloud (an app with no account and cloud only if you opt in, such as Photo Vault).",
         "Backing up a vault so a lost phone does not lose photos (Keepsafe or Private Photo Vault cloud).",
         "Handing your phone to someone without them seeing the app (disguised icons and face-down exit).",
-        "Moving to a new iPhone: with ours you export and restore a file yourself; cloud-backed apps restore from their cloud.",
+        "Moving to a new iPhone: with Photo Vault you export and restore a file yourself; cloud-backed apps restore from their cloud.",
     ],
     "method": [
         "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; we did not verify their encryption. We did not invent ratings or reviews.",

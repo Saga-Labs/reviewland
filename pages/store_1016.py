@@ -2000,7 +2000,7 @@ def refresh_ours(page, cc, priv_col, ver_col, rating_col):
             a["rating"] = rating(cc, i)
             changed = True
     if changed:
-        note = (f" La fila de nuestra app se actualizó el {day} de octubre de 2026." if cc == "es"
-                else f" The row for our own app was updated on {day} October 2026.")
+        note = (f" Una fila se actualizó el {day} de octubre de 2026." if cc == "es"
+                else f" One row was updated on {day} October 2026.")
         page["table_note"] = page.get("table_note", "") + note
     return page

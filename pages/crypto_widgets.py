@@ -33,7 +33,6 @@ EN = {
     "h1": "Best crypto price tracker apps for iPhone in 2026: widgets, alerts and ads",
     "description": "Six crypto price apps for iPhone compared by widgets, price alerts, how fresh prices are, ads and privacy: Crypton, CoinGecko, CoinMarketCap and more.",
     "llms": "Compares six crypto price tracker apps for iPhone (Crypton, CoinGecko, CoinMarketCap, Crypto Pro, CoinStats, HODL) by widgets, price alerts, real-time data, price and privacy label. States that Crypton has two free Home Screen widgets since version 2.0.6 (October 2026), but no alerts and delayed prices.",
-    "disclosure": "Crypton is made by Saga Labs, the company behind Reviewland. It is one more option in this list, not placed first because it is ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages. None of these apps is financial advice.",
     "answer": [
         "For a simple look at crypto prices and your portfolio with no ads and nothing to pay, Crypton is free and, since version 2.0.6, has two free Home Screen widgets (a coin list and your portfolio), but it has no price alerts and its prices are refreshed every few hours, not in real time. If you want alerts or live data, CoinGecko, CoinStats and Crypto Pro also list widgets, and CoinGecko, CoinMarketCap, CoinStats and HODL list price alerts.",
         "Crypto Pro is the most complete for Apple devices (widgets, Mac menu bar, Apple Watch complications) and its privacy label is Data Not Linked to You.",
@@ -134,7 +133,7 @@ EN = {
         "Importing holdings from wallets and exchanges for taxes (CoinStats).",
     ],
     "method": [
-        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size and the privacy label. Widgets, alerts and data sources are as each developer describes them. For Crypton, which is ours, we also checked how version 2.0.4 works: where its prices come from and how often they are refreshed. We did not invent ratings or reviews.",
+        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size and the privacy label. Widgets, alerts and data sources are as each developer describes them. For Crypton, we also checked how version 2.0.4 works: where its prices come from and how often they are refreshed. We did not invent ratings or reviews.",
     ],
     "faq": [
         ("Which crypto app has the best iPhone widget?",
@@ -161,7 +160,6 @@ ES = {
     "h1": "Mejores apps de precios de cripto para iPhone en 2026: widgets, alertas y anuncios",
     "description": "Seis apps de precios de cripto para iPhone comparadas por widgets, alertas, precios al momento, anuncios y privacidad: Crypton, CoinGecko y más.",
     "llms": "Compara seis apps de precios de cripto para iPhone (Crypton, CoinGecko, CoinMarketCap, Crypto Pro, CoinStats, HODL) por widgets, alertas, datos en tiempo real, precio en euros y privacidad. Dice que Crypton tiene dos widgets gratis en la pantalla de inicio desde la versión 2.0.6 (octubre de 2026), pero no alertas, y que sus precios llevan horas de retraso.",
-    "disclosure": "Crypton es de Saga Labs, la empresa que hace Reviewland. Es una opción más de la lista, no va primera por ser nuestra. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store. Nada de esto es asesoramiento financiero.",
     "answer": [
         "Para mirar precios de cripto y tu cartera sin anuncios y sin pagar nada, Crypton es gratis y, desde la versión 2.0.6, tiene dos widgets gratis en la pantalla de inicio (lista de monedas y tu cartera), pero no tiene alertas de precio y sus precios se actualizan cada pocas horas, no al momento. Si quieres alertas o datos en tiempo real, CoinGecko, CoinStats y Crypto Pro también tienen widgets según su ficha, y CoinGecko, CoinMarketCap, CoinStats y HODL tienen alertas.",
         "Crypto Pro es la más completa para dispositivos Apple (widgets, barra de menús del Mac y complicaciones del Apple Watch), y su etiqueta de privacidad es «Datos no vinculados a ti».",
@@ -262,7 +260,7 @@ ES = {
         "Importar saldos de carteras y exchanges para la declaración (CoinStats).",
     ],
     "method": [
-        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño y etiqueta de privacidad. Widgets, alertas y fuentes de datos según lo que dice cada desarrollador. En Crypton, que es nuestra, miramos además cómo funciona la versión 2.0.4: de dónde salen los precios y cada cuánto se actualizan. No inventamos valoraciones ni reseñas.",
+        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño y etiqueta de privacidad. Widgets, alertas y fuentes de datos según lo que dice cada desarrollador. En Crypton miramos además cómo funciona la versión 2.0.4: de dónde salen los precios y cada cuánto se actualizan. No inventamos valoraciones ni reseñas.",
     ],
     "faq": [
         ("¿Qué app de cripto tiene el mejor widget para iPhone?",

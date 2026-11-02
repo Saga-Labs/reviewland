@@ -22,7 +22,6 @@ EN = {
     "h1": "Best apps to run open-source AI models on iPhone in 2026",
     "description": "Five iPhone apps that download open models (Gemma, Qwen, Llama, DeepSeek) and run them offline, compared by models, size limits, price and privacy.",
     "llms": "Compares five iPhone apps that run open-weight AI models on the device (PocketPal AI, Locally AI, Enclave, Pinku, Private LLM) by the model families each one can load, minimum iOS, price, privacy label and version date. Notes that only Pinku's description lists Gemma 4 (E2B, since 24 October 2026) and none lists Qwen3.5 yet.",
-    "disclosure": "Pinku is made by Saga Labs, the company behind Reviewland. It is ranked on the same criteria as the others.",
     "llms_note": "Pinku, one of the five, is made by Saga Labs, which runs Reviewland.",
     "answer": [
         "To run an open model such as Gemma, Qwen or Llama on an iPhone, you need an app that downloads the model once and then answers on the phone with no server. For the widest choice, PocketPal AI loads any GGUF model from Hugging Face and its code is public. For a free, simple app with a curated list, Locally AI. On iOS 27, Enclave offers the most models in an app with optional cloud models. Pinku and Private LLM have shorter curated lists.",
@@ -73,7 +72,7 @@ EN = {
                 "Interface in 33 languages, including Russian and Chinese; downloads from ModelScope where Hugging Face is blocked.",
                 "Also on Mac with Apple silicon.",
             ],
-            "limits": "11 curated models only (0.4 to 4.7 GB); every model except Llama 3.2 1B needs Pinku Pro; no image or document input; few ratings.",
+            "limits": "11 curated models only (0.4 to 4.7 GB); every model except Llama 3.2 1B needs Pinku Pro; no image or document input.",
         },
         {
             "name": "Private LLM - Local AI Chat", "id": 6448106860, "anchor": "privatellm", "developer": "Numen Technologies", "rating": (4.15, 736),
@@ -103,7 +102,7 @@ EN = {
     "method": [
         "We read each app's App Store page in the US on 20 October 2026: description, version, price, in-app purchases, privacy label and ratings. Model families are copied from the descriptions; we did not count models inside each app.",
         "Order: how many open models each app can load and how current its list is, then requirements and price. On a computer the equivalent tools are Ollama, LM Studio, llama.cpp and Jan; see <a href=\"" + REDITOR + "\">Ollama alternatives for Mac and iPhone</a>.",
-        "From the team at Saga Labs: we make Pinku, one of the apps here. We built it because tools like Ollama and LM Studio expect some technical knowledge, such as picking a model file and a quantisation or using a terminal. Pinku is for everyone else: install it from the App Store, tap a model and chat privately, with no terminal and nothing to configure. The trade-off is a short list of small models chosen to fit each device, which is why it is not first here.",
+        "Tools like Ollama and LM Studio expect some technical knowledge, such as picking a model file and a quantisation or using a terminal. Pinku is for everyone else: install it from the App Store, tap a model and chat privately, with no terminal and nothing to configure. The trade-off is a short list of small models chosen to fit each device, which is why it is not first here.",
     ],
     "faq": [
         ("Can I run Gemma or Qwen on my iPhone?", "Yes. Apps such as PocketPal AI, Locally AI, Enclave, Pinku and Private LLM download an open model once and run it on the phone. Phone-sized versions (up to about 4B parameters) are the realistic choice."),

@@ -16,8 +16,6 @@ PAGES = [{'group': 'sora-alt',
   'description': 'Sora is gone from the App Store. Six iPhone replacements sorted by what you used it for: Kling AI, Runway, Grok, Gemini, PixVerse '
                  'Lite and Dora.',
   'llms': 'Six iPhone replacements for Sora sorted by use: Kling AI, Runway, Grok, Gemini, PixVerse Lite, Dora.',
-  'disclosure': 'Dora is made by Saga Labs, the company behind Reviewland. It is one more option here, not placed higher because it is ours, and it '
-                'has only 16 ratings in the US. The other apps are not ours and we get nothing from them.',
   'answer': ['OpenAI discontinued the Sora app and website on 26 April 2026 and the Sora API on 24 September 2026, and the app no longer has an App Store page. There is no single '
              'replacement, because people used it for different things.',
              'For the best-looking clips, try Kling AI or Runway. If you already pay for an assistant, try the video in Grok or Gemini. For effects '
@@ -34,7 +32,7 @@ PAGES = [{'group': 'sora-alt',
             'best_for': 'moving on from Sora with a short vertical clip, paying per video through coins.',
             'facts': ['Text or photo to video in about two minutes, per its listing, 9:16 up to 1080p, no watermark.',
                       'Same account on the web and inside AI assistants.'],
-            'limits': 'no social feed and no free video. Only 16 ratings in the US.',
+            'limits': 'no social feed and no free video.',
             'row': ['Pro weekly $6.99 for new subscribers, Pro yearly $119.99; coin packs $3.99 to $224.99',
                     'Text or photo to a short video, several models',
                     '11',
@@ -152,8 +150,6 @@ PAGES = [{'group': 'sora-alt',
   'description': 'Write one shot, pick the right kind of app and check the cost: how to turn text into a video on iPhone, with five apps compared by '
                  'price and rating.',
   'llms': 'How to turn text into a video on iPhone, and five apps compared: Faceless, Kling AI, Runway, invideo, Dora.',
-  'disclosure': 'Dora is made by Saga Labs, the company behind Reviewland. It is one more option here, not placed higher because it is ours, and it '
-                'has only 16 ratings in the US. The other apps are not ours and we get nothing from them.',
   'answer': ['First decide what you want. A single scene needs a generator such as Kling AI, Runway or Dora. A full short from a script needs an app '
              'that assembles scenes, such as Faceless or invideo.',
              'Then: 1. Write one shot, saying who, what happens, where and how the camera moves. 2. Choose vertical for phones. 3. Check the cost '
@@ -169,7 +165,7 @@ PAGES = [{'group': 'sora-alt',
             'best_for': 'one short vertical clip from a description, with the cost shown first.',
             'facts': ['A video takes about two minutes, per its listing, up to 1080p with no watermark.',
                       'The coin cost shows before you generate, and failed generations return the coins.'],
-            'limits': 'it makes clips, not long edited videos, has no free video, and has only 16 ratings in the US.',
+            'limits': 'it makes clips, not long edited videos, and has no free video.',
             'row': ['Pro weekly $6.99 for new subscribers, Pro yearly $119.99; coin packs $3.99 to $224.99',
                     'Writes nothing for you: you describe the shot, several models to pick from',
                     '11',

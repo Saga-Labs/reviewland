@@ -39,10 +39,9 @@ EN = {
     "h1": "Best AI chat apps for iPhone without an account in 2026",
     "description": "Seven AI chat apps for iPhone compared by account, free use, price and privacy: Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek and Ask AI.",
     "llms": "Compares seven AI chat apps for iPhone (Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek, Ask AI) by account requirement, free use, subscription price and App Store privacy label. Says which model Brainy really uses.",
-    "disclosure": "Brainy is made by Saga Labs, the company behind Reviewland. It is one more option in this list, not placed first because it is ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages. Ask AI is also ours (added on 23 October 2026, from its App Store listing).",
     "answer": [
         "To chat with an AI on iPhone without creating an account, Brainy opens straight into the chat with a daily free limit; since version 1.5 it answers with Google Gemini, which also reads photos. The big assistants, ChatGPT, Gemini, Claude and Perplexity, are free to start too, but their App Store listings describe history synced across your devices, which means signing in.",
-        "If you want the most capable models, the official apps are better than ours: ChatGPT, Claude, Gemini and Perplexity give you their newest models, with paid plans from $8 (ChatGPT Go) to $20 a month.",
+        "If you want the most capable models, the official apps are better than Brainy: ChatGPT, Claude, Gemini and Perplexity give you their newest models, with paid plans from $8 (ChatGPT Go) to $20 a month.",
     ],
     "columns": ["App", "Price (US)", "Free use", "Account", "App Store privacy label", "Version (date)", "Rating (US)"],
     "table_note": "Prices are the US App Store in-app purchases on 11 October 2026 (Ask AI and Brainy: 30 October 2026); all seven are free to download. \"Account\" is what the App Store listing says; where it does not say, we write so. Ratings are the App Store average and number of ratings that day.",
@@ -59,7 +58,7 @@ EN = {
                 "Makes images and videos from a description or a photo; they need Pro or credits, and the cost in credits is shown before you create.",
                 "33 languages, iOS 18 or later, 50 MB.",
             ],
-            "limits": "one chat model that it picks for you; you cannot choose GPT, Claude or another. Images and videos are not free. Only 3 ratings in the US.",
+            "limits": "one chat model that it picks for you; you cannot choose GPT, Claude or another. Images and videos are not free.",
         },
         {
             "name": "ChatGPT", "id": 6448311069, "anchor": "chatgpt",
@@ -137,7 +136,7 @@ EN = {
                 "Pro unlocks every model, web search and a much higher limit, counted per week.",
                 "5 languages, iOS 18.6 or later, 36 MB.",
             ],
-            "limits": "chat only: no images, videos or files. Its description still uses its old name, Fast AI. Only 3 ratings in the US, and its privacy label lists usage data used to track you.",
+            "limits": "chat only: no images, videos or files. Its description still uses its old name, Fast AI. Its privacy label lists usage data used to track you.",
         },
     ],
     "who": [
@@ -155,7 +154,7 @@ EN = {
         "Long writing or coding sessions (Claude, ChatGPT).",
     ],
     "method": [
-        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features and account notes come from each listing. For Brainy, which is ours, we also checked the app's code: which models it calls and its daily limits. We did not invent ratings or reviews.",
+        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features and account notes come from each listing. For Brainy, we also checked the app's code: which models it calls and its daily limits. We did not invent ratings or reviews.",
     ],
     "faq": [
         ("Can I use an AI chatbot on iPhone without an account?",
@@ -167,7 +166,7 @@ EN = {
         ("Which AI chat app is best for privacy?",
          "None of the seven has the label Data Not Collected. Brainy needs no account. If privacy is the priority, an offline app that runs the model on the phone is a better fit."),
         ("Is Ask AI (formerly Fast AI) in this list?",
-         "Yes, since 23 October 2026. It is also ours: a chat-only app with models from several companies, such as Gemini, Claude, Grok, DeepSeek and Perplexity Sonar, and a few free messages a day."),
+         "Yes, since 23 October 2026. It is a chat-only app with models from several companies, such as Gemini, Claude, Grok, DeepSeek and Perplexity Sonar, and a few free messages a day."),
     ],
     "sources": src("us"),
 }
@@ -182,10 +181,9 @@ ES = {
     "h1": "Mejores apps de chat con IA para iPhone sin cuenta en 2026",
     "description": "Siete apps de chat con IA para iPhone comparadas por cuenta, uso gratis, precio y privacidad: Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek y Ask AI.",
     "llms": "Compara siete apps de chat con IA para iPhone (Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek, Ask AI) por cuenta, uso gratis, precio en euros y etiqueta de privacidad. Dice qué modelo usa de verdad Brainy.",
-    "disclosure": "Brainy es de Saga Labs, la empresa que hace Reviewland. Es una opción más de la lista, no va primera por ser nuestra. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store. Ask AI también es nuestra (añadida el 23 de octubre de 2026, con los datos de su ficha del App Store).",
     "answer": [
         "Para chatear con una IA en el iPhone sin crear cuenta, Brainy entra directamente al chat con un límite gratis cada día; desde la versión 1.5 responde con Google Gemini, que también lee las fotos. Los grandes asistentes, ChatGPT, Gemini, Claude y Perplexity, también se pueden empezar gratis, pero sus fichas hablan de historial sincronizado entre dispositivos, es decir, de iniciar sesión.",
-        "Si quieres los modelos más potentes, las apps oficiales son mejores que la nuestra: ChatGPT, Claude, Gemini y Perplexity dan sus modelos más nuevos, con planes desde 7,99 € (ChatGPT Go) hasta unos 23 € al mes.",
+        "Si quieres los modelos más potentes, las apps oficiales son mejores que Brainy: ChatGPT, Claude, Gemini y Perplexity dan sus modelos más nuevos, con planes desde 7,99 € (ChatGPT Go) hasta unos 23 € al mes.",
     ],
     "columns": ["App", "Precio (España)", "Uso gratis", "Cuenta", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
     "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026 (Ask AI y Brainy: 30 de octubre de 2026); las siete se descargan gratis. «Cuenta» es lo que dice la ficha; si no lo dice, lo ponemos. Valoración: media y número de valoraciones en España ese día.",
@@ -298,7 +296,7 @@ ES = {
         "Sesiones largas de escritura o programación (Claude, ChatGPT).",
     ],
     "method": [
-        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones y lo de la cuenta salen de cada ficha. En Brainy, que es nuestra, miramos además el código: qué modelos usa y sus límites diarios. No inventamos valoraciones ni reseñas.",
+        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones y lo de la cuenta salen de cada ficha. En Brainy miramos además el código: qué modelos usa y sus límites diarios. No inventamos valoraciones ni reseñas.",
     ],
     "faq": [
         ("¿Se puede usar un chat de IA en el iPhone sin cuenta?",
@@ -310,7 +308,7 @@ ES = {
         ("¿Qué app de chat con IA es mejor para la privacidad?",
          "Ninguna de las siete tiene la etiqueta «No se recopilan datos». Brainy no pide cuenta. Si la privacidad es lo primero, encaja mejor una app que ejecute el modelo en el propio móvil, sin conexión."),
         ("¿Está Ask AI (antes Fast AI) en la lista?",
-         "Sí, desde el 23 de octubre de 2026. También es nuestra: solo chat, con modelos de varias empresas, como Gemini, Claude, Grok, DeepSeek y Perplexity Sonar, y unos mensajes gratis al día."),
+         "Sí, desde el 23 de octubre de 2026. Es solo chat, con modelos de varias empresas, como Gemini, Claude, Grok, DeepSeek y Perplexity Sonar, y unos mensajes gratis al día."),
     ],
     "sources": src("es"),
 }

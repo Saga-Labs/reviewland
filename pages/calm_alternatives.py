@@ -32,7 +32,6 @@ EN = {
     "h1": "Calm alternatives for iPhone in 2026",
     "description": "Seven alternatives to Calm on iPhone: Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite and Drop. Prices, ratings and privacy checked.",
     "llms": "Compares Calm with six alternatives for iPhone (Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite, Drop) by price, content type (meditations, sleep stories, sleep sounds, white noise), privacy label and App Store rating.",
-    "disclosure": "Drop is made by Saga Labs, the company behind Reviewland. It is one more option in this list, not placed first because it is ours, and it is a much smaller app than Calm. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
         "The best Calm alternative depends on what you use Calm for. For guided meditation without paying, Medito is completely free and Insight Timer has a large free library. For sleep sounds and stories, BetterSleep is the closest paid match. For plain white noise, White Noise Lite is free with 50+ sounds. If you only want short breathing sessions with nature sounds and no ads, Drop does that, and nothing else.",
         "Calm itself is a free download with a Premium subscription; Headspace charges $12.99 a month or $69.99 a year in the US. All prices below are the ones listed on the App Store on 16 October 2026.",
@@ -54,7 +53,7 @@ EN = {
                 "Home screen widgets, works offline, no ads.",
                 "33 languages, iOS 18 or later, 138 MB.",
             ],
-            "limits": "no sleep stories, no teacher-led meditation library, no sleep tracking and no mixer: one sound at a time, and pink and brown noise need Drop Pro. Only 12 ratings so far, and it needs iOS 18.",
+            "limits": "no sleep stories, no teacher-led meditation library, no sleep tracking and no mixer: one sound at a time, and pink and brown noise need Drop Pro. It needs iOS 18.",
         },
         {
             "name": "Calm", "id": 571800810, "anchor": "calm",
@@ -154,7 +153,7 @@ EN = {
         "Masking street or household noise at night (White Noise Lite, BetterSleep).",
     ],
     "method": [
-        "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; for Drop, which is ours, the sound list comes from the app itself (version 2.10, updated 24 October 2026), because its listing only names five. We did not invent ratings or reviews, and we did not test the audio quality of each app.",
+        "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; for Drop, the sound list comes from the app itself (version 2.10, updated 24 October 2026), because its listing only names five. We did not invent ratings or reviews, and we did not test the audio quality of each app.",
     ],
     "faq": [
         ("What is the best alternative to Calm on iPhone?",

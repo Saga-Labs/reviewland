@@ -32,7 +32,6 @@ CALM = dict(COMMON, **{
     "h1": "Alternativas a Calm para iPhone en 2026",
     "description": "Siete alternativas a Calm en iPhone: Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite y Drop. Precios, valoraciones y privacidad.",
     "llms": "Compara Calm con seis alternativas para iPhone (Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite, Drop) por precio en euros, tipo de contenido (meditación, cuentos para dormir, sonidos, ruido blanco), etiqueta de privacidad y valoración.",
-    "disclosure": "Drop es de Saga Labs, la empresa que hace Reviewland. Es una opción más de la lista, no va primera por ser nuestra, y es una app mucho más pequeña que Calm. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store.",
     "answer": [
         "La mejor alternativa a Calm depende de para qué uses Calm. Para meditación guiada sin pagar, Medito es totalmente gratis e Insight Timer tiene una biblioteca gratuita enorme. Para sonidos y cuentos para dormir, BetterSleep es lo más parecido de pago. Para ruido blanco a secas, White Noise Lite es gratis y trae más de 50 sonidos. Si solo quieres sonidos relajantes con temporizador y sesiones cortas de respiración, sin anuncios, eso hace Drop, y nada más.",
         "Calm se descarga gratis y tiene suscripción Premium (en España, de 12,99 € a 64,99 € según el plan); Headspace cobra 12,99 € al mes o 69,99 € al año. Todos los precios son los que lista el App Store de España el 16 de octubre de 2026.",
@@ -51,7 +50,7 @@ CALM = dict(COMMON, **{
                 "Widgets, funciona sin conexión y sin anuncios.",
                 "33 idiomas, español incluido, iOS 18 o posterior, 138 MB.",
             ],
-            limits="no tiene cuentos para dormir, ni biblioteca de meditación con profesores, ni seguimiento del sueño, ni mezclador: suena un sonido cada vez, y el ruido rosa y el marrón piden Drop Pro. Solo 7 valoraciones en España y pide iOS 18."),
+            limits="no tiene cuentos para dormir, ni biblioteca de meditación con profesores, ni seguimiento del sueño, ni mezclador: suena un sonido cada vez, y el ruido rosa y el marrón piden Drop Pro. Pide iOS 18."),
         app(en(C.EN, 1), name="Calm: Meditación y Sueño",
             row=["Gratis; suscripción Calm Premium (listada de 12,99 € a 64,99 € según el plan)", "Cuentos para dormir, meditación guiada, respiración y música", "Sonidos y paisajes sonoros (océano, lluvia fuerte, hoguera)", "", "", ""],
             best_for="cuentos para dormir narrados por voces conocidas y una biblioteca amplia y muy cuidada.",
@@ -126,7 +125,7 @@ CALM = dict(COMMON, **{
         "Tapar el ruido de la calle o de casa por la noche (White Noise Lite, BetterSleep).",
     ],
     "method": [
-        f"El {DATE} abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; en Drop, que es nuestra, la lista de sonidos sale de la propia app (versión 2.10, actualizado el 24 de octubre de 2026), porque su ficha solo nombra cinco. No inventamos valoraciones ni reseñas, y no probamos la calidad del audio de cada app.",
+        f"El {DATE} abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; en Drop, la lista de sonidos sale de la propia app (versión 2.10, actualizado el 24 de octubre de 2026), porque su ficha solo nombra cinco. No inventamos valoraciones ni reseñas, y no probamos la calidad del audio de cada app.",
     ],
     "faq": [
         ("¿Cuál es la mejor alternativa a Calm en iPhone?",
@@ -152,7 +151,6 @@ TODO = dict(COMMON, **{
     "h1": "Alternativas a Todoist para iPhone en 2026",
     "description": "Cinco alternativas a Todoist en iPhone comparadas: TickTick, Things 3, Microsoft To Do, Structured y 3 Tasks. Precios, valoraciones y privacidad.",
     "llms": "Compara Todoist con cinco alternativas para iPhone (TickTick, Things 3, Microsoft To Do, Structured, 3 Tasks) por precio en euros, si piden cuenta, funciones clave y etiqueta de privacidad.",
-    "disclosure": "3 Tasks es de Saga Labs, la empresa que hace Reviewland. Es una opción más de la lista, no va primera por ser nuestra, y es una app deliberadamente mínima, no un sustituto completo de Todoist. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store.",
     "answer": [
         "Si buscas un sustituto completo de Todoist, TickTick es lo más parecido (plan gratis, Premium a 4,99 € al mes o 49,99 € al año, con hábitos, calendario y temporizador Pomodoro), Things 3 es la compra única bien pulida (9,99 €, sin suscripción) y Microsoft To Do es gratis. Si Todoist te parece demasiado, 3 Tasks hace lo contrario: tres tareas al día, un cronómetro por tarea, gratis.",
         "Todoist Pro cuesta 6,99 € al mes o 59,99 € al año en España; el plan gratis sigue siendo una cuenta normal de Todoist.",
@@ -169,7 +167,7 @@ TODO = dict(COMMON, **{
                 "Pro (pago único, sin suscripción): historial de días terminados, rachas, exportar a CSV y cuatro temas de color.",
                 "Sin anuncios y sin cuenta. 33 idiomas, iOS 18 o posterior, 21 MB.",
             ],
-            limits="no tiene proyectos, fechas límite, recordatorios, compartir ni sincronización entre dispositivos: es una lista de tres para un día. Solo 2 valoraciones en España."),
+            limits="no tiene proyectos, fechas límite, recordatorios, compartir ni sincronización entre dispositivos: es una lista de tres para un día."),
         app(en(T.EN, 1), name="Todoist: To do list–Calendario",
             row=["Plan gratis; Pro a 6,99 € al mes o 59,99 € al año", "Proyectos, fechas en lenguaje natural, calendario y equipos", "Sí", "", "", ""],
             best_for="el punto de referencia: proyectos, fechas recurrentes y trabajo compartido en muchas plataformas.",
@@ -258,7 +256,6 @@ COIN = dict(COMMON, **{
     "h1": "Alternativas a CoinStats y Delta para iPhone en 2026",
     "description": "Cinco apps para seguir tu cartera cripto en iPhone comparadas: CoinStats, Delta, CoinGecko, CoinMarketCap y Crypton. Precios y privacidad.",
     "llms": "Compara CoinStats y Delta con tres alternativas para iPhone (CoinGecko, CoinMarketCap, Crypton) por precio en euros, conexión con carteras y exchanges, alertas, límites del plan gratis y etiqueta de privacidad.",
-    "disclosure": "Crypton es de Saga Labs, la empresa que hace Reviewland. Es una opción más de la lista, no va primera por ser nuestra, y es mucho más simple que CoinStats o Delta. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store. Nada de esto es asesoramiento financiero.",
     "answer": [
         "Si quieres un seguimiento que se conecte a tus exchanges y carteras, CoinStats y Delta son las pesadas, y las dos tienen planes de pago (CoinStats lista suscripciones Premium de 134,99 € a 184,99 € al año; el plan gratis de Delta sigue 10 activos). Si solo quieres precios, noticias y una lista de seguimiento, CoinGecko y CoinMarketCap son gratis y mucho más grandes. Si solo quieres una lista rápida, gratis y sin anuncios de las principales monedas con tus tenencias apuntadas a mano, Crypton hace eso y nada más.",
         "Crypton no se conecta a carteras ni a exchanges y no tiene alertas de precio, así que no sustituye a CoinStats ni a Delta si necesitas sincronización automática.",
@@ -354,7 +351,6 @@ VAULT = dict(COMMON, **{
     "h1": "Alternativas a Private Photo Vault para iPhone en 2026",
     "description": "Cinco alternativas a Private Photo Vault en iPhone: Keepsafe, PV Secret Photo Album, Secret Photo Album SA y Photo Vault. Precios y privacidad.",
     "llms": "Compara Private Photo Vault - Pic Safe (en España «Ocultar Fotos - Photo Vault») con cuatro alternativas para iPhone (Keepsafe, PV, Secret Photo Album SA, Photo Vault) por precio, copia en la nube, funciones de señuelo y alerta de intrusos y etiqueta de privacidad.",
-    "disclosure": "Photo Vault: Hide Pics Video (en España, «Boveda: Ocultar Fotos y Video») es de Saga Labs, la empresa que hace Reviewland. Es una opción más de la lista, no va primera por ser nuestra. Ojo: es una app distinta de «Private Photo Vault - Pic Safe», que no es nuestra. Las demás tampoco son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store.",
     "answer": [
         "Private Photo Vault - Pic Safe es la app de bóveda más grande del App Store (más de un millón de valoraciones en total, 4,8 estrellas en EE. UU.). Si buscas alternativa, Keepsafe es la grande más parecida con nube privada opcional, PV - Secret Photo Album tiene más funciones y la suscripción más barata, y Photo Vault: Hide Pics Video no pide cuenta y lo guarda todo en el teléfono salvo que actives su copia cifrada opcional en iCloud.",
         "iOS ya trae un álbum Oculto gratis en Fotos; para una privacidad casual puede bastar. La guía de Apple está enlazada en las fuentes.",
@@ -421,10 +417,10 @@ VAULT = dict(COMMON, **{
         "<strong>Solo necesitas esconder unas fotos de miradas casuales:</strong> el álbum Oculto de iOS, que no necesita app.",
     ],
     "cases": [
-        "Mantener las fotos privadas fuera del carrete compartido y fuera de iCloud (una app sin cuenta y con nube solo si la activas, como la nuestra).",
+        "Mantener las fotos privadas fuera del carrete compartido y fuera de iCloud (una app sin cuenta y con nube solo si la activas, como Photo Vault).",
         "Hacer copia de la bóveda para no perder las fotos si pierdes el teléfono (la nube de Keepsafe o de Private Photo Vault).",
         "Dejar el teléfono a alguien sin que vea la app (iconos disfrazados y salida boca abajo).",
-        "Cambiar de iPhone: con la nuestra exportas y restauras un archivo tú; las apps con nube restauran desde su nube.",
+        "Cambiar de iPhone: con Photo Vault exportas y restauras un archivo tú; las apps con nube restauran desde su nube.",
     ],
     "method": [
         f"El {DATE} abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; no verificamos su cifrado. No inventamos valoraciones ni reseñas.",

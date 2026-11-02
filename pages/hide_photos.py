@@ -33,7 +33,6 @@ EN = {
     "h1": "Best apps to hide photos on iPhone in 2026",
     "description": "Seven ways to hide photos on iPhone compared: Photo Vault, the Hidden album, Private Photo Vault, Keepsafe and more. Prices and privacy labels checked.",
     "llms": "Compares seven ways to hide photos on iPhone by price, App Store privacy label, account and cloud requirements and disguise options.",
-    "disclosure": "Photo Vault is made by Saga Labs, the company behind Reviewland. It is one more option in this list, not placed first because it is ours. The other apps are not ours and we get nothing from them; their links go to their normal App Store pages.",
     "answer": [
         "To hide photos on iPhone without an account or a cloud copy, use a vault app that stores them only on the phone: Photo Vault and Safe Lock both have the App Store privacy label <em>Data Not Collected</em>. If you just want a few photos out of the main grid, the free Hidden album in Apple's Photos app is locked with Face ID, but it syncs to your other devices through iCloud Photos.",
         "If you want an online backup of the vault, Private Photo Vault and Keepsafe offer encrypted cloud storage as a paid option, and both show <em>Data Used to Track You</em> on their privacy labels.",
@@ -54,7 +53,7 @@ EN = {
                 "The vault is left out of iCloud backups. To move it to a new iPhone you export one encrypted, password-locked file and restore it.",
                 "Works offline. 19 languages. Needs iOS 17 or later; 20 MB.",
             ],
-            "limits": "the free version holds only 1 photo or video, so in practice it is a paid app. It has only 6 ratings in the US so far. Without the optional iCloud copy there is no automatic backup: if you delete the app without exporting a backup, the vault is gone.",
+            "limits": "the free version holds only 1 photo or video, so in practice it is a paid app. Without the optional iCloud copy there is no automatic backup: if you delete the app without exporting a backup, the vault is gone.",
         },
         {
             "name": "Hidden album in Apple Photos", "anchor": "hidden-album", "developer": "Apple",
@@ -100,7 +99,7 @@ EN = {
             "rating": (4.81, 24834),
             "row": ["Premium $4.99, $19.99 or $29.99", "On the device; Wi-Fi transfer", "Data Not Collected",
                     "App icon can be changed", "3.1 (17 Aug 2026)", "4.8 (24,834 ratings)"],
-            "best_for": "a local vault from a developer that, like ours, declares no data collected.",
+            "best_for": "a local vault from a developer that, like Photo Vault's, declares no data collected.",
             "facts": [
                 "PIN, pattern, numeric or alphabetic password, Touch ID and Face ID.",
                 "Hidden camera inside the app, secret folders for photos, videos and notes.",
@@ -181,7 +180,6 @@ ES = {
     "h1": "Mejores apps para ocultar fotos en iPhone en 2026",
     "description": "Siete formas de ocultar fotos en iPhone comparadas: Photo Vault, el álbum Oculto, Private Photo Vault, Keepsafe y más. Precios y privacidad comprobados.",
     "llms": "Compara siete formas de ocultar fotos en iPhone por precio en euros, etiqueta de privacidad del App Store, cuenta o nube y camuflaje.",
-    "disclosure": "Photo Vault (en España se llama «Bóveda: Ocultar Fotos y Video») es de Saga Labs, la empresa que hace Reviewland. Es una opción más de la lista, no va primera por ser nuestra. Las demás no son nuestras y no ganamos nada con ellas; sus enlaces van a su ficha normal del App Store.",
     "answer": [
         "Para ocultar fotos en el iPhone sin cuenta y sin copia en la nube, usa una app bóveda que las guarde solo en el teléfono: Photo Vault y Safe Lock tienen las dos la etiqueta de privacidad <em>No se recopilan datos</em>. Si solo quieres sacar unas pocas fotos de la galería, el álbum Oculto de la app Fotos es gratis y se abre con Face ID, pero se sincroniza con tus otros dispositivos por Fotos de iCloud.",
         "Si quieres copia de la bóveda en internet, Private Photo Vault y Keepsafe tienen nube cifrada de pago, y las dos declaran datos utilizados para rastrearte en su etiqueta de privacidad.",

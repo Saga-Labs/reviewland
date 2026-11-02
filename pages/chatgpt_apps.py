@@ -204,7 +204,6 @@ EN = {
     "h1": "Best ChatGPT apps (plugins) in 2026",
     "description": "13 apps from the ChatGPT plugin directory grouped by use: Canva, Figma, Adobe, Runway, Booking.com, Tripadvisor, Spotify, Notion, Lovable and more. Account, cost and availability checked.",
     "llms": "13 apps from the ChatGPT plugin directory grouped by use (design, video, travel, music, productivity, code, research), with what each does, which account it needs, whether it costs extra, where it is available and who makes it, each with its source.",
-    "disclosure": "Dora AI Video is made by Saga Labs, the company behind Reviewland.",
     "answer": [
         "There is no single best ChatGPT app: each one connects ChatGPT to one service. For design, Canva, Figma and Adobe are in the directory; for video, Runway, Higgsfield and Dora; for travel, Booking.com, Skyscanner and Tripadvisor; for music, Spotify; for work, Notion; for building web apps, Lovable; for research papers, Consensus.",
         "Most of them work with your account at that company and its own plan. Adobe announced its apps as free to ChatGPT users, Canva works with Canva Free, and Tripadvisor needs no account to browse. Video generators (Runway, Higgsfield, Dora) spend credits from their own paid plans.",
@@ -230,7 +229,7 @@ EN = {
     ],
     "method": [
         "On 24 October 2026 we opened each app's listing in the ChatGPT plugin directory (chatgpt.com/plugins) from a ChatGPT Plus account, and read OpenAI's help articles on plugins and connected apps. For account rules, extra cost and availability we used only each company's own help page, pricing page or press release, plus one trade report for Skyscanner's launch markets. If neither said something, the table says \"Not stated\". We did not test every app, and we left out apps whose listing or rules we could not confirm (for example Apple Music, whose listing had no description that day).",
-        "Dora is ours; its data comes from its directory listing and doravideo.com/llms.txt, which publishes no prices (they are only on doravideo.com/pricing).",
+        "Dora's data comes from its directory listing and doravideo.com/llms.txt, which publishes no prices (they are only on doravideo.com/pricing).",
     ],
     "faq": [
         ("What are ChatGPT apps or plugins?",
@@ -338,7 +337,6 @@ ES = dict(EN, **{
     "h1": "Mejores apps de ChatGPT (plugins) en 2026",
     "description": "13 apps del directorio de plugins de ChatGPT agrupadas por uso: Canva, Figma, Adobe, Runway, Booking.com, Tripadvisor, Spotify, Notion, Lovable y más. Cuenta, coste y disponibilidad comprobados.",
     "llms": "13 apps del directorio de plugins de ChatGPT agrupadas por uso (diseño, vídeo, viajes, música, productividad, código, investigación): qué hace cada una, qué cuenta pide, si cobra aparte, dónde está disponible y quién la hace, con la fuente de cada dato.",
-    "disclosure": "Dora AI Video es de Saga Labs, la empresa que hace Reviewland.",
     "answer": [
         "No hay una única mejor app de ChatGPT: cada una conecta ChatGPT con un servicio. Para diseño están Canva, Figma y Adobe; para vídeo, Runway, Higgsfield y Dora; para viajes, Booking.com, Skyscanner y Tripadvisor; para música, Spotify; para trabajo, Notion; para hacer webs, Lovable; para estudios científicos, Consensus.",
         "La mayoría funciona con tu cuenta en esa empresa y su propio plan. Adobe anunció sus apps gratis para los usuarios de ChatGPT, Canva funciona con Canva Free y Tripadvisor no pide cuenta para mirar. Los generadores de vídeo (Runway, Higgsfield, Dora) gastan créditos de sus propios planes de pago.",
@@ -364,7 +362,7 @@ ES = dict(EN, **{
     ],
     "method": [
         "El 24 de octubre de 2026 abrimos la ficha de cada app en el directorio de plugins de ChatGPT (chatgpt.com/plugins) desde una cuenta de ChatGPT Plus y leímos los artículos de ayuda de OpenAI sobre plugins y apps conectadas. Para la cuenta, el coste aparte y la disponibilidad solo usamos la página de ayuda, la de precios o la nota de prensa de cada empresa, más una noticia del sector para los países de lanzamiento de Skyscanner. Si ninguna lo decía, la tabla pone \"No consta\". No probamos todas las apps y dejamos fuera las que no pudimos confirmar (por ejemplo Apple Music, cuya ficha no tenía descripción ese día).",
-        "Dora es nuestra; sus datos salen de su ficha en el directorio y de doravideo.com/llms.txt, que no publica precios (solo están en doravideo.com/pricing).",
+        "Los datos de Dora salen de su ficha en el directorio y de doravideo.com/llms.txt, que no publica precios (solo están en doravideo.com/pricing).",
     ],
     "faq": [
         ("¿Qué son las apps o plugins de ChatGPT?",
