@@ -28,7 +28,7 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video"]
+                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models"]
 
 T = {
     "en": {
@@ -68,7 +68,7 @@ HOME_SECTIONS = [
 HOME_GROUPS = {
     "photos": {"hide-photos", "photo-vault-alternatives", "vault-no-data"},
     "ai": {"ai-chat", "local-models", "chatgpt-apps", "chatgpt-video"},
-    "ai-video": {"make-video", "free-video", "capcut-alt", "reels-apps", "photo-talk-family", "sora-alt", "text-video"},
+    "ai-video": {"make-video", "free-video", "capcut-alt", "reels-apps", "photo-talk-family", "sora-alt", "text-video", "video-models"},
     "sleep": {"calm-alternatives", "free-sleep-sounds"},
     "tasks": {"simple-todo", "todoist-alternatives"},
     "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers"},
@@ -248,7 +248,7 @@ def ranking_html(p, alternates):
     }
 
     out = [head(p, alternates, [article, item_list, faq, crumbs])]
-    out.append(f'<article>\n<div class="hero"><p class="kicker">{len(apps)} apps · {"Ranking" if lang == "en" else "Ranking"}</p><h1>{esc(p["h1"])}</h1>\n')
+    out.append(f'<article>\n<div class="hero"><p class="kicker">{esc(p.get("kicker", f"{len(apps)} apps · Ranking"))}</p><h1>{esc(p["h1"])}</h1>\n')
     out.append(f'<p class="meta">{t["updated"]} <time datetime="{p["updated"]}">{upd}</time> · {p.get("checked_label", t["checked"])} {chk}</p></div>\n')
     if cover_of(p):
         out.append(f'<figure class="cover"><img src="/img/{cover_of(p)}.jpg" alt="" width="1200" height="675" fetchpriority="high"></figure>\n')

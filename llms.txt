@@ -37,6 +37,7 @@
 - [How to make an AI video on iPhone, step by step](https://reviewland.io/how-to-make-an-ai-video-on-iphone/) (en, updated 2026-11-02): Step-by-step guide to making an AI video on iPhone, with five apps compared: Kling AI, Runway, Dora, Canva, Captions. Our app on this page: DORA · AI Video Generator.
 - [Best AI apps to make a family photo talk on iPhone](https://reviewland.io/best-ai-apps-to-make-a-photo-talk-for-family-iphone/) (en, updated 2026-11-02): Five iPhone apps for animating family photos or making them talk: Avatarify, Revive, MyHeritage, Dora, HeyGen. Includes advice on consent. Dora's lip sync is web only. Our app on this page: DORA · AI Video Generator.
 - [ChatGPT video generator plugins compared](https://reviewland.io/chatgpt-video-generator-plugins/) (en, updated 2026-11-02): Nine ChatGPT video plugins compared from their public listings: Runway, OpenArt, Higgsfield, invideo, Dora AI Video, VEED, HeyGen, Descript, Kling AI. None was tested. Our app on this page: Dora AI Video.
+- [Seedance 2 Mini vs Veo 3.1 vs Kling 2.6](https://reviewland.io/seedance-2-mini-vs-veo-3-1-vs-kling/) (en, updated 2026-11-02): Spec sheet comparison of three AI video models from official pages: Seedance 2 Mini (BytePlus), Veo 3.1 (Google Vertex AI) and Kling 2.6 (Kling API). Resolution, length, audio, price per second. No quality test.
 
 ## About
 
