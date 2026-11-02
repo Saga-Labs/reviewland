@@ -5,6 +5,11 @@ alguien de fuera (web, IAs, buscadores) va aquí, el día que sale en vivo. Una
 línea por cambio, la más nueva arriba. Los cambios que afectan a una app
 nuestra también van en el diario de esa app.
 
+## Pendientes con fecha
+
+- **11 nov 2026:** tras la lectura del rediseño (10 nov), quitar `hide_from_related` de pages/nov03_crypto_alerts.py y enlazar best-habit-tracker-apps-iphone con best-simple-to-do-list-apps-iphone (avisar antes a saga-growth).
+- **2 dic 2026:** revisión mensual de /chatgpt-video-generator-plugins/: releer las fichas de OpenAI y la página de precios de cada vendedor (Kling desde la App Store) y cambiar «Last verified».
+
 | Fecha | Canal | Cambio | Qué mirar | Desde cuándo |
 |---|---|---|---|---|
 | 2 nov 2026 | Web | **[fuera]** /chatgpt-video-generator-plugins/ al nivel de scrimba: «Last verified 2 Nov 2026» arriba, desarrollador, plan gratis y plan más barato de la web de cada vendedor (Kling, de la App Store). Mismo h1. | Posición en «best ChatGPT plugin for making videos» y campaña rl-chatgpt-video. | 2 nov 2026 |
