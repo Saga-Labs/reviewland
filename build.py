@@ -109,6 +109,13 @@ def tag_ours(url, ct):
     return url + ("&" if "?" in url else "?") + f"pt={PT}&ct={ct[:40]}"
 
 
+def cover_of(p):
+    """Cover image name, or None. A page without group (home, about) or with "cover": None has no image."""
+    if not p.get("group") or ("cover" in p and not p["cover"]):
+        return None
+    return p.get("cover", p["group"])
+
+
 def page_url(p):
     return f"{SITE}/{p['path']}"
 
@@ -167,7 +174,7 @@ def head(p, alternates, extra_ld):
 <meta property="og:type" content="article">
 <meta property="og:url" content="{esc(page_url(p))}">
 <meta property="og:site_name" content="{NAME}">
-{f'<meta property="og:image" content="{SITE}/img/{p.get("cover", p["group"])}.jpg"><meta name="twitter:card" content="summary_large_image">' if p.get("group") else ""}
+{f'<meta property="og:image" content="{SITE}/img/{cover_of(p)}.jpg"><meta name="twitter:card" content="summary_large_image">' if cover_of(p) else ""}
 <meta name="robots" content="index, follow, max-snippet:-1">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -221,7 +228,7 @@ def ranking_html(p, alternates):
     }
     article = {
         "@context": "https://schema.org", "@type": "Article",
-        "headline": p["h1"], "description": p["description"], "image": f"{SITE}/img/{p.get('cover', p['group'])}.jpg",
+        "headline": p["h1"], "description": p["description"], **({"image": f"{SITE}/img/{cover_of(p)}.jpg"} if cover_of(p) else {}),
         "inLanguage": lang, "datePublished": p["published"], "dateModified": p["updated"],
         "mainEntityOfPage": page_url(p),
         "author": {"@type": "Organization", "name": NAME, "url": SITE},
@@ -245,7 +252,8 @@ def ranking_html(p, alternates):
     out = [head(p, alternates, [article, item_list, faq, crumbs])]
     out.append(f'<article>\n<div class="hero"><p class="kicker">{len(apps)} apps · {"Ranking" if lang == "en" else "Ranking"}</p><h1>{esc(p["h1"])}</h1>\n')
     out.append(f'<p class="meta">{t["updated"]} <time datetime="{p["updated"]}">{upd}</time> · {p.get("checked_label", t["checked"])} {chk}</p></div>\n')
-    out.append(f'<figure class="cover"><img src="/img/{p.get("cover", p["group"])}.jpg" alt="" width="1600" height="900" fetchpriority="high"></figure>\n')
+    if cover_of(p):
+        out.append(f'<figure class="cover"><img src="/img/{cover_of(p)}.jpg" alt="" width="1200" height="675" fetchpriority="high"></figure>\n')
     if p.get("disclosure"):
         out.append(f'<aside class="disclosure"><strong>{t["disclosure_title"]}:</strong> {p["disclosure"]}</aside>\n')
     out.append('<div class="answer">' + "".join(f"<p>{x}</p>\n" for x in p["answer"]) + "</div>\n")
@@ -279,6 +287,7 @@ def ranking_html(p, alternates):
     out.append(f'<h2 id="faq">{t["faq"]}</h2>\n')
     for q, a in p["faq"]:
         out.append(f"<h3>{esc(q)}</h3>\n<p>{esc(a)}</p>\n")
+    out.append(related_html(p))
     out.append(guide_links_html(p))
     out.append(f'<h2 id="sources">{t["sources"]}</h2>\n<ul class="sources">')
     for label, url, *_ in p["sources"]:
@@ -289,7 +298,21 @@ def ranking_html(p, alternates):
 
 
 # Guias paso a paso de aisagalab.com que tratan lo mismo (enlaces entre los tres sitios, 23 oct 2026).
-GUIDE_LINKS = {'best-apps-to-hide-photos-iphone/': [('What to do before lending your iPhone or taking it to repair', 'https://aisagalab.com/photo-vault/before-lending-iphone-or-taking-it-to-repair.html'), ('How to hide photos on iPhone without installing an app', 'https://aisagalab.com/photo-vault/hide-photos-iphone-without-an-app.html'), ('How to move a photo vault to a new iPhone without losing photos', 'https://aisagalab.com/blog/move-photo-vault-to-new-iphone.html')], 'private-photo-vault-alternatives-iphone/': [('What to do before lending your iPhone or taking it to repair', 'https://aisagalab.com/photo-vault/before-lending-iphone-or-taking-it-to-repair.html'), ('How to hide photos on iPhone without installing an app', 'https://aisagalab.com/photo-vault/hide-photos-iphone-without-an-app.html'), ('How to move a photo vault to a new iPhone without losing photos', 'https://aisagalab.com/blog/move-photo-vault-to-new-iphone.html')], 'best-photo-vault-apps-no-data-collection-iphone/': [('What to do before lending your iPhone or taking it to repair', 'https://aisagalab.com/photo-vault/before-lending-iphone-or-taking-it-to-repair.html'), ('How to hide photos on iPhone without installing an app', 'https://aisagalab.com/photo-vault/hide-photos-iphone-without-an-app.html'), ('How to move a photo vault to a new iPhone without losing photos', 'https://aisagalab.com/blog/move-photo-vault-to-new-iphone.html')], 'es/mejores-apps-para-ocultar-fotos-iphone/': [('Qué hacer antes de prestar el iPhone o llevarlo a reparar', 'https://aisagalab.com/photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html'), ('Cómo ocultar fotos en el iPhone sin instalar ninguna app', 'https://aisagalab.com/photo-vault/es/ocultar-fotos-iphone-sin-instalar-app.html'), ('Cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas', 'https://aisagalab.com/blog/es/pasar-boveda-de-fotos-a-iphone-nuevo.html')], 'es/alternativas-a-private-photo-vault-iphone/': [('Qué hacer antes de prestar el iPhone o llevarlo a reparar', 'https://aisagalab.com/photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html'), ('Cómo ocultar fotos en el iPhone sin instalar ninguna app', 'https://aisagalab.com/photo-vault/es/ocultar-fotos-iphone-sin-instalar-app.html'), ('Cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas', 'https://aisagalab.com/blog/es/pasar-boveda-de-fotos-a-iphone-nuevo.html')], 'es/mejores-apps-bovedas-fotos-sin-recoger-datos-iphone/': [('Qué hacer antes de prestar el iPhone o llevarlo a reparar', 'https://aisagalab.com/photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html'), ('Cómo ocultar fotos en el iPhone sin instalar ninguna app', 'https://aisagalab.com/photo-vault/es/ocultar-fotos-iphone-sin-instalar-app.html'), ('Cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas', 'https://aisagalab.com/blog/es/pasar-boveda-de-fotos-a-iphone-nuevo.html')], 'calm-alternatives-iphone/': [('Brown noise vs pink noise vs white noise: which one for sleep, focus or a baby', 'https://aisagalab.com/drop/brown-noise-vs-pink-noise-vs-white-noise.html'), ('How to use white noise to fall asleep on iPhone', 'https://aisagalab.com/drop/white-noise-to-fall-asleep-iphone.html')], 'best-free-sleep-sound-apps-iphone/': [('Brown noise vs pink noise vs white noise: which one for sleep, focus or a baby', 'https://aisagalab.com/drop/brown-noise-vs-pink-noise-vs-white-noise.html'), ('How to use white noise to fall asleep on iPhone', 'https://aisagalab.com/drop/white-noise-to-fall-asleep-iphone.html')], 'es/alternativas-a-calm-iphone/': [('Ruido marrón, rosa o blanco: cuál para dormir, concentrarse o para un bebé', 'https://aisagalab.com/drop/es/ruido-marron-rosa-o-blanco.html'), ('Cómo usar ruido blanco para dormirte con el iPhone', 'https://aisagalab.com/drop/es/ruido-blanco-para-dormir-iphone.html')], 'es/mejores-apps-gratis-sonidos-para-dormir-iphone/': [('Ruido marrón, rosa o blanco: cuál para dormir, concentrarse o para un bebé', 'https://aisagalab.com/drop/es/ruido-marron-rosa-o-blanco.html'), ('Cómo usar ruido blanco para dormirte con el iPhone', 'https://aisagalab.com/drop/es/ruido-blanco-para-dormir-iphone.html')], 'best-simple-to-do-list-apps-iphone/': [('The 3-task method (Ivy Lee and the Rule of 3): how to plan your day with only 3 tasks', 'https://aisagalab.com/3-tasks/3-task-method-ivy-lee-rule-of-3.html')], 'todoist-alternatives-iphone/': [('The 3-task method (Ivy Lee and the Rule of 3): how to plan your day with only 3 tasks', 'https://aisagalab.com/3-tasks/3-task-method-ivy-lee-rule-of-3.html')], 'es/mejores-apps-de-tareas-sencillas-iphone/': [('El método de las 3 tareas (Ivy Lee y la regla de 3)', 'https://aisagalab.com/3-tasks/es/metodo-de-3-tareas-ivy-lee-regla-de-3.html')], 'es/alternativas-a-todoist-iphone/': [('El método de las 3 tareas (Ivy Lee y la regla de 3)', 'https://aisagalab.com/3-tasks/es/metodo-de-3-tareas-ivy-lee-regla-de-3.html')], 'best-apps-run-open-source-ai-models-iphone/': [('Is it safe to tell ChatGPT private things? What AI chat apps keep, and how to keep it on your phone', 'https://aisagalab.com/pinku/is-it-safe-to-tell-chatgpt-private-things.html'), ('How to use AI on iPhone without internet', 'https://aisagalab.com/pinku/use-ai-on-iphone-without-internet.html'), ('How to check whether an AI chat app really keeps your chats on your iPhone', 'https://aisagalab.com/pinku/check-ai-chat-app-keeps-chats-on-iphone.html')], 'best-ai-chat-apps-iphone-no-account/': [('Is it safe to tell ChatGPT private things? What AI chat apps keep, and how to keep it on your phone', 'https://aisagalab.com/pinku/is-it-safe-to-tell-chatgpt-private-things.html')], 'es/mejores-apps-chat-ia-sin-cuenta-iphone/': [('¿Es seguro contarle cosas privadas a ChatGPT?', 'https://aisagalab.com/pinku/es/es-seguro-contarle-cosas-privadas-a-chatgpt.html')]}
+GUIDE_LINKS = {'sora-alternatives-by-use-iphone/': [('Best Sora app alternatives for iPhone, with more detail on each app', 'https://reditor.cloud/sora-app-alternatives-iphone/'), ('The same prompt in 8 AI video models', 'https://doravideo.com/blog/8-ai-video-models-same-prompt-test')], 'how-to-turn-text-into-video-iphone/': [('The same prompt in 8 AI video models', 'https://doravideo.com/blog/8-ai-video-models-same-prompt-test'), ('Turn a story or script into an AI video series', 'https://doravideo.com/blog/turn-a-story-script-into-an-ai-video-series')], 'best-apps-to-hide-photos-iphone/': [('What to do before lending your iPhone or taking it to repair', 'https://aisagalab.com/photo-vault/before-lending-iphone-or-taking-it-to-repair.html'), ('How to hide photos on iPhone without installing an app', 'https://aisagalab.com/photo-vault/hide-photos-iphone-without-an-app.html'), ('How to move a photo vault to a new iPhone without losing photos', 'https://aisagalab.com/blog/move-photo-vault-to-new-iphone.html')], 'private-photo-vault-alternatives-iphone/': [('What to do before lending your iPhone or taking it to repair', 'https://aisagalab.com/photo-vault/before-lending-iphone-or-taking-it-to-repair.html'), ('How to hide photos on iPhone without installing an app', 'https://aisagalab.com/photo-vault/hide-photos-iphone-without-an-app.html'), ('How to move a photo vault to a new iPhone without losing photos', 'https://aisagalab.com/blog/move-photo-vault-to-new-iphone.html')], 'best-photo-vault-apps-no-data-collection-iphone/': [('What to do before lending your iPhone or taking it to repair', 'https://aisagalab.com/photo-vault/before-lending-iphone-or-taking-it-to-repair.html'), ('How to hide photos on iPhone without installing an app', 'https://aisagalab.com/photo-vault/hide-photos-iphone-without-an-app.html'), ('How to move a photo vault to a new iPhone without losing photos', 'https://aisagalab.com/blog/move-photo-vault-to-new-iphone.html')], 'es/mejores-apps-para-ocultar-fotos-iphone/': [('Qué hacer antes de prestar el iPhone o llevarlo a reparar', 'https://aisagalab.com/photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html'), ('Cómo ocultar fotos en el iPhone sin instalar ninguna app', 'https://aisagalab.com/photo-vault/es/ocultar-fotos-iphone-sin-instalar-app.html'), ('Cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas', 'https://aisagalab.com/blog/es/pasar-boveda-de-fotos-a-iphone-nuevo.html')], 'es/alternativas-a-private-photo-vault-iphone/': [('Qué hacer antes de prestar el iPhone o llevarlo a reparar', 'https://aisagalab.com/photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html'), ('Cómo ocultar fotos en el iPhone sin instalar ninguna app', 'https://aisagalab.com/photo-vault/es/ocultar-fotos-iphone-sin-instalar-app.html'), ('Cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas', 'https://aisagalab.com/blog/es/pasar-boveda-de-fotos-a-iphone-nuevo.html')], 'es/mejores-apps-bovedas-fotos-sin-recoger-datos-iphone/': [('Qué hacer antes de prestar el iPhone o llevarlo a reparar', 'https://aisagalab.com/photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html'), ('Cómo ocultar fotos en el iPhone sin instalar ninguna app', 'https://aisagalab.com/photo-vault/es/ocultar-fotos-iphone-sin-instalar-app.html'), ('Cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas', 'https://aisagalab.com/blog/es/pasar-boveda-de-fotos-a-iphone-nuevo.html')], 'calm-alternatives-iphone/': [('Brown noise vs pink noise vs white noise: which one for sleep, focus or a baby', 'https://aisagalab.com/drop/brown-noise-vs-pink-noise-vs-white-noise.html'), ('How to use white noise to fall asleep on iPhone', 'https://aisagalab.com/drop/white-noise-to-fall-asleep-iphone.html')], 'best-free-sleep-sound-apps-iphone/': [('Brown noise vs pink noise vs white noise: which one for sleep, focus or a baby', 'https://aisagalab.com/drop/brown-noise-vs-pink-noise-vs-white-noise.html'), ('How to use white noise to fall asleep on iPhone', 'https://aisagalab.com/drop/white-noise-to-fall-asleep-iphone.html')], 'es/alternativas-a-calm-iphone/': [('Ruido marrón, rosa o blanco: cuál para dormir, concentrarse o para un bebé', 'https://aisagalab.com/drop/es/ruido-marron-rosa-o-blanco.html'), ('Cómo usar ruido blanco para dormirte con el iPhone', 'https://aisagalab.com/drop/es/ruido-blanco-para-dormir-iphone.html')], 'es/mejores-apps-gratis-sonidos-para-dormir-iphone/': [('Ruido marrón, rosa o blanco: cuál para dormir, concentrarse o para un bebé', 'https://aisagalab.com/drop/es/ruido-marron-rosa-o-blanco.html'), ('Cómo usar ruido blanco para dormirte con el iPhone', 'https://aisagalab.com/drop/es/ruido-blanco-para-dormir-iphone.html')], 'best-simple-to-do-list-apps-iphone/': [('The 3-task method (Ivy Lee and the Rule of 3): how to plan your day with only 3 tasks', 'https://aisagalab.com/3-tasks/3-task-method-ivy-lee-rule-of-3.html')], 'todoist-alternatives-iphone/': [('The 3-task method (Ivy Lee and the Rule of 3): how to plan your day with only 3 tasks', 'https://aisagalab.com/3-tasks/3-task-method-ivy-lee-rule-of-3.html')], 'es/mejores-apps-de-tareas-sencillas-iphone/': [('El método de las 3 tareas (Ivy Lee y la regla de 3)', 'https://aisagalab.com/3-tasks/es/metodo-de-3-tareas-ivy-lee-regla-de-3.html')], 'es/alternativas-a-todoist-iphone/': [('El método de las 3 tareas (Ivy Lee y la regla de 3)', 'https://aisagalab.com/3-tasks/es/metodo-de-3-tareas-ivy-lee-regla-de-3.html')], 'best-apps-run-open-source-ai-models-iphone/': [('Is it safe to tell ChatGPT private things? What AI chat apps keep, and how to keep it on your phone', 'https://aisagalab.com/pinku/is-it-safe-to-tell-chatgpt-private-things.html'), ('How to use AI on iPhone without internet', 'https://aisagalab.com/pinku/use-ai-on-iphone-without-internet.html'), ('How to check whether an AI chat app really keeps your chats on your iPhone', 'https://aisagalab.com/pinku/check-ai-chat-app-keeps-chats-on-iphone.html')], 'best-ai-chat-apps-iphone-no-account/': [('Is it safe to tell ChatGPT private things? What AI chat apps keep, and how to keep it on your phone', 'https://aisagalab.com/pinku/is-it-safe-to-tell-chatgpt-private-things.html')], 'es/mejores-apps-chat-ia-sin-cuenta-iphone/': [('¿Es seguro contarle cosas privadas a ChatGPT?', 'https://aisagalab.com/pinku/es/es-seguro-contarle-cosas-privadas-a-chatgpt.html')]}
+
+
+ALL_PAGES = []
+
+
+def related_html(p):
+    """Links to the other rankings of the same home section and language, so no page is a dead end."""
+    groups = next((g for g in HOME_GROUPS.values() if p["group"] in g), set())
+    rel = [q for q in ALL_PAGES if q["lang"] == p["lang"] and q["group"] in groups and q["path"] != p["path"]]
+    if not rel:
+        return ""
+    h = "Related rankings" if p["lang"] == "en" else "Rankings relacionados"
+    items = "".join(f'<li><a href="/{q["path"]}">{esc(q["h1"])}</a></li>' for q in rel[:5])
+    return f'<h2 id="related">{h}</h2>\n<ul>{items}</ul>\n'
 
 
 def guide_links_html(p):
@@ -297,13 +320,17 @@ def guide_links_html(p):
     if not links:
         return ""
     h = "Step-by-step guides" if p["lang"] == "en" else "Guías paso a paso"
-    items = "".join(f'<li><a href="{esc(u)}">{esc(t)}</a> (aisagalab.com)</li>' for t, u in links)
+    items = "".join(f'<li><a href="{esc(u)}">{esc(t)}</a> ({u.split("/")[2]})</li>' for t, u in links)
     return f'<h2 id="guides">{h}</h2>\n<ul>{items}</ul>\n'
 
 
-def simple_page(lang, path, title, description, body_html, alternates=()):
+def simple_page(lang, path, title, description, body_html, alternates=(), ld=()):
     p = {"lang": lang, "path": path, "title": title, "description": description}
-    return head(p, alternates, []) + body_html + foot(lang)
+    return head(p, alternates, list(ld)) + body_html + foot(lang)
+
+
+def card_img(p):
+    return f'<img src="/img/{cover_of(p)}.jpg" alt="" width="1200" height="675" loading="lazy">' if cover_of(p) else ""
 
 
 def write(path, text):
@@ -314,10 +341,20 @@ def write(path, text):
     f.write_text(text, encoding="utf-8")
 
 
+def write_404():
+    body = ('<div class="hero home"><h1>Page not found</h1><p>That page does not exist or has moved. '
+            '<a href="/">All rankings</a> · <a href="/es/">Todos los rankings</a></p></div>')
+    html_404 = simple_page("en", "", "Page not found: Reviewland", "This page does not exist.", body)
+    html_404 = html_404.replace('content="index, follow, max-snippet:-1"', 'content="noindex"')
+    html_404 = re.sub(r'<link rel="canonical"[^>]*>\n', "", html_404)
+    (ROOT / "404.html").write_text(html_404, encoding="utf-8")
+
+
 def main():
     pages = []
     for mod in PAGE_MODULES:
         pages += importlib.import_module(f"pages.{mod}").PAGES
+    ALL_PAGES[:] = pages
     by_group = {}
     for p in pages:
         by_group.setdefault(p["group"], []).append(p)
@@ -337,7 +374,7 @@ def main():
                      "<p>One page per question people ask: which app to hide photos, to fall asleep, to keep a simple to-do list. "
                      "Every price, version and privacy label is copied from the App Store on the date shown on each page.</p>")
         else:
-            title = "Mejores apps de iPhone para cada tarea (2026): rankings de Reviewland"
+            title = "Mejores apps de iPhone para cada tarea (2026): Reviewland"
             desc = "Mejores apps de iPhone por tarea: ocultar fotos, chat con IA, sonidos para dormir, tareas y cripto. Precios y privacidad comprobados en el App Store."
             intro = ("<h1>Rankings de apps de iPhone, comprobados en el App Store</h1>"
                      "<p>Una página por cada pregunta: qué app usar para ocultar fotos, para dormir o para una lista de tareas sencilla. "
@@ -348,14 +385,16 @@ def main():
             if not group_pages:
                 continue
             cards = "".join(
-                f'<li><a href="/{p["path"]}"><img src="/img/{p.get("cover", p["group"])}.jpg" alt="" width="1600" height="900" loading="lazy"><span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} apps · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
+                f'<li><a href="/{p["path"]}">{card_img(p)}<span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} apps · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
                 for p in group_pages
             )
             sections += f'<h2 id="{sec_id}">{esc(names[lang])} <span class="meta">({len(group_pages)})</span></h2><ul class="cards">{cards}</ul>'
         missing = [p["path"] for p in own if not any(p["group"] in g for g in HOME_GROUPS.values())]
         assert not missing, f"home: add these groups to HOME_GROUPS: {missing}"
         write(path, simple_page(lang, path, title, desc, '<div class="hero home">' + intro + f'</div>{sections}',
-                                [("en", f"{SITE}/"), ("es", f"{SITE}/es/"), ("x-default", f"{SITE}/")]))
+                                [("en", f"{SITE}/"), ("es", f"{SITE}/es/"), ("x-default", f"{SITE}/")],
+                                [{"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": f"{SITE}/", "inLanguage": lang,
+                                  "publisher": {"@type": "Organization", "name": NAME, "url": SITE, "parentOrganization": {"@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com"}}}]))
 
     about_en = """<h1>About Reviewland and how we check</h1>
 <p>Reviewland is made by a small team that also builds iPhone apps.</p>
@@ -384,6 +423,8 @@ def main():
                                 "Who runs Reviewland, how apps are checked and how our own apps are disclosed.", about_en, about_alts))
     write("es/acerca/", simple_page("es", "es/acerca/", "Quiénes somos y cómo comprobamos las apps",
                                     "Quién hace Reviewland, cómo comprobamos las apps y cómo avisamos de las nuestras.", about_es, about_alts))
+
+    write_404()
 
     # sitemap
     urls = [(f"{SITE}/", max(p["updated"] for p in pages)), (f"{SITE}/es/", max(p["updated"] for p in pages)),

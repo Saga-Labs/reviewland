@@ -129,7 +129,7 @@ SLEEP = {
                 ("Which sleep sound app works on older iPhones?", "Rain Rain and Sleep Pillow ask for iOS 12 or later, White Noise Lite iOS 14. Dark Noise needs iOS 26 and Drop needs iOS 18.")],
     },
     "es": {
-        "title": "Mejores apps gratis de sonidos para dormir para iPhone (2026)",
+        "title": "Apps gratis de sonidos para dormir en iPhone (2026)",
         "h1": "Mejores apps gratis de sonidos para dormir para iPhone en 2026",
         "description": "Seis apps de sonidos para dormir y ruido blanco para iPhone comparadas por lo que es gratis de verdad: Drop, White Noise Lite, Rain Rain y más.",
         "llms": "Compara seis apps de sonidos para dormir para iPhone (Drop, White Noise Lite, Rain Rain, White Noise Deep Sleep Sounds, Sleep Pillow, Dark Noise) por cuánto es gratis, anuncios, temporizadores, precio del plan de pago y etiqueta de privacidad.",
@@ -231,7 +231,7 @@ CRYPTO = {
                 ("Is any of this financial advice?", "No. This page compares app features, prices and ratings as listed on the App Store.")],
     },
     "es": {
-        "title": "Mejores apps gratis para seguir tu cartera cripto en iPhone (2026)",
+        "title": "Apps gratis para seguir tu cartera cripto en iPhone (2026)",
         "h1": "Mejores apps gratis para seguir tu cartera de criptomonedas en iPhone en 2026",
         "description": "Seis apps para seguir tu cartera cripto en iPhone comparadas por lo que incluye el plan gratis: Crypton, Crypto Pro, Delta, HODL, CoinGecko y más.",
         "llms": "Compara seis apps gratis para seguir una cartera de criptomonedas en iPhone (Crypton, Crypto Pro, Delta, HODL, CoinGecko, CoinMarketCap) por límites del plan gratis, planes de pago, registro y etiqueta de privacidad. No es asesoramiento financiero.",
@@ -333,7 +333,7 @@ VAULT = {
                 ("Do I need a vault app at all?", "Not always. iPhone has a Hidden album in Photos you can lock with Face ID or a passcode on recent iOS versions; a vault app adds separate albums, disguised icons and other features.")],
     },
     "es": {
-        "title": "Mejores bóvedas de fotos para iPhone que no recogen datos (2026)",
+        "title": "Bóvedas de fotos para iPhone que no recogen datos (2026)",
         "h1": "Mejores apps de bóveda de fotos sin recoger datos para iPhone en 2026",
         "description": "Seis bóvedas de fotos para iPhone comparadas por su etiqueta de privacidad; solo dos dicen «No se recopilan datos». Photo Vault, Safe Lock, Keepsafe y más.",
         "llms": "Compara seis apps de bóveda de fotos para iPhone (Photo Vault, Safe Lock, Keepsafe, Private Photo Vault, Privault, PV) por etiqueta de privacidad, precio y copia en la nube. Solo Photo Vault y Safe Lock declaran que no se recopilan datos.",
