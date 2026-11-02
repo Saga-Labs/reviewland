@@ -53,7 +53,7 @@ MODELS = [
 
 PAGES = [{
     "group": "video-models", "lang": "en", "store": "us", "path": "seedance-2-mini-vs-veo-3-1-vs-kling/", "ct": "rl-seedance-veo-kling",
-    "category": "MultimediaApplication", "os": "Web API", "link_label": "Official documentation", "kicker": "3 models · Specs",
+    "category": "MultimediaApplication", "os": "Web API", "link_label": "Official documentation", "kicker": "3 models · Specs", "count_word": "models",
     "published": DAY, "updated": DAY, "checked": DAY, "cover": None,
     "title": "Seedance 2 Mini vs Veo 3.1 vs Kling: Specs and Price", "h1": "Seedance 2 Mini vs Veo 3.1 vs Kling 2.6",
     "description": "Resolution, clip length, audio and API price per second for Seedance 2 Mini, Veo 3.1 and Kling 2.6, from each official page on 2 November 2026.",

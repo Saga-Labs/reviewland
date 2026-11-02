@@ -381,7 +381,7 @@ def main():
             if not group_pages:
                 continue
             cards = "".join(
-                f'<li><a href="/{p["path"]}">{card_img(p)}<span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} apps · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
+                f'<li><a href="/{p["path"]}">{card_img(p)}<span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} {p.get("count_word", "apps")} · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
                 for p in group_pages
             )
             sections += f'<h2 id="{sec_id}">{esc(names[lang])} <span class="meta">({len(group_pages)})</span></h2><ul class="cards">{cards}</ul>'
