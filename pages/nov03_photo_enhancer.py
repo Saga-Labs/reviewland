@@ -60,7 +60,7 @@ PAGES = [{
     "apps": APPS,
     "who": ["<strong>Old or blurry faces:</strong> Remini.", "<strong>Natural result, free start:</strong> Citrus.", "<strong>Colourising old photos:</strong> PhotoApp.",
             "<strong>Editing beyond sharpening:</strong> Lightroom.", "<strong>Scratched prints:</strong> Pixelup."],
-    "cases": ["A blurry photo from a party: Citrus or Remini.", "Grandparents' black-and-white print: photograph it, then PhotoApp or Pixelup to restore and colourise.", "A holiday photo that needs light and colour too: Lightroom."],
+    "cases": ["A blurry photo from a party: Citrus or Remini.", "Grandparents' black-and-white print: photograph it, then PhotoApp or Pixelup to restore and colourise. To make it move or talk afterwards, see <a href=\"/best-ai-apps-to-make-a-photo-talk-for-family-iphone/\">the best AI apps to make a family photo talk</a>.", "A holiday photo that needs light and colour too: Lightroom."],
     "method": ["On 2 November 2026 we read each app's US App Store page and Apple's lookup data. What each app fixes comes from its listing; we did not enhance any photo or compare results.",
                "Lensa is not here because its listing is about editing and avatars rather than enhancing. Order follows how directly each listing describes enhancing photos, then the editor and the app that has not been updated in a year."],
     "faq": [
