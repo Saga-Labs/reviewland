@@ -70,7 +70,7 @@ PAGES = [{
         "<strong>4K, or Google's cloud:</strong> Veo 3.1, or Veo 3.1 Fast or Lite to pay less.",
         "<strong>1080p without sound for little money:</strong> Kling 2.6.",
         "<strong>Clips longer than 10 seconds:</strong> Seedance 2 Mini, up to 15 seconds.",
-        "<strong>All three without an API account:</strong> the " + DORA + " app and doravideo.com list all three models (more below).",
+        "<strong>Seedance 2 Mini or Kling 2.6 without an API account:</strong> the " + DORA + " app and doravideo.com list both (more below).",
     ],
     "cases": [
         "An 8-second clip with sound: $0.64 on Seedance 2 Mini at 720p and $3.20 on Veo 3.1 at 720p or 1080p. Kling 2.6 has no 8-second option and only adds sound at 1080p: $0.70 for 5 seconds, $1.40 for 10.",
@@ -80,7 +80,7 @@ PAGES = [{
     "method": [
         "On 2 November 2026 we read, for each model, the maker's official API documentation and pricing page, linked under Sources. Per-second prices for Seedance come from BytePlus's own worked examples; for Kling we multiplied the units per second by the unit price of the smallest package that covers these models. Resellers charge different prices, which we did not compare.",
         "We did not generate a video, pay for anything or test quality, speed or how well each follows a prompt.",
-        "<strong>Where to use them without an API:</strong> " + DORA + " (iPhone app and doravideo.com) lists all three on its models page, priced in credits: Seedance 2 Mini 16 credits for 4 seconds at 480p, 31 for 8 seconds, 66 for 8 seconds at 720p; Veo 3.1 60 credits per 8-second clip; Kling 2.6 55 credits for 5 seconds, 110 with audio. That page also says that in Dora, Veo 3.1 has no audio and no 1080p, and Kling 2.6 only animates a photo (it cannot start from text). Dora has no free tier.",
+        "<strong>Where to use two of them without an API:</strong> " + DORA + " (iPhone app and doravideo.com) lists Seedance 2 Mini and Kling 2.6 on its models page, priced in credits: Seedance 2 Mini 16 credits for 4 seconds at 480p, 31 for 8 seconds, 66 for 8 seconds at 720p; Kling 2.6 55 credits for 5 seconds, 110 with audio. That page says Kling 2.6 in Dora only animates a photo (it cannot start from text). Veo 3.1 is not among its models. Dora has no free tier.",
     ],
     "faq": [
         ("Which is cheapest: Seedance 2 Mini, Veo 3.1 or Kling?", "On their official APIs, Seedance 2 Mini at $0.04 per second at 480p. With sound at 720p, Seedance 2 Mini ($0.08) is far below Veo 3.1 ($0.40). Without sound at 1080p, Kling 2.6 ($0.07) is below Veo 3.1 ($0.20), and Seedance 2 Mini has no 1080p."),
