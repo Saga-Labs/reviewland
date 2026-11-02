@@ -7,6 +7,7 @@ nuestra también van en el diario de esa app.
 
 | Fecha | Canal | Cambio | Qué mirar | Desde cuándo |
 |---|---|---|---|---|
+| 2 nov 2026 | Web | **[fuera]** Nueva /best-ai-photo-enhancer-apps-iphone/ en la sección nueva «AI photo editing». | Visitas de la página. | 2 nov 2026 |
 | 2 nov 2026 | Web | **[fuera]** Nueva /best-crypto-price-alert-apps-iphone/ (c387f6d, 22:50 JST), con `hide_from_related`: no sale en «Related» de las otras de cripto hasta el 11 nov (orden de saga-growth). | Visitas de la página; el 11 nov quitar `hide_from_related`. | 2 nov 2026 |
 | 2 nov 2026 | Web | **[fuera]** Nueva /best-habit-tracker-apps-iphone/ (e5a6502, 22:48 JST), sección nueva «Habit trackers». | Visitas de la página. | 2 nov 2026 |
 | 2 nov 2026 | Web | **[fuera]** Nueva /best-text-to-video-ai-apps-iphone/ (9e2e860, 22:45 JST); la guía how-to-turn-text-into-video-iphone enlaza a ella. | Campaña rl-text-video-list. | 2 nov 2026 |
