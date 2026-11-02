@@ -28,7 +28,7 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits"]
+                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts"]
 
 T = {
     "en": {
@@ -73,7 +73,7 @@ HOME_GROUPS = {
     "sleep": {"calm-alternatives", "free-sleep-sounds"},
     "tasks": {"simple-todo", "todoist-alternatives"},
     "habits": {"habit-trackers"},
-    "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers"},
+    "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers", "crypto-alerts"},
 }
 
 
@@ -305,7 +305,8 @@ ALL_PAGES = []
 def related_html(p):
     """Links to the other rankings of the same home section and language, so no page is a dead end."""
     groups = next((g for g in HOME_GROUPS.values() if p["group"] in g), set())
-    rel = [q for q in ALL_PAGES if q["lang"] == p["lang"] and q["group"] in groups and q["path"] != p["path"]]
+    # hide_from_related: la página sale en la portada pero aún no en «Related» de las demás (protegidas fijas hasta la lectura del 10 nov)
+    rel = [q for q in ALL_PAGES if q["lang"] == p["lang"] and q["group"] in groups and q["path"] != p["path"] and not q.get("hide_from_related")]
     if not rel:
         return ""
     h = "Related rankings" if p["lang"] == "en" else "Rankings relacionados"
