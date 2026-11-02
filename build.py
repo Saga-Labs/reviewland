@@ -6,8 +6,8 @@
 Each ranking lives in pages/*.py as a dict (see pages/hide_photos.py).
 Rules (Marta, 20 Oct 2026): our app is one more option, never first by
 default. place_ours() moves it to the middle of the list (or to "ours_rank"
-if a page sets it) and the page says it is ours only in the disclosure line
-at the top, with no label in the table, the cards or "who should use what".
+if a page sets it) and the page says it is ours in one line under "How we checked"
+and in the footer (Marta, 2 Nov 2026), with no label in the table, the cards or "who should use what".
 Our apps link to the App Store with pt+ct for campaign stats, competitors with a plain App Store link;
 every price, version and rating comes from the App Store on the date in
 `checked`, and that date is shown on the page and in the JSON-LD.
@@ -39,7 +39,8 @@ T = {
         "faq": "Frequently asked questions", "sources": "Sources",
         "who": "Who should use what", "cases": "Use cases",
         "method": "How we checked",
-        "footer": "Rankings of iPhone apps. Every price, version and privacy label is copied from the App Store on the date shown.",
+        "footer": "Rankings of iPhone apps. Every price, version and privacy label is copied from the App Store on the date shown. Reviewland is run by Saga Labs, which also makes some of the apps listed.",
+        "owner": "Reviewland is run by Saga Labs, which also makes {}.",
         "about": "About and method", "home": "All rankings",
         "ratings": "ratings", "store_page": "App Store page",
     },
@@ -51,7 +52,8 @@ T = {
         "faq": "Preguntas frecuentes", "sources": "Fuentes",
         "who": "Cuál elegir según tu caso", "cases": "Casos de uso",
         "method": "Cómo lo comprobamos",
-        "footer": "Rankings de apps de iPhone. Cada precio, versión y etiqueta de privacidad está copiado del App Store en la fecha indicada.",
+        "footer": "Rankings de apps de iPhone. Cada precio, versión y etiqueta de privacidad está copiado del App Store en la fecha indicada. Reviewland es de Saga Labs, que también hace algunas de las apps de las listas.",
+        "owner": "Reviewland es de Saga Labs, que también hace {}.",
         "about": "Quiénes somos y método", "home": "Todos los rankings",
         "ratings": "valoraciones", "store_page": "Ficha en el App Store",
     },
@@ -87,6 +89,15 @@ def store_link(app_id, ct):
 
 OUR_IDS = {"1667947372", "6754878073", "1143691286", "6754180384",
            "1553693943", "1462269642", "1662608035", "1532670722"}
+
+
+def owner_note(p, t):
+    """One plain line in "How we checked" (Marta, 2 Nov 2026: no notice at the top), unless the method already says it."""
+    ours = [a["name"] for a in p["apps"] if a.get("ours")]
+    text = " ".join(p["method"])
+    if not ours or "Saga Labs" in text or "es nuestra" in text or "is ours" in text:
+        return ""
+    return f'<p>{t["owner"].format(esc(", ".join(ours)))}</p>'
 
 
 def place_ours(p):
@@ -254,8 +265,6 @@ def ranking_html(p, alternates):
     out.append(f'<p class="meta">{t["updated"]} <time datetime="{p["updated"]}">{upd}</time> · {p.get("checked_label", t["checked"])} {chk}</p></div>\n')
     if cover_of(p):
         out.append(f'<figure class="cover"><img src="/img/{cover_of(p)}.jpg" alt="" width="1200" height="675" fetchpriority="high"></figure>\n')
-    if p.get("disclosure"):
-        out.append(f'<aside class="disclosure"><strong>{t["disclosure_title"]}:</strong> {p["disclosure"]}</aside>\n')
     out.append('<div class="answer">' + "".join(f"<p>{x}</p>\n" for x in p["answer"]) + "</div>\n")
 
     out.append(f'<h2 id="table">{t["table"]}</h2>\n<div class="scroll"><table>\n<thead><tr>')
@@ -283,7 +292,7 @@ def ranking_html(p, alternates):
 
     out.append(f'<h2 id="who">{t["who"]}</h2>\n<ul>' + "".join(f"<li>{x}</li>" for x in p["who"]) + "</ul>\n")
     out.append(f'<h2 id="cases">{t["cases"]}</h2>\n<ul>' + "".join(f"<li>{x}</li>" for x in p["cases"]) + "</ul>\n")
-    out.append(f'<h2 id="method">{t["method"]}</h2>\n' + "".join(f"<p>{x}</p>" for x in p["method"]) + "\n")
+    out.append(f'<h2 id="method">{t["method"]}</h2>\n' + "".join(f"<p>{x}</p>" for x in p["method"]) + owner_note(p, t) + "\n")
     out.append(f'<h2 id="faq">{t["faq"]}</h2>\n')
     for q, a in p["faq"]:
         out.append(f"<h3>{esc(q)}</h3>\n<p>{esc(a)}</p>\n")
@@ -399,7 +408,7 @@ def main():
     about_en = """<h1>About Reviewland and how we check</h1>
 <p>Reviewland is made by a small team that also builds iPhone apps.</p>
 <h2>Our apps are one more option, and we say so</h2>
-<p>When one of our apps fits a question, it is included as one more option, placed where it fits rather than first, and a single line at the top of the page says it is ours. Competitors are linked to their normal App Store pages and shown with their real data, including where they are better than ours.</p>
+<p>When one of our apps fits a question, it is included as one more option, placed where it fits rather than first, and a line under "How we checked" on that page says it is ours. Competitors are linked to their normal App Store pages and shown with their real data, including where they are better than ours.</p>
 <h2>What we check</h2>
 <ul><li>Price and in-app purchases, version and release date, rating and number of ratings, languages, minimum iOS: from the App Store listing (US store unless the page says otherwise) on the date shown.</li>
 <li>Privacy: the App Store privacy label as published by each developer.</li>
@@ -410,7 +419,7 @@ def main():
     about_es = """<h1>Quiénes somos y cómo comprobamos</h1>
 <p>Reviewland lo hace un equipo pequeño que también hace apps de iPhone.</p>
 <h2>Nuestras apps son una opción más, y lo decimos</h2>
-<p>Cuando una de nuestras apps encaja, aparece como una opción más, en el puesto que le corresponde y no primera, y una sola línea arriba de la página dice que es nuestra. Las demás llevan enlace a su ficha normal del App Store y aparecen con sus datos reales, también donde son mejores que la nuestra.</p>
+<p>Cuando una de nuestras apps encaja, aparece como una opción más, en el puesto que le corresponde y no primera, y una línea en «Cómo lo comprobamos» de esa página dice que es nuestra. Las demás llevan enlace a su ficha normal del App Store y aparecen con sus datos reales, también donde son mejores que la nuestra.</p>
 <h2>Qué comprobamos</h2>
 <ul><li>Precio y compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas e iOS mínimo: de la ficha del App Store (la de España en las páginas en español) en la fecha indicada.</li>
 <li>Privacidad: la etiqueta de privacidad del App Store que publica cada desarrollador.</li>
@@ -440,7 +449,7 @@ def main():
 
     # llms.txt
     lines = ["# Reviewland", "",
-             "> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. When one of our own apps is ranked it is one more option, not first by default, and the page says so at the top.", "",
+             "> Rankings of iPhone apps by task, with prices, versions and privacy labels copied from the App Store on a stated date. When one of our own apps is ranked it is one more option, not first by default, and the page says so under How we checked.", "",
              "## Rankings", ""]
     for p in pages:
         ours = next((a for a in p["apps"] if a.get("ours")), None)
