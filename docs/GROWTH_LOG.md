@@ -7,6 +7,7 @@ nuestra también van en el diario de esa app.
 
 | Fecha | Canal | Cambio | Qué mirar | Desde cuándo |
 |---|---|---|---|---|
+| 2 nov 2026 | Web | **[fuera]** /chatgpt-video-generator-plugins/ al nivel de scrimba: «Last verified 2 Nov 2026» arriba, desarrollador, plan gratis y plan más barato de la web de cada vendedor (Kling, de la App Store). Mismo h1. | Posición en «best ChatGPT plugin for making videos» y campaña rl-chatgpt-video. | 2 nov 2026 |
 | 2 nov 2026 | Web | **[fuera]** Nueva /best-ai-photo-enhancer-apps-iphone/ en la sección nueva «AI photo editing». | Visitas de la página. | 2 nov 2026 |
 | 2 nov 2026 | Web | **[fuera]** Nueva /best-crypto-price-alert-apps-iphone/ (c387f6d, 22:50 JST), con `hide_from_related`: no sale en «Related» de las otras de cripto hasta el 11 nov (orden de saga-growth). | Visitas de la página; el 11 nov quitar `hide_from_related`. | 2 nov 2026 |
 | 2 nov 2026 | Web | **[fuera]** Nueva /best-habit-tracker-apps-iphone/ (e5a6502, 22:48 JST), sección nueva «Habit trackers». | Visitas de la página. | 2 nov 2026 |
