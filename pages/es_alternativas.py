@@ -365,20 +365,20 @@ COIN = dict(COMMON, **NEW, **{
 })
 
 # ---------------------------------------------------------------- Private Photo Vault
-VAULT = dict(COMMON, **{
+VAULT = dict(COMMON, **NEW, **{
     "group": "photo-vault-alternatives", "cover": "hide-photos",
     "path": "es/alternativas-a-private-photo-vault-iphone/", "ct": "rl-vault-alt-es",
     "category": "PhotographyApplication",
     "title": "Alternativas a Private Photo Vault para iPhone (2026)",
     "h1": "Alternativas a Private Photo Vault para iPhone en 2026",
-    "description": "Cinco alternativas a Private Photo Vault en iPhone: Keepsafe, PV Secret Photo Album, Secret Photo Album SA y Photo Vault. Precios y privacidad.",
+    "description": "Alternativas a Private Photo Vault en iPhone: Keepsafe, PV Secret Photo Album, Secret Photo Album SA y Photo Vault, con precio en España y privacidad al 3 nov 2026.",
     "llms": "Compara Private Photo Vault - Pic Safe (en España «Ocultar Fotos - Photo Vault») con cuatro alternativas para iPhone (Keepsafe, PV, Secret Photo Album SA, Photo Vault) por precio, copia en la nube, funciones de señuelo y alerta de intrusos y etiqueta de privacidad.",
     "answer": [
-        "Private Photo Vault - Pic Safe es la app de bóveda más grande del App Store (más de un millón de valoraciones en total, 4,8 estrellas en EE. UU.). Si buscas alternativa, Keepsafe es la grande más parecida con nube privada opcional, PV - Secret Photo Album tiene más funciones y la suscripción más barata, y Photo Vault: Hide Pics Video no pide cuenta y lo guarda todo en el teléfono salvo que actives su copia cifrada opcional en iCloud.",
+        "Private Photo Vault - Pic Safe es la app de bóveda más grande del App Store (más de un millón de valoraciones solo en EE. UU., con 4,8 estrellas). Si buscas alternativa, Keepsafe es la grande más parecida con nube privada opcional, PV - Secret Photo Album tiene más funciones y la suscripción más barata, y Photo Vault: Hide Pics Video no pide cuenta y lo guarda todo en el teléfono salvo que actives su copia cifrada opcional en iCloud.",
         "iOS ya trae un álbum Oculto gratis en Fotos; para una privacidad casual puede bastar. La guía de Apple está enlazada en las fuentes.",
     ],
     "columns": ["App", "Precio (España)", "Copia en la nube", "Funciones de privacidad", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Las cinco se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 16 de octubre de 2026 (las apps listan varios precios para el mismo plan, y la de Photo Vault aún incluye un producto antiguo llamado «Keeper Pro»). Valoración: media y número de valoraciones en España ese día; en España las apps pequeñas tienen muy pocas.",
+    "table_note": "Las cinco se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 3 de noviembre de 2026 (las apps listan varios precios para el mismo plan, y la de Photo Vault aún incluye un producto antiguo llamado «Keeper Pro»). Valoración: media y número de valoraciones en España ese día; en España las apps pequeñas tienen muy pocas.",
     "apps": [
         app(en(P.EN, 0), name="Boveda: Ocultar Fotos y Video",
             row=["Gratis; Premium anual (listado a 22,99 € y 34,99 €) o de por vida (17,99 €, 34,99 € y 69,99 €)", "Opcional: una copia cifrada de extremo a extremo en tu propio iCloud, desactivada por defecto; sin cuenta; o un archivo cifrado que exportas tú", "Face ID, contraseña por álbum, código señuelo (Premium), icono disfrazado, salida boca abajo, cámara privada", "", "", ""],
@@ -387,10 +387,11 @@ VAULT = dict(COMMON, **{
                 "Se abre con Face ID, Touch ID o código, y cada álbum puede tener su propia contraseña.",
                 "Icono disfrazado (Calculadora, Notas o Tiempo) y salida boca abajo que salta a Safari, Calendario o Mensajes.",
                 "La cámara privada hace las fotos directamente en la bóveda, sin pasar por el carrete.",
-                "Queda fuera de las copias de iCloud; para cambiar de iPhone exportas un archivo protegido con contraseña y lo restauras. Funciona sin conexión.",
+                "Queda fuera de las copias normales de iCloud; para cambiar de iPhone activas su copia cifrada en tu iCloud (Premium) o exportas un archivo protegido con contraseña y lo restauras. Funciona sin conexión.",
+                "Desde la versión 1.3.0 (26 de octubre de 2026), una papelera de 30 días: lo que borras, también un álbum entero, se puede recuperar durante ese tiempo.",
                 "19 idiomas, iOS 17 o posterior, 20 MB.",
             ],
-            limits="sin la copia opcional en iCloud no hay copia automática: si borras la app sin exportar la bóveda, se pierde. La versión gratis es limitada (guardaba un solo elemento cuando lo comprobamos el 11 de octubre), así que en la práctica es de pago. Solo 1 valoración en España (de 1 estrella) y es una app mucho más joven que las demás."),
+            limits="sin la copia opcional en iCloud no hay copia automática: si borras la app sin exportar la bóveda, se pierde. Las fotos y vídeos ilimitados y la copia en iCloud son de Premium, que se paga al año (la versión gratis guardaba un solo elemento cuando lo comprobamos el 11 de octubre)."),
         app(en(P.EN, 1), name="Ocultar Fotos - Photo Vault",
             row=["Gratis; Premium listado a 7,99 €, 12,99 €, 35,99 €, 37,99 € y 43,99 €", "Cloud Vault cifrado opcional", "Bloqueo con PIN o patrón, contraseña por álbum, informe de intrusión con foto y GPS, contraseña señuelo, bloqueo boca abajo", "", "", ""],
             best_for="la bóveda más conocida, con una lista larga de funciones que incluye un navegador privado.",
@@ -398,7 +399,7 @@ VAULT = dict(COMMON, **{
                 "Informe de intrusión con foto y GPS, contraseña señuelo y bloqueo boca abajo, según su ficha.",
                 "Navegador web privado que puede descargar fotos a la app; importar y exportar, y transferencia inalámbrica de fotos.",
                 "Copia en la nube cifrada opcional («Cloud Vault»); la ficha dice que sus empleados no pueden ver tus fotos.",
-                "11 idiomas, iOS 15 o posterior, 172 MB.",
+                "11 idiomas, iOS 15 o posterior, 173 MB.",
             ],
             limits="su etiqueta de privacidad lista varios tipos de datos vinculados contigo, y varias funciones piden Premium."),
         app(en(P.EN, 2), name="Keepsafe-Protege Fotos, Videos",
@@ -408,7 +409,7 @@ VAULT = dict(COMMON, **{
                 "Bloqueo con PIN y huella; el bloqueo de álbum da a cada álbum su propio PIN con Premium.",
                 "La nube privada guarda hasta 10.000 elementos y sincroniza entre dispositivos (Premium); Safe Send comparte imágenes durante un tiempo limitado.",
                 "Cámara integrada y recuperación de la papelera.",
-                "16 idiomas, iOS 17 o posterior, 210 MB.",
+                "16 idiomas, iOS 17 o posterior, 215 MB.",
             ],
             limits="la copia en la nube y el bloqueo por álbum piden Premium, y tus fotos van a su nube si la activas."),
         app(en(P.EN, 3), name="foto privadas - proteger album",
@@ -418,7 +419,7 @@ VAULT = dict(COMMON, **{
                 "Almacenamiento gratis e ilimitado, según su ficha, con contraseña y Face ID, contraseña falsa e icono personalizable.",
                 "Etiquetas, notas y búsqueda, editor de fotos, audio y Nearby Drop entre teléfonos.",
                 "La transferencia por Wi-Fi a un PC y la copia en nubes de terceros son de Pro; los anuncios se quitan con una compra.",
-                "12 idiomas, iOS 15 o posterior, 157 MB.",
+                "12 idiomas, iOS 17 o posterior, 142 MB.",
             ],
             limits="la versión gratis muestra anuncios, y su etiqueta de privacidad incluye datos de contacto e identificadores vinculados contigo."),
         app(en(P.EN, 4), name="SA - Ocultar fotos secretas",
@@ -445,7 +446,7 @@ VAULT = dict(COMMON, **{
         "Cambiar de iPhone: con Photo Vault exportas y restauras un archivo tú; las apps con nube restauran desde su nube.",
     ],
     "method": [
-        f"El {DATE} abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; no verificamos su cifrado. No inventamos valoraciones ni reseñas.",
+        f"El {DATE}, y otra vez el {DATE2}, abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; la papelera de Photo Vault sale de la propia app (versión 1.3.0). No verificamos su cifrado. No inventamos valoraciones ni reseñas.",
     ],
     "faq": [
         ("¿Cuál es la mejor alternativa a Private Photo Vault?",
@@ -453,18 +454,19 @@ VAULT = dict(COMMON, **{
         ("¿Photo Vault: Hide Pics Video es lo mismo que Private Photo Vault?",
          "No. Son apps distintas de desarrolladores distintos. Photo Vault: Hide Pics Video es de Saga Ltd.; Private Photo Vault - Pic Safe es de Legendary Software Labs."),
         ("¿Qué bóveda de fotos no usa la nube?",
-         "Photo Vault: Hide Pics Video lo guarda todo en el iPhone, sin cuenta y sin sincronización, y su etiqueta de privacidad dice «No se recopilan datos». En Private Photo Vault, Keepsafe y PV la copia en la nube es opcional."),
+         "Photo Vault: Hide Pics Video lo guarda en el iPhone, sin cuenta, y solo lo copia a tu propio iCloud, cifrado, si activas esa opción; su etiqueta de privacidad dice «No se recopilan datos». En Private Photo Vault, Keepsafe y PV la copia en la nube también es opcional, pero va a su propia nube."),
         ("¿Necesito una app de bóveda?",
          "No siempre. El iPhone tiene un álbum Oculto en Fotos que puedes bloquear con Face ID o código en las versiones recientes de iOS; una app añade álbumes separados, iconos disfrazados y otras funciones. Mira la guía de Apple en las fuentes."),
         ("¿Puedo pasar mi bóveda a un iPhone nuevo?",
-         "Con Photo Vault: Hide Pics Video exportas un archivo protegido con contraseña y lo restauras en el teléfono nuevo, porque la bóveda queda fuera de las copias de iCloud. Las bóvedas con nube restauran desde su propia nube."),
+         "Con Photo Vault: Hide Pics Video, restauras su copia cifrada en iCloud o un archivo protegido con contraseña que exportas tú, porque la bóveda queda fuera de las copias normales de iCloud. Las bóvedas con nube restauran desde su propia nube."),
+        ("¿Qué pasa si borro una foto de la bóveda por error?",
+         "En Photo Vault: Hide Pics Video va a una papelera durante 30 días desde la versión 1.3.0, también si borras un álbum entero. Keepsafe lista recuperación de la papelera. Si la bóveda no tiene copia y borras la app, lo que había dentro se pierde."),
     ],
     "sources": P.src("es"),
 })
 
-for _p in (TODO, VAULT):
-    refresh(_p, "es")
-for _p in (CALM, COIN):
+refresh(TODO, "es")
+for _p in (CALM, COIN, VAULT):
     refresh_1103(_p, "es")
 
 PAGES = [CALM, TODO, COIN, VAULT]
