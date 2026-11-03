@@ -5,11 +5,15 @@ Las funciones de cada app salen de las páginas EN (mismas fuentes); aquí solo 
 """
 
 from pages.store_1016 import refresh
+from pages.store_1103 import refresh as refresh_1103
 from pages import calm_alternatives as C, todoist_alternatives as T, coinstats_alternatives as K, photo_vault_alternatives as P
 
 CHECKED = "2026-10-16"
 COMMON = {"lang": "es", "store": "es", "published": CHECKED, "updated": CHECKED, "checked": CHECKED}
 DATE = "16 de octubre de 2026"
+# Páginas revisadas el 3 nov 2026 con pages/store_1103.py (la de Todoist sigue con los datos del 16 oct)
+NEW = {"updated": "2026-11-03", "checked": "2026-11-03"}
+DATE2 = "3 de noviembre de 2026"
 
 
 def app(en_app, **kw):
@@ -24,33 +28,34 @@ def en(page, i):
 
 
 # ---------------------------------------------------------------- Calm
-CALM = dict(COMMON, **{
+CALM = dict(COMMON, **NEW, **{
     "group": "calm-alternatives", "cover": "sleep-sounds",
     "path": "es/alternativas-a-calm-iphone/", "ct": "rl-calm-alt-es",
     "category": "HealthApplication",
     "title": "Alternativas a Calm para dormir y meditar en iPhone (2026)",
     "h1": "Alternativas a Calm para iPhone en 2026",
-    "description": "Siete alternativas a Calm en iPhone: Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite y Drop. Precios, valoraciones y privacidad.",
+    "description": "Seis alternativas a Calm en iPhone (Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite, Drop), con opciones gratis. Precios en España y privacidad al 3 nov 2026.",
     "llms": "Compara Calm con seis alternativas para iPhone (Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite, Drop) por precio en euros, tipo de contenido (meditación, cuentos para dormir, sonidos, ruido blanco), etiqueta de privacidad y valoración.",
     "answer": [
         "La mejor alternativa a Calm depende de para qué uses Calm. Para meditación guiada sin pagar, Medito es totalmente gratis e Insight Timer tiene una biblioteca gratuita enorme. Para sonidos y cuentos para dormir, BetterSleep es lo más parecido de pago. Para ruido blanco a secas, White Noise Lite es gratis y trae más de 50 sonidos. Si solo quieres sonidos relajantes con temporizador y sesiones cortas de respiración, sin anuncios, eso hace Drop, y nada más.",
-        "Calm se descarga gratis y tiene suscripción Premium (en España, de 12,99 € a 64,99 € según el plan); Headspace cobra 12,99 € al mes o 69,99 € al año. Todos los precios son los que lista el App Store de España el 16 de octubre de 2026.",
+        "Calm se descarga gratis y tiene suscripción Premium (en España, de 12,99 € a 64,99 € según el plan); Headspace cobra 12,99 € al mes o 69,99 € al año. Todos los precios son los que lista el App Store de España el 3 de noviembre de 2026.",
     ],
     "columns": ["App", "Precio (España)", "En qué destaca", "Sonidos para dormir / ruido blanco", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Las siete se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 16 de octubre de 2026 (una app puede listar varios precios para el mismo plan). Valoración: media y número de valoraciones en España ese día.",
+    "table_note": "Las siete se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 3 de noviembre de 2026 (una app puede listar varios precios para el mismo plan). Valoración: media y número de valoraciones en España ese día.",
     "apps": [
         app(en(C.EN, 0), name="Sonidos para Dormir: Drop",
-            row=["Gratis (9 sonidos); Drop Pro listado a 5,99 € al mes, 17,99 € de acceso y varias opciones de pago único", "Sesiones cortas de respiración guiada (de 2 a 20 minutos) y sonidos relajantes con temporizador", "53 sonidos de naturaleza, ambiente y ruido, 9 gratis; ruido blanco gratis, rosa y marrón con Drop Pro", "", "", ""],
+            row=["Gratis (9 sonidos); Drop Pro listado a 5,99 € al mes, 17,99 € de acceso y varias opciones de pago único", "Sesiones cortas de respiración guiada (de 2 a 20 minutos) y sonidos relajantes con temporizador", "56 sonidos de naturaleza, ambiente y ruido, 9 gratis; ruido blanco gratis; ruido rosa y marrón y sonidos binaurales con Drop Pro", "", "", ""],
             best_for="una app tranquila y sin anuncios, con sonidos relajantes, temporizador de sueño y respiración corta, cuando una biblioteca de meditación completa es demasiado.",
             facts=[
-                "Sesiones de respiración de 2, 5, 10 y 20 minutos con guía visual.",
-                "53 sonidos en tres grupos (naturaleza, ambiente, ruido); 9 son gratis: ruido blanco, fuego, bosque, latido, lago, cafetería, nieve, desierto y delfines. La lluvia, el mar y el ruido rosa y marrón piden Drop Pro.",
+                "Sesiones de respiración de 2, 5, 10 y 20 minutos con guía visual; 8 tipos de respiración, de los que la cuadrada y la 4-7-8 son gratis.",
+                "56 sonidos en tres grupos (naturaleza, ambiente, ruido); 9 son gratis: ruido blanco, fuego, bosque, latido, lago, cafetería, nieve, desierto y delfines. La lluvia, el mar y el ruido rosa y marrón piden Drop Pro.",
+                "Desde la versión 2.14 (30 de octubre de 2026), sonidos binaurales: delta para dormir, alfa, theta y gamma (40 Hz), todos con Drop Pro.",
                 "Temporizador de 15, 30 o 45 minutos, 1, 2 u 8 horas, con fundido de 30 segundos.",
                 "Una planta crece en cinco fases mientras practicas; rachas y logros.",
                 "Widgets, funciona sin conexión y sin anuncios.",
-                "33 idiomas, español incluido, iOS 18 o posterior, 138 MB.",
+                "33 idiomas, español incluido, iOS 18 o posterior, 145 MB.",
             ],
-            limits="no tiene cuentos para dormir, ni biblioteca de meditación con profesores, ni seguimiento del sueño, ni mezclador: suena un sonido cada vez, y el ruido rosa y el marrón piden Drop Pro. Pide iOS 18."),
+            limits="no tiene cuentos para dormir, ni biblioteca de meditación con profesores, ni seguimiento del sueño, ni mezclador: suena un sonido cada vez, y el ruido rosa, el marrón y los sonidos binaurales piden Drop Pro. Pide iOS 18."),
         app(en(C.EN, 1), name="Calm: Meditación y Sueño",
             row=["Gratis; suscripción Calm Premium (listada de 12,99 € a 64,99 € según el plan)", "Cuentos para dormir, meditación guiada, respiración y música", "Sonidos y paisajes sonoros (océano, lluvia fuerte, hoguera)", "", "", ""],
             best_for="cuentos para dormir narrados por voces conocidas y una biblioteca amplia y muy cuidada.",
@@ -58,7 +63,7 @@ CALM = dict(COMMON, **{
                 "Más de 100 cuentos para dormir (la ficha dice que añaden nuevos cada mes), algunos narrados por Matthew McConaughey y Stephen Fry.",
                 "Sesiones diarias, programas de 7 y 21 días y ejercicios de respiración.",
                 "Guarda las sesiones en Salud de Apple (minutos de atención plena).",
-                "10 idiomas, iOS 18 o posterior, 179 MB.",
+                "10 idiomas, iOS 18 o posterior, 181 MB.",
             ],
             limits="casi todo el contenido pide Premium, y su etiqueta de privacidad lista varios tipos de datos vinculados contigo, incluidos datos de salud y forma física."),
         app(en(C.EN, 2), name="Headspace: Sueño y Meditación",
@@ -78,7 +83,7 @@ CALM = dict(COMMON, **{
                 "Miles de meditaciones y charlas gratis; la ficha dice que añaden más de 80 nuevas gratis al día.",
                 "Temporizador de meditación, estadísticas, grupos de debate y minutos de atención plena en Salud.",
                 "Miles de pistas de música y sonidos ambientales.",
-                "10 idiomas, iOS 15 o posterior, 243 MB.",
+                "10 idiomas, iOS 15 o posterior, 242 MB.",
             ],
             limits="tanto contenido cuesta de elegir; Premium desbloquea funciones extra y su etiqueta de privacidad lista muchos tipos de datos."),
         app(en(C.EN, 4), name="BetterSleep: Relax and Sleep",
@@ -88,7 +93,7 @@ CALM = dict(COMMON, **{
                 "Más de 300 sonidos y pistas (naturaleza, ASMR, ruido blanco, sonidos binaurales) que se pueden mezclar.",
                 "Más de 250 meditaciones y sesiones de hipnosis, y más de 100 cuentos para dormir.",
                 "Seguimiento y grabadora del sueño; integración opcional con Salud; recordatorios y temporizadores.",
-                "10 idiomas, iOS 15 o posterior, 317 MB.",
+                "10 idiomas, iOS 15 o posterior, 313 MB.",
             ],
             limits="los sonidos y contenidos premium piden suscripción, y lista muchos precios distintos."),
         app(en(C.EN, 5), name="Medito: Mindfulness Meditación",
@@ -107,7 +112,7 @@ CALM = dict(COMMON, **{
                 "Más de 50 sonidos en bucle, incluidos ruido blanco, rosa, marrón, azul y violeta.",
                 "Mezclador para crear tus propias mezclas; audio de fondo para usar otras apps.",
                 "Temporizadores y alarmas con fundido de entrada y salida; reloj a pantalla completa.",
-                "3 idiomas (inglés, francés y español), iOS 14 o posterior, 94 MB.",
+                "3 idiomas (inglés, francés y español), iOS 15 o posterior, 96 MB.",
             ],
             limits="no tiene meditación, respiración ni cuentos para dormir: es solo una máquina de sonidos."),
     ],
@@ -125,7 +130,7 @@ CALM = dict(COMMON, **{
         "Tapar el ruido de la calle o de casa por la noche (White Noise Lite, BetterSleep).",
     ],
     "method": [
-        f"El {DATE} abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; en Drop, la lista de sonidos sale de la propia app (versión 2.10, actualizado el 24 de octubre de 2026), porque su ficha solo nombra cinco. No inventamos valoraciones ni reseñas, y no probamos la calidad del audio de cada app.",
+        f"El {DATE}, y otra vez el {DATE2}, abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; en Drop, la lista de sonidos y de respiraciones sale de la propia app (versión 2.14, publicada el 30 de octubre de 2026), porque su ficha solo nombra unos pocos. No inventamos valoraciones ni reseñas, y no probamos la calidad del audio de cada app.",
     ],
     "faq": [
         ("¿Cuál es la mejor alternativa a Calm en iPhone?",
@@ -133,9 +138,11 @@ CALM = dict(COMMON, **{
         ("¿Hay una alternativa gratis a Calm?",
          "Sí. Medito es gratis y sin compras dentro, Insight Timer tiene una gran biblioteca gratuita con Premium opcional, y White Noise Lite es gratis para sonidos."),
         ("¿Qué alternativa a Calm tiene ruido blanco?",
-         "White Noise Lite tiene ruido blanco, rosa, marrón, azul y violeta. BetterSleep lista ruido blanco entre más de 300 sonidos. Medito lo lista en sus paisajes sonoros. Drop, desde la versión 2.10, tiene ruido blanco gratis y ruido rosa, marrón y marrón profundo con Drop Pro."),
+         "White Noise Lite tiene ruido blanco, rosa, marrón, azul y violeta. BetterSleep lista ruido blanco entre más de 300 sonidos. Medito lo lista en sus paisajes sonoros. Drop tiene ruido blanco gratis y ruido rosa, marrón y marrón profundo con Drop Pro."),
+        ("¿Qué alternativa a Calm tiene sonidos binaurales?",
+         "BetterSleep lista sonidos binaurales entre sus más de 300 sonidos. Drop, desde la versión 2.14, tiene ondas binaurales delta, alfa, theta y gamma con Drop Pro; se escuchan con auriculares, porque cada oído recibe un tono distinto. La ficha de Calm no las menciona."),
         ("¿Drop tiene cuentos para dormir como Calm?",
-         "No. Drop ofrece sesiones cortas de respiración guiada y 53 sonidos relajantes (9 gratis) con temporizador de sueño. No tiene cuentos para dormir ni biblioteca de meditación."),
+         "No. Drop ofrece sesiones cortas de respiración guiada y 56 sonidos relajantes (9 gratis) con temporizador de sueño. No tiene cuentos para dormir ni biblioteca de meditación."),
         ("¿Cuánto cuesta Calm?",
          "Calm se descarga gratis y lista suscripciones Premium de 12,99 € a 64,99 € en el App Store de España, según el plan. Mira la oferta dentro de la app antes de suscribirte."),
     ],
@@ -440,7 +447,8 @@ VAULT = dict(COMMON, **{
     "sources": P.src("es"),
 })
 
-for _p in (CALM, TODO, COIN, VAULT):
+for _p in (TODO, COIN, VAULT):
     refresh(_p, "es")
+refresh_1103(CALM, "es")
 
 PAGES = [CALM, TODO, COIN, VAULT]

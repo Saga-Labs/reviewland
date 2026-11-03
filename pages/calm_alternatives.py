@@ -1,13 +1,15 @@
 """Calm alternatives for iPhone. EN. Our app: Drop (id1462269642), sold as "Sleep Sounds & Focus: Drop".
 
-Checked 2026-10-16: iTunes lookup API + App Store web pages (US). Drop 2.9 was
-live that day. Its listing names five nature sounds; the app itself has 32 sounds
-(10 free), per the 2.9 code and aisagalab.com/drop.html. ES page: Spain store, same day.
+First checked 2026-10-16; re-checked 2026-11-03 (JST): iTunes lookup API + App Store web pages (US),
+data in pages/store_1103.py. Drop 2.14 (30 Oct) is live: 56 sounds, 9 free, binaural delta, alpha, theta
+and gamma with Drop Pro; 8 breathing patterns, Box and 4-7-8 free (v2.14 code: SoundCatalog.swift,
+ModernBreatheView.swift). ES page: Spain store, same days.
 """
 
-from pages.store_1016 import refresh
+from pages.store_1103 import refresh
 
-CHECKED = "2026-10-16"
+PUBLISHED = "2026-10-16"
+CHECKED = "2026-11-03"
 
 
 def src(cc):
@@ -27,33 +29,33 @@ EN = {
     "path": "calm-alternatives-iphone/",
     "ct": "rl-calm-alt",
     "category": "HealthApplication",
-    "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
+    "published": PUBLISHED, "updated": CHECKED, "checked": CHECKED,
     "title": "Best Calm Alternatives for Sleep on iPhone (2026)",
     "h1": "Calm alternatives for iPhone in 2026",
-    "description": "Seven alternatives to Calm on iPhone: Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite and Drop. Prices, ratings and privacy checked.",
+    "description": "Six alternatives to Calm on iPhone (Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite, Drop), with free options. US prices, ratings and privacy checked 3 Nov 2026.",
     "llms": "Compares Calm with six alternatives for iPhone (Headspace, Insight Timer, BetterSleep, Medito, White Noise Lite, Drop) by price, content type (meditations, sleep stories, sleep sounds, white noise), privacy label and App Store rating.",
     "answer": [
         "The best Calm alternative depends on what you use Calm for. For guided meditation without paying, Medito is completely free and Insight Timer has a large free library. For sleep sounds and stories, BetterSleep is the closest paid match. For plain white noise, White Noise Lite is free with 50+ sounds. If you only want short breathing sessions with nature sounds and no ads, Drop does that, and nothing else.",
-        "Calm itself is a free download with a Premium subscription; Headspace charges $12.99 a month or $69.99 a year in the US. All prices below are the ones listed on the App Store on 16 October 2026.",
+        "Calm itself is a free download with a Premium subscription; Headspace charges $12.99 a month or $69.99 a year in the US. Prices below are the ones listed on the US App Store on 3 November 2026.",
     ],
     "columns": ["App", "Price (US)", "What it is best at", "Sleep sounds / white noise", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "All seven are free to download. Prices are the in-app purchases listed on the US App Store on 16 October 2026 (an app can list several price points for the same plan). Ratings are the App Store average and number of ratings that day.",
+    "table_note": "All seven are free to download. Prices are the in-app purchases listed on the US App Store on 3 November 2026 (an app can list several price points for the same plan). Ratings are the App Store average and number of ratings that day.",
     "apps": [
         {
             "name": "Sleep Sounds & Focus: Drop", "id": 1462269642, "ours": True, "anchor": "drop",
             "developer": "Saga Ltd.", "rating": (4.42, 12),
-            "row": ["Free (9 sounds); Drop Pro listed as monthly $4.99, access $14.99 and lifetime options", "Short guided-breathing sessions (2 to 20 minutes) and calming sounds with a sleep timer", "53 nature, ambient and noise sounds, 9 free; white noise free, pink and brown noise with Drop Pro",
+            "row": ["Free (9 sounds); Drop Pro listed as monthly $4.99, access $14.99, lifetime $24.99 or $49.99", "Short guided-breathing sessions (2 to 20 minutes) and calming sounds with a sleep timer", "56 nature, ambient and noise sounds, 9 free; white noise free; pink and brown noise and binaural beats with Drop Pro",
                     "Data Not Linked to You (usage data)", "2.13 (26 Oct 2026)", "4.4 (12 ratings)"],
             "best_for": "a quiet, ad-free app with calming sounds, a sleep timer and short breathing sessions, when a full meditation library is more than you need.",
             "facts": [
-                "Breathing sessions of 2, 5, 10 and 20 minutes with visual breathing guides.",
-                "53 sounds in three groups (nature, ambient, noise); 9 are free: white noise, crackling fire, forest, heartbeat, lake, coffee shop, falling snow, desert wind and dolphins. Rain, ocean, pink and brown noise need Drop Pro.",
+                "Breathing sessions of 2, 5, 10 and 20 minutes with visual breathing guides; 8 breathing patterns, of which Box and 4-7-8 are free.",
+                "56 sounds in three groups (nature, ambient, noise); 9 are free: white noise, crackling fire, forest, heartbeat, lake, coffee shop, falling snow, desert wind and dolphins. Rain, ocean, pink and brown noise need Drop Pro.", "Since version 2.14 (30 October 2026), binaural beats: delta for sleep, alpha, theta and gamma (40 Hz), all with Drop Pro.",
                 "Sleep timer of 15, 30 or 45 minutes, 1, 2 or 8 hours, with a 30-second fade-out.",
                 "A plant grows through five stages as you practise; streaks and achievements.",
                 "Home screen widgets, works offline, no ads.",
-                "33 languages, iOS 18 or later, 138 MB.",
+                "33 languages, iOS 18 or later, 145 MB.",
             ],
-            "limits": "no sleep stories, no teacher-led meditation library, no sleep tracking and no mixer: one sound at a time, and pink and brown noise need Drop Pro. It needs iOS 18.",
+            "limits": "no sleep stories, no teacher-led meditation library, no sleep tracking and no mixer: one sound at a time, and pink noise, brown noise and the binaural beats need Drop Pro. It needs iOS 18.",
         },
         {
             "name": "Calm", "id": 571800810, "anchor": "calm",
@@ -65,7 +67,7 @@ EN = {
                 "100+ Sleep Stories (listing says new ones every month), including ones narrated by Matthew McConaughey and Stephen Fry.",
                 "Daily Calm, Daily Jay and other daily sessions; 7- and 21-day programs; breathing exercises.",
                 "Saves sessions to Apple Health (Mindful Minutes).",
-                "10 languages, iOS 18 or later, 179 MB.",
+                "10 languages, iOS 18 or later, 181 MB.",
             ],
             "limits": "most of the content needs Premium, and the privacy label lists several kinds of data linked to you, including health and fitness data.",
         },
@@ -86,7 +88,7 @@ EN = {
         {
             "name": "Insight Timer: Meditate, Sleep", "id": 337472899, "anchor": "insight-timer",
             "developer": "Insight Network Inc", "rating": (4.9, 447855),
-            "row": ["Free; Premium listed $9.99 and $59.99, family $89.99", "Huge free library of guided meditations, talks and music", "Thousands of music tracks and ambient sounds",
+            "row": ["Free; Premium listed $9.99 and $59.99, family $89.99; live event tickets $6.99", "Huge free library of guided meditations, talks and music", "Thousands of music tracks and ambient sounds",
                     "Data Linked to You (contact info, location, health and fitness, purchases and more)", "20.38.0 (9 Oct 2026)", "4.9 (447,855 ratings)"],
             "best_for": "free guided meditation from many different teachers, plus a meditation timer.",
             "facts": [
@@ -107,7 +109,7 @@ EN = {
                 "300+ sleep sounds and music tracks (nature, ASMR, white noise, binaural beats) you can mix.",
                 "250+ meditations and hypnosis sessions and 100+ sleep stories.",
                 "Sleep tracker and sleep recorder; optional HealthKit integration; bedtime reminders and timers.",
-                "10 languages, iOS 15 or later, 317 MB.",
+                "10 languages, iOS 15 or later, 313 MB.",
             ],
             "limits": "premium sounds and content need a subscription, and many different price points are listed for it.",
         },
@@ -134,7 +136,7 @@ EN = {
                 "50+ looped sounds, including white, pink, brown, blue and violet noise.",
                 "Mix Pad to build your own mixes; background audio so you can use other apps.",
                 "Timers and alarms that fade audio in and out; full-screen clock.",
-                "3 languages (English, French, Spanish), iOS 14 or later, 94 MB.",
+                "3 languages (English, French, Spanish), iOS 15 or later, 96 MB.",
             ],
             "limits": "no meditation, breathing or sleep stories: it is a sound machine only.",
         },
@@ -153,7 +155,7 @@ EN = {
         "Masking street or household noise at night (White Noise Lite, BetterSleep).",
     ],
     "method": [
-        "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; for Drop, the sound list comes from the app itself (version 2.10, updated 24 October 2026), because its listing only names five. We did not invent ratings or reviews, and we did not test the audio quality of each app.",
+        "On 16 October 2026, and again on 3 November 2026, we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; for Drop, the sound list and breathing patterns come from the app itself (version 2.14, released 30 October 2026), because its listing only names a few. We did not invent ratings or reviews, and we did not test the audio quality of each app.",
     ],
     "faq": [
         ("What is the best alternative to Calm on iPhone?",
@@ -161,9 +163,11 @@ EN = {
         ("Is there a free alternative to Calm?",
          "Yes. Medito is free with no in-app purchases, Insight Timer has a large free library with an optional Premium, and White Noise Lite is free for sounds."),
         ("Which Calm alternative has white noise?",
-         "White Noise Lite has white, pink, brown, blue and violet noise. BetterSleep lists white noise among 300+ sounds. Medito lists white noise in its soundscapes. Drop, since version 2.10, has white noise free and pink, brown and deep brown noise with Drop Pro."),
+         "White Noise Lite has white, pink, brown, blue and violet noise. BetterSleep lists white noise among 300+ sounds. Medito lists white noise in its soundscapes. Drop has white noise free and pink, brown and deep brown noise with Drop Pro."),
+        ("Which Calm alternative has binaural beats?",
+         "BetterSleep lists binaural beats among its 300+ sounds, and Headspace's US listing mentions binaural beats for focus. Drop, since version 2.14, has delta, alpha, theta and gamma binaural beats with Drop Pro; use headphones, because each ear gets a different tone. Calm's listing does not mention them."),
         ("Does Drop have sleep stories like Calm?",
-         "No. Drop offers short guided-breathing sessions and 53 calming sounds (9 free) with a sleep timer. It has no sleep stories and no meditation library."),
+         "No. Drop offers short guided-breathing sessions and 56 calming sounds (9 free) with a sleep timer. It has no sleep stories and no meditation library."),
         ("How much does Calm cost?",
          "Calm is free to download and lists Premium subscription prices from $14.99 to $79.99 on the US App Store, depending on the plan. Check the in-app offer before you subscribe."),
     ],
