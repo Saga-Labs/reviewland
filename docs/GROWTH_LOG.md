@@ -8,12 +8,16 @@ nuestra también van en el diario de esa app.
 ## Pendientes con fecha
 
 - **11 nov 2026:** tras la lectura del rediseño (10 nov), quitar `hide_from_related` de pages/nov03_crypto_alerts.py y enlazar best-habit-tracker-apps-iphone con best-simple-to-do-list-apps-iphone (avisar antes a saga-growth).
-- **4 nov 2026:** pedir indexación en Search Console de /best-ai-video-generator-apps-ipad/ (el 3 nov se acabó la cuota diaria).
-- **11 nov 2026:** quitar también `hide_from_related` de pages/nov03_deepseek_alt.py. Proponer a saga-growth el título de la de tareas («Best To-Do List Apps for iPhone: Simple and Free (2026)»): sus búsquedas son «best to do list app iphone» y «best free to do list app for iphone», sin «simple» (122 impresiones, posición 52,6, 21-31 oct).
+- **4 nov 2026:** pedir indexación en Search Console de /best-ai-video-generator-apps-ipad/, /best-ai-trend-video-apps-iphone/, /es/mejores-apps-video-ia-con-sonido-iphone/ y /seedance-2-mini-vs-veo-3-1-vs-kling/ (el 3 nov se acabó la cuota diaria).
+- **11 nov 2026:** quitar también `hide_from_related` de pages/nov03_deepseek_alt.py y enlazar desde ella reditor.cloud/deepseek-apps-iphone/ (orden de saga-growth).
+- **11 nov 2026 (OK de saga-growth, 3 nov):** cambiar solo el `title` de best-simple-to-do-list-apps-iphone a «Best To-Do List Apps for iPhone: Simple and Free (2026)». Partida: 122 impresiones, 0 clics, posición 52,6 (Search Console, 21-31 oct). Comparar con los 14 días siguientes; si bajan las visitas de ChatGPT a esa página, volver atrás.
 - **2 dic 2026:** revisión mensual de /chatgpt-video-generator-plugins/: releer las fichas de OpenAI y la página de precios de cada vendedor (Kling desde la App Store) y cambiar «Last verified».
 
 | Fecha | Canal | Cambio | Qué mirar | Desde cuándo |
 |---|---|---|---|---|
+| 3 nov 2026 | Web | **[fuera]** /seedance-2-mini-vs-veo-3-1-vs-kling/ amplía a 4 modelos con Grok Imagine Video 1.5 y Lite (precios de docs.x.ai) y dice en qué apps de iPhone se usa cada uno; título «Seedance 2 Mini vs Kling vs Veo vs Grok Imagine (2026)», h1 nuevo, misma URL (66e3e37, 09:58 JST). Encargo de Marta. IndexNow 200. | Campaña rl-seedance-veo-kling. | 3 nov 2026 |
+| 3 nov 2026 | Web | **[fuera]** Nueva /es/mejores-apps-video-ia-con-sonido-iphone/ (4ee40e6, 09:55 JST), tienda de España, enlazada con la inglesa por hreflang; Dora 4.ª de 6. IndexNow 200. | Campaña rl-video-sound-es. | 3 nov 2026 |
+| 3 nov 2026 | Web | **[fuera]** Nueva /best-ai-trend-video-apps-iphone/ (4ee40e6, 09:55 JST): ReelMe, Hula AI, Pika, Dora 4.ª de 6, Vids AI, Zoomerang. IndexNow 200. | Campaña rl-trend-video. | 3 nov 2026 |
 | 3 nov 2026 | Web | **[fuera]** /best-crypto-price-widget-apps-iphone/: título «Best Crypto Widget Apps for iPhone & Apple Watch (2026)» y descripción con Apple Watch (4336ef4, ~09:50 JST); mismo h1. Motivo: sus búsquedas en Search Console (21-31 oct, 45 impresiones, posición 10,4) son de widgets en Apple Watch y «best crypto tracker app ios». | Clics e impresiones de la página en Search Console. | 3 nov 2026 |
 | 3 nov 2026 | Web | **[fuera]** Nueva /best-ai-video-generator-apps-ipad/ (58c90f8, 09:43 JST): solo apps universales con capturas de iPad; Kling, Gemini, Grok, Dora 4.ª de 7, invideo, Pollo, Faceless; Runway y VideoGPT no tienen versión de iPad. IndexNow 200; Search Console sin cuota ese día. | Campaña rl-video-ipad. | 3 nov 2026 |
 | 3 nov 2026 | Web | **[fuera]** Nueva /deepseek-alternatives-iphone/ (58c90f8, 09:43 JST), con `hide_from_related` hasta el 11 nov: ChatGPT, Claude, Gemini, Perplexity, Ask AI 5.ª de 7, Vibe by Mistral, Kimi; la política de DeepSeek dice que guarda los datos en China. IndexNow 200 e indexación pedida. | Campaña rl-deepseek-alt (Ask AI). | 3 nov 2026 |
