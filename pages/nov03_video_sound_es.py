@@ -5,9 +5,9 @@ Dora: ficha 1.4.2 «Vídeos con sonido, en los modelos que lo admiten»; Seedanc
 Versión inglesa: nov03_video_sound.py."""
 
 DAY = "2026-11-03"
-TRACK = "Datos utilizados para rastrearte"
-LINKED = "Datos vinculados a ti"
-NOTLINKED = "Datos no vinculados a ti"
+TRACK = "Datos usados para rastrearte"
+LINKED = "Datos vinculados contigo"
+NOTLINKED = "Datos no vinculados contigo"
 
 
 def label(*x):
@@ -36,7 +36,7 @@ APPS = [
     app("Google Gemini", 6477489729, "gemini", "Google LLC", 4.69, 215922, "1.2026.4262206", "29 oct 2026", LINKED,
         "Google AI Plus 4,99 € o Pro 21,99 € al mes", "Audio nativo con Gemini Omni, según la web de Google", "Hasta 10 s",
         "quien paga un plan de Google AI y quiere vídeo con sonido desde texto o hasta cinco fotos.",
-        ["Su ficha dice que Gemini Omni convierte ideas en vídeos para usuarios de Google AI Plus, Pro y Ultra; la web de Gemini habla de audio nativo, vídeos de 10 segundos y de foto a vídeo con hasta cinco fotos.", "Según la web de Google, Gemini Omni sustituyó a Veo en la app de Gemini.", "La única etiqueta de privacidad de la lista sin «Datos utilizados para rastrearte»."],
+        ["Su ficha dice que Gemini Omni convierte ideas en vídeos para usuarios de Google AI Plus, Pro y Ultra; la web de Gemini habla de audio nativo, vídeos de 10 segundos y de foto a vídeo con hasta cinco fotos.", "Según la web de Google, Gemini Omni sustituyó a Veo en la app de Gemini.", "La única etiqueta de privacidad de la lista sin «Datos usados para rastrearte»."],
         "el vídeo necesita un plan de pago de Google AI, y la web de Google dice que es para mayores de 18 años."),
     app("Kling AI: AI Image&Video Maker", 6738049229, "kling", "KLING AI PTE. LTD.", 4.62, 1750, "3.9.32", "2 nov 2026", label(TRACK, LINKED, NOTLINKED),
         "Standard 10 €, Pro 39 €, Premier 99 € al mes; una semana desde 0,99 €; créditos desde 1,99 €",
