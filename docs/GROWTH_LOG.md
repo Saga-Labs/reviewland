@@ -12,6 +12,8 @@ nuestra también van en el diario de esa app.
 
 | Fecha | Canal | Cambio | Qué mirar | Desde cuándo |
 |---|---|---|---|---|
+| 3 nov 2026 | Web | **[fuera]** Nueva /best-ai-video-generator-apps-with-sound-iphone/ (057055c, 09:30 JST): Grok, Gemini, Kling, Dora 4.ª de 6, invideo, Pollo; la de texto a vídeo enlaza a ella. Tema que no está en reditor, aisagalab ni doravideo/blog. IndexNow 200 y indexación pedida en Search Console. | Campaña rl-video-sound. | 3 nov 2026 |
+| 3 nov 2026 | Web | **[fuera]** Nueva /best-ai-homework-helper-apps-iphone/ (057055c, 09:30 JST), sección nueva «Homework help»: Photomath, Gauth, Brainly, Answer.AI, Ask AI 5.ª de 7, Solvely, Quizard. Tema que no está en ninguna de las 4 webs. IndexNow 200 y indexación pedida en Search Console. | Campaña rl-homework (Ask AI). | 3 nov 2026 |
 | 2 nov 2026 | Web | **[fuera]** /chatgpt-video-generator-plugins/ al nivel de scrimba: «Last verified 2 Nov 2026» arriba, desarrollador, plan gratis y plan más barato de la web de cada vendedor (Kling, de la App Store). Mismo h1. | Posición en «best ChatGPT plugin for making videos» y campaña rl-chatgpt-video. | 2 nov 2026 |
 | 2 nov 2026 | Web | **[fuera]** Nueva /best-ai-photo-enhancer-apps-iphone/ en la sección nueva «AI photo editing». | Visitas de la página. | 2 nov 2026 |
 | 2 nov 2026 | Web | **[fuera]** Nueva /best-crypto-price-alert-apps-iphone/ (c387f6d, 22:50 JST), con `hide_from_related`: no sale en «Related» de las otras de cripto hasta el 11 nov (orden de saga-growth). | Visitas de la página; el 11 nov quitar `hide_from_related`. | 2 nov 2026 |
