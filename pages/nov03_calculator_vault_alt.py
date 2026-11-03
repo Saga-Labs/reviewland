@@ -65,7 +65,7 @@ PAGES = [{
     "group": "calculator-vault-alternatives", "lang": "en", "store": "us", "path": "calculator-vault-alternatives-iphone/", "ct": "rl-calculator-vault-alt",
     "category": "PhotographyApplication", "cover": "hide-photos", "hide_from_related": True,
     "published": DAY, "updated": DAY, "checked": DAY,
-    "title": "Calculator# Alternatives: Hidden Photo Vaults for iPhone (2026)", "h1": "Calculator# alternatives for iPhone",
+    "title": "Calculator# Alternatives: Photo Vaults for iPhone (2026)", "h1": "Calculator# alternatives for iPhone",
     "description": "Six iPhone photo vaults that hide or disguise themselves like Calculator#: decoy passwords, fake icons, fake crash screens. US prices, privacy labels and ratings on 3 November 2026.",
     "llms": "Six alternatives to Calculator# Hide Photos Videos on iPhone, each with a way to hide or disguise the vault: Converter: Hidden Photo Vault, Private Photo Vault, PV - Secret Photo Album, Photo Vault: Hide Pics Video, Safe Lock, Hide it Pro. Price, disguise, backup, privacy label, version, rating on 3 November 2026.",
     "llms_note": "Photo Vault: Hide Pics Video, one of the six, is made by Saga Labs, which runs Reviewland.",
