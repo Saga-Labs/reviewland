@@ -44,6 +44,8 @@
 - [Best AI photo enhancer apps for iPhone](https://reviewland.io/best-ai-photo-enhancer-apps-iphone/) (en, updated 2026-11-02): Five iPhone AI photo enhancers from the App Store: Remini, Citrus, PhotoApp, Lightroom, Pixelup. What each fixes, price, privacy label, rating. No quality test.
 - [Best AI homework helper apps for iPhone](https://reviewland.io/best-ai-homework-helper-apps-iphone/) (en, updated 2026-11-03): Seven AI homework helper apps for iPhone: Photomath, Gauth, Brainly, Answer.AI, Ask AI, Solvely, Quizard. Price, free tier, subjects, privacy label, rating. No accuracy test.
 - [Best AI video generator apps with sound for iPhone](https://reviewland.io/best-ai-video-generator-apps-with-sound-iphone/) (en, updated 2026-11-03): Six iPhone AI video apps that generate video with sound: Grok, Google Gemini, Kling AI, Dora, invideo, Pollo AI. Where the sound claim comes from, price, length, privacy label, rating. No quality test. Our app on this page: DORA · AI Video Generator.
+- [DeepSeek alternatives for iPhone](https://reviewland.io/deepseek-alternatives-iphone/) (en, updated 2026-11-03): Seven DeepSeek alternatives for iPhone: ChatGPT, Claude, Gemini, Perplexity, Ask AI, Vibe by Mistral, Kimi. Price, free use, privacy label, rating. DeepSeek's policy says it stores data in China.
+- [Best AI video generator apps for iPad](https://reviewland.io/best-ai-video-generator-apps-ipad/) (en, updated 2026-11-03): Seven AI video generator apps built for iPad (universal, with iPad screenshots): Kling AI, Google Gemini, Grok, Dora, invideo, Pollo AI, Faceless. Runway and VideoGPT have no iPad version. Price, iPadOS, privacy label, rating. Our app on this page: DORA · AI Video Generator.
 
 ## About
 
