@@ -28,7 +28,7 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt"]
+                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt", "nov03_videogpt_alt"]
 
 T = {
     "en": {
@@ -71,7 +71,7 @@ HOME_SECTIONS = [
 HOME_GROUPS = {
     "photos": {"hide-photos", "photo-vault-alternatives", "vault-no-data"},
     "ai": {"ai-chat", "local-models", "chatgpt-apps", "chatgpt-video", "deepseek-alternatives", "poe-alternatives"},
-    "ai-video": {"make-video", "free-video", "capcut-alt", "reels-apps", "photo-talk-family", "sora-alt", "text-video", "video-models", "text-video-list", "video-sound", "video-ipad", "trend-video", "grok-imagine-alternatives"},
+    "ai-video": {"make-video", "free-video", "capcut-alt", "reels-apps", "photo-talk-family", "sora-alt", "text-video", "video-models", "text-video-list", "video-sound", "video-ipad", "trend-video", "grok-imagine-alternatives", "videogpt-alternatives"},
     "photo-editing": {"photo-enhancer"},
     "sleep": {"calm-alternatives", "free-sleep-sounds"},
     "tasks": {"simple-todo", "todoist-alternatives"},

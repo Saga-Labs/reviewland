@@ -50,6 +50,7 @@
 - [Mejores apps de vídeo con IA con sonido para iPhone](https://reviewland.io/es/mejores-apps-video-ia-con-sonido-iphone/) (es, updated 2026-11-03): Seis apps de iPhone que generan vídeo con IA con sonido, con datos del App Store de España: Grok, Google Gemini, Kling AI, Dora, invideo, Pollo AI. De dónde sale que tienen sonido, precio en euros, duración, privacidad. Our app on this page: DORA · Generador Vídeo IA.
 - [Poe alternatives for iPhone](https://reviewland.io/poe-alternatives-iphone/) (en, updated 2026-11-03): Five Poe alternatives for iPhone, all with models from several companies: Perplexity, ChatOn, Monica, Ask AI, OpenCat. Price, models named in the listing, privacy label, rating.
 - [Grok Imagine alternatives for iPhone](https://reviewland.io/grok-imagine-alternatives-iphone/) (en, updated 2026-11-03): Six Grok Imagine alternatives for iPhone: Kling AI, Google Gemini, Runway, Dora, Pollo AI, Hula AI. What each makes, sound, price, privacy label, rating. Grok Imagine API specs from xAI. Our app on this page: DORA · AI Video Generator.
+- [VideoGPT alternatives for iPhone](https://reviewland.io/videogpt-alternatives-iphone/) (en, updated 2026-11-03): Six VideoGPT alternatives for iPhone, all updated in October or November 2026: invideo, Kling AI, Grok, Dora, Pollo AI, Runway. What each makes from text, sound, price, privacy label, rating. VideoGPT's last update: 8 October 2025.
 
 ## About
 

@@ -39,7 +39,7 @@ APPS = [
         ["Its listing names Seedance 2.5, Kling 3 Pro and Gen-4.5 among its video models.", "Runway Agent turns a plain description into several shots and assembles them."],
         "English only, no iPad version, and the listing gives no clip length or sound."),
     app("DORA · AI Video Generator", 6754180384, "dora", "Saga Ltd.", 4.31, 16, "1.4.2", "26 Oct 2026", label(TRACK, NOTLINKED),
-        "Pro weekly $4.99 or $6.99, Pro yearly $119.99; coins $3.99 (300) to $224.99 (25,000)", "Text or photo to a short clip; templates; several models", "On the models that support it, per listing",
+        "Pro weekly $4.99 or $6.99, Pro yearly $119.99; coins $4.99 (300) to $224.99 (25,000)", "Text or photo to a short clip; templates; several models", "On the models that support it, per listing",
         "keeping Grok as one option and trying other models from the same coins.",
         ["Dora's models page lists Grok (480p, 6 seconds, 10 credits) next to Seedance 2 Mini (8 seconds with sound for 31 credits) and Kling 2.6.", "The coin cost shows before you generate and failed generations give the coins back, per its listing.", "Templates put you in another era or place, and Motion Control copies a dance onto your photo."],
         "a subscription with no free video, and short clips only.", True),

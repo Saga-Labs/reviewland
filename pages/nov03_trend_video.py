@@ -40,7 +40,7 @@ APPS = [
         ["Its listing says a selfie becomes a video, GIF or meme, and you can remix trending styles, sounds and lip-sync templates.", "AI lip-sync to music or speech, and a community feed.", "Its terms and privacy links go to pika.art, and it sells token packs with no subscription."],
         "English only, under 300 ratings, and its last update was on 12 June 2026."),
     app("DORA · AI Video Generator", 6754180384, "dora", "Saga Ltd.", 4.31, 16, "1.4.2", "26 Oct 2026", 11, label(TRACK, NOTLINKED),
-        "Pro weekly $4.99 or $6.99, Pro yearly $119.99; coins $3.99 (300) to $224.99 (25,000)", "Era, place and style templates; dance moves copied onto your photo", "One photo",
+        "Pro weekly $4.99 or $6.99, Pro yearly $119.99; coins $4.99 (300) to $224.99 (25,000)", "Era, place and style templates; dance moves copied onto your photo", "One photo",
         "era and place trends and copying a dance onto your own photo, with the cost shown first.",
         ["Its listing says ready-made templates put you in another era, place or style, and Motion Control copies the moves of a dance video onto the person in your photo.", "Vertical 9:16 for TikTok and Reels, up to 1080p, no watermark; the coin cost shows before you tap and failed generations give the coins back.",
          "Videos have sound on the models that support it; the default model makes 8 seconds with sound for 31 coins, per Dora's site."],
