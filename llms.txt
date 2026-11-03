@@ -51,6 +51,7 @@
 - [Poe alternatives for iPhone](https://reviewland.io/poe-alternatives-iphone/) (en, updated 2026-11-03): Five Poe alternatives for iPhone, all with models from several companies: Perplexity, ChatOn, Monica, Ask AI, OpenCat. Price, models named in the listing, privacy label, rating.
 - [Grok Imagine alternatives for iPhone](https://reviewland.io/grok-imagine-alternatives-iphone/) (en, updated 2026-11-03): Six Grok Imagine alternatives for iPhone: Kling AI, Google Gemini, Runway, Dora, Pollo AI, Hula AI. What each makes, sound, price, privacy label, rating. Grok Imagine API specs from xAI. Our app on this page: DORA · AI Video Generator.
 - [VideoGPT alternatives for iPhone](https://reviewland.io/videogpt-alternatives-iphone/) (en, updated 2026-11-03): Six VideoGPT alternatives for iPhone, all updated in October or November 2026: invideo, Kling AI, Grok, Dora, Pollo AI, Runway. What each makes from text, sound, price, privacy label, rating. VideoGPT's last update: 8 October 2025.
+- [Calculator# alternatives for iPhone](https://reviewland.io/calculator-vault-alternatives-iphone/) (en, updated 2026-11-03): Six alternatives to Calculator# Hide Photos Videos on iPhone, each with a way to hide or disguise the vault: Converter: Hidden Photo Vault, Private Photo Vault, PV - Secret Photo Album, Photo Vault: Hide Pics Video, Safe Lock, Hide it Pro. Price, disguise, backup, privacy label, version, rating on 3 November 2026. Photo Vault: Hide Pics Video, one of the six, is made by Saga Labs, which runs Reviewland.
 
 ## About
 
