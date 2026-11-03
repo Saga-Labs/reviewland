@@ -28,7 +28,7 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer"]
+                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer", "nov03_homework", "nov03_video_sound"]
 
 T = {
     "en": {
@@ -60,6 +60,7 @@ T = {
 HOME_SECTIONS = [
     ("photos", {"en": "Hide photos and photo vaults", "es": "Ocultar fotos y bóvedas de fotos"}),
     ("ai", {"en": "AI chat and AI models", "es": "Chat con IA y modelos de IA"}),
+    ("study", {"en": "Homework help", "es": "Ayuda con los deberes"}),
     ("ai-video", {"en": "AI video", "es": "Vídeo con IA"}),
     ("photo-editing", {"en": "AI photo editing", "es": "Edición de fotos con IA"}),
     ("sleep", {"en": "Sleep, calm and white noise", "es": "Dormir, calma y ruido blanco"}),
@@ -70,11 +71,12 @@ HOME_SECTIONS = [
 HOME_GROUPS = {
     "photos": {"hide-photos", "photo-vault-alternatives", "vault-no-data"},
     "ai": {"ai-chat", "local-models", "chatgpt-apps", "chatgpt-video"},
-    "ai-video": {"make-video", "free-video", "capcut-alt", "reels-apps", "photo-talk-family", "sora-alt", "text-video", "video-models", "text-video-list"},
+    "ai-video": {"make-video", "free-video", "capcut-alt", "reels-apps", "photo-talk-family", "sora-alt", "text-video", "video-models", "text-video-list", "video-sound"},
     "photo-editing": {"photo-enhancer"},
     "sleep": {"calm-alternatives", "free-sleep-sounds"},
     "tasks": {"simple-todo", "todoist-alternatives"},
     "habits": {"habit-trackers"},
+    "study": {"homework-helpers"},
     "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers", "crypto-alerts"},
 }
 

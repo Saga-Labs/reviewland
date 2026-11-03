@@ -42,6 +42,8 @@
 - [Best habit tracker apps for iPhone](https://reviewland.io/best-habit-tracker-apps-iphone/) (en, updated 2026-11-02): Seven iPhone habit trackers compared from the App Store: Streaks, HabitKit, Habit Tracker, Habitify, Atoms, Finch, Productive. Price, free tier, privacy label, rating.
 - [Best crypto price alert apps for iPhone](https://reviewland.io/best-crypto-price-alert-apps-iphone/) (en, updated 2026-11-02): Six iPhone crypto price alert apps from the App Store: CoinGecko, HODL, CoinMarketCap, Crypto Pro, The Crypto App, Crypto News. Alert types, free limits, price, privacy label.
 - [Best AI photo enhancer apps for iPhone](https://reviewland.io/best-ai-photo-enhancer-apps-iphone/) (en, updated 2026-11-02): Five iPhone AI photo enhancers from the App Store: Remini, Citrus, PhotoApp, Lightroom, Pixelup. What each fixes, price, privacy label, rating. No quality test.
+- [Best AI homework helper apps for iPhone](https://reviewland.io/best-ai-homework-helper-apps-iphone/) (en, updated 2026-11-03): Seven AI homework helper apps for iPhone: Photomath, Gauth, Brainly, Answer.AI, Ask AI, Solvely, Quizard. Price, free tier, subjects, privacy label, rating. No accuracy test.
+- [Best AI video generator apps with sound for iPhone](https://reviewland.io/best-ai-video-generator-apps-with-sound-iphone/) (en, updated 2026-11-03): Six iPhone AI video apps that generate video with sound: Grok, Google Gemini, Kling AI, Dora, invideo, Pollo AI. Where the sound claim comes from, price, length, privacy label, rating. No quality test. Our app on this page: DORA · AI Video Generator.
 
 ## About
 
