@@ -255,33 +255,35 @@ TODO = dict(COMMON, **{
 })
 
 # ---------------------------------------------------------------- CoinStats / Delta
-COIN = dict(COMMON, **{
+COIN = dict(COMMON, **NEW, **{
     "group": "coinstats-alternatives", "cover": "crypto-widgets",
     "path": "es/alternativas-a-coinstats-y-delta-iphone/", "ct": "rl-coinstats-alt-es",
     "category": "FinanceApplication",
     "title": "Alternativas a CoinStats y Delta para iPhone (2026)",
     "h1": "Alternativas a CoinStats y Delta para iPhone en 2026",
-    "description": "Cinco apps para seguir tu cartera cripto en iPhone comparadas: CoinStats, Delta, CoinGecko, CoinMarketCap y Crypton. Precios y privacidad.",
-    "llms": "Compara CoinStats y Delta con tres alternativas para iPhone (CoinGecko, CoinMarketCap, Crypton) por precio en euros, conexión con carteras y exchanges, alertas, límites del plan gratis y etiqueta de privacidad.",
+    "description": "Alternativas a CoinStats para iPhone: Delta, CoinTracker, CoinGecko, CoinMarketCap y Crypton, por precio en España, conexión con carteras y privacidad al 3 nov 2026.",
+    "llms": "Compara CoinStats y Delta con cuatro alternativas para iPhone (CoinTracker, CoinGecko, CoinMarketCap, Crypton) por precio en euros, conexión con carteras y exchanges, alertas, límites del plan gratis y etiqueta de privacidad.",
     "answer": [
-        "Si quieres un seguimiento que se conecte a tus exchanges y carteras, CoinStats y Delta son las pesadas, y las dos tienen planes de pago (CoinStats lista suscripciones Premium de 134,99 € a 184,99 € al año; el plan gratis de Delta sigue 10 activos). Si solo quieres precios, noticias y una lista de seguimiento, CoinGecko y CoinMarketCap son gratis y mucho más grandes. Si solo quieres una lista rápida, gratis y sin anuncios de las principales monedas con tus tenencias apuntadas a mano, Crypton hace eso y nada más.",
-        "Crypton no se conecta a carteras ni a exchanges y no tiene alertas de precio, así que no sustituye a CoinStats ni a Delta si necesitas sincronización automática.",
+        "Si quieres un seguimiento que se conecte a tus exchanges y carteras, CoinStats y Delta son las pesadas, y las dos tienen planes de pago (CoinStats lista suscripciones Premium de 134,99 € a 184,99 € al año; el plan gratis de Delta sigue 10 activos). Si además necesitas los impuestos de tus criptomonedas, CoinTracker sincroniza carteras y exchanges y prepara formularios fiscales de EE. UU. Si solo quieres precios, noticias y una lista de seguimiento, CoinGecko y CoinMarketCap son gratis y mucho más grandes. Si solo quieres una lista rápida, gratis y sin anuncios de monedas con tus tenencias apuntadas a mano, Crypton hace eso y poco más.",
+        "Crypton no se conecta a carteras ni a exchanges y no tiene alertas de precio, así que no sustituye a CoinStats ni a Delta si necesitas sincronización automática. Precios y planes, los del App Store de España el 3 de noviembre de 2026.",
     ],
     "columns": ["App", "Precio (España)", "En qué destaca", "Conexión con carteras / exchanges", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Las cinco se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 16 de octubre de 2026 (las apps listan varios precios para el mismo plan). Valoración: media y número de valoraciones en España ese día.",
+    "table_note": "Las seis se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 3 de noviembre de 2026 (las apps listan varios precios para el mismo plan). Valoración: media y número de valoraciones en España ese día.",
     "apps": [
         app(en(K.EN, 0), name="Criptomonedas: Crypton",
-            row=["Gratis, sin anuncios y sin compras dentro", "Una lista rápida y simple de las principales monedas con una cartera manual", "No", "", "", ""],
+            row=["Gratis, sin anuncios y sin compras dentro", "Una lista rápida y simple de monedas con una cartera manual y ganancias y pérdidas", "No", "", "", ""],
             best_for="un vistazo gratis y sin anuncios a las principales monedas y a tus tenencias, una o dos veces al día.",
             facts=[
                 "Cartera con las cantidades que apuntas, su valor y el cambio por moneda, y un gráfico de precio con vistas de 1D, 1W, 1M, 3M y 1Y.",
-                "Favoritas y lista de seguimiento; sigue más de 250 monedas según la ficha.",
+                "Ganancias y pérdidas por moneda si apuntas tu precio medio de compra, según su ficha.",
+                "Precios de las 250 primeras monedas por capitalización, y el buscador encuentra cualquier otra que esté en CoinGecko; favoritas como lista de seguimiento.",
+                "Dos widgets gratis en la pantalla de inicio: Coin List (pequeño, mediano y grande) y Portfolio (pequeño y mediano).",
                 "Cuenta opcional (solo para sincronizar), sin anuncios y nada que comprar.",
                 "Solo en inglés, iOS 18 o posterior, 29 MB.",
             ],
-            limits="no se conecta a carteras ni exchanges, no tiene alertas de precio ni app para Apple Watch (sí dos widgets gratis en la pantalla de inicio, Coin List y Portfolio, desde la 2.0.6); los precios se actualizan cada pocas horas, así que no sirve para operar. No calcula ganancias y pérdidas por precio de compra."),
+            limits="no se conecta a carteras ni exchanges y no tiene alertas de precio ni app para Apple Watch; los precios pueden tener unas horas, así que no sirve para operar. Solo en inglés."),
         app(en(K.EN, 1), name="Crypto Tracker - Coin Stats",
-            row=["Gratis; Premium listado de 134,99 € a 184,99 € al año o 17,99 € a 21,99 € al mes; Pro desde 41,99 € al año", "Cartera con más de 300 carteras y exchanges, con ganancias y pérdidas e información con IA", "Sí: más de 300 carteras y exchanges, o pegando la dirección de una cartera", "", "", ""],
+            row=["Gratis; Premium listado de 134,99 € a 184,99 € al año o 21,99 € al mes; Pro desde 41,99 € al año", "Cartera con más de 300 carteras y exchanges, con ganancias y pérdidas e información con IA", "Sí: más de 300 carteras y exchanges, o pegando la dirección de una cartera", "", "", ""],
             best_for="quien tiene varias carteras y exchanges y quiere verlo todo en una sola cartera.",
             facts=[
                 "Conecta más de 300 carteras y exchanges (MetaMask, Phantom, Binance, Coinbase y otros), o desde una dirección pegada.",
@@ -300,7 +302,17 @@ COIN = dict(COMMON, **{
                 "18 idiomas, iOS 16.4 o posterior, 131 MB.",
             ],
             limits="el plan gratis se queda en 10 activos y sus precios tienen muchos niveles (PRO, PRO+)."),
-        app(en(K.EN, 3), name="CoinGecko: Crypto Tracker, NFT",
+        app(en(K.EN, 3), name="CoinTracker: Portfolio & Taxes", rating=(4.76, 78),
+            row=["Gratis; la ficha no lista compras dentro de la app", "Cartera con carteras y exchanges, más formularios de impuestos cripto", "Sí: más de 500 integraciones, 400 exchanges y 70 blockchains y carteras", "Datos no vinculados contigo", "2.16.1 (7 oct 2026)", "4,8 (78 valoraciones)"],
+            best_for="quien sigue lo que tiene en varios exchanges y además necesita coste base y formularios fiscales.",
+            facts=[
+                "Añade carteras y exchanges con acceso de solo lectura y muestra patrimonio, ganancias, pérdidas y tenencias en un solo sitio.",
+                "Calcula el coste base y las ganancias de capital, clasifica las transacciones DeFi y prepara formularios para presentarlos con TurboTax, H&R Block o un asesor, según su ficha.",
+                "Su etiqueta de privacidad solo tiene «Datos no vinculados contigo».",
+                "Solo en inglés, iOS 15.1 o posterior, 99 MB.",
+            ],
+            limits="sus herramientas fiscales nombran servicios de EE. UU. (TurboTax, H&R Block), la ficha no dice qué es gratis y qué de pago, y la app está solo en inglés."),
+        app(en(K.EN, 4), name="CoinGecko: Crypto Tracker, NFT",
             row=["Gratis; Premium 9,90 € al mes o 99,90 € al año", "Datos de mercado de más de 10.000 monedas, NFT y categorías, más una cartera", "No (la cartera se apunta a mano)", "", "", ""],
             best_for="investigar monedas y categorías, con una cartera gratis de apoyo.",
             facts=[
@@ -309,19 +321,20 @@ COIN = dict(COMMON, **{
                 "Solo inglés, iOS 16 o posterior, 161 MB.",
             ],
             limits="está pensada para investigar el mercado más que para sincronizar tus cuentas; la cartera es manual."),
-        app(en(K.EN, 4), name="CoinMarketCap: Crypto Tracker",
+        app(en(K.EN, 5), name="CoinMarketCap: Crypto Tracker",
             row=["Gratis; planes de pago Essential desde 12,99 € al mes hasta Max a 129,99 € al mes", "Precios, listas de seguimiento, noticias y una cartera en tiempo real", "No lo indica", "", "", ""],
             best_for="la mayor base de datos de precios y noticias en una app gratis.",
             facts=[
                 "Seguimiento de cartera en más de 90 divisas, listas de seguimiento personalizadas y alertas de precio.",
                 "Noticias y tendencias del mercado cripto en la misma app.",
-                "21 idiomas, iOS 15 o posterior, 224 MB.",
+                "21 idiomas, iOS 15 o posterior, 222 MB.",
             ],
             limits="una app grande con noticias y muchos extras; sus planes de pago llegan a 129,99 € al mes."),
     ],
     "who": [
         "<strong>Tienes monedas en varios exchanges y carteras:</strong> CoinStats o Delta.",
         "<strong>Sigues acciones y cripto a la vez:</strong> Delta.",
+        "<strong>También necesitas los impuestos (EE. UU.):</strong> CoinTracker.",
         "<strong>Investigas monedas y quieres una cartera gratis:</strong> CoinGecko o CoinMarketCap.",
         "<strong>Solo quieres echar un vistazo a las principales monedas y a tus tenencias, gratis y sin anuncios:</strong> Crypton.",
     ],
@@ -329,10 +342,10 @@ COIN = dict(COMMON, **{
         "Ver el valor total de carteras y exchanges en un solo sitio (CoinStats, Delta).",
         "Mirar el precio de una moneda y por qué se movió (CoinGecko, CoinMarketCap).",
         "Un vistazo rápido por la mañana a las principales monedas y a tus tenencias (Crypton).",
-        "Exportar transacciones para la declaración de impuestos (CoinStats lista informes fiscales).",
+        "Impuestos de criptomonedas: CoinTracker prepara formularios fiscales de EE. UU.; CoinStats lista exportación de informes fiscales.",
     ],
     "method": [
-        f"El {DATE} abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha. Los límites de Crypton salen de nuestras propias pruebas de la versión 2.0.4. No inventamos valoraciones ni reseñas, y nada de esto es asesoramiento financiero.",
+        f"El {DATE}, y otra vez el {DATE2}, abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; CoinTracker se añadió el 3 de noviembre. Los límites de Crypton salen de su ficha de la versión 2.0.8 y de nuestras pruebas. No inventamos valoraciones ni reseñas, y nada de esto es asesoramiento financiero.",
     ],
     "faq": [
         ("¿Cuál es la mejor alternativa a CoinStats en iPhone?",
@@ -340,9 +353,11 @@ COIN = dict(COMMON, **{
         ("¿Hay una alternativa gratis a Delta?",
          "CoinGecko y CoinMarketCap se descargan gratis con planes de pago opcionales, y Crypton es gratis sin compras. El propio Delta tiene un plan gratis limitado a 10 activos."),
         ("¿Qué app de criptomonedas se conecta a exchanges y carteras?",
-         "CoinStats lista más de 300 carteras y exchanges y Delta más de 200. Crypton no se conecta a ninguno."),
+         "CoinTracker lista más de 500 integraciones, CoinStats más de 300 carteras y exchanges y Delta más de 200. Crypton no se conecta a ninguno."),
         ("¿Crypton tiene alertas de precio o widgets?",
-         "No en la versión actual (2.0.8). Tiene favoritas, lista de seguimiento y una cartera manual con gráficos."),
+         "Tiene dos widgets gratis en la pantalla de inicio (Coin List y Portfolio) desde la versión 2.0.6, pero no alertas de precio en la versión actual (2.0.8)."),
+        ("¿Qué alternativa a CoinStats ayuda con los impuestos?",
+         "CoinTracker calcula el coste base y las ganancias de capital y prepara formularios fiscales, según su ficha, pensados para EE. UU. CoinStats lista exportación de informes fiscales. Las demás siguen precios y carteras, sin herramientas fiscales."),
         ("¿Es esto asesoramiento financiero?",
          "No. Esta página compara funciones, precios y valoraciones de apps tal como aparecen en el App Store."),
     ],
@@ -447,8 +462,9 @@ VAULT = dict(COMMON, **{
     "sources": P.src("es"),
 })
 
-for _p in (TODO, COIN, VAULT):
+for _p in (TODO, VAULT):
     refresh(_p, "es")
-refresh_1103(CALM, "es")
+for _p in (CALM, COIN):
+    refresh_1103(_p, "es")
 
 PAGES = [CALM, TODO, COIN, VAULT]
