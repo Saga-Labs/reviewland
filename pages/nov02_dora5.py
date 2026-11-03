@@ -24,7 +24,7 @@ def store(a):
     return (f"{a['name']} (App Store)", f"https://apps.apple.com/us/app/id{a['id']}")
 
 
-DORA_PRICE = "Pro weekly $6.99 for new subscribers, Pro yearly $119.99; coin packs $3.99 to $224.99"
+DORA_PRICE = "Pro weekly $6.99 for new subscribers, Pro yearly $119.99; coin packs $4.99 (300) to $224.99 (25,000)"
 
 
 def dora(does, best, facts, limits):
@@ -129,7 +129,7 @@ FREE = page(
     ["Mostly no. Free to download is not free to use: making video with AI costs the app money per clip, so nearly all of them sell plans or credits, and most listings do not say how much you get without paying.", "The closest we found on a listing: Edits is free and includes AI animation of images, but no text to video. Runway says \"Free to start\" for real text to video, without saying how much. Dora is not free."],
     ["<strong>Free editing plus AI animation:</strong> Edits.", "<strong>A first try at text to video:</strong> Runway.", "<strong>A free timeline:</strong> VN.", "<strong>A film from your own clips:</strong> iMovie.", "<strong>You already pay for the assistant:</strong> Grok."],
     ["Testing whether AI video is for you before paying.", "Captions and small edits at no cost.", "A family video from clips you already have."],
-    [("Is Dora free?", "No. Dora is free to download, but video needs a Pro plan or coins. Weekly is $6.99 for new subscribers, yearly $119.99, and coin packs start at $3.99."),
+    [("Is Dora free?", "No. Dora is free to download, but video needs a Pro plan or coins. Weekly is $6.99 for new subscribers, yearly $119.99, and coin packs start at $4.99 for 300 coins."),
      ("Why do free AI video apps ask for money after installing?", "Each generated clip has a real cost for the app, so free to download usually means a paywall or limited credits. Read the in-app purchases on the App Store page before installing."),
      ("Is there an unlimited free AI video app?", "We found no listing on this page that promises unlimited free AI video generation."),
      ("Do free AI video apps add a watermark?", "It varies. Edits and VN state no watermark on their listings; Dora states none on its videos, but Dora is paid. Others do not say.")],
