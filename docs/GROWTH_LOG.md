@@ -20,6 +20,7 @@ nuestra también van en el diario de esa app.
 
 | Fecha | Canal | Cambio | Qué mirar | Desde cuándo |
 |---|---|---|---|---|
+| 4 nov 2026 | Web | **[fuera]** Nueva /pollo-ai-alternatives-iphone/ (cd7f160, 11:48 JST): Runway, invideo, Kling, Dora 4.ª de 6, PixVerse Lite, Hula AI; Pollo 4.3.1 de referencia (solo en inglés, etiqueta con rastreo). IndexNow 200. ios-playbook#174. | Campaña rl-pollo-alt. | 4 nov 2026 |
 | 4 nov 2026 | Web | **[fuera]** Nueva /chat-with-pdf-offline-iphone/ (0a1885b, 11:44 JST): IA que lee un PDF en el iPhone sin subirlo; Enclave, Noema, KernelAI, Pinku 4.ª de 6 (notas de la 1.4: PDF también escaneados), Off Grid AI, Reins. `hide_from_related` hasta el 11 nov. IndexNow 200. ios-playbook#172. | Campaña rl-pdf-offline. | 4 nov 2026 |
 | 4 nov 2026 | Web | **[fuera]** Nueva /photo-vault-apps-with-backup-iphone/ (e50a943, 11:41 JST): dónde guarda la copia cada bóveda (nube de la empresa, tu iCloud o Dropbox) para no perder fotos al cambiar de iPhone; Private Photo Vault, Keepsafe, PV, Photo Vault 4.ª de 6, Converter, Calculator#. `hide_from_related` hasta el 11 nov. IndexNow 200. ios-playbook#171. | Campaña rl-vault-backup. | 4 nov 2026 |
 | 4 nov 2026 | Web | **[fuera]** Nueva /higgsfield-alternatives-iphone/ (a872a5e, 11:39 JST): Higgsfield no tiene app en la App Store; Kling, Runway, Pollo, Dora 4.ª de 6, PixVerse Lite, Hula AI, según para qué se usa Higgsfield. IndexNow 200. ios-playbook#170. | Campaña rl-higgsfield-alt. | 4 nov 2026 |
