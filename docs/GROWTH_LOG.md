@@ -7,7 +7,7 @@ nuestra también van en el diario de esa app.
 
 ## Pendientes con fecha
 
-- **11 nov 2026:** quitar también `hide_from_related` de pages/nov03_calculator_vault_alt.py, pages/nov03_pocketpal_alt.py, pages/nov03_crypto_no_connect.py, pages/nov04_vault_backup.py y pages/nov04_pdf_offline.py (secciones con protegidas; avisar antes a saga-growth).
+- **11 nov 2026:** quitar también `hide_from_related` de pages/nov03_calculator_vault_alt.py, pages/nov03_pocketpal_alt.py, pages/nov03_crypto_no_connect.py, pages/nov04_vault_backup.py, pages/nov04_pdf_offline.py y pages/nov04_hide_it_pro_alt.py (secciones con protegidas; avisar antes a saga-growth).
 - **Si sale Crypton 2.1.1** (retirada de revisión; no sale hasta que Marta lo apruebe, CTO 4 nov): en /crypto-portfolio-tracker-without-connecting-wallet-iphone/, la fila de Crypton pasa a tener cartera por dirección (Pro, solo lectura) y compras dentro; cambiar fila, límites y la pregunta de cuenta.
 - **11 nov 2026 (OK de saga-growth, 3 nov):** poner al día /private-photo-vault-alternatives-iphone/ con Photo Vault 1.3.1, la papelera de 30 días y la copia en iCloud, comprobando antes las tres cosas en la ficha o en el código. Apuntar aquí el día en vivo y medir sus visitas antes y después, por separado del cambio de título de la de tareas.
 - **Si sale Crypton 2.1.1** (retirada de revisión; no sale hasta que Marta lo apruebe, CTO 4 nov): en /coinstats-alternatives-iphone/ y su versión ES, P&L y alertas pasan a Crypton Pro y hay compras dentro; cambiar la fila, los datos y la pregunta de alertas.
@@ -20,6 +20,7 @@ nuestra también van en el diario de esa app.
 
 | Fecha | Canal | Cambio | Qué mirar | Desde cuándo |
 |---|---|---|---|---|
+| 4 nov 2026 | Web | **[fuera]** Nueva /hide-it-pro-alternatives-iphone/ (6d1ace8, 11:50 JST): Hide it Pro sin actualizar desde el 11 ene 2026; Safe Lock, Private Photo Vault, Keepsafe, Photo Vault 4.ª de 6, PV, SPV. `hide_from_related` hasta el 11 nov. IndexNow 200. ios-playbook#175. | Campaña rl-hide-it-pro-alt. | 4 nov 2026 |
 | 4 nov 2026 | Web | **[fuera]** Nueva /pollo-ai-alternatives-iphone/ (cd7f160, 11:48 JST): Runway, invideo, Kling, Dora 4.ª de 6, PixVerse Lite, Hula AI; Pollo 4.3.1 de referencia (solo en inglés, etiqueta con rastreo). IndexNow 200. ios-playbook#174. | Campaña rl-pollo-alt. | 4 nov 2026 |
 | 4 nov 2026 | Web | **[fuera]** Nueva /chat-with-pdf-offline-iphone/ (0a1885b, 11:44 JST): IA que lee un PDF en el iPhone sin subirlo; Enclave, Noema, KernelAI, Pinku 4.ª de 6 (notas de la 1.4: PDF también escaneados), Off Grid AI, Reins. `hide_from_related` hasta el 11 nov. IndexNow 200. ios-playbook#172. | Campaña rl-pdf-offline. | 4 nov 2026 |
 | 4 nov 2026 | Web | **[fuera]** Nueva /photo-vault-apps-with-backup-iphone/ (e50a943, 11:41 JST): dónde guarda la copia cada bóveda (nube de la empresa, tu iCloud o Dropbox) para no perder fotos al cambiar de iPhone; Private Photo Vault, Keepsafe, PV, Photo Vault 4.ª de 6, Converter, Calculator#. `hide_from_related` hasta el 11 nov. IndexNow 200. ios-playbook#171. | Campaña rl-vault-backup. | 4 nov 2026 |
