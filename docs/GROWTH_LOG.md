@@ -7,7 +7,7 @@ nuestra también van en el diario de esa app.
 
 ## Pendientes con fecha
 
-- **11 nov 2026:** quitar también `hide_from_related` de pages/nov03_calculator_vault_alt.py, pages/nov03_pocketpal_alt.py y pages/nov03_crypto_no_connect.py (secciones con protegidas; avisar antes a saga-growth).
+- **11 nov 2026:** quitar también `hide_from_related` de pages/nov03_calculator_vault_alt.py, pages/nov03_pocketpal_alt.py, pages/nov03_crypto_no_connect.py y pages/nov04_vault_backup.py (secciones con protegidas; avisar antes a saga-growth).
 - **Cuando salga Crypton 2.1.1:** en /crypto-portfolio-tracker-without-connecting-wallet-iphone/, la fila de Crypton pasa a tener cartera por dirección (Pro, solo lectura) y compras dentro; cambiar fila, límites y la pregunta de cuenta.
 - **11 nov 2026 (OK de saga-growth, 3 nov):** poner al día /private-photo-vault-alternatives-iphone/ con Photo Vault 1.3.1, la papelera de 30 días y la copia en iCloud, comprobando antes las tres cosas en la ficha o en el código. Apuntar aquí el día en vivo y medir sus visitas antes y después, por separado del cambio de título de la de tareas.
 - **Cuando salga Crypton 2.1.1** (en revisión desde el 31 oct): en /coinstats-alternatives-iphone/ y su versión ES, P&L y alertas pasan a Crypton Pro y hay compras dentro; cambiar la fila, los datos y la pregunta de alertas.
@@ -20,6 +20,7 @@ nuestra también van en el diario de esa app.
 
 | Fecha | Canal | Cambio | Qué mirar | Desde cuándo |
 |---|---|---|---|---|
+| 4 nov 2026 | Web | **[fuera]** Nueva /photo-vault-apps-with-backup-iphone/ (e50a943, 11:41 JST): dónde guarda la copia cada bóveda (nube de la empresa, tu iCloud o Dropbox) para no perder fotos al cambiar de iPhone; Private Photo Vault, Keepsafe, PV, Photo Vault 4.ª de 6, Converter, Calculator#. `hide_from_related` hasta el 11 nov. IndexNow 200. ios-playbook#171. | Campaña rl-vault-backup. | 4 nov 2026 |
 | 4 nov 2026 | Web | **[fuera]** Nueva /higgsfield-alternatives-iphone/ (a872a5e, 11:39 JST): Higgsfield no tiene app en la App Store; Kling, Runway, Pollo, Dora 4.ª de 6, PixVerse Lite, Hula AI, según para qué se usa Higgsfield. IndexNow 200. ios-playbook#170. | Campaña rl-higgsfield-alt. | 4 nov 2026 |
 | 4 nov 2026 | Web | **[fuera]** /sora-alternatives-by-use-iphone/ al 4 nov (8d42a6d, en vivo a las 00:35 JST), con la misma URL, título y h1: columna «Vertical video with sound, per listing», datos de la tienda del 4 nov, ct pasa de rl-sora-by-use a rl-sora-alt y pregunta nueva de vídeo vertical con sonido. Sora sigue con 404. Encargo de saga-growth, en vez de una página nueva de Sora. IndexNow 200. | Visitas de ChatGPT (la partida la apunta saga-growth) y campaña rl-sora-alt. | 4 nov 2026 |
 | 4 nov 2026 | Web | **[fuera]** Precios de Dora al día en las 8 páginas del 2 nov (4f46973): 300 monedas a 4,99 $ según la ficha de EE. UU. (decían 3,99 $; #133 solo arregló las del 3 nov), y en /chatgpt-video-generator-plugins/ la web de hoy (2,99 $ la primera semana y luego 4,99 $, 150 monedas a la semana). Solo cambian precios. IndexNow 200. ios-playbook#159. | — | 4 nov 2026 |
