@@ -1,7 +1,7 @@
 """ChatGPT video generator plugins. EN. Listings read 2 Nov 2026 in the browser: public OpenAI plugin pages and the ChatGPT directory listing for Dora.
 Prices and free plans re-read on each vendor's own pricing page on 2 Nov 2026 (JST night). Kling: its web plans need sign-in, so the App Store
 in-app price is used and labelled. Nothing was installed, generated or paid for. Visla: no listing found at the slugs tried.
-The h1 stays the same: it appears in the Related block of protected pages, which must not change until 11 Nov."""
+Title starts with «Make videos in ChatGPT» since 5 Nov (#187); the h1 stays the same: it appears in the Related block of protected pages, which must not change until 11 Nov."""
 
 DAY = "2026-11-02"
 OA = "https://openai.com/business/plugins/"
@@ -70,8 +70,8 @@ PAGES = [{
     "category": "MultimediaApplication", "os": "ChatGPT", "link_label": "Plugin listing", "kicker": "9 plugins · Last verified 2 Nov 2026",
     "checked_label": "Plugins and prices last verified",
     "published": DAY, "updated": DAY, "checked": DAY, "cover": None,
-    "title": "ChatGPT Video Generator Plugins Compared (Nov 2026)", "h1": "ChatGPT video generator plugins compared",
-    "description": "Nine ChatGPT plugins that make or edit video, last verified 2 November 2026: who makes each, what it does, free plan and cheapest price from each vendor's site.",
+    "title": "Make Videos in ChatGPT: 9 Video Generator Plugins Compared (Nov 2026)", "h1": "ChatGPT video generator plugins compared",
+    "description": "How to make videos in ChatGPT: nine plugins that make or edit video, last verified 2 November 2026: who makes each, what it does, free plan and cheapest price from each vendor's site.",
     "llms": "Nine ChatGPT video plugins compared, last verified 2 Nov 2026: Runway, OpenArt, Higgsfield, invideo, Dora AI Video, VEED, HeyGen, Descript, Kling AI. Developer, what it makes, free plan, cheapest plan from each vendor's pricing page. None was tested.",
     "answer": [
         "<strong>Last verified 2 November 2026.</strong> We read the listings of nine plugins that make or edit video from ChatGPT, and each vendor's own pricing page. For general text to video, start with Runway or OpenArt. For a longer video from one prompt, invideo. For a presenter, HeyGen or VEED. To edit a recording, Descript. <strong>We did not install or run any of them, so this page says what each listing and pricing page claims, not how good the videos are.</strong>",
