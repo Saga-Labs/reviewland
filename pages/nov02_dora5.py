@@ -126,7 +126,7 @@ FREE = page(
         app("Grok", 6670324846, "grok", "X Corp.", 4.87, 1567769, "1.4.61", "1 Nov 2026", 38, label(TRACK, LINKED, NOTLINKED), "Free to download; SuperGrok Lite $10, SuperGrok $30, higher plans to $300", "Assistant with short videos with sound, from text or a photo", "people who may already pay for the assistant.", ["Grok Imagine makes short videos with sound and animates photos, per its listing."], "the listing does not say what video is included without a plan, so we do not call it free."),
         dora("Text or photo to a short video, several models", "paying per clip, with the cost shown before you generate.", ["Each video costs coins, and failed generations return them, per its listing.", "The cost shows before you generate."], "Dora is not free. There is no free video: you need a plan or coins."),
     ],
-    ["Mostly no. Free to download is not free to use: making video with AI costs the app money per clip, so nearly all of them sell plans or credits, and most listings do not say how much you get without paying.", "The closest we found on a listing: Edits is free and includes AI animation of images, but no text to video. Runway says \"Free to start\" for real text to video, without saying how much. Dora is not free."],
+    ["Mostly no. Free to download is not free to use: making video with AI costs the app money per clip, so nearly all of them sell plans or credits, and most listings do not say how much you get without paying.", "The closest we found on a listing: Edits is free and includes AI animation of images, but no text to video. Runway says \"Free to start\" for real text to video, without saying how much. Dora is not free, but it shows the cost of each clip before you generate: about $0.52 for 8 seconds with sound on the smallest coin pack, in the <a href=\"https://apps.apple.com/us/app/id6754180384?pt=118348020&amp;ct=rl-free-video\">iPhone app</a> or in the browser at <a href=\"https://doravideo.com/?utm_source=reviewland&amp;utm_medium=guide&amp;utm_campaign=is-there-a-free-ai-video-app-iphone\">doravideo.com</a>."],
     ["<strong>Free editing plus AI animation:</strong> Edits.", "<strong>A first try at text to video:</strong> Runway.", "<strong>A free timeline:</strong> VN.", "<strong>A film from your own clips:</strong> iMovie.", "<strong>You already pay for the assistant:</strong> Grok."],
     ["Testing whether AI video is for you before paying.", "Captions and small edits at no cost.", "A family video from clips you already have."],
     [("Is Dora free?", "No. Dora is free to download, but video needs a Pro plan or coins. Weekly is $6.99 for new subscribers, yearly $119.99, and coin packs start at $4.99 for 300 coins."),
@@ -134,6 +134,13 @@ FREE = page(
      ("Is there an unlimited free AI video app?", "We found no listing on this page that promises unlimited free AI video generation."),
      ("Do free AI video apps add a watermark?", "It varies. Edits and VN state no watermark on their listings; Dora states none on its videos, but Dora is paid. Others do not say.")],
 )
+
+# 7 Nov 2026: ChatGPT cites this page, so its ratings and versions were re-checked (iTunes lookup) and its prices on the US App Store pages (unchanged).
+FRESH_7NOV = {"edits": (4.79, 101705, "454.0", "2 Nov 2026"), "runway": (4.49, 19662, "103.0.0", "1 Nov 2026"), "vn": (4.76, 323777, "2.24.0", "30 Oct 2026"),
+              "imovie": (4.42, 321064, "3.0.6", "22 Oct 2026"), "grok": (4.87, 1582846, "1.4.62", "6 Nov 2026"), "dora": (4.12, 17, "1.4.2", "26 Oct 2026")}
+FREE["apps"] = [dict(a, rating=FRESH_7NOV[a["anchor"]][:2], row=a["row"][:4] + [f"{FRESH_7NOV[a['anchor']][2]} ({FRESH_7NOV[a['anchor']][3]})", f"{round(FRESH_7NOV[a['anchor']][0], 1)} ({FRESH_7NOV[a['anchor']][1]:,} ratings)"]) for a in FREE["apps"]]
+FREE.update(updated="2026-11-07", checked="2026-11-07", table_note=NOTE.replace("2 November 2026", "7 November 2026"),
+            method=[METHOD[0] + " Ratings, versions and prices were re-checked on 7 November 2026.", METHOD[1]])
 
 HOWTO = page(
     "make-video", "how-to-make-an-ai-video-on-iphone/", "rl-make-video",
