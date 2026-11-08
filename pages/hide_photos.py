@@ -191,7 +191,7 @@ ES = {
             "name": "Photo Vault (Bóveda: Ocultar Fotos y Video)", "id": 1532670722, "ours": True, "anchor": "photo-vault",
             "developer": "Saga Ltd.", "rating": (1.0, 1),
             "row": ["Gratis con 1 elemento; Premium 22,99 € o 34,99 € al año; de por vida 69,99 €", "Sin cuenta; copia en iCloud opcional (cifrada, desactivada por defecto)", "No se recopilan datos",
-                    "Icono como Calculadora, Notas o Tiempo; código señuelo (Premium)", "1.3.0 (26 oct 2026)", "1,0"],
+                    "Icono como Calculadora, Notas o Tiempo; código señuelo (Premium)", "1.3.0 (26 oct 2026)", "Sin valoraciones suficientes en España"],
             "best_for": "quien quiere las fotos solo en su iPhone, sin cuenta y sin subir nada.",
             "facts": [
                 "Se abre con Face ID, Touch ID o código, y cada álbum puede tener su propia contraseña.",
@@ -200,7 +200,7 @@ ES = {
                 "La bóveda no entra en las copias de iCloud. Para pasarla a otro iPhone se exporta un archivo cifrado con contraseña y se restaura.",
                 "Funciona sin conexión. 19 idiomas, español incluido. Pide iOS 17 o posterior; 20 MB.",
             ],
-            "limits": "la versión gratis solo guarda 1 foto o vídeo, así que en la práctica es de pago. En España tiene una sola valoración, de 1 estrella. Sin la copia opcional en iCloud no hay copia automática: si borras la app sin exportar una copia, pierdes la bóveda.",
+            "limits": "la versión gratis solo guarda 1 foto o vídeo, así que en la práctica es de pago. Sin la copia opcional en iCloud no hay copia automática: si borras la app sin exportar una copia, pierdes la bóveda.",
         },
         {
             "name": "Álbum Oculto de Fotos (Apple)", "anchor": "album-oculto", "developer": "Apple",
