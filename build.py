@@ -28,7 +28,7 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt", "nov03_videogpt_alt", "nov03_calculator_vault_alt", "nov03_pocketpal_alt", "nov03_crypto_no_connect", "nov04_higgsfield_alt", "nov04_vault_backup", "nov04_pdf_offline", "nov04_pollo_alt", "nov04_hide_it_pro_alt", "nov04_binaural"]
+                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt", "nov03_videogpt_alt", "nov03_calculator_vault_alt", "nov03_pocketpal_alt", "nov03_crypto_no_connect", "nov04_higgsfield_alt", "nov04_vault_backup", "nov04_pdf_offline", "nov04_pollo_alt", "nov04_hide_it_pro_alt", "nov04_binaural", "nov08_wlfi_trump"]
 
 T = {
     "en": {
@@ -77,7 +77,7 @@ HOME_GROUPS = {
     "tasks": {"simple-todo", "todoist-alternatives"},
     "habits": {"habit-trackers"},
     "study": {"homework-helpers"},
-    "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers", "crypto-alerts", "crypto-no-connect"},
+    "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers", "crypto-alerts", "crypto-no-connect", "wlfi-trump-trackers"},
 }
 
 
@@ -282,6 +282,8 @@ def ranking_html(p, alternates):
     if cover_of(p):
         out.append(f'<figure class="cover"><img src="/img/{cover_of(p)}.jpg" alt="" width="1200" height="675" fetchpriority="high"></figure>\n')
     out.append('<div class="answer">' + "".join(f"<p>{x}</p>\n" for x in p["answer"]) + "</div>\n")
+    if p.get("context_html"):  # news pages: dated context and a small data table before the ranking
+        out.append(p["context_html"])
 
     out.append(f'<h2 id="table">{t["table"]}</h2>\n<div class="scroll"><table>\n<thead><tr>')
     out.append("".join(f"<th>{esc(c)}</th>" for c in p["columns"]))
