@@ -28,11 +28,11 @@ EN = {
         "On 20 October 2026, none of these five App Store descriptions listed the newest families, Gemma 4 or Qwen3.5; since version 1.2 (24 October), Pinku's lists Gemma 4 E2B. PocketPal can load them anyway if you pick a GGUF file that fits your phone's memory. Phone-sized models (about 0.4 to 5 GB) are much weaker than ChatGPT or Claude; see <a href=\"" + AISAGALAB + "\">the guide to open-weight models</a> for what each family is good at.",
     ],
     "columns": ["App", "Models it can load", "Price (US)", "Min iOS", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "Model families are the ones each App Store description lists on 20 October 2026. Prices are the US App Store; all except Private LLM are free to download. Ratings are the App Store average and number of ratings that day.",
+    "table_note": "Model families are the ones each App Store description lists on 20 October 2026. Prices are the US App Store; all except Private LLM are free to download. Ratings are the App Store average that day.",
     "apps": [
         {
             "name": "PocketPal AI", "id": 6502579498, "anchor": "pocketpal", "developer": "Gooya UG", "rating": (4.07, 163),
-            "row": ["Any GGUF model from Hugging Face", "Free; optional character presets from $0.99", "15.1", "Data Not Collected", "v1.19.1 (8 Oct 2026)", "4.1 (163 ratings)"],
+            "row": ["Any GGUF model from Hugging Face", "Free; optional character presets from $0.99", "15.1", "Data Not Collected", "v1.19.1 (8 Oct 2026)", "4.1"],
             "best_for": "choosing any open model yourself, including new ones the day a GGUF build appears.",
             "facts": [
                 "Searches and downloads GGUF models straight from Hugging Face.",
@@ -43,7 +43,7 @@ EN = {
         },
         {
             "name": "Locally AI by LM Studio", "id": 6741426692, "anchor": "locally", "developer": "Element Labs", "rating": (4.71, 1804),
-            "row": ["Llama 3.2, Gemma 2 and 3, Qwen 3, DeepSeek and more", "Free", "18.1", "Data Not Collected", "1.66.0 (15 Oct 2026)", "4.7 (1,804 ratings)"],
+            "row": ["Llama 3.2, Gemma 2 and 3, Qwen 3, DeepSeek and more", "Free", "18.1", "Data Not Collected", "1.66.0 (15 Oct 2026)", "4.7"],
             "best_for": "a free, polished app from the LM Studio team, with image understanding.",
             "facts": [
                 "Runs models with Apple's MLX; no login.",
@@ -54,7 +54,7 @@ EN = {
         },
         {
             "name": "Enclave - Local AI Assistant", "id": 6476614556, "anchor": "enclave", "developer": "Piotr Gorzelany", "rating": (4.7, 1101),
-            "row": ["\"Hundreds\": Llama, DeepSeek, Gemma, Qwen, Phi, Mistral, SmolLM", "Free; Pro $9.99", "27.0", "Data Not Linked to You", "1.77.0 (1 Oct 2026)", "4.7 (1,101 ratings)"],
+            "row": ["\"Hundreds\": Llama, DeepSeek, Gemma, Qwen, Phi, Mistral, SmolLM", "Free; Pro $9.99", "27.0", "Data Not Linked to You", "1.77.0 (1 Oct 2026)", "4.7"],
             "best_for": "the most features: documents, voice chat, custom assistants, and cloud models if you want them.",
             "facts": [
                 "Attach PDFs, text files, images and code to a chat, processed on the device.",
@@ -65,7 +65,7 @@ EN = {
         },
         {
             "name": "Private Offline AI Chat: Pinku", "id": 6754878073, "anchor": "pinku", "developer": "Saga Ltd.", "rating": (4.67, 12),
-            "row": ["Llama 3.2, Gemma 3, 3n and 4, Qwen3, SmolLM3, LFM2 (11 models)", "Free with Llama 3.2 1B; Pinku Pro $16.99 a year or a one-time purchase", "18.6, Metal 3 (iPhone 12+)", "Purchase history and an anonymous user ID (for Pro); chats stay on the device", "1.3 (26 Oct 2026)", "4.7 (12 ratings)"],
+            "row": ["Llama 3.2, Gemma 3, 3n and 4, Qwen3, SmolLM3, LFM2 (11 models)", "Free with Llama 3.2 1B; Pinku Pro $16.99 a year or a one-time purchase", "18.6, Metal 3 (iPhone 12+)", "Purchase history and an anonymous user ID (for Pro); chats stay on the device", "1.3 (26 Oct 2026)", "4.7"],
             "best_for": "a short, tested list where the app hides models your iPhone cannot run.",
             "facts": [
                 "Checks free memory before loading a model; no account.",
@@ -76,7 +76,7 @@ EN = {
         },
         {
             "name": "Private LLM - Local AI Chat", "id": 6448106860, "anchor": "privatellm", "developer": "Numen Technologies", "rating": (4.15, 736),
-            "row": ["Qwen 2.5 and 3, Llama 3.1 and 3.2, Gemma 2 and 3, Phi 4, Mistral 7B, DeepSeek R1 Distill, Yi", "$4.99 once", "17.0 (A12 or later)", "Data Not Collected", "1.9.16 (14 Sep 2026)", "4.2 (736 ratings)"],
+            "row": ["Qwen 2.5 and 3, Llama 3.1 and 3.2, Gemma 2 and 3, Phi 4, Mistral 7B, DeepSeek R1 Distill, Yi", "$4.99 once", "17.0 (A12 or later)", "Data Not Collected", "1.9.16 (14 Sep 2026)", "4.2"],
             "best_for": "paying once, with Siri and Shortcuts, on older iPhones such as the iPhone 11.",
             "facts": [
                 "Its own quantisation (OmniQuant) for each model.",

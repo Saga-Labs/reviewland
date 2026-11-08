@@ -34,7 +34,7 @@ CONTEXT = f"""<h2 id="context">What happened (8 November 2026)</h2>
 
 def app(name, i, anchor, dev, r, n, ver, date, price, coins, alerts, widget, account, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, coins, alerts, widget, account, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, coins, alerts, widget, account, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -72,7 +72,7 @@ APPS = [
         ["Live prices for the top 250 coins, plus search for any coin listed on CoinGecko, so WLFI, TRUMP and USD1 can go into Favorites, per its listing.",
          "Portfolio with profit and loss on every coin, and Home Screen widgets for prices and for your portfolio.",
          "No in-app purchases; English only, iOS 18 or later."],
-        "no price alerts in the live version, no Lock Screen widget or Apple Watch app, and no wallet or exchange sync; fewest ratings here (186). For alerts, see the " + ALERTS + "."
+        "no price alerts in the live version, no Lock Screen widget or Apple Watch app, and no wallet or exchange sync. For alerts, see the " + ALERTS + "."
         , ours=True),
     app("Delta by eToro", 1288676542, "delta", "Opus Labs CVBA", 4.71, 11362, "2026.3.2", "5 Nov 2026",
         "Free up to 10 assets; PRO $6.99 to $13.99 a month or $58.99 to $99.90 a year; PRO+ $13.99 a month or $107.99 a year", "Not verified (listing: 10,000+ coins)",

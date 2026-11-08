@@ -17,7 +17,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, langs, labels, price, trends, you, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, trends, you, str(langs), labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, trends, you, str(langs), labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -38,7 +38,7 @@ APPS = [
         "Tokens only: $9.99 (800) to $199.99 (19,200)", "Remix trending styles, sounds and lip-sync templates", "A selfie",
         "lip-sync trends: singing or saying a line with your face, from Pika.",
         ["Its listing says a selfie becomes a video, GIF or meme, and you can remix trending styles, sounds and lip-sync templates.", "AI lip-sync to music or speech, and a community feed.", "Its terms and privacy links go to pika.art, and it sells token packs with no subscription."],
-        "English only, under 300 ratings, and its last update was on 12 June 2026."),
+        "English only, and its last update was on 12 June 2026."),
     app("DORA · AI Video Generator", 6754180384, "dora", "Saga Ltd.", 4.31, 16, "1.4.2", "26 Oct 2026", 11, label(TRACK, NOTLINKED),
         "Pro weekly $4.99 or $6.99, Pro yearly $119.99; coins $4.99 (300) to $224.99 (25,000)", "Era, place and style templates; dance moves copied onto your photo", "One photo",
         "era and place trends and copying a dance onto your own photo, with the cost shown first.",

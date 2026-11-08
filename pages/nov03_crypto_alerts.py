@@ -15,7 +15,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, langs, labels, price, alerts, best, facts, limits):
     return {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-            "row": [price, alerts, str(langs), labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+            "row": [price, alerts, str(langs), labels, f"{ver} ({date})", f"{round(r, 1)}"]}
 
 
 APPS = [
@@ -43,12 +43,12 @@ APPS = [
         "Pro $8.99, Pro+ $14.99, Pro+ yearly $143.99", "Price, condition and news alerts",
         "alerts on both prices and headlines, with the strictest privacy label here.",
         ["Real-time price alerts for tokens hitting a target or condition, and news alerts, per its listing.", "The only app here whose privacy label is Data Not Collected."],
-        "fewer ratings, about 2,500, and the page does not say what Pro adds to alerts."),
+        "the page does not say what Pro adds to alerts."),
     app("Crypto News: Prices, Alerts", 1267753692, "crypto-news", "ROCKETM FZCO", 4.83, 1757, "7.2.2", "13 Oct 2026", 5, label(TRACK, LINKED),
         "$9.99 a month, $47.99 for 6 months, $77.99 a year", "Price, market cap and BTC dominance alerts",
         "alerts on market-moving news as well as prices.",
         ["Push notifications for market-moving events, and for a coin's price, market cap or Bitcoin's share of the market, per its listing.", "The subscription removes ads and adds offline reading, with a 7-day trial."],
-        "the fewest ratings here, and its privacy label includes Data Used to Track You."),
+        "its privacy label includes Data Used to Track You."),
 ]
 
 PAGES = [{

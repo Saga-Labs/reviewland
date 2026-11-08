@@ -17,7 +17,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, does, length, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, does, length, labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, does, length, labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -61,7 +61,7 @@ APPS = [
         "Text or script to a vertical reel", "Short reels with music, per its listing",
         "a faceless reel for TikTok or Shorts straight from a script.",
         ["Its listing says you paste text or a script and it picks visuals, music and transitions.", "33 languages, and the only app here whose privacy label has no tracking or linked data."],
-        "a small developer with about 1,200 ratings, and the look comes from its own templates."),
+        "a small developer, and the look comes from its own templates."),
     app("VideoGPT - AI Video Generator", 6451396274, "videogpt", "ElevenThirteen LLC", 4.76, 56005, "4.7", "8 Oct 2025", label(TRACK, NOTLINKED),
         "Unlimited $6.99 a week or $69.99 a year, Premium $19.99 a month, Pro $14.99 a week; credits $2.99 to $9.99",
         "Text or story to an animated video in styles such as Cinematic or Anime", "Not stated",

@@ -38,13 +38,13 @@ EN = {
         "Crypto Pro is the most complete for Apple devices (widgets, Mac menu bar, Apple Watch complications) and its privacy label is Data Not Linked to You.",
     ],
     "columns": ["App", "Price (US)", "Widgets", "Price alerts", "Prices", "App Store privacy label", "Rating (US)"],
-    "table_note": "Prices are the US App Store in-app purchases on 11 October 2026; all six are free to download. Widgets, alerts and real-time data are as each developer describes them on its App Store page (for Crypton, as the app works today). Ratings are the App Store average and number of ratings that day.",
+    "table_note": "Prices are the US App Store in-app purchases on 11 October 2026; all six are free to download. Widgets, alerts and real-time data are as each developer describes them on its App Store page (for Crypton, as the app works today). Ratings are the App Store average that day.",
     "apps": [
         {
             "name": "Crypto Tracker: Crypton", "id": 1143691286, "ours": True, "anchor": "crypton",
             "developer": "Saga Ltd.", "rating": (4.72, 184),
             "row": ["Free, no ads, no in-app purchases", "Yes, free: Coin List (small, medium, large) and Portfolio (small, medium)", "No",
-                    "Top 249 coins, refreshed every 3 to 7 hours", "Data Used to Track You; Data Not Linked to You", "4.7 (184 ratings)"],
+                    "Top 249 coins, refreshed every 3 to 7 hours", "Data Used to Track You; Data Not Linked to You", "4.7"],
             "best_for": "a free, ad-free look at the top coins and your holdings, once or twice a day.",
             "facts": [
                 "Portfolio with amounts, value, a 1D to 1Y portfolio chart and the change per coin.",
@@ -57,7 +57,7 @@ EN = {
             "name": "CoinGecko: Crypto Tracker", "id": 1390323960, "anchor": "coingecko",
             "developer": "Gecko Labs", "rating": (4.81, 27127),
             "row": ["Premium $9.90 a month or $99.90 a year", "Prices and portfolio", "Yes, plus large-move alerts",
-                    "Real time, 10,000+ coins", "Data Linked to You; Data Not Linked to You", "4.8 (27,127 ratings)"],
+                    "Real time, 10,000+ coins", "Data Linked to You; Data Not Linked to You", "4.8"],
             "best_for": "the widest coin coverage with alerts, news and NFT floor prices.",
             "facts": [
                 "Portfolio with real-time profit and loss, synced between web and app; several portfolios.",
@@ -70,7 +70,7 @@ EN = {
             "name": "CoinMarketCap: Crypto Tracker", "id": 1282107098, "anchor": "coinmarketcap",
             "developer": "CoinMarketCap", "rating": (4.81, 172929),
             "row": ["Essential $11.99 a month or $109.99 a year; Plus and Max up to $229.99", "Not mentioned in the listing", "Yes",
-                    "Real time", "Data Used to Track You; Data Linked to You; Data Not Linked to You", "4.8 (172,929 ratings)"],
+                    "Real time", "Data Used to Track You; Data Linked to You; Data Not Linked to You", "4.8"],
             "best_for": "market-wide stats, exchange data and news from the best-known price site.",
             "facts": [
                 "Price alerts on coins or on your portfolio.",
@@ -83,7 +83,7 @@ EN = {
             "name": "Crypto Pro - Live Coin Tracker", "id": 980888073, "anchor": "crypto-pro",
             "developer": "Crypto Inc.", "rating": (4.72, 46611),
             "row": ["Premium $7.99, $31.99 or $47.99", "Prices, charts, news and portfolio; Mac menu bar", "Breaking-news alerts",
-                    "Real time from Coinbase, Binance, Kraken and others", "Data Not Linked to You", "4.7 (46,611 ratings)"],
+                    "Real time from Coinbase, Binance, Kraken and others", "Data Not Linked to You", "4.7"],
             "best_for": "people with iPhone, iPad, Mac and Apple Watch who want everything in sync.",
             "facts": [
                 "Imports holdings from wallet addresses or exchange API keys; profit and loss.",
@@ -96,7 +96,7 @@ EN = {
             "name": "CoinStats: Crypto Portfolio", "id": 1247849330, "anchor": "coinstats",
             "developer": "CoinStats", "rating": (4.76, 85820),
             "row": ["Pro $4.99 a month or $39.99 a year; Premium up to $164.99 a year", "Home and Lock Screen; Apple Watch", "Yes, price, volume and market cap",
-                    "Real time, 20,000+ coins", "Data Not Linked to You", "4.8 (85,820 ratings)"],
+                    "Real time, 20,000+ coins", "Data Not Linked to You", "4.8"],
             "best_for": "tracking holdings across 300+ wallets and exchanges, including DeFi.",
             "facts": [
                 "Connects MetaMask, Phantom, Binance, Coinbase and more; realised and unrealised profit and loss.",
@@ -109,7 +109,7 @@ EN = {
             "name": "HODL Real-Time Crypto Tracker", "id": 1253668876, "anchor": "hodl",
             "developer": "HODL Media", "rating": (4.83, 35390),
             "row": ["Basic $4.99; Premium $6.99 to $83.99", "Not mentioned in the listing", "Yes, targets, percentages and smart brackets",
-                    "Real time from 240+ exchanges", "Data Used to Track You; Data Linked to You; Data Not Linked to You", "4.8 (35,390 ratings)"],
+                    "Real time from 240+ exchanges", "Data Used to Track You; Data Linked to You; Data Not Linked to You", "4.8"],
             "best_for": "traders who want many alerts and a watchlist of crypto and stocks.",
             "facts": [
                 "Unlimited watchlist and price alerts with Premium; smart alert brackets.",
@@ -133,7 +133,7 @@ EN = {
         "Importing holdings from wallets and exchanges for taxes (CoinStats).",
     ],
     "method": [
-        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size and the privacy label. Widgets, alerts and data sources are as each developer describes them. For Crypton, we also checked how version 2.0.4 works: where its prices come from and how often they are refreshed. We did not invent ratings or reviews.",
+        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size and the privacy label. Widgets, alerts and data sources are as each developer describes them. For Crypton, we also checked how version 2.0.4 works: where its prices come from and how often they are refreshed. We did not invent ratings or reviews.",
     ],
     "faq": [
         ("Which crypto app has the best iPhone widget?",
@@ -165,13 +165,13 @@ ES = {
         "Crypto Pro es la más completa para dispositivos Apple (widgets, barra de menús del Mac y complicaciones del Apple Watch), y su etiqueta de privacidad es «Datos no vinculados a ti».",
     ],
     "columns": ["App", "Precio (España)", "Widgets", "Alertas de precio", "Precios", "Etiqueta de privacidad", "Valoración (España)"],
-    "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026; las seis se descargan gratis. Widgets, alertas y datos en tiempo real según la ficha de cada desarrollador (en Crypton, según cómo funciona hoy). Valoración: media y número de valoraciones en España ese día.",
+    "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026; las seis se descargan gratis. Widgets, alertas y datos en tiempo real según la ficha de cada desarrollador (en Crypton, según cómo funciona hoy). Valoración: media en España ese día.",
     "apps": [
         {
             "name": "Criptomonedas: Crypton", "id": 1143691286, "ours": True, "anchor": "crypton",
             "developer": "Saga Ltd.", "rating": (4.6, 35),
             "row": ["Gratis, sin anuncios ni compras dentro", "Sí, gratis: Coin List (pequeño, mediano y grande) y Portfolio (pequeño y mediano)", "No",
-                    "Las 249 primeras monedas, cada 3 a 7 horas", "Datos utilizados para rastrearte; datos no vinculados a ti", "4,6 (35 valoraciones)"],
+                    "Las 249 primeras monedas, cada 3 a 7 horas", "Datos utilizados para rastrearte; datos no vinculados a ti", "4,6"],
             "best_for": "ver gratis y sin anuncios las monedas principales y tu cartera una o dos veces al día.",
             "facts": [
                 "Cartera con cantidades, valor, gráfico de 1 día a 1 año y cambio por moneda.",
@@ -184,7 +184,7 @@ ES = {
             "name": "CoinGecko: Crypto Tracker, NFT", "id": 1390323960, "anchor": "coingecko",
             "developer": "Gecko Labs", "rating": (4.76, 1771),
             "row": ["Premium 9,90 € al mes o 99,90 € al año", "Precios y cartera", "Sí, y avisos de grandes movimientos",
-                    "Tiempo real, más de 10.000 monedas", "Datos vinculados a ti; datos no vinculados a ti", "4,8 (1.771 valoraciones)"],
+                    "Tiempo real, más de 10.000 monedas", "Datos vinculados a ti; datos no vinculados a ti", "4,8"],
             "best_for": "la mayor cobertura de monedas con alertas, noticias y precios de NFT.",
             "facts": [
                 "Cartera con ganancias y pérdidas en tiempo real, sincronizada entre web y app; varias carteras.",
@@ -197,7 +197,7 @@ ES = {
             "name": "CoinMarketCap: Crypto Tracker", "id": 1282107098, "anchor": "coinmarketcap",
             "developer": "CoinMarketCap", "rating": (4.77, 13648),
             "row": ["Essential 12,99 € al mes o 119,99 € al año; Plus y Max hasta 249,99 €", "La ficha no los menciona", "Sí",
-                    "Tiempo real", "Datos utilizados para rastrearte; datos vinculados a ti; datos no vinculados a ti", "4,8 (13.648 valoraciones)"],
+                    "Tiempo real", "Datos utilizados para rastrearte; datos vinculados a ti; datos no vinculados a ti", "4,8"],
             "best_for": "datos de todo el mercado, de exchanges y noticias de la web de precios más conocida.",
             "facts": [
                 "Alertas de precio por moneda o por cartera.",
@@ -210,7 +210,7 @@ ES = {
             "name": "Crypto Pro - Criptomonedas", "id": 980888073, "anchor": "crypto-pro",
             "developer": "Crypto Inc.", "rating": (4.65, 929),
             "row": ["Premium 7,99 €, 31,99 € o 47,99 €", "Precios, gráficos, noticias y cartera; barra de menús del Mac", "Avisos de noticias",
-                    "Tiempo real de Coinbase, Binance, Kraken y otros", "Datos no vinculados a ti", "4,7 (929 valoraciones)"],
+                    "Tiempo real de Coinbase, Binance, Kraken y otros", "Datos no vinculados a ti", "4,7"],
             "best_for": "quien tiene iPhone, iPad, Mac y Apple Watch y lo quiere todo sincronizado.",
             "facts": [
                 "Importa saldos con direcciones de cartera o claves de API de exchanges; ganancias y pérdidas.",
@@ -223,7 +223,7 @@ ES = {
             "name": "Crypto Tracker - Coin Stats", "id": 1247849330, "anchor": "coinstats",
             "developer": "CoinStats", "rating": (4.67, 1465),
             "row": ["Pro 4,99 € al mes o 41,99 € al año; Premium hasta 184,99 € al año", "Pantalla de inicio y bloqueada; Apple Watch", "Sí: precio, volumen y capitalización",
-                    "Tiempo real, más de 20.000 monedas", "Datos no vinculados a ti", "4,7 (1.465 valoraciones)"],
+                    "Tiempo real, más de 20.000 monedas", "Datos no vinculados a ti", "4,7"],
             "best_for": "seguir saldos en más de 300 carteras y exchanges, también DeFi.",
             "facts": [
                 "Conecta MetaMask, Phantom, Binance, Coinbase y más; ganancias y pérdidas realizadas y no realizadas.",
@@ -236,7 +236,7 @@ ES = {
             "name": "HODL: Cripto en tiempo real", "id": 1253668876, "anchor": "hodl",
             "developer": "HODL Media", "rating": (4.74, 323),
             "row": ["Basic 5,99 €; Premium de 6,99 € a 83,99 €", "La ficha no los menciona", "Sí: objetivos, porcentajes y rangos automáticos",
-                    "Tiempo real de más de 240 exchanges", "Datos utilizados para rastrearte; datos vinculados a ti; datos no vinculados a ti", "4,7 (323 valoraciones)"],
+                    "Tiempo real de más de 240 exchanges", "Datos utilizados para rastrearte; datos vinculados a ti; datos no vinculados a ti", "4,7"],
             "best_for": "quien hace trading y quiere muchas alertas y una lista de cripto y acciones.",
             "facts": [
                 "Lista de seguimiento y alertas ilimitadas con Premium; rangos de alerta automáticos.",
@@ -260,7 +260,7 @@ ES = {
         "Importar saldos de carteras y exchanges para la declaración (CoinStats).",
     ],
     "method": [
-        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño y etiqueta de privacidad. Widgets, alertas y fuentes de datos según lo que dice cada desarrollador. En Crypton miramos además cómo funciona la versión 2.0.4: de dónde salen los precios y cada cuánto se actualizan. No inventamos valoraciones ni reseñas.",
+        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración, idiomas, tamaño y etiqueta de privacidad. Widgets, alertas y fuentes de datos según lo que dice cada desarrollador. En Crypton miramos además cómo funciona la versión 2.0.4: de dónde salen los precios y cada cuánto se actualizan. No inventamos valoraciones ni reseñas.",
     ],
     "faq": [
         ("¿Qué app de cripto tiene el mejor widget para iPhone?",

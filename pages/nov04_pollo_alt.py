@@ -20,7 +20,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, does, langs, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, does, langs, labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, does, langs, labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d

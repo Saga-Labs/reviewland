@@ -38,13 +38,13 @@ EN = {
         "If you want an online backup of the vault, Private Photo Vault and Keepsafe offer encrypted cloud storage as a paid option, and both show <em>Data Used to Track You</em> on their privacy labels.",
     ],
     "columns": ["App", "Price (US)", "Account or cloud", "App Store privacy label", "Disguise", "Version (date)", "Rating (US)"],
-    "table_note": "Prices are the in-app purchases listed on each App Store page in the US on 11 October 2026; all of them are free to download. Ratings are the App Store average and number of ratings on that day.",
+    "table_note": "Prices are the in-app purchases listed on each App Store page in the US on 11 October 2026; all of them are free to download. Ratings are the App Store average on that day.",
     "apps": [
         {
             "name": "Photo Vault: Hide Pics Video", "id": 1532670722, "ours": True, "anchor": "photo-vault",
             "developer": "Saga Ltd.", "rating": (4.17, 6),
             "row": ["Free for 1 item; Premium $19.99 or $29.99 a year; lifetime $59.99", "No account; iCloud copy optional (encrypted, off by default)", "Data Not Collected",
-                    "Icon can look like Calculator, Notes or Weather; decoy code (Premium)", "1.3.0 (26 Oct 2026)", "4.2 (6 ratings)"],
+                    "Icon can look like Calculator, Notes or Weather; decoy code (Premium)", "1.3.0 (26 Oct 2026)", "4.2"],
             "best_for": "people who want photos only on their iPhone, with no account and nothing uploaded unless they turn on the optional encrypted iCloud copy.",
             "facts": [
                 "Opens with Face ID, Touch ID or a passcode, and each album can have its own password.",
@@ -70,7 +70,7 @@ EN = {
             "name": "Private Photo Vault - Pic Safe", "id": 417571834, "anchor": "private-photo-vault", "developer": "Legendary Software Labs",
             "rating": (4.82, 1016855),
             "row": ["In-app purchases from $6.99 to $39.99", "Optional encrypted Cloud Vault (needs its own password)", "Data Used to Track You; Data Linked to You",
-                    "Decoy password", "25.8 (17 Sep 2026)", "4.8 (1,016,855 ratings)"],
+                    "Decoy password", "25.8 (17 Sep 2026)", "4.8"],
             "best_for": "people who want a long-established vault with an optional cloud backup.",
             "facts": [
                 "PIN or pattern lock for the app, password-protected albums, decoy password and face-down lock.",
@@ -84,7 +84,7 @@ EN = {
             "name": "Secret Photo Vault: Keepsafe", "id": 510873505, "anchor": "keepsafe", "developer": "KeepSafe Software",
             "rating": (4.75, 384216),
             "row": ["Premium $9.99 a month or $23.99 a year; other plans up to $35.99", "Syncs across your Keepsafe installs; Private Cloud with Premium", "Data Used to Track You; Data Not Linked to You",
-                    "Not stated", "13.33.0 (29 Sep 2026)", "4.8 (384,216 ratings)"],
+                    "Not stated", "13.33.0 (29 Sep 2026)", "4.8"],
             "best_for": "people who want the vault on several devices, including Android.",
             "facts": [
                 "PIN and Touch ID lock, custom albums and a camera that saves straight into Keepsafe.",
@@ -98,7 +98,7 @@ EN = {
             "name": "Safe Lock - Hidden Photo Vault", "id": 1195429570, "anchor": "safe-lock", "developer": "Katerina Akhlebinina",
             "rating": (4.81, 24834),
             "row": ["Premium $4.99, $19.99 or $29.99", "On the device; Wi-Fi transfer", "Data Not Collected",
-                    "App icon can be changed", "3.1 (17 Aug 2026)", "4.8 (24,834 ratings)"],
+                    "App icon can be changed", "3.1 (17 Aug 2026)", "4.8"],
             "best_for": "a local vault from a developer that, like Photo Vault's, declares no data collected.",
             "facts": [
                 "PIN, pattern, numeric or alphabetic password, Touch ID and Face ID.",
@@ -112,7 +112,7 @@ EN = {
             "name": "Calculator# Hide Photos Videos", "id": 1165276801, "anchor": "calculator", "developer": "NewSoftwares.net",
             "rating": (4.39, 28907),
             "row": ["Yearly $4.99; feature pack $4.99", "Backup to iCloud, Dropbox, Google Drive or OneDrive", "Data Used to Track You; Data Not Linked to You",
-                    "Looks and works like a calculator", "3.4.12 (29 Jul 2026)", "4.4 (28,907 ratings)"],
+                    "Looks and works like a calculator", "3.4.12 (29 Jul 2026)", "4.4"],
             "best_for": "people who want the vault to look like a working calculator and also hide documents, notes and passwords.",
             "facts": [
                 "Can delete photos from the main library after moving them in (optional).",
@@ -126,7 +126,7 @@ EN = {
             "name": "Privault - Private Photo Vault", "id": 1186436980, "anchor": "privault", "developer": "Binspir Technologies",
             "rating": (4.68, 76592),
             "row": ["Pro $3.49 a month, $24.99 a year or $45.99 once; remove ads $2.99", "On the device", "Data Used to Track You; Data Linked to You",
-                    "Keypad-style lock screen", "10.2 (28 Feb 2025)", "4.7 (76,592 ratings)"],
+                    "Keypad-style lock screen", "10.2 (28 Feb 2025)", "4.7"],
             "best_for": "people who need a second passcode that opens a different, harmless folder.",
             "facts": [
                 "Primary passcode, secondary passcode for a decoy space, and an erase-all passcode.",
@@ -150,7 +150,7 @@ EN = {
         "Taking a photo that should never be in the camera roll at all (Photo Vault's Private Camera, Safe Lock's hidden camera, Keepsafe's camera).",
     ],
     "method": [
-        "On 11 October 2026 we read each app's US App Store page and Apple's lookup data: price list of in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page. We did not invent ratings or reviews.",
+        "On 11 October 2026 we read each app's US App Store page and Apple's lookup data: price list of in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page. We did not invent ratings or reviews.",
         "We picked the apps that appear at the top of App Store search for \"hide photos\" and \"photo vault\" in the US, plus Apple's own Hidden album.",
     ],
     "faq": [
@@ -185,13 +185,13 @@ ES = {
         "Si quieres copia de la bóveda en internet, Private Photo Vault y Keepsafe tienen nube cifrada de pago, y las dos declaran datos utilizados para rastrearte en su etiqueta de privacidad.",
     ],
     "columns": ["App", "Precio (España)", "Cuenta o nube", "Etiqueta de privacidad", "Camuflaje", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Precios: compras dentro de la app que muestra cada ficha del App Store de España el 11 de octubre de 2026; todas se descargan gratis. Valoración: media y número de valoraciones en España ese día.",
+    "table_note": "Precios: compras dentro de la app que muestra cada ficha del App Store de España el 11 de octubre de 2026; todas se descargan gratis. Valoración: media en España ese día.",
     "apps": [
         {
             "name": "Photo Vault (Bóveda: Ocultar Fotos y Video)", "id": 1532670722, "ours": True, "anchor": "photo-vault",
             "developer": "Saga Ltd.", "rating": (1.0, 1),
             "row": ["Gratis con 1 elemento; Premium 22,99 € o 34,99 € al año; de por vida 69,99 €", "Sin cuenta; copia en iCloud opcional (cifrada, desactivada por defecto)", "No se recopilan datos",
-                    "Icono como Calculadora, Notas o Tiempo; código señuelo (Premium)", "1.3.0 (26 oct 2026)", "1,0 (1 valoración)"],
+                    "Icono como Calculadora, Notas o Tiempo; código señuelo (Premium)", "1.3.0 (26 oct 2026)", "1,0"],
             "best_for": "quien quiere las fotos solo en su iPhone, sin cuenta y sin subir nada.",
             "facts": [
                 "Se abre con Face ID, Touch ID o código, y cada álbum puede tener su propia contraseña.",
@@ -217,7 +217,7 @@ ES = {
             "name": "Private Photo Vault (Ocultar Fotos - Photo Vault)", "id": 417571834, "anchor": "private-photo-vault", "developer": "Legendary Software Labs",
             "rating": (4.73, 21956),
             "row": ["Compras de 7,99 € a 44,99 €", "Cloud Vault cifrada opcional (con su propia contraseña)", "Datos utilizados para rastrearte; datos vinculados a ti",
-                    "Contraseña señuelo", "25.8 (17 sep 2026)", "4,7 (21.956 valoraciones)"],
+                    "Contraseña señuelo", "25.8 (17 sep 2026)", "4,7"],
             "best_for": "quien quiere una bóveda veterana con copia en la nube opcional.",
             "facts": [
                 "Bloqueo con PIN o patrón, álbumes con contraseña, contraseña señuelo y bloqueo boca abajo.",
@@ -231,7 +231,7 @@ ES = {
             "name": "Keepsafe (Keepsafe-Protege Fotos, Videos)", "id": 510873505, "anchor": "keepsafe", "developer": "KeepSafe Software",
             "rating": (4.69, 10905),
             "row": ["Premium 10,99 € al mes o 26,49 € al año; otros planes hasta 39,99 €", "Sincroniza entre tus instalaciones; nube privada con Premium", "Datos utilizados para rastrearte; datos no vinculados a ti",
-                    "No lo indica", "13.33.0 (29 sep 2026)", "4,7 (10.905 valoraciones)"],
+                    "No lo indica", "13.33.0 (29 sep 2026)", "4,7"],
             "best_for": "quien quiere la bóveda en varios dispositivos, también Android.",
             "facts": [
                 "Bloqueo con PIN y Touch ID, álbumes y cámara que guarda directamente en Keepsafe.",
@@ -245,7 +245,7 @@ ES = {
             "name": "Safe Lock (Photo Vault - Galeria Secreta)", "id": 1195429570, "anchor": "safe-lock", "developer": "Katerina Akhlebinina",
             "rating": (4.71, 2013),
             "row": ["Premium 5,99 €, 22,99 € o 34,99 €", "En el dispositivo; transferencia por wifi", "No se recopilan datos",
-                    "Se puede cambiar el icono", "3.1 (17 ago 2026)", "4,7 (2.013 valoraciones)"],
+                    "Se puede cambiar el icono", "3.1 (17 ago 2026)", "4,7"],
             "best_for": "una bóveda local de un desarrollador que, como nosotros, declara no recoger datos.",
             "facts": [
                 "PIN, patrón, contraseña numérica o con letras, Touch ID y Face ID.",
@@ -259,7 +259,7 @@ ES = {
             "name": "Calculator# Hide Photos Videos", "id": 1165276801, "anchor": "calculator", "developer": "NewSoftwares.net",
             "rating": (4.39, 583),
             "row": ["Anual 4,99 €; paquete de funciones 5,99 €", "Copia en iCloud, Dropbox, Google Drive u OneDrive", "Datos utilizados para rastrearte; datos no vinculados a ti",
-                    "Parece y funciona como una calculadora", "3.4.12 (29 jul 2026)", "4,4 (583 valoraciones)"],
+                    "Parece y funciona como una calculadora", "3.4.12 (29 jul 2026)", "4,4"],
             "best_for": "quien quiere que la bóveda parezca una calculadora y guardar también documentos, notas y contraseñas.",
             "facts": [
                 "Puede borrar las fotos de la galería al moverlas a la app (opcional).",
@@ -296,7 +296,7 @@ ES = {
         "Hacer una foto que no pase nunca por el carrete (Cámara privada de Photo Vault, cámara oculta de Safe Lock o cámara de Keepsafe).",
     ],
     "method": [
-        "El 11 de octubre de 2026 leímos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador pone en su ficha. No inventamos valoraciones ni reseñas.",
+        "El 11 de octubre de 2026 leímos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador pone en su ficha. No inventamos valoraciones ni reseñas.",
         "Elegimos las apps que salen arriba al buscar «hide photos» y «photo vault» en el App Store, más el álbum Oculto de Apple.",
     ],
     "faq": [

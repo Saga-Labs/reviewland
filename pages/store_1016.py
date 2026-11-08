@@ -1950,11 +1950,9 @@ def rating_cell(cc, app_id):
     d = DATA[cc][app_id]
     if not d["n"]:
         return "Sin valoraciones" if cc == "es" else "No ratings"
+    # Solo las estrellas, sin el número de valoraciones (Marta, 8 nov 2026).
     r = f"{d['rating']:.1f}"
-    n = f"{d['n']:,}"
-    if cc == "es":
-        return f"{r.replace('.', ',')} ({n.replace(',', '.')} {'valoración' if d['n'] == 1 else 'valoraciones'})"
-    return f"{r} ({n} {'rating' if d['n'] == 1 else 'ratings'})"
+    return r.replace('.', ',') if cc == "es" else r
 
 
 def version_cell(cc, app_id):

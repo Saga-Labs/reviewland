@@ -33,13 +33,13 @@ EN = {
         "iOS already has a free Hidden album in Photos; for casual privacy that may be enough. Apple's own guide is linked in the sources.",
     ],
     "columns": ["App", "Price (US)", "Cloud backup", "Privacy features", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "All five are free to download. Prices are the in-app purchases listed on the US App Store on 16 October 2026 (apps list several price points for the same plan). Ratings are the App Store average and number of ratings that day.",
+    "table_note": "All five are free to download. Prices are the in-app purchases listed on the US App Store on 16 October 2026 (apps list several price points for the same plan). Ratings are the App Store average that day.",
     "apps": [
         {
             "name": "Photo Vault: Hide Pics Video", "id": 1532670722, "ours": True, "anchor": "photo-vault",
             "developer": "Saga Ltd.", "rating": (4.17, 6),
             "row": ["Free to download; Premium yearly (listed $19.99 and $29.99) or lifetime (listed $14.99, $29.99 and $59.99)", "Optional: an end-to-end encrypted copy in your own iCloud, off by default; no account; or one encrypted file you export yourself", "Face ID, per-album passwords, decoy code (Premium), disguised icon, face-down exit, private camera",
-                    "Data Not Collected", "1.3.0 (26 Oct 2026)", "4.2 (6 ratings)"],
+                    "Data Not Collected", "1.3.0 (26 Oct 2026)", "4.2"],
             "best_for": "people who want photos only on their iPhone, with no account and nothing uploaded.",
             "facts": [
                 "Opens with Face ID, Touch ID or a passcode, and each album can have its own password.",
@@ -54,7 +54,7 @@ EN = {
             "name": "Private Photo Vault - Pic Safe", "id": 417571834, "anchor": "private-photo-vault",
             "developer": "Legendary Software Labs LLC", "rating": (4.82, 1017221),
             "row": ["Free; Premium listed at $6.99, $12.99, $35.99 and $39.99", "Optional encrypted Cloud Vault", "PIN or pattern lock, per-album passwords, break-in report with photo and GPS, decoy password, face-down lock",
-                    "Data Linked to You (diagnostics, identifiers, purchases, usage data, user content)", "25.8 (17 Sep 2026)", "4.8 (1,017,221 ratings)"],
+                    "Data Linked to You (diagnostics, identifiers, purchases, usage data, user content)", "25.8 (17 Sep 2026)", "4.8"],
             "best_for": "the best-known vault, with a long feature list including a private browser.",
             "facts": [
                 "Break-in report with photo and GPS, decoy password and face-down lock, per its listing.",
@@ -68,7 +68,7 @@ EN = {
             "name": "Secret Photo Vault: Keepsafe", "id": 510873505, "anchor": "keepsafe",
             "developer": "KeepSafe Software, Inc", "rating": (4.75, 384414),
             "row": ["Free; Premium listed from $4.99 to $35.99 (yearly $23.99, monthly $9.99)", "Optional Private Cloud (Premium)", "PIN, Touch ID, album lock with separate PINs, Safe Send",
-                    "Data Not Linked to You (usage data)", "13.34.0 (12 Oct 2026)", "4.8 (384,414 ratings)"],
+                    "Data Not Linked to You (usage data)", "13.34.0 (12 Oct 2026)", "4.8"],
             "best_for": "an easy vault with optional cloud sync across devices.",
             "facts": [
                 "PIN and fingerprint lock; Album Lock gives each album its own PIN on Premium.",
@@ -82,7 +82,7 @@ EN = {
             "name": "PV - Secret Photo Album", "id": 867586326, "anchor": "pv-secret-photo-album",
             "developer": "Haibin Jiao", "rating": (4.71, 30267),
             "row": ["Free (with ads); Pro $3.99 a month or $17.99 a year, lifetime $41.99; cloud plans $12.99 to $79.99 a year", "Optional cloud backup plans", "Face ID, fake password, emergency switch when face down, customizable app icon",
-                    "Data Linked to You (contact info, identifiers); other data not linked", "7.5.18 (8 Aug 2026)", "4.7 (30,267 ratings)"],
+                    "Data Linked to You (contact info, identifiers); other data not linked", "7.5.18 (8 Aug 2026)", "4.7"],
             "best_for": "the longest feature list at the lowest subscription prices.",
             "facts": [
                 "Free unlimited storage, per its listing, with password and Face ID protection, fake password and a customizable icon.",
@@ -96,7 +96,7 @@ EN = {
             "name": "Secret Photo Album - SA", "id": 1174964304, "anchor": "secret-photo-album-sa",
             "developer": "BP Mobile LLC", "rating": (4.59, 38913),
             "row": ["Free; Premium listed from $1.99 to $51.99 across plans", "Secure cloud backup (unlimited cloud storage on Premium)", "PIN, Touch ID and Face ID, decoy PIN, break-in alerts with intruder photos, separate PIN per album",
-                    "Data Linked to You (diagnostics, identifiers, location, purchases, usage data, user content and more)", "2.18 (6 Oct 2026)", "4.6 (38,913 ratings)"],
+                    "Data Linked to You (diagnostics, identifiers, location, purchases, usage data, user content and more)", "2.18 (6 Oct 2026)", "4.6"],
             "best_for": "a simple vault if you are comfortable with a long list of data types on its privacy label.",
             "facts": [
                 "Encrypted, PIN-protected vault with a decoy PIN, break-in alerts with photos of the intruder and a separate PIN for selected albums.",
@@ -120,7 +120,7 @@ EN = {
         "Moving to a new iPhone: with Photo Vault you export and restore a file yourself; cloud-backed apps restore from their cloud.",
     ],
     "method": [
-        "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; we did not verify their encryption. We did not invent ratings or reviews.",
+        "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; we did not verify their encryption. We did not invent ratings or reviews.",
     ],
     "faq": [
         ("What is the best alternative to Private Photo Vault?",

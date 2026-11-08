@@ -39,13 +39,13 @@ EN = {
         "Crypton does not connect to wallets or exchanges and has no price alerts, so it is not a replacement for CoinStats or Delta for people who need automatic sync. Prices and plans below are the ones on the US App Store on 3 November 2026.",
     ],
     "columns": ["App", "Price (US)", "What it is best at", "Wallet / exchange sync", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "All six are free to download. Prices are the in-app purchases listed on the US App Store on 3 November 2026 (apps list several price points for the same plan). Ratings are the App Store average and number of ratings that day.",
+    "table_note": "All six are free to download. Prices are the in-app purchases listed on the US App Store on 3 November 2026 (apps list several price points for the same plan). Ratings are the App Store average that day.",
     "apps": [
         {
             "name": "Crypto Tracker: Crypton", "id": 1143691286, "ours": True, "anchor": "crypton",
             "developer": "Saga Ltd.", "rating": (4.72, 184),
             "row": ["Free, no ads, no in-app purchases", "A fast, simple list of coins with a manual portfolio and P&L", "No",
-                    "Data Not Linked to You (diagnostics, usage data)", "2.0.8 (24 Oct 2026)", "4.7 (184 ratings)"],
+                    "Data Not Linked to You (diagnostics, usage data)", "2.0.8 (24 Oct 2026)", "4.7"],
             "best_for": "a free, ad-free look at the top coins and your holdings, once or twice a day.",
             "facts": [
                 "Portfolio with the amounts you enter, their value and change per coin, and a price chart with 1D, 1W, 1M, 3M and 1Y views.",
@@ -61,7 +61,7 @@ EN = {
             "name": "CoinStats: Crypto Portfolio", "id": 1247849330, "anchor": "coinstats",
             "developer": "COINSTATSAPP LLC", "rating": (4.76, 85864),
             "row": ["Free; Premium listed from $65.99 to $164.99 a year or $15.99 to $19.99 a month; Pro from $39.99 a year", "Portfolio across 300+ wallets and exchanges, with P&L and AI insights", "Yes: 300+ wallets and exchanges, or paste a wallet address",
-                    "Data Not Linked to You (contact info, diagnostics, identifiers, usage data)", "5.31.0 (3 Oct 2026)", "4.8 (85,864 ratings)"],
+                    "Data Not Linked to You (contact info, diagnostics, identifiers, usage data)", "5.31.0 (3 Oct 2026)", "4.8"],
             "best_for": "people with several wallets and exchanges who want everything in one portfolio.",
             "facts": [
                 "Connects 300+ wallets and exchanges (MetaMask, Phantom, Binance, Coinbase and others), or from a pasted wallet address.",
@@ -75,7 +75,7 @@ EN = {
             "name": "Delta by eToro", "id": 1288676542, "anchor": "delta",
             "developer": "Opus Labs CVBA", "rating": (4.71, 11362),
             "row": ["Free (up to 10 assets); PRO listed from $10.49 a month or $58.99 a year; PRO+ up to $107.99 a year", "Crypto, stocks, ETFs and forex in one portfolio", "Yes: 200+ exchanges, brokers and wallets",
-                    "Data Not Linked to You (diagnostics, identifiers, search history, usage data, user content)", "2026.3.1 (24 Aug 2026)", "4.7 (11,362 ratings)"],
+                    "Data Not Linked to You (diagnostics, identifiers, search history, usage data, user content)", "2026.3.1 (24 Aug 2026)", "4.7"],
             "best_for": "tracking crypto and stocks together, with automatic syncing.",
             "facts": [
                 "Syncs 200+ exchanges, brokers and wallets; tracks stocks, ETFs, forex, commodities and 10,000+ coins.",
@@ -89,7 +89,7 @@ EN = {
             "name": "CoinTracker: Portfolio & Taxes", "id": 1401499763, "anchor": "cointracker",
             "developer": "Nino Finance, Inc.", "rating": (4.72, 14362),
             "row": ["Free; no in-app purchases listed on the App Store", "Portfolio across wallets and exchanges, plus crypto tax forms", "Yes: 500+ integrations, 400+ exchanges, 70+ blockchains and wallets",
-                    "Data Not Linked to You", "2.16.1 (7 Oct 2026)", "4.7 (14,362 ratings)"],
+                    "Data Not Linked to You", "2.16.1 (7 Oct 2026)", "4.7"],
             "best_for": "people who track holdings across exchanges and also need cost basis and tax forms.",
             "facts": [
                 "Adds wallets and exchanges with read-only access and shows net worth, gains, losses and holdings in one place.",
@@ -103,7 +103,7 @@ EN = {
             "name": "CoinGecko: Crypto Tracker", "id": 1390323960, "anchor": "coingecko",
             "developer": "Gecko Labs Pte. Ltd.", "rating": (4.81, 27147),
             "row": ["Free; Premium $9.90 a month or $99.90 a year", "Market data on 10,000+ coins, NFTs and categories, plus a portfolio", "No (portfolio is entered manually)",
-                    "Data Linked to You (contact info); other data not linked", "3.59.0 (12 Oct 2026)", "4.8 (27,147 ratings)"],
+                    "Data Linked to You (contact info); other data not linked", "3.59.0 (12 Oct 2026)", "4.8"],
             "best_for": "researching coins and categories, with a free portfolio on the side.",
             "facts": [
                 "Real-time data for 10,000+ cryptocurrencies, exchange volumes and 3,000+ NFT collections.",
@@ -116,7 +116,7 @@ EN = {
             "name": "CoinMarketCap: Crypto Tracker", "id": 1282107098, "anchor": "coinmarketcap",
             "developer": "CoinMarketCap, LLC", "rating": (4.81, 172970),
             "row": ["Free; paid plans Essential from $11.99 a month up to Max at $119.99 a month", "Prices, watchlists, news and a real-time portfolio tracker", "Not stated",
-                    "Data Linked to You (identifiers); other data not linked", "5.22.0 (25 Sep 2026)", "4.8 (172,970 ratings)"],
+                    "Data Linked to You (identifiers); other data not linked", "5.22.0 (25 Sep 2026)", "4.8"],
             "best_for": "the biggest price database and news in a free app.",
             "facts": [
                 "Portfolio tracker in 90+ fiat currencies, personalised watchlists and price alerts.",
@@ -140,7 +140,7 @@ EN = {
         "Crypto taxes: CoinTracker makes tax forms; CoinStats lists tax-report export.",
     ],
     "method": [
-        "On 16 October 2026, and again on 3 November 2026, we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; CoinTracker was added on 3 November. Crypton's limits come from its 2.0.8 listing and our testing. We did not invent ratings or reviews, and none of this is financial advice.",
+        "On 16 October 2026, and again on 3 November 2026, we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; CoinTracker was added on 3 November. Crypton's limits come from its 2.0.8 listing and our testing. We did not invent ratings or reviews, and none of this is financial advice.",
     ],
     "faq": [
         ("What is the best alternative to CoinStats on iPhone?",

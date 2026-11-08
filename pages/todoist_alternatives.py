@@ -33,13 +33,13 @@ EN = {
         "Todoist Pro costs $6.99 a month or $59.99 a year in the US; the free plan is still a normal Todoist account.",
     ],
     "columns": ["App", "Price (US)", "What it is best at", "Account", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "Prices are the US App Store prices and in-app purchases on 16 October 2026 (an app can list several price points for the same plan). Ratings are the App Store average and number of ratings that day. \"Not stated\" means the listing does not say whether an account is needed.",
+    "table_note": "Prices are the US App Store prices and in-app purchases on 16 October 2026 (an app can list several price points for the same plan). Ratings are the App Store average that day. \"Not stated\" means the listing does not say whether an account is needed.",
     "apps": [
         {
             "name": "3 Tasks: To Do List & Focus", "id": 1553693943, "ours": True, "anchor": "3-tasks",
             "developer": "Saga Ltd.", "rating": (5.0, 5),
             "row": ["Free; 3 Tasks Pro is a one-time purchase (listed at $4.99 and $9.99)", "Only three priorities a day, with a timer on each", "No account",
-                    "Data Not Linked to You (usage data)", "1.4.3 (26 Oct 2026)", "5.0 (5 ratings)"],
+                    "Data Not Linked to You (usage data)", "1.4.3 (26 Oct 2026)", "5.0"],
             "best_for": "people who find a full task manager overwhelming and want to pick the three things that matter today.",
             "facts": [
                 "Three daily priorities on one screen; a start/pause timer on every task, Pomodoro-style, that keeps counting with the screen locked.",
@@ -53,7 +53,7 @@ EN = {
             "name": "Todoist: To Do List & Calendar", "id": 572688855, "anchor": "todoist",
             "developer": "Todoist Inc.", "rating": (4.8, 129814),
             "row": ["Free plan; Pro $6.99 a month or $59.99 a year", "Projects, natural-language dates, calendar and teams", "Yes",
-                    "Data Linked to You (contact info, identifiers, usage data, user content, diagnostics)", "26.10.12 (12 Oct 2026)", "4.8 (129,814 ratings)"],
+                    "Data Linked to You (contact info, identifiers, usage data, user content, diagnostics)", "26.10.12 (12 Oct 2026)", "4.8"],
             "best_for": "the reference point: projects, recurring dates and shared work across many platforms.",
             "facts": [
                 "Quick Add understands dates in plain language.",
@@ -66,7 +66,7 @@ EN = {
             "name": "TickTick: To-Do List & Calendar", "id": 626144601, "anchor": "ticktick",
             "developer": "Appest Limited", "rating": (4.86, 46382),
             "row": ["Free; Premium $4.99 a month or $49.99 a year", "Tasks, calendar views, habits, Pomodoro timer", "Yes (cloud sync)",
-                    "Data Linked to You (contact info, identifiers, user content, diagnostics); some data not linked", "8.2.22 (12 Oct 2026)", "4.9 (46,382 ratings)"],
+                    "Data Linked to You (contact info, identifiers, user content, diagnostics); some data not linked", "8.2.22 (12 Oct 2026)", "4.9"],
             "best_for": "the closest feature-for-feature alternative at a lower subscription price.",
             "facts": [
                 "Recurring tasks, multiple reminders, calendar views, tags, checklists and shared lists.",
@@ -80,7 +80,7 @@ EN = {
             "name": "Things 3", "id": 904237743, "anchor": "things-3",
             "developer": "Cultured Code GmbH & Co. KG", "rating": (4.82, 28010),
             "row": ["$9.99 once for iPhone, no subscription", "Projects, areas, Today and Upcoming views with calendar events", "Not stated",
-                    "Data Linked to You (user content); diagnostics not linked", "3.24.2 (22 Sep 2026)", "4.8 (28,010 ratings)"],
+                    "Data Linked to You (user content); diagnostics not linked", "3.24.2 (22 Sep 2026)", "4.8"],
             "best_for": "people who prefer paying once for a polished, well-designed task manager.",
             "facts": [
                 "To-dos with notes, tags and deadlines; Projects and Areas for different parts of life.",
@@ -93,7 +93,7 @@ EN = {
             "name": "Microsoft To Do", "id": 1212616790, "anchor": "microsoft-to-do",
             "developer": "Microsoft Corporation", "rating": (4.72, 268633),
             "row": ["Free, no in-app purchases", "My Day plan and lists synced with Microsoft 365", "Microsoft account",
-                    "Data Linked to You (contact info, location, identifiers, usage data and more)", "2.177 (6 Jul 2026)", "4.7 (268,633 ratings)"],
+                    "Data Linked to You (contact info, location, identifiers, usage data and more)", "2.177 (6 Jul 2026)", "4.7"],
             "best_for": "a completely free list that works with Outlook and Microsoft 365.",
             "facts": [
                 "My Day and suggestions to plan the day from all your lists.",
@@ -106,7 +106,7 @@ EN = {
             "name": "Structured: Daily Planner Todo", "id": 1499198946, "anchor": "structured",
             "developer": "unorderly GmbH", "rating": (4.79, 167579),
             "row": ["Free; Pro monthly (listed $2.99 to $7.99), yearly (listed $9.99 to $34.99) or lifetime $99.99", "A visual timeline of your day with tasks and calendar events", "Not stated",
-                    "Data Linked to You (contact info, user content); other data not linked", "4.6.4 (29 Sep 2026)", "4.8 (167,579 ratings)"],
+                    "Data Linked to You (contact info, user content); other data not linked", "4.6.4 (29 Sep 2026)", "4.8"],
             "best_for": "people who think in time blocks rather than lists, including those who want a visual daily routine.",
             "facts": [
                 "Drag-and-drop day timeline, an inbox, sub-tasks with notes and a Pomodoro focus timer, free.",
@@ -131,7 +131,7 @@ EN = {
         "Timing focused work blocks per task (TickTick's Pomodoro timer or 3 Tasks' per-task timer).",
     ],
     "method": [
-        "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: price and in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page. We did not invent ratings or reviews. iPhone's built-in Reminders app is also free and needs no extra download, but it has no App Store page to compare.",
+        "On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: price and in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page. We did not invent ratings or reviews. iPhone's built-in Reminders app is also free and needs no extra download, but it has no App Store page to compare.",
     ],
     "faq": [
         ("What is the best free alternative to Todoist?",

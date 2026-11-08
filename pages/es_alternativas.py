@@ -41,7 +41,7 @@ CALM = dict(COMMON, **NEW, **{
         "Calm se descarga gratis y tiene suscripción Premium (en España, de 12,99 € a 64,99 € según el plan); Headspace cobra 12,99 € al mes o 69,99 € al año. Todos los precios son los que lista el App Store de España el 3 de noviembre de 2026.",
     ],
     "columns": ["App", "Precio (España)", "En qué destaca", "Sonidos para dormir / ruido blanco", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Las siete se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 3 de noviembre de 2026 (una app puede listar varios precios para el mismo plan). Valoración: media y número de valoraciones en España ese día.",
+    "table_note": "Las siete se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 3 de noviembre de 2026 (una app puede listar varios precios para el mismo plan). Valoración: media en España ese día.",
     "apps": [
         app(en(C.EN, 0), name="Sonidos para Dormir: Drop",
             row=["Gratis (9 sonidos); Drop Pro listado a 5,99 € al mes, 17,99 € de acceso y varias opciones de pago único", "Sesiones cortas de respiración guiada (de 2 a 20 minutos) y sonidos relajantes con temporizador", "56 sonidos de naturaleza, ambiente y ruido, 9 gratis; ruido blanco gratis; ruido rosa y marrón y sonidos binaurales con Drop Pro", "", "", ""],
@@ -130,7 +130,7 @@ CALM = dict(COMMON, **NEW, **{
         "Tapar el ruido de la calle o de casa por la noche (White Noise Lite, BetterSleep).",
     ],
     "method": [
-        f"El {DATE}, y otra vez el {DATE2}, abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; en Drop, la lista de sonidos y de respiraciones sale de la propia app (versión 2.14, publicada el 30 de octubre de 2026), porque su ficha solo nombra unos pocos. No inventamos valoraciones ni reseñas, y no probamos la calidad del audio de cada app.",
+        f"El {DATE}, y otra vez el {DATE2}, abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; en Drop, la lista de sonidos y de respiraciones sale de la propia app (versión 2.14, publicada el 30 de octubre de 2026), porque su ficha solo nombra unos pocos. No inventamos valoraciones ni reseñas, y no probamos la calidad del audio de cada app.",
     ],
     "faq": [
         ("¿Cuál es la mejor alternativa a Calm en iPhone?",
@@ -163,7 +163,7 @@ TODO = dict(COMMON, **{
         "Todoist Pro cuesta 6,99 € al mes o 59,99 € al año en España; el plan gratis sigue siendo una cuenta normal de Todoist.",
     ],
     "columns": ["App", "Precio (España)", "En qué destaca", "Cuenta", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Precios: los del App Store de España y sus compras dentro de la app el 16 de octubre de 2026 (una app puede listar varios precios para el mismo plan). Valoración: media y número de valoraciones en España ese día. «No lo indica» significa que la ficha no dice si hace falta cuenta.",
+    "table_note": "Precios: los del App Store de España y sus compras dentro de la app el 16 de octubre de 2026 (una app puede listar varios precios para el mismo plan). Valoración: media en España ese día. «No lo indica» significa que la ficha no dice si hace falta cuenta.",
     "apps": [
         app(en(T.EN, 0), name="Lista de Tareas: 3 Tasks",
             row=["Gratis; 3 Tasks Pro es una compra única (listada a 5,99 € y 9,99 €)", "Solo tres prioridades al día, con un cronómetro en cada una", "Sin cuenta", "", "", ""],
@@ -237,7 +237,7 @@ TODO = dict(COMMON, **{
         "Cronometrar bloques de trabajo concentrado por tarea (el Pomodoro de TickTick o el cronómetro por tarea de 3 Tasks).",
     ],
     "method": [
-        f"El {DATE} abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: precio y compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha. No inventamos valoraciones ni reseñas. La app Recordatorios del iPhone también es gratis y no hace falta descargarla, pero no tiene ficha en el App Store para comparar.",
+        f"El {DATE} abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: precio y compras dentro de la app, versión y fecha, valoración, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha. No inventamos valoraciones ni reseñas. La app Recordatorios del iPhone también es gratis y no hace falta descargarla, pero no tiene ficha en el App Store para comparar.",
     ],
     "faq": [
         ("¿Cuál es la mejor alternativa gratis a Todoist?",
@@ -268,7 +268,7 @@ COIN = dict(COMMON, **NEW, **{
         "Crypton no se conecta a carteras ni a exchanges y no tiene alertas de precio, así que no sustituye a CoinStats ni a Delta si necesitas sincronización automática. Precios y planes, los del App Store de España el 3 de noviembre de 2026.",
     ],
     "columns": ["App", "Precio (España)", "En qué destaca", "Conexión con carteras / exchanges", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Las seis se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 3 de noviembre de 2026 (las apps listan varios precios para el mismo plan). Valoración: media y número de valoraciones en España ese día.",
+    "table_note": "Las seis se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 3 de noviembre de 2026 (las apps listan varios precios para el mismo plan). Valoración: media en España ese día.",
     "apps": [
         app(en(K.EN, 0), name="Criptomonedas: Crypton",
             row=["Gratis, sin anuncios y sin compras dentro", "Una lista rápida y simple de monedas con una cartera manual y ganancias y pérdidas", "No", "", "", ""],
@@ -303,7 +303,7 @@ COIN = dict(COMMON, **NEW, **{
             ],
             limits="el plan gratis se queda en 10 activos y sus precios tienen muchos niveles (PRO, PRO+)."),
         app(en(K.EN, 3), name="CoinTracker: Portfolio & Taxes", rating=(4.76, 78),
-            row=["Gratis; la ficha no lista compras dentro de la app", "Cartera con carteras y exchanges, más formularios de impuestos cripto", "Sí: más de 500 integraciones, 400 exchanges y 70 blockchains y carteras", "Datos no vinculados contigo", "2.16.1 (7 oct 2026)", "4,8 (78 valoraciones)"],
+            row=["Gratis; la ficha no lista compras dentro de la app", "Cartera con carteras y exchanges, más formularios de impuestos cripto", "Sí: más de 500 integraciones, 400 exchanges y 70 blockchains y carteras", "Datos no vinculados contigo", "2.16.1 (7 oct 2026)", "4,8"],
             best_for="quien sigue lo que tiene en varios exchanges y además necesita coste base y formularios fiscales.",
             facts=[
                 "Añade carteras y exchanges con acceso de solo lectura y muestra patrimonio, ganancias, pérdidas y tenencias en un solo sitio.",
@@ -345,7 +345,7 @@ COIN = dict(COMMON, **NEW, **{
         "Impuestos de criptomonedas: CoinTracker prepara formularios fiscales de EE. UU.; CoinStats lista exportación de informes fiscales.",
     ],
     "method": [
-        f"El {DATE}, y otra vez el {DATE2}, abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; CoinTracker se añadió el 3 de noviembre. Los límites de Crypton salen de su ficha de la versión 2.0.8 y de nuestras pruebas. No inventamos valoraciones ni reseñas, y nada de esto es asesoramiento financiero.",
+        f"El {DATE}, y otra vez el {DATE2}, abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; CoinTracker se añadió el 3 de noviembre. Los límites de Crypton salen de su ficha de la versión 2.0.8 y de nuestras pruebas. No inventamos valoraciones ni reseñas, y nada de esto es asesoramiento financiero.",
     ],
     "faq": [
         ("¿Cuál es la mejor alternativa a CoinStats en iPhone?",
@@ -378,7 +378,7 @@ VAULT = dict(COMMON, **NEW, **{
         "iOS ya trae un álbum Oculto gratis en Fotos; para una privacidad casual puede bastar. La guía de Apple está enlazada en las fuentes.",
     ],
     "columns": ["App", "Precio (España)", "Copia en la nube", "Funciones de privacidad", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Las cinco se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 3 de noviembre de 2026 (las apps listan varios precios para el mismo plan, y la de Photo Vault aún incluye un producto antiguo llamado «Keeper Pro»). Valoración: media y número de valoraciones en España ese día; en España las apps pequeñas tienen muy pocas.",
+    "table_note": "Las cinco se descargan gratis. Precios: compras dentro de la app listadas en el App Store de España el 3 de noviembre de 2026 (las apps listan varios precios para el mismo plan, y la de Photo Vault aún incluye un producto antiguo llamado «Keeper Pro»). Valoración: media en España ese día; en España las apps pequeñas tienen muy pocas.",
     "apps": [
         app(en(P.EN, 0), name="Boveda: Ocultar Fotos y Video",
             row=["Gratis; Premium anual (listado a 22,99 € y 34,99 €) o de por vida (17,99 €, 34,99 € y 69,99 €)", "Opcional: una copia cifrada de extremo a extremo en tu propio iCloud, desactivada por defecto; sin cuenta; o un archivo cifrado que exportas tú", "Face ID, contraseña por álbum, código señuelo (Premium), icono disfrazado, salida boca abajo, cámara privada", "", "", ""],
@@ -446,7 +446,7 @@ VAULT = dict(COMMON, **NEW, **{
         "Cambiar de iPhone: con Photo Vault exportas y restauras un archivo tú; las apps con nube restauran desde su nube.",
     ],
     "method": [
-        f"El {DATE}, y otra vez el {DATE2}, abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; la papelera de Photo Vault sale de la propia app (versión 1.3.0). No verificamos su cifrado. No inventamos valoraciones ni reseñas.",
+        f"El {DATE}, y otra vez el {DATE2}, abrimos la ficha de cada app en el App Store de España y los datos de búsqueda de Apple: compras dentro de la app, versión y fecha, valoración, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador lista en su ficha; la papelera de Photo Vault sale de la propia app (versión 1.3.0). No verificamos su cifrado. No inventamos valoraciones ni reseñas.",
     ],
     "faq": [
         ("¿Cuál es la mejor alternativa a Private Photo Vault?",

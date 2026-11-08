@@ -14,7 +14,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, langs, labels, price, does, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, does, str(langs), labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, does, str(langs), labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -138,7 +138,7 @@ FREE = page(
 # 7 Nov 2026: ChatGPT cites this page, so its ratings and versions were re-checked (iTunes lookup) and its prices on the US App Store pages (unchanged).
 FRESH_7NOV = {"edits": (4.79, 101705, "454.0", "2 Nov 2026"), "runway": (4.49, 19662, "103.0.0", "1 Nov 2026"), "vn": (4.76, 323777, "2.24.0", "30 Oct 2026"),
               "imovie": (4.42, 321064, "3.0.6", "22 Oct 2026"), "grok": (4.87, 1582846, "1.4.62", "6 Nov 2026"), "dora": (4.12, 17, "1.4.2", "26 Oct 2026")}
-FREE["apps"] = [dict(a, rating=FRESH_7NOV[a["anchor"]][:2], row=a["row"][:4] + [f"{FRESH_7NOV[a['anchor']][2]} ({FRESH_7NOV[a['anchor']][3]})", f"{round(FRESH_7NOV[a['anchor']][0], 1)} ({FRESH_7NOV[a['anchor']][1]:,} ratings)"]) for a in FREE["apps"]]
+FREE["apps"] = [dict(a, rating=FRESH_7NOV[a["anchor"]][:2], row=a["row"][:4] + [f"{FRESH_7NOV[a['anchor']][2]} ({FRESH_7NOV[a['anchor']][3]})", f"{round(FRESH_7NOV[a['anchor']][0], 1)}"]) for a in FREE["apps"]]
 FREE.update(updated="2026-11-07", checked="2026-11-07", table_note=NOTE.replace("2 November 2026", "7 November 2026"),
             method=[METHOD[0] + " Ratings, versions and prices were re-checked on 7 November 2026.", METHOD[1]])
 

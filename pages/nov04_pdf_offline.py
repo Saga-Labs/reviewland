@@ -19,7 +19,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, files, ios, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, files, ios, labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, files, ios, labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -35,12 +35,12 @@ APPS = [
         "Free (no in-app purchases)", "PDFs, EPUBs and textbooks, indexed for search", "18.0",
         "long PDFs and books: answers grounded in indexed passages, for free.",
         ["Its listing says you import PDFs, EPUBs and textbooks and get answers grounded in indexed passages, offline.", "Also on iPad, Mac and Apple Vision; downloads models that fit your device."],
-        "few ratings (36), and no voice or image input is named in the listing."),
+        "no voice or image input is named in the listing."),
     app("KernelAI - Offline AI Chat", 6757350731, "kernelai", "Anes Khadiri", 4.58, 43, "2.2.0", "15 Oct 2026", label(LINKED, NOTLINKED),
         "Free; optional tips $1.99 to $6.99", "PDF, DOCX, CSV, Markdown and text; photos and screenshots", "16.4",
         "the widest list of file types, including Word files, on older iOS.",
         ["Its listing says you ask questions about PDFs, DOCX, CSV, Markdown and text files, with on-device search and summaries.", "Checks model compatibility before you download, so you pick one that fits your iPhone or iPad."],
-        "few ratings (43), and its privacy label includes data linked to you."),
+        "its privacy label includes data linked to you."),
     app("Private Offline AI Chat: Pinku", 6754878073, "pinku", "Saga Ltd.", 4.67, 12, "1.4", "31 Oct 2026", LINKED,
         "Free with Llama 3.2 1B; Pinku Pro $16.99 a year or one-time", "PDFs (even scanned), text and Markdown; photos with Gemma 4 E2B", "18.6",
         "reading a PDF, even a scanned one, with no setup: it only shows models your iPhone can run.",

@@ -44,13 +44,13 @@ EN = {
         "If you want the most capable models, the official apps are better than Brainy: ChatGPT, Claude, Gemini and Perplexity give you their newest models, with paid plans from $8 (ChatGPT Go) to $20 a month.",
     ],
     "columns": ["App", "Price (US)", "Free use", "Account", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "Prices are the US App Store in-app purchases on 11 October 2026 (Ask AI and Brainy: 30 October 2026); all seven are free to download. \"Account\" is what the App Store listing says; where it does not say, we write so. Ratings are the App Store average and number of ratings that day.",
+    "table_note": "Prices are the US App Store in-app purchases on 11 October 2026 (Ask AI and Brainy: 30 October 2026); all seven are free to download. \"Account\" is what the App Store listing says; where it does not say, we write so. Ratings are the App Store average that day.",
     "apps": [
         {
             "name": "Easy AI Assistant: Brainy", "id": 1667947372, "ours": True, "anchor": "brainy",
             "developer": "Saga Ltd.",
             "row": ["Pro $6.99 a week or $49.99 a year (3-day trial)", "A daily limit on chat", "None (anonymous sign-in you never see)",
-                    "Data Used to Track You; Data Not Linked to You", "1.5.0 (25 Oct 2026)", "4.7 (3 ratings)"],
+                    "Data Used to Track You; Data Not Linked to You", "1.5.0 (25 Oct 2026)", "4.7"],
             "best_for": "quick questions, homework and rewriting text without signing up for anything.",
             "facts": [
                 "Since version 1.5 the chat runs on Google Gemini (Gemini 3.1 Flash Lite), which also reads the photos you send.",
@@ -64,7 +64,7 @@ EN = {
             "name": "ChatGPT", "id": 6448311069, "anchor": "chatgpt",
             "developer": "OpenAI", "rating": (4.83, 11178273),
             "row": ["Go $8, Plus $19.99 a month; Pro $100 to $500; credits from $4", "Free tier", "Listing says history syncs across devices",
-                    "Data Linked to You", "1.2026.272 (6 Oct 2026)", "4.8 (11,178,273 ratings)"],
+                    "Data Linked to You", "1.2026.272 (6 Oct 2026)", "4.8"],
             "best_for": "the most complete assistant: voice, images and OpenAI's newest models.",
             "facts": [
                 "Image generation and editing from a description.",
@@ -77,7 +77,7 @@ EN = {
             "name": "Google Gemini", "id": 6477489729, "anchor": "gemini",
             "developer": "Google", "rating": (4.72, 2330532),
             "row": ["Google AI Plus $4.99, Pro $19.99, Ultra $199.99", "Free tier", "Not stated in the listing",
-                    "Data Linked to You", "1.2026.3970207 (7 Oct 2026)", "4.7 (2,330,532 ratings)"],
+                    "Data Linked to You", "1.2026.3970207 (7 Oct 2026)", "4.7"],
             "best_for": "people who live in Google apps; paid plans include Google storage.",
             "facts": [
                 "Reads documents, spreadsheets, photos and videos you upload.",
@@ -90,7 +90,7 @@ EN = {
             "name": "Claude by Anthropic", "id": 6473753684, "anchor": "claude",
             "developer": "Anthropic", "rating": (4.72, 277404),
             "row": ["Pro $20 a month or $214.99 a year; Max $124.99 or $249.99 a month", "Free to try", "Not stated in the listing",
-                    "Data Linked to You", "1.261009.20 (10 Oct 2026)", "4.7 (277,404 ratings)"],
+                    "Data Linked to You", "1.261009.20 (10 Oct 2026)", "4.7"],
             "best_for": "writing, coding and long documents.",
             "facts": [
                 "Voice conversations and dictation in several languages.",
@@ -103,7 +103,7 @@ EN = {
             "name": "Perplexity - AI Search & Chat", "id": 1668000334, "anchor": "perplexity",
             "developer": "Perplexity AI", "rating": (4.82, 513889),
             "row": ["Pro $20 a month or $200 a year; Max $200; credits from $5", "Free app", "Listing says it syncs across devices",
-                    "Data Linked to You", "26.40.0 (8 Oct 2026)", "4.8 (513,889 ratings)"],
+                    "Data Linked to You", "26.40.0 (8 Oct 2026)", "4.8"],
             "best_for": "answers with sources from the web.",
             "facts": [
                 "Pro Search and Deep Research for longer questions.",
@@ -116,7 +116,7 @@ EN = {
             "name": "DeepSeek - AI Assistant", "id": 6737597349, "anchor": "deepseek",
             "developer": "Hangzhou DeepSeek", "rating": (3.88, 12204),
             "row": ["Free, no in-app purchases", "Free", "Not stated in the listing",
-                    "Data Linked to You", "2.6.2 (8 Oct 2026)", "3.9 (12,204 ratings)"],
+                    "Data Linked to You", "2.6.2 (8 Oct 2026)", "3.9"],
             "best_for": "free use of DeepSeek's own newest model.",
             "facts": [
                 "DeepSeek's official assistant, free with no in-app purchases.",
@@ -128,7 +128,7 @@ EN = {
             "name": "All AI Models in One: Ask AI", "id": 1662608035, "ours": True, "anchor": "ask-ai",
             "developer": "Saga Ltd.", "rating": (5.0, 3),
             "row": ["Pro $49.99 a year (3-day trial), the plan the app sells; the listing also shows $7.99 a week and $69.99 a year", "A few messages a day", "Not stated in the listing",
-                    "Data Used to Track You; Data Linked to You; Data Not Linked to You", "1.4.4 (22 Oct 2026)", "5.0 (3 ratings)"],
+                    "Data Used to Track You; Data Linked to You; Data Not Linked to You", "1.4.4 (22 Oct 2026)", "5.0"],
             "best_for": "trying models from several companies (such as Gemini, Claude, Grok, DeepSeek and Perplexity Sonar) in one chat.",
             "facts": [
                 "Switch model in the middle of a chat and keep the same conversation.",
@@ -154,7 +154,7 @@ EN = {
         "Long writing or coding sessions (Claude, ChatGPT).",
     ],
     "method": [
-        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features and account notes come from each listing. For Brainy, we also checked the app's code: which models it calls and its daily limits. We did not invent ratings or reviews.",
+        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. Features and account notes come from each listing. For Brainy, we also checked the app's code: which models it calls and its daily limits. We did not invent ratings or reviews.",
     ],
     "faq": [
         ("Can I use an AI chatbot on iPhone without an account?",
@@ -186,13 +186,13 @@ ES = {
         "Si quieres los modelos más potentes, las apps oficiales son mejores que Brainy: ChatGPT, Claude, Gemini y Perplexity dan sus modelos más nuevos, con planes desde 7,99 € (ChatGPT Go) hasta unos 23 € al mes.",
     ],
     "columns": ["App", "Precio (España)", "Uso gratis", "Cuenta", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026 (Ask AI y Brainy: 30 de octubre de 2026); las siete se descargan gratis. «Cuenta» es lo que dice la ficha; si no lo dice, lo ponemos. Valoración: media y número de valoraciones en España ese día.",
+    "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026 (Ask AI y Brainy: 30 de octubre de 2026); las siete se descargan gratis. «Cuenta» es lo que dice la ficha; si no lo dice, lo ponemos. Valoración: media en España ese día.",
     "apps": [
         {
             "name": "Asistente IA fácil: Brainy", "id": 1667947372, "ours": True, "anchor": "brainy",
             "developer": "Saga Ltd.",
             "row": ["Pro 7,99 € a la semana o 59,99 € al año (prueba de 3 días)", "Un límite diario en el chat", "Ninguna (acceso anónimo que no ves)",
-                    "Datos utilizados para rastrearte; datos no vinculados a ti", "1.5.0 (25 oct 2026)", "5,0 (1 valoración)"],
+                    "Datos utilizados para rastrearte; datos no vinculados a ti", "1.5.0 (25 oct 2026)", "5,0"],
             "best_for": "preguntas rápidas, deberes y reescribir textos sin registrarte en nada.",
             "facts": [
                 "Desde la versión 1.5 el chat funciona con Google Gemini (Gemini 3.1 Flash Lite), que también lee las fotos que mandas.",
@@ -200,13 +200,13 @@ ES = {
                 "Hace imágenes y vídeos desde una descripción o una foto; piden Pro o créditos, y el coste en créditos se ve antes de crear.",
                 "33 idiomas (también español), iOS 18 o posterior, 50 MB.",
             ],
-            "limits": "un solo modelo de chat que elige la app; no puedes escoger GPT, Claude u otro. Las imágenes y los vídeos no son gratis. Solo 1 valoración en España.",
+            "limits": "un solo modelo de chat que elige la app; no puedes escoger GPT, Claude u otro. Las imágenes y los vídeos no son gratis.",
         },
         {
             "name": "ChatGPT", "id": 6448311069, "anchor": "chatgpt",
             "developer": "OpenAI", "rating": (4.78, 908827),
             "row": ["Go 7,99 €, Plus 22,99 € al mes; Pro desde 102,99 €", "Plan gratis", "La ficha dice que el historial se sincroniza entre dispositivos",
-                    "Datos vinculados a ti", "1.2026.272 (6 oct 2026)", "4,8 (908.827 valoraciones)"],
+                    "Datos vinculados a ti", "1.2026.272 (6 oct 2026)", "4,8"],
             "best_for": "el asistente más completo: voz, imágenes y los modelos más nuevos de OpenAI.",
             "facts": [
                 "Crea y edita imágenes a partir de una descripción.",
@@ -219,7 +219,7 @@ ES = {
             "name": "Google Gemini", "id": 6477489729, "anchor": "gemini",
             "developer": "Google", "rating": (4.68, 207849),
             "row": ["Google AI Plus 4,99 €, Pro 21,99 €", "Plan gratis", "La ficha no lo indica",
-                    "Datos vinculados a ti", "1.2026.3970207 (7 oct 2026)", "4,7 (207.849 valoraciones)"],
+                    "Datos vinculados a ti", "1.2026.3970207 (7 oct 2026)", "4,7"],
             "best_for": "quien vive en las apps de Google; los planes de pago incluyen almacenamiento.",
             "facts": [
                 "Lee documentos, hojas de cálculo, fotos y vídeos que subes.",
@@ -232,7 +232,7 @@ ES = {
             "name": "Claude by Anthropic", "id": 6473753684, "anchor": "claude",
             "developer": "Anthropic", "rating": (4.67, 14676),
             "row": ["Pro 22 € al mes o 249,99 € al año; Max 149,99 € o 299,99 € al mes", "Se puede probar gratis", "La ficha no lo indica",
-                    "Datos vinculados a ti", "1.261009.20 (10 oct 2026)", "4,7 (14.676 valoraciones)"],
+                    "Datos vinculados a ti", "1.261009.20 (10 oct 2026)", "4,7"],
             "best_for": "escribir, programar y trabajar con documentos largos.",
             "facts": [
                 "Conversación por voz y dictado en varios idiomas.",
@@ -245,7 +245,7 @@ ES = {
             "name": "Perplexity - Búsqueda con IA", "id": 1668000334, "anchor": "perplexity",
             "developer": "Perplexity AI", "rating": (4.75, 44269),
             "row": ["Pro 22 € al mes o 229 € al año; créditos desde 6 €", "App gratis", "La ficha dice que se sincroniza entre dispositivos",
-                    "Datos vinculados a ti", "26.40.0 (8 oct 2026)", "4,8 (44.269 valoraciones)"],
+                    "Datos vinculados a ti", "26.40.0 (8 oct 2026)", "4,8"],
             "best_for": "respuestas con fuentes de la web.",
             "facts": [
                 "Pro Search y Deep Research para preguntas más largas.",
@@ -258,7 +258,7 @@ ES = {
             "name": "DeepSeek - Asistente de AI", "id": 6737597349, "anchor": "deepseek",
             "developer": "Hangzhou DeepSeek", "rating": (3.7, 733),
             "row": ["Gratis, sin compras dentro", "Gratis", "La ficha no lo indica",
-                    "Datos vinculados a ti", "2.6.2 (8 oct 2026)", "3,7 (733 valoraciones)"],
+                    "Datos vinculados a ti", "2.6.2 (8 oct 2026)", "3,7"],
             "best_for": "usar gratis el modelo más nuevo de DeepSeek.",
             "facts": [
                 "El asistente oficial de DeepSeek, gratis y sin compras dentro.",
@@ -270,7 +270,7 @@ ES = {
             "name": "Todos los modelos IA: Ask AI", "id": 1662608035, "ours": True, "anchor": "ask-ai",
             "developer": "Saga Ltd.", "rating": (5.0, 1),
             "row": ["Pro 59,99 € al año (prueba de 3 días), el plan que vende la app; la ficha también muestra 8,99 € a la semana y 79,99 € al año", "Unos mensajes al día", "La ficha no lo indica",
-                    "Datos usados para rastrearte; datos vinculados a ti; datos no vinculados a ti", "1.4.4 (22 oct 2026)", "5,0 (1 valoración)"],
+                    "Datos usados para rastrearte; datos vinculados a ti; datos no vinculados a ti", "1.4.4 (22 oct 2026)", "5,0"],
             "best_for": "probar modelos de varias empresas (como Gemini, Claude, Grok, DeepSeek y Perplexity Sonar) en un mismo chat.",
             "facts": [
                 "Cambias de modelo en mitad del chat y sigues en la misma conversación.",
@@ -278,7 +278,7 @@ ES = {
                 "Pro desbloquea todos los modelos, la búsqueda web y un límite mucho más alto, contado por semana.",
                 "5 idiomas, iOS 18.6 o posterior, 36 MB.",
             ],
-            "limits": "solo chat: sin imágenes, vídeos ni archivos. Su descripción aún usa su nombre anterior, Fast AI. Solo 1 valoración en España, y su etiqueta de privacidad incluye datos de uso para rastrearte.",
+            "limits": "solo chat: sin imágenes, vídeos ni archivos. Su descripción aún usa su nombre anterior, Fast AI, y su etiqueta de privacidad incluye datos de uso para rastrearte.",
         },
     ],
     "who": [
@@ -296,7 +296,7 @@ ES = {
         "Sesiones largas de escritura o programación (Claude, ChatGPT).",
     ],
     "method": [
-        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones y lo de la cuenta salen de cada ficha. En Brainy miramos además el código: qué modelos usa y sus límites diarios. No inventamos valoraciones ni reseñas.",
+        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones y lo de la cuenta salen de cada ficha. En Brainy miramos además el código: qué modelos usa y sus límites diarios. No inventamos valoraciones ni reseñas.",
     ],
     "faq": [
         ("¿Se puede usar un chat de IA en el iPhone sin cuenta?",

@@ -22,7 +22,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, disguise, backup, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, disguise, backup, labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, disguise, backup, labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -48,7 +48,7 @@ APPS = [
         "Premium $19.99 or $29.99 a year; lifetime $14.99 or $29.99", "Icon that looks like Calculator, Notes or Weather; face-down exit", "Optional encrypted copy in your own iCloud",
         "a calculator-looking icon with no account, no ads and nothing uploaded unless you choose.",
         ["Its listing says you can make the icon look like Calculator, Notes or Weather, and flipping the phone face down jumps to Safari, Calendar or Messages.", "A separate password for each album; no account and no server; privacy label Data Not Collected.", "Optional end-to-end encrypted copy in your own iCloud, or an encrypted backup file you keep."],
-        "the icon looks like a calculator but the app does not work as one, the free version is limited (Premium adds unlimited photos and the iCloud copy), and it has only 6 ratings."),
+        "the icon looks like a calculator but the app does not work as one, and the free version is limited (Premium adds unlimited photos and the iCloud copy)."),
     app("Safe Lock - Hidden Photo Vault", 1195429570, "safe-lock", "Katerina Akhlebinina", 4.81, 24930, "3.1", "17 Aug 2026", NONE,
         "Premium $4.99, $19.99 or $29.99", "Fake password that opens a fake gallery; custom icon; shake or flip to lock", "Export to iCloud, Dropbox, Google Drive or Box",
         "a decoy gallery and a custom icon with a privacy label of Data Not Collected.",

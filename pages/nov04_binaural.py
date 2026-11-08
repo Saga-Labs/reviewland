@@ -19,7 +19,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, waves, langs, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, waves, langs, labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, waves, langs, labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -45,7 +45,7 @@ APPS = [
         "Free (9 sounds); Drop Pro $4.99 a month, $14.99, lifetime $9.99 to $49.99", "Delta, alpha (10 Hz), theta (6 Hz) and gamma (40 Hz), over soft brown noise", "33",
         "a few binaural tracks inside a calm, ad-free sleep and breathing app, in 33 languages.",
         ["Version 2.14 added four binaural tracks: delta for sleep, alpha, theta and gamma at 40 Hz, each a tone per ear over soft brown noise.", "Also 56 nature and noise sounds, short guided breathing, a sleep timer up to 8 hours and no ads."],
-        "only four binaural tracks, all with Drop Pro, no custom frequencies and no mixer; its App Store description does not list them yet, and it has only 12 ratings."),
+        "only four binaural tracks, all with Drop Pro, no custom frequencies and no mixer; its App Store description does not list them yet."),
     app("Binaural Beats Generator +", 1206442552, "generator", "TMSOFT", 4.72, 1193, "5.2.1", "8 Oct 2026", label(TRACK, LINKED, NOTLINKED),
         "Free; no in-app purchases listed", "Any beat from 1 to 50 Hz on a base tone from 20 to 1500 Hz", "1",
         "making your own beat: pick the exact frequency, for free.",

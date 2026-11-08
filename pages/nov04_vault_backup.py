@@ -19,7 +19,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, where, who, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, where, who, labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, where, who, labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -45,7 +45,7 @@ APPS = [
         "Premium $19.99 or $29.99 a year; lifetime $14.99 or $29.99", "Your own iCloud, end-to-end encrypted (Premium); or an encrypted backup file", "You: your own iCloud or a file you keep",
         "a backup only you can open, in your own iCloud, with no account.",
         ["Its listing says the optional iCloud copy is end-to-end encrypted and lives in your own iCloud; to move to a new iPhone you turn it on and restore.", "Or export the whole vault to one password-locked file in Files, on a computer or in iCloud Drive.", "The vault is left out of regular iCloud backups, per its listing; no account and no server."],
-        "the iCloud copy needs Premium, and without it or an exported file there is no backup; only 6 ratings."),
+        "the iCloud copy needs Premium, and without it or an exported file there is no backup."),
     app("Converter: Hidden Photo Vault", 1536734125, "converter", "Dmitry Petrov", 4.86, 3657, "3.0.7", "2 Dec 2025", NONE,
         "One-time: Full Access $19.99 (offers at $9.99 and $14.99)", "Your own iCloud, encrypted", "You: your own iCloud",
         "your own iCloud with no subscription.",

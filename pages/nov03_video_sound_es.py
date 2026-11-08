@@ -15,7 +15,7 @@ def label(*x):
 
 
 def rating(r, n):
-    return "Sin valoraciones en España" if not n else f"{str(round(r, 1)).replace('.', ',')} ({n:,} valoraciones)".replace(",", "X").replace("X", ",", 1).replace("X", ".")
+    return "Sin valoraciones en España" if not n else str(round(r, 1)).replace('.', ',')
 
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, sound, length, best, facts, limits, ours=False):

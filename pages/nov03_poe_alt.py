@@ -15,7 +15,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, langs, labels, price, models, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, models, str(langs), labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, models, str(langs), labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -46,7 +46,7 @@ APPS = [
         "OpenCat Pro $9.99; Cloud AI $3.99 or $24.99; tokens $5.99", "Your own API keys, OpenCat Cloud, local models, Apple Intelligence",
         "people who already pay for API keys and want one app for all of them, on iPhone, iPad and Mac.",
         ["Its listing says you can use your own API key, its Cloud subscription, local open-source models or Apple Intelligence.", "Supports MCP and tool calls; chats are stored locally and synced through iCloud.", "An AI keyboard and system-wide translation with Pro."],
-        "bringing your own keys takes setup, and it has under 1,000 ratings."),
+        "bringing your own keys takes setup."),
 ]
 
 PAGES = [{

@@ -16,7 +16,7 @@ REDITOR = '<a href="https://reditor.cloud/private-llm-alternatives-iphone/">Priv
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, models, own, ios, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, models, own, ios, labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, models, own, ios, labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -27,7 +27,7 @@ APPS = [
         "Free; Plus $4.99, Pro $9.99; lifetime $59.99 or $119.99", "Qwen3.5 VL, Gemma 4, LFM2.5 VL, gpt-oss, Llama 4, Phi 4, Mistral and more", "Yes: GGUF, MLX and MNN from Hugging Face", "17.0",
         "the closest to PocketPal: your own model files from Hugging Face, plus characters, tools and MCP.",
         ["Its listing says it downloads models straight from Hugging Face and runs GGUF (llama.cpp), MLX and MNN files.", "Custom characters, tool calling, MCP servers and Skills; can also connect to your own Ollama or LLM server.", "No account, and its privacy label says Data Not Collected; 18 languages."],
-        "few ratings (86), and the listing does not say which features need Plus or Pro."),
+        "the listing does not say which features need Plus or Pro."),
     app("Locally AI by LM Studio", 6741426692, "locally", "Element Labs Inc", 4.7, 1903, "1.66.0", "15 Oct 2026", NONE,
         "Free (no in-app purchases)", "Llama 3.2, Gemma 2 and 3, Qwen 3, DeepSeek and more", "No, a curated list", "18.1",
         "a free, polished app from the LM Studio team that just works.",
@@ -64,11 +64,11 @@ PAGES = [{
     "llms": "Six alternatives to PocketPal AI for running AI models offline on iPhone: Secret AI, Locally AI, Enclave, Pinku, Private LLM, Liquid Apollo. Models, whether you can load your own model files, price, minimum iOS, privacy label, version and rating on 3 November 2026.",
     "llms_note": "Pinku, one of the six, is made by Saga Labs, which runs Reviewland.",
     "answer": [
-        "PocketPal AI runs open AI models on your iPhone with no internet, and you pick any GGUF file from Hugging Face. It is free and collects no data, but it is in English only, rated 4.0 from 167 ratings, and you must choose a model size your phone can handle. For the same freedom to load your own files, <strong>Secret AI</strong>. For a free app that just works, <strong>Locally AI</strong>. For the most models from a menu, on iOS 27, <strong>Enclave</strong>. For an app that only shows models your iPhone can run, <strong>Pinku</strong>. To pay once, <strong>Private LLM</strong>.",
+        "PocketPal AI runs open AI models on your iPhone with no internet, and you pick any GGUF file from Hugging Face. It is free and collects no data, but it is in English only, rated 4.0, and you must choose a model size your phone can handle. For the same freedom to load your own files, <strong>Secret AI</strong>. For a free app that just works, <strong>Locally AI</strong>. For the most models from a menu, on iOS 27, <strong>Enclave</strong>. For an app that only shows models your iPhone can run, <strong>Pinku</strong>. To pay once, <strong>Private LLM</strong>.",
         "All six work offline after the model download. Phone-sized models are much weaker than ChatGPT or Claude; see " + OPEN + " for what each model family is good at.",
     ],
     "columns": ["App", "Price (US)", "Models, per listing", "Load your own model files", "Min iOS", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "Prices are the US App Store on 3 November 2026; all except Private LLM are free to download. For comparison, PocketPal AI v1.22.0 (1 November 2026): free, PocketPal Plus listed from $3.99 to $44.99 and character packs from $0.99, any GGUF model from Hugging Face, iOS 15.1, Data Not Collected, rated 4.0 from 167 ratings.",
+    "table_note": "Prices are the US App Store on 3 November 2026; all except Private LLM are free to download. For comparison, PocketPal AI v1.22.0 (1 November 2026): free, PocketPal Plus listed from $3.99 to $44.99 and character packs from $0.99, any GGUF model from Hugging Face, iOS 15.1, Data Not Collected, rated 4.0.",
     "apps": APPS,
     "who": ["<strong>Your own model files, like PocketPal:</strong> Secret AI.", "<strong>Free and simple:</strong> Locally AI.", "<strong>The biggest menu of models, on iOS 27:</strong> Enclave.",
             "<strong>No model sizes to work out, and PDFs and photos on the device:</strong> Pinku.", "<strong>Pay once, use Siri:</strong> Private LLM.", "<strong>Small models on the phone and a bigger one at home:</strong> Liquid Apollo."],

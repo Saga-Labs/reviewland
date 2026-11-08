@@ -34,13 +34,13 @@ EN = {
         "Todoist is the most complete of the six, but its Pro plan is a subscription ($6.99 a month or $59.99 a year in the US).",
     ],
     "columns": ["App", "Price (US)", "What makes it simple", "Account", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "Prices are the US App Store in-app purchases on 11 October 2026; all six are free to download. Ratings are the App Store average and number of ratings that day.",
+    "table_note": "Prices are the US App Store in-app purchases on 11 October 2026; all six are free to download. Ratings are the App Store average that day.",
     "apps": [
         {
             "name": "To Do List & Focus: 3 Tasks", "id": 1553693943, "ours": True, "anchor": "3-tasks",
             "developer": "Saga Ltd.", "rating": (5.0, 5),
             "row": ["Free; 3 Tasks Pro is a one-time purchase (listed at $4.99 and $9.99)", "Only 3 tasks a day, one screen, a timer per task", "No account",
-                    "Data Used to Track You; Data Not Linked to You", "1.4.3 (26 Oct 2026)", "5.0 (5 ratings)"],
+                    "Data Used to Track You; Data Not Linked to You", "1.4.3 (26 Oct 2026)", "5.0"],
             "best_for": "people who drown in long lists and want to pick the three things that matter today.",
             "facts": [
                 "Write down three daily priorities; nothing else to configure.",
@@ -54,7 +54,7 @@ EN = {
             "name": "Do! – Simple To Do List", "id": 421819675, "anchor": "do",
             "developer": "SIMPLERION", "rating": (4.73, 26187),
             "row": ["Free with ads; remove ads $20.00 once; tip $0.99", "Add a task, double-tap when done; groups and colours", "Not stated",
-                    "Data Used to Track You; Data Linked to You; Data Not Linked to You", "7.7.2 (1 Oct 2026)", "4.7 (26,187 ratings)"],
+                    "Data Used to Track You; Data Linked to You; Data Not Linked to You", "7.7.2 (1 Oct 2026)", "4.7"],
             "best_for": "a paper-like daily list with reminders and repeating tasks.",
             "facts": [
                 "Themes, fonts and pen-and-paper sounds.",
@@ -68,7 +68,7 @@ EN = {
             "name": "To Do List MinimaList & Widget", "id": 993066159, "anchor": "minimalist",
             "developer": "Inner Grow Limited", "rating": (4.77, 48222),
             "row": ["Lifetime from $5.99 (offers) to $9.99; family $14.99; or $2.99 a month", "Coloured lists, smart input that detects times", "Not stated",
-                    "Data Not Linked to You", "2.27.3 (11 Oct 2026)", "4.8 (48,222 ratings)"],
+                    "Data Not Linked to You", "2.27.3 (11 Oct 2026)", "4.8"],
             "best_for": "a minimal-looking list that still has widgets, shared lists and location reminders.",
             "facts": [
                 "Home Screen and Lock Screen widgets.",
@@ -82,7 +82,7 @@ EN = {
             "name": "Clear: To Dos & Reminders", "id": 493136154, "anchor": "clear",
             "developer": "Impending, Inc.", "rating": (4.6, 5144),
             "row": ["Clear Pro $3.99; legacy Pro $2.99 a month or $24.99 a year; sound packs", "Gesture-only lists, colour heatmap of priority", "Not stated",
-                    "Data Used to Track You; Data Not Linked to You", "2.8.0 (30 Sep 2026)", "4.6 (5,144 ratings)"],
+                    "Data Used to Track You; Data Not Linked to You", "2.8.0 (30 Sep 2026)", "4.6"],
             "best_for": "people who like swiping lists with no buttons on screen.",
             "facts": [
                 "Swipe to complete, pinch and drag to reorder; a heatmap shows priority.",
@@ -95,7 +95,7 @@ EN = {
             "name": "Microsoft To Do", "id": 1212616790, "anchor": "microsoft-to-do",
             "developer": "Microsoft", "rating": (4.72, 268432),
             "row": ["Free, no in-app purchases", "My Day with suggested tasks", "Microsoft account for sync",
-                    "Data Linked to You", "2.177 (6 Jul 2026)", "4.7 (268,432 ratings)"],
+                    "Data Linked to You", "2.177 (6 Jul 2026)", "4.7"],
             "best_for": "a free list that syncs everywhere, especially if you use Outlook or Microsoft 365.",
             "facts": [
                 "My Day and Suggestions help plan the day from all your lists.",
@@ -109,7 +109,7 @@ EN = {
             "name": "Todoist: To Do List & Calendar", "id": 572688855, "anchor": "todoist",
             "developer": "Doist", "rating": (4.8, 129694),
             "row": ["Pro $6.99 a month or $59.99 a year", "Natural-language quick add and voice capture", "Yes",
-                    "Data Linked to You", "26.10.8 (8 Oct 2026)", "4.8 (129,694 ratings)"],
+                    "Data Linked to You", "26.10.8 (8 Oct 2026)", "4.8"],
             "best_for": "people whose list is outgrowing a simple app and who want projects, dates and teams.",
             "facts": [
                 "Quick Add understands dates in plain language; Ramble turns speech into tasks.",
@@ -133,7 +133,7 @@ EN = {
         "Timing focused work blocks on each priority (3 Tasks).",
     ],
     "method": [
-        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page. \"Not stated\" means the listing does not say whether an account is needed. We did not invent ratings or reviews.",
+        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page. \"Not stated\" means the listing does not say whether an account is needed. We did not invent ratings or reviews.",
     ],
     "faq": [
         ("What is the simplest to-do list app for iPhone?",
@@ -165,13 +165,13 @@ ES = {
         "Todoist es la más completa de las seis, pero su plan Pro es una suscripción (6,99 € al mes o 59,99 € al año en España).",
     ],
     "columns": ["App", "Precio (España)", "Qué la hace sencilla", "Cuenta", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026; las seis se descargan gratis. Valoración: media y número de valoraciones en España ese día.",
+    "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026; las seis se descargan gratis. Valoración: media en España ese día.",
     "apps": [
         {
             "name": "Lista de Tareas: 3 Tasks", "id": 1553693943, "ours": True, "anchor": "3-tasks",
             "developer": "Saga Ltd.", "rating": (5.0, 2),
             "row": ["Gratis; 3 Tasks Pro es una compra única (listada a 5,99 € y 9,99 €)", "Solo 3 tareas al día, una pantalla, un cronómetro por tarea", "Sin cuenta",
-                    "Datos utilizados para rastrearte; datos no vinculados a ti", "1.4.3 (26 oct 2026)", "5,0 (2 valoraciones)"],
+                    "Datos utilizados para rastrearte; datos no vinculados a ti", "1.4.3 (26 oct 2026)", "5,0"],
             "best_for": "quien se ahoga en listas largas y quiere elegir las tres cosas que importan hoy.",
             "facts": [
                 "Apuntas tres prioridades del día y nada más que configurar.",
@@ -185,7 +185,7 @@ ES = {
             "name": "Do! – Simple To Do List", "id": 421819675, "anchor": "do",
             "developer": "SIMPLERION", "rating": (4.61, 234),
             "row": ["Gratis con anuncios; quitar anuncios 22,00 € una vez; propina 0,99 €", "Añades una tarea y la marcas con doble toque; grupos y colores", "No lo indica",
-                    "Datos utilizados para rastrearte; datos vinculados a ti; datos no vinculados a ti", "7.7.2 (1 oct 2026)", "4,6 (234 valoraciones)"],
+                    "Datos utilizados para rastrearte; datos vinculados a ti; datos no vinculados a ti", "7.7.2 (1 oct 2026)", "4,6"],
             "best_for": "una lista diaria con aire de papel, con recordatorios y tareas repetidas.",
             "facts": [
                 "Temas, tipos de letra y sonidos de lápiz y papel.",
@@ -199,7 +199,7 @@ ES = {
             "name": "To do list - MinimaList", "id": 993066159, "anchor": "minimalist",
             "developer": "Inner Grow Limited", "rating": (4.72, 1025),
             "row": ["De por vida desde 6,99 € (ofertas) a 9,99 €; familiar 17,99 €; o 2,99 € al mes", "Listas de colores y escritura que detecta horas", "No lo indica",
-                    "Datos no vinculados a ti", "2.27.3 (11 oct 2026)", "4,7 (1.025 valoraciones)"],
+                    "Datos no vinculados a ti", "2.27.3 (11 oct 2026)", "4,7"],
             "best_for": "una lista de aspecto mínimo que aun así tiene widgets, listas compartidas y avisos por ubicación.",
             "facts": [
                 "Widgets en la pantalla de inicio y en la pantalla bloqueada.",
@@ -213,7 +213,7 @@ ES = {
             "name": "Clear: To Dos & Reminders", "id": 493136154, "anchor": "clear",
             "developer": "Impending, Inc.", "rating": (4.6, 131),
             "row": ["Pro antiguo 2,99 € al mes; packs de sonidos", "Listas solo con gestos y mapa de calor por prioridad", "No lo indica",
-                    "Datos utilizados para rastrearte; datos no vinculados a ti", "2.8.0 (30 sep 2026)", "4,6 (131 valoraciones)"],
+                    "Datos utilizados para rastrearte; datos no vinculados a ti", "2.8.0 (30 sep 2026)", "4,6"],
             "best_for": "quien prefiere deslizar listas sin botones en pantalla.",
             "facts": [
                 "Deslizas para completar y pellizcas o arrastras para ordenar; los colores marcan la prioridad.",
@@ -226,7 +226,7 @@ ES = {
             "name": "Microsoft To Do", "id": 1212616790, "anchor": "microsoft-to-do",
             "developer": "Microsoft", "rating": (4.65, 21250),
             "row": ["Gratis, sin compras dentro", "Mi día con tareas sugeridas", "Cuenta de Microsoft para sincronizar",
-                    "Datos vinculados a ti", "2.177 (6 jul 2026)", "4,7 (21.250 valoraciones)"],
+                    "Datos vinculados a ti", "2.177 (6 jul 2026)", "4,7"],
             "best_for": "una lista gratis que se sincroniza en todas partes, sobre todo si usas Outlook o Microsoft 365.",
             "facts": [
                 "Mi día y Sugerencias ayudan a planear el día con tus listas.",
@@ -240,7 +240,7 @@ ES = {
             "name": "Todoist: To do list–Calendario", "id": 572688855, "anchor": "todoist",
             "developer": "Doist", "rating": (4.71, 7585),
             "row": ["Pro 6,99 € al mes o 59,99 € al año", "Escritura en lenguaje natural y captura por voz", "Sí",
-                    "Datos vinculados a ti", "26.10.8 (8 oct 2026)", "4,7 (7.585 valoraciones)"],
+                    "Datos vinculados a ti", "26.10.8 (8 oct 2026)", "4,7"],
             "best_for": "quien ya necesita más que una app sencilla: proyectos, fechas y equipos.",
             "facts": [
                 "Quick Add entiende fechas escritas con normalidad; Ramble convierte lo que dices en tareas.",
@@ -264,7 +264,7 @@ ES = {
         "Cronometrar bloques de trabajo concentrado en cada prioridad (3 Tasks).",
     ],
     "method": [
-        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración y número de valoraciones, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador pone en su ficha. «No lo indica» quiere decir que la ficha no dice si hace falta cuenta. No inventamos valoraciones ni reseñas.",
+        "El 11 de octubre de 2026 abrimos la ficha de cada app en el App Store de España y los datos de Apple: compras dentro de la app, versión y fecha, valoración, idiomas, tamaño, iOS mínimo y etiqueta de privacidad. Las funciones son las que cada desarrollador pone en su ficha. «No lo indica» quiere decir que la ficha no dice si hace falta cuenta. No inventamos valoraciones ni reseñas.",
     ],
     "faq": [
         ("¿Cuál es la app de tareas más sencilla para iPhone?",

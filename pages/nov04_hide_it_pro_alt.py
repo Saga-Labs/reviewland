@@ -20,7 +20,7 @@ def label(*x):
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, protects, langs, best, facts, limits, ours=False):
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
-         "row": [price, protects, langs, labels, f"{ver} ({date})", f"{round(r, 1)} ({n:,} ratings)"]}
+         "row": [price, protects, langs, labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
         d["ours"] = True
     return d
@@ -46,7 +46,7 @@ APPS = [
         "Premium $19.99 or $29.99 a year; lifetime $14.99 or $29.99", "Password per album; icon like Calculator, Notes or Weather; face-down exit", "19",
         "no account and nothing uploaded unless you choose, updated this month.",
         ["Its listing says each album can have its own password, the icon can look like Calculator, Notes or Weather, and flipping the phone jumps to another app.", "Optional end-to-end encrypted copy in your own iCloud; privacy label Data Not Collected."],
-        "the free version is limited (Premium adds unlimited photos and the iCloud copy), and it has only 6 ratings."),
+        "the free version is limited (Premium adds unlimited photos and the iCloud copy)."),
     app("PV - Secret Photo Album", 867586326, "pv", "Haibin Jiao", 4.71, 30300, "7.7.9", "26 Oct 2026", label(TRACK, LINKED, NOTLINKED),
         "Pro $3.99 a month or $17.99 a year; lifetime $41.99; cloud backup from $12.99 a year", "Fake password; custom icon; face-down jump to another app", "12",
         "the most features for the money, with Wi-Fi transfer like Hide it Pro's USB export.",

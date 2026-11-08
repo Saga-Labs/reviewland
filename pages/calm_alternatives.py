@@ -39,13 +39,13 @@ EN = {
         "Calm itself is a free download with a Premium subscription; Headspace charges $12.99 a month or $69.99 a year in the US. Prices below are the ones listed on the US App Store on 3 November 2026.",
     ],
     "columns": ["App", "Price (US)", "What it is best at", "Sleep sounds / white noise", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "All seven are free to download. Prices are the in-app purchases listed on the US App Store on 3 November 2026 (an app can list several price points for the same plan). Ratings are the App Store average and number of ratings that day.",
+    "table_note": "All seven are free to download. Prices are the in-app purchases listed on the US App Store on 3 November 2026 (an app can list several price points for the same plan). Ratings are the App Store average that day.",
     "apps": [
         {
             "name": "Sleep Sounds & Focus: Drop", "id": 1462269642, "ours": True, "anchor": "drop",
             "developer": "Saga Ltd.", "rating": (4.42, 12),
             "row": ["Free (9 sounds); Drop Pro listed as monthly $4.99, access $14.99, lifetime $24.99 or $49.99", "Short guided-breathing sessions (2 to 20 minutes) and calming sounds with a sleep timer", "56 nature, ambient and noise sounds, 9 free; white noise free; pink and brown noise and binaural beats with Drop Pro",
-                    "Data Not Linked to You (usage data)", "2.13 (26 Oct 2026)", "4.4 (12 ratings)"],
+                    "Data Not Linked to You (usage data)", "2.13 (26 Oct 2026)", "4.4"],
             "best_for": "a quiet, ad-free app with calming sounds, a sleep timer and short breathing sessions, when a full meditation library is more than you need.",
             "facts": [
                 "Breathing sessions of 2, 5, 10 and 20 minutes with visual breathing guides; 8 breathing patterns, of which Box and 4-7-8 are free.",
@@ -61,7 +61,7 @@ EN = {
             "name": "Calm", "id": 571800810, "anchor": "calm",
             "developer": "Calm.com, Inc.", "rating": (4.77, 1987792),
             "row": ["Free; Calm Premium subscription (listed $14.99 to $79.99 depending on plan)", "Sleep Stories, guided meditation, breathwork, music", "Sleep sounds and soundscapes (ocean, heavy rain, campfire)",
-                    "Data Linked to You (contact info, health and fitness, purchases, search history and more)", "7.3 (8 Oct 2026)", "4.8 (1,987,792 ratings)"],
+                    "Data Linked to You (contact info, health and fitness, purchases, search history and more)", "7.3 (8 Oct 2026)", "4.8"],
             "best_for": "bedtime stories read by well-known narrators and a big, polished all-round library.",
             "facts": [
                 "100+ Sleep Stories (listing says new ones every month), including ones narrated by Matthew McConaughey and Stephen Fry.",
@@ -75,7 +75,7 @@ EN = {
             "name": "Headspace: Sleep & Meditation", "id": 493145008, "anchor": "headspace",
             "developer": "Headspace Inc.", "rating": (4.84, 973795),
             "row": ["Free; monthly $12.99, annual $69.99 (Plus listed up to $94.99)", "Guided meditations and courses, with optional therapy and coaching", "Sleep sounds, sleepcasts and sleep meditations",
-                    "Data Linked to You (contact info, health and fitness, location and more)", "8.36.1 (15 Oct 2026)", "4.8 (973,795 ratings)"],
+                    "Data Linked to You (contact info, health and fitness, location and more)", "8.36.1 (15 Oct 2026)", "4.8"],
             "best_for": "a structured, course-style approach to meditation, with human support available.",
             "facts": [
                 "500+ guided meditations, from 3-minute resets to longer sessions.",
@@ -89,7 +89,7 @@ EN = {
             "name": "Insight Timer: Meditate, Sleep", "id": 337472899, "anchor": "insight-timer",
             "developer": "Insight Network Inc", "rating": (4.9, 447855),
             "row": ["Free; Premium listed $9.99 and $59.99, family $89.99; live event tickets $6.99", "Huge free library of guided meditations, talks and music", "Thousands of music tracks and ambient sounds",
-                    "Data Linked to You (contact info, location, health and fitness, purchases and more)", "20.38.0 (9 Oct 2026)", "4.9 (447,855 ratings)"],
+                    "Data Linked to You (contact info, location, health and fitness, purchases and more)", "20.38.0 (9 Oct 2026)", "4.9"],
             "best_for": "free guided meditation from many different teachers, plus a meditation timer.",
             "facts": [
                 "Thousands of free guided meditations and talks; the listing says 80+ new free ones are added daily.",
@@ -103,7 +103,7 @@ EN = {
             "name": "BetterSleep: Relax and Sleep", "id": 314498713, "anchor": "bettersleep",
             "developer": "BetterSleep Health, LLC", "rating": (4.74, 390799),
             "row": ["Free; Premium listed from $11.99 to $99.99 depending on plan", "Sleep sounds, sleep stories, sleep tracker and recorder", "300+ sleep sounds and music tracks, including white noise",
-                    "Data Linked to You (contact info, purchases, usage and more); some data not linked", "26.18 (8 Oct 2026)", "4.7 (390,799 ratings)"],
+                    "Data Linked to You (contact info, purchases, usage and more); some data not linked", "26.18 (8 Oct 2026)", "4.7"],
             "best_for": "sleep-first people who want a sound mixer, stories and a sleep tracker in one app.",
             "facts": [
                 "300+ sleep sounds and music tracks (nature, ASMR, white noise, binaural beats) you can mix.",
@@ -117,7 +117,7 @@ EN = {
             "name": "Medito: Mindfulness Meditation", "id": 1500780518, "anchor": "medito",
             "developer": "Medito Stichting", "rating": (4.9, 4262),
             "row": ["Free, no in-app purchases (non-profit)", "Free guided meditation, courses and sleep stories", "Soundscapes: rain, ocean, white noise",
-                    "Data Linked to You (identifiers); usage data not linked", "2609.27.0 (29 Sep 2026)", "4.9 (4,262 ratings)"],
+                    "Data Linked to You (identifiers); usage data not linked", "2609.27.0 (29 Sep 2026)", "4.9"],
             "best_for": "completely free guided meditation from a non-profit.",
             "facts": [
                 "Courses for daily calm, focus, anxiety and sleep; 7-day starter and 30-day programmes.",
@@ -130,7 +130,7 @@ EN = {
             "name": "White Noise Lite", "id": 292987597, "anchor": "white-noise-lite",
             "developer": "TMSOFT", "rating": (4.82, 277342),
             "row": ["Free, no in-app purchases listed", "Looped sounds, sound mixer and sleep timer", "50+ sounds incl. white, pink, brown, blue and violet noise",
-                    "Data Linked to You (user content); other data not linked", "8.7.3 (3 Oct 2026)", "4.8 (277,342 ratings)"],
+                    "Data Linked to You (user content); other data not linked", "8.7.3 (3 Oct 2026)", "4.8"],
             "best_for": "plain white, pink or brown noise and fans, rain or trains, with timers and alarms.",
             "facts": [
                 "50+ looped sounds, including white, pink, brown, blue and violet noise.",
@@ -155,7 +155,7 @@ EN = {
         "Masking street or household noise at night (White Noise Lite, BetterSleep).",
     ],
     "method": [
-        "On 16 October 2026, and again on 3 November 2026, we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating and number of ratings, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; for Drop, the sound list and breathing patterns come from the app itself (version 2.14, released 30 October 2026), because its listing only names a few. We did not invent ratings or reviews, and we did not test the audio quality of each app.",
+        "On 16 October 2026, and again on 3 November 2026, we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page; for Drop, the sound list and breathing patterns come from the app itself (version 2.14, released 30 October 2026), because its listing only names a few. We did not invent ratings or reviews, and we did not test the audio quality of each app.",
     ],
     "faq": [
         ("What is the best alternative to Calm on iPhone?",
