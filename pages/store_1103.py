@@ -29,6 +29,10 @@ DATA = {
     "Drop Pro Monthly $4.99"
    ],
    "priv": {
+    "Data Linked to You": [
+     "Purchases",
+     "Identifiers"
+    ],
     "Data Not Linked to You": [
      "Usage Data"
     ]
@@ -248,6 +252,10 @@ DATA = {
    "ios": "18.0",
    "iap": [],
    "priv": {
+    "Data Linked to You": [
+     "Purchases",
+     "Identifiers"
+    ],
     "Data Not Linked to You": [
      "Usage Data",
      "Diagnostics"
@@ -401,6 +409,10 @@ DATA = {
     "Drop Pro Monthly 5,99 €"
    ],
    "priv": {
+    "Datos vinculados contigo": [
+     "Compras",
+     "Identificadores"
+    ],
     "Datos no vinculados contigo": [
      "Datos de uso"
     ]
@@ -620,6 +632,10 @@ DATA = {
    "ios": "18.0",
    "iap": [],
    "priv": {
+    "Datos vinculados contigo": [
+     "Compras",
+     "Identificadores"
+    ],
     "Datos no vinculados contigo": [
      "Datos de uso",
      "Diagnósticos"
@@ -771,7 +787,9 @@ DATA = {
     "Photo Vault Premium Yearly 34,99 €"
    ],
    "priv": {
-    "No se recopilan datos": []
+    "Datos no vinculados contigo": [
+     "Compras"
+    ]
    }
   },
   "417571834": {

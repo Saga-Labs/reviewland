@@ -451,7 +451,7 @@ TR_VAULT = {
     "description": "Sechs Foto-Tresor-Apps fürs iPhone nach Datenschutzlabel verglichen; nur eine sagt „Daten werden nicht erfasst“. Safe Lock, Photo Vault, Keepsafe und mehr.",
     "llms": "Vergleicht sechs Foto-Tresor-Apps fürs iPhone (Photo Vault, Safe Lock, Keepsafe, Private Photo Vault, Privault, PV) nach Datenschutzlabel, Preis und Cloud-Backup im deutschen App Store. Nur Safe Lock gibt „Daten werden nicht erfasst“ an.",
     "answer": [
-        "Um Fotos auf dem iPhone zu verstecken, gibt von den sechs Apps heute nur Safe Lock im Datenschutzlabel <em>Daten werden nicht erfasst</em> an. Die anderen fünf nennen Daten, die dich verfolgen, mit dir verknüpfte Daten oder beides – auch Photo Vault: Hide Pics Video, dessen Label mit dir verknüpfte Daten aufführt. Ein Datenschutzlabel ist die Angabe des Entwicklers, kein unabhängiges Audit.",
+        "Um Fotos auf dem iPhone zu verstecken, gibt von den sechs Apps heute nur Safe Lock im Datenschutzlabel <em>Daten werden nicht erfasst</em> an. Danach kommt Photo Vault: Hide Pics Video: sein Label nennt nur Käufe, nicht mit dir verknüpft, und kein Tracking. Die anderen vier nennen Daten, die dich verfolgen, mit dir verknüpfte Daten oder beides. Ein Datenschutzlabel ist die Angabe des Entwicklers, kein unabhängiges Audit.",
         "Wenn du zusätzlich eine private Cloud willst, hat Keepsafe unter den Cloud-Optionen das kürzeste Label (zwei Einträge, ohne mit dir verknüpfte Daten); Private Photo Vault hat die meisten Funktionen, und sein Label enthält mit dir verknüpfte Daten.",
     ],
     "columns": ["App", "Preis (DE)", "Cloud-Backup", "Datenschutzlabel im App Store", "Version (Datum)", "Bewertung (DE)"],
@@ -461,13 +461,13 @@ TR_VAULT = {
             "row": [
                 "Gratis zu laden; Premium jährlich 22,99 € oder 34,99 €, Lifetime 17,99 € oder 34,99 €",
                 "Kein Konto; optionale Ende-zu-Ende-verschlüsselte Kopie in deiner eigenen iCloud (Premium, standardmäßig aus)",
-                L,
+                N + " (Käufe)",
                 "1.4 (6.11.2026)",
                 "–",
             ],
-            "best_for": "Face ID, Passwörter pro Album, getarntes Symbol und eine private Kamera, mit einem Label, das nur mit dir verknüpfte Daten nennt.",
+            "best_for": "Face ID, Passwörter pro Album, getarntes Symbol und eine private Kamera, mit einem kurzen Label: nur Käufe, nicht mit dir verknüpft.",
             "facts": [
-                "Label: Mit dir verknüpfte Daten. Entsperren mit Face ID, Touch ID oder Code; jedes Album kann ein eigenes Passwort haben; ein Ködercode (Premium) öffnet einen separaten Tresor.",
+                "Label: Nicht mit dir verknüpfte Daten (nur Käufe); nichts mit dir verknüpft, kein Tracking. Entsperren mit Face ID, Touch ID oder Code; jedes Album kann ein eigenes Passwort haben; ein Ködercode (Premium) öffnet einen separaten Tresor.",
                 "Getarntes Symbol (Taschenrechner, Notizen oder Wetter) und Beenden durch Umdrehen des Geräts.",
                 "Kein Konto; eine optionale Ende-zu-Ende-verschlüsselte Kopie in deiner eigenen iCloud (standardmäßig aus); für ein neues iPhone exportierst du eine passwortgeschützte Datei. 19 Sprachen, ab iOS 17.",
             ],
@@ -555,7 +555,7 @@ TR_VAULT = {
         },
     ],
     "who": [
-        "<strong>Du willst, dass nichts erfasst wird:</strong> Safe Lock.",
+        "<strong>Du willst, dass nichts erfasst wird:</strong> Safe Lock; ohne Konto und mit einem Label, das nur Käufe nennt (nicht mit dir verknüpft), auch Photo Vault: Hide Pics Video.",
         "<strong>Du willst eine private Cloud mit dem kürzesten Label:</strong> Keepsafe.",
         "<strong>Du willst die meisten Funktionen und akzeptierst ein langes Label:</strong> Private Photo Vault.",
         "<strong>Du willst einen Ködercode:</strong> Privault oder Photo Vault: Hide Pics Video (dort mit Premium).",
@@ -572,7 +572,7 @@ TR_VAULT = {
     ],
     "faq": [
         ("Welche Foto-Tresor-Apps sagen „Daten werden nicht erfasst“?",
-         "Am 9. November 2026 nur Safe Lock - Hidden Photo Vault. Photo Vault: Hide Pics Video, Keepsafe, Private Photo Vault, Privault und PV nennen Daten, die dich verfolgen, oder mit dir verknüpfte Daten."),
+         "Am 9. November 2026 nur Safe Lock - Hidden Photo Vault. Photo Vault: Hide Pics Video nennt nur Käufe, nicht mit dir verknüpft. Keepsafe, Private Photo Vault, Privault und PV nennen Daten, die dich verfolgen, oder mit dir verknüpfte Daten."),
         ("Heißt „Daten werden nicht erfasst“, dass meine Fotos sicher sind?",
          "Es heißt, dass der Entwickler gegenüber Apple angibt, keine Daten aus der App zu erfassen. Es ist kein Audit und sagt nichts darüber, wie gut deine Fotos auf dem Handy geschützt sind."),
         ("Welcher Foto-Tresor hat eine private Cloud?",

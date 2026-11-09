@@ -9,6 +9,7 @@ TRACK = "Data Used to Track You"
 LINKED = "Data Linked to You"
 NOTLINKED = "Data Not Linked to You"
 NONE = "Data Not Collected"
+PVLABEL = "Data Not Linked to You (purchases)"
 CALC = '<a href="/calculator-vault-alternatives-iphone/">Calculator# alternatives</a>'
 BACKUP = '<a href="/photo-vault-apps-with-backup-iphone/">photo vaults with a backup</a>'
 HIDE = '<a href="/best-apps-to-hide-photos-iphone/">apps to hide photos</a>'
@@ -35,17 +36,17 @@ APPS = [
     app("Private Photo Vault - Pic Safe", 417571834, "private-photo-vault", "Legendary Software Labs LLC", 4.82, 1018948, "26.0", "2 Nov 2026", label(TRACK, LINKED),
         "Premium from $6.99 to $39.99; Upgrade $39.99", "Decoy password, face-down lock, break-in report with photo and GPS", "11",
         "the best-known vault, updated this week, with an encrypted cloud backup.",
-        ["About 1 million ratings; updated on 2 November 2026.", "Encrypted Cloud Vault backup (paid) and a private browser, per its listing."],
+        ["Rated 4.8 stars; updated on 2 November 2026.", "Encrypted Cloud Vault backup (paid) and a private browser, per its listing."],
         "its privacy label includes data used to track you, and the free version has no cloud backup."),
     app("Secret Photo Vault: Keepsafe", 510873505, "keepsafe", "KeepSafe Software, Inc", 4.75, 385566, "13.35.0", "26 Oct 2026", label(TRACK, NOTLINKED),
         "Premium $4.99 to $35.99 (yearly $23.99, monthly $9.99)", "PIN per album; Private Cloud up to 10,000 items", "16",
         "the same vault on several devices, synced automatically.",
         ["Its listing says Private Cloud stores up to 10,000 items and syncs to all your Keepsafe installs.", "Trash recovery for photos deleted by mistake; 16 languages."],
         "the cloud is Keepsafe's, and its label includes data used to track you."),
-    app("Photo Vault: Hide Pics Video", 1532670722, "photo-vault", "Saga Ltd.", 4.17, 6, "1.3.1", "1 Nov 2026", NONE,
+    app("Photo Vault: Hide Pics Video", 1532670722, "photo-vault", "Saga Ltd.", 4.17, 6, "1.3.1", "1 Nov 2026", PVLABEL,
         "Premium $19.99 or $29.99 a year; lifetime $14.99 or $29.99", "Password per album; icon like Calculator, Notes or Weather; face-down exit", "19",
         "no account and nothing uploaded unless you choose, updated this month.",
-        ["Its listing says each album can have its own password, the icon can look like Calculator, Notes or Weather, and flipping the phone jumps to another app.", "Optional end-to-end encrypted copy in your own iCloud; privacy label Data Not Collected."],
+        ["Its listing says each album can have its own password, the icon can look like Calculator, Notes or Weather, and flipping the phone jumps to another app.", "Optional end-to-end encrypted copy in your own iCloud; privacy label Data Not Linked to You, with purchases only (rechecked on 9 November 2026)."],
         "the free version is limited (Premium adds unlimited photos and the iCloud copy)."),
     app("PV - Secret Photo Album", 867586326, "pv", "Haibin Jiao", 4.71, 30300, "7.7.9", "26 Oct 2026", label(TRACK, LINKED, NOTLINKED),
         "Pro $3.99 a month or $17.99 a year; lifetime $41.99; cloud backup from $12.99 a year", "Fake password; custom icon; face-down jump to another app", "12",
@@ -55,14 +56,14 @@ APPS = [
     app("SPV - Secret Photo Vault", 1449239240, "spv", "MAPLE LABS COMPANY LIMITED", 4.59, 70064, "7.6.1", "30 Aug 2026", label(TRACK, NOTLINKED),
         "Premium $4.99 to $39.99", "PIN lock for photos, contacts, passwords and a private browser", "4",
         "keeping contacts and passwords in the same locked app.",
-        ["Its listing says it stores photos, videos, passwords, contacts and browser data behind a PIN.", "About 70,000 ratings."],
+        ["Its listing says it stores photos, videos, passwords, contacts and browser data behind a PIN.", "Rated 4.6 stars."],
         "no decoy or disguise named in the listing, and its label includes data used to track you."),
 ]
 
 PAGES = [{
     "group": "hide-it-pro-alternatives", "lang": "en", "store": "us", "path": "hide-it-pro-alternatives-iphone/", "ct": "rl-hide-it-pro-alt",
     "category": "PhotographyApplication", "cover": "hide-photos", "hide_from_related": True,
-    "published": DAY, "updated": DAY, "checked": DAY,
+    "published": DAY, "updated": "2026-11-09", "checked": DAY,
     "title": "Best Hide it Pro Alternatives for iPhone (2026)", "h1": "Hide it Pro alternatives for iPhone",
     "description": "Hide it Pro has not been updated on iPhone since January 2026. Six photo vaults updated since August, with prices, privacy labels and ratings on 4 November 2026.",
     "llms": "Six alternatives to Hide it Pro on iPhone (last update 11 January 2026): Safe Lock, Private Photo Vault, Keepsafe, Photo Vault, PV - Secret Photo Album, SPV. Price, how each protects the vault, languages, privacy label, version and rating on 4 November 2026.",
@@ -72,7 +73,7 @@ PAGES = [{
         "Before you switch, export your photos from Hide it Pro (its listing names USB export and unhide to the gallery), then import them into the new vault.",
     ],
     "columns": ["App", "Price (US)", "How it protects, per listing", "Languages", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "All six are free to download; prices are in-app purchases on each US App Store page on 4 November 2026 (pages list only some). For comparison, Hide it Pro 6.3.0 (11 January 2026): Cloud Storage $9.99 and Password Reset $4.99; English only; Data Not Linked to You; rated 4.7 from 24,796 ratings.",
+    "table_note": "All six are free to download; prices are in-app purchases on each US App Store page on 4 November 2026 (pages list only some). For comparison, Hide it Pro 6.3.0 (11 January 2026): Cloud Storage $9.99 and Password Reset $4.99; English only; Data Not Linked to You; rated 4.7 stars. Privacy labels rechecked on 9 November 2026.",
     "apps": APPS,
     "who": ["<strong>Closest match, no data collected:</strong> Safe Lock.", "<strong>Best-known, encrypted backup:</strong> Private Photo Vault.", "<strong>Synced across devices:</strong> Keepsafe.",
             "<strong>No account, backup in your own iCloud:</strong> Photo Vault.", "<strong>Most features, Wi-Fi transfer:</strong> PV.", "<strong>Contacts and passwords too:</strong> SPV."],

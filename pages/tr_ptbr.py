@@ -308,17 +308,17 @@ TR_VAULT = {
     "description": "Seis apps de cofre de fotos para iPhone comparados pela etiqueta de privacidade da App Store; só um declara Dados não coletados. Safe Lock, Keepsafe e mais.",
     "llms": "Compara seis apps de cofre de fotos para iPhone (Photo Vault, Safe Lock, Keepsafe, Private Photo Vault, Privault, PV) por etiqueta de privacidade da App Store, preço e backup na nuvem. Só o Safe Lock declara Dados não coletados.",
     "answer": [
-        "Para esconder fotos no iPhone, só um dos seis apps declara <em>Dados não coletados</em> na etiqueta de privacidade da App Store: o Safe Lock - Hidden Photo Vault. Os outros cinco listam dados usados para rastrear você, dados vinculados a você, ou os dois; o Photo Vault: Hide Pics Video lista apenas Dados vinculados a você. A etiqueta de privacidade é o que o desenvolvedor declara, não uma auditoria independente.",
+        "Para esconder fotos no iPhone, só um dos seis apps declara <em>Dados não coletados</em> na etiqueta de privacidade da App Store: o Safe Lock - Hidden Photo Vault. Em seguida vem o Photo Vault: Hide Pics Video, que lista apenas compras, em Dados não vinculados a você, sem rastreamento. Os outros quatro listam dados usados para rastrear você, dados vinculados a você, ou os dois. A etiqueta de privacidade é o que o desenvolvedor declara, não uma auditoria independente.",
         "Se você também quer uma nuvem privada, as opções são Keepsafe (Private Cloud), Private Photo Vault (Cloud Vault) e PV (planos de nuvem); o Safe Lock e o Photo Vault: Hide Pics Video guardam as fotos no aparelho, com uma cópia opcional no iCloud no caso do segundo.",
     ],
     "columns": ["App", "Preço (Brasil)", "Backup na nuvem", "Etiqueta de privacidade da App Store", "Versão (data)", "Nota (Brasil)"],
     "table_note": "Os seis são grátis para baixar. Os preços são as compras dentro do app listadas na App Store brasileira em 9 de novembro de 2026 (os apps listam vários preços para o mesmo plano). As notas são a média da App Store naquele dia; um traço indica que o app ainda não tem avaliações no Brasil. A etiqueta de privacidade é o que cada desenvolvedor declara à Apple.",
     "apps": [
         {
-            "row": ["Grátis para baixar; Premium anual R$ 129,90 ou R$ 199,90, vitalício R$ 99,90 ou R$ 199,90", "Sem conta; cópia opcional criptografada de ponta a ponta no seu próprio iCloud (Premium, desativada por padrão)", "Dados vinculados a você", "1.4 (6 nov 2026)", "—"],
+            "row": ["Grátis para baixar; Premium anual R$ 129,90 ou R$ 199,90, vitalício R$ 99,90 ou R$ 199,90", "Sem conta; cópia opcional criptografada de ponta a ponta no seu próprio iCloud (Premium, desativada por padrão)", "Dados não vinculados a você (compras)", "1.4 (6 nov 2026)", "—"],
             "best_for": "uma etiqueta de privacidade enxuta, com Face ID, senha por álbum, ícone disfarçado e câmera privada.",
             "facts": [
-                "Etiqueta: Dados vinculados a você. Abre com Face ID, Touch ID ou código; cada álbum pode ter sua própria senha; um código falso (Premium) abre um cofre separado.",
+                "Etiqueta: Dados não vinculados a você (só compras); nada vinculado a você e nada usado para rastrear você. Abre com Face ID, Touch ID ou código; cada álbum pode ter sua própria senha; um código falso (Premium) abre um cofre separado.",
                 "Ícone disfarçado (Calculadora, Notas ou Clima) e saída ao virar o aparelho para baixo.",
                 "Sem conta; uma cópia opcional criptografada de ponta a ponta no seu próprio iCloud (desativada por padrão); para trocar de iPhone, você exporta um arquivo protegido por senha. 19 idiomas, iOS 17 ou posterior.",
             ],
@@ -393,7 +393,7 @@ TR_VAULT = {
         "Em 9 de novembro de 2026 abrimos a página de cada app na App Store brasileira e os dados de consulta da Apple: preço, compras dentro do app, versão e data, nota, idiomas, iOS mínimo e a etiqueta de privacidade exatamente como declarada. Os recursos são os que cada desenvolvedor lista na própria página; não verificamos a criptografia nem auditamos práticas de dados. Não inventamos notas nem avaliações.",
     ],
     "faq": [
-        ("Quais apps de cofre de fotos dizem Dados não coletados?", "Em 9 de novembro de 2026, apenas o Safe Lock - Hidden Photo Vault. O Photo Vault: Hide Pics Video lista Dados vinculados a você; Keepsafe, Private Photo Vault, Privault e PV listam dados usados para rastrear você, dados vinculados a você, ou os dois."),
+        ("Quais apps de cofre de fotos dizem Dados não coletados?", "Em 9 de novembro de 2026, apenas o Safe Lock - Hidden Photo Vault. O Photo Vault: Hide Pics Video lista apenas compras, em Dados não vinculados a você; Keepsafe, Private Photo Vault, Privault e PV listam dados usados para rastrear você, dados vinculados a você, ou os dois."),
         ("A etiqueta Dados não coletados significa que minhas fotos estão seguras?", "Significa que o desenvolvedor declara à Apple que não coleta dados do app. Não é uma auditoria e não diz nada sobre o quanto suas fotos ficam protegidas no celular."),
         ("Qual cofre de fotos tem nuvem privada?", "Keepsafe (Private Cloud, Premium), Private Photo Vault (Cloud Vault) e PV (planos de nuvem). Safe Lock guarda as fotos no aparelho; o Photo Vault: Hide Pics Video também, com cópia opcional no seu iCloud."),
         ("O Photo Vault: Hide Pics Video é o mesmo que o Private Photo Vault?", "Não. São apps diferentes, de desenvolvedores diferentes. O Photo Vault: Hide Pics Video é da Saga Ltd.; o Private Photo Vault - Pic Safe é da Legendary Software Labs."),

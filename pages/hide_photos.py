@@ -28,22 +28,22 @@ EN = {
     "path": "best-apps-to-hide-photos-iphone/",
     "ct": "rl-hide-photos", "store": "us",
     "category": "UtilitiesApplication",
-    "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
+    "published": CHECKED, "updated": "2026-11-09", "checked": CHECKED,
     "title": "Best Apps to Hide Photos on iPhone (2026)",
     "h1": "Best apps to hide photos on iPhone in 2026",
     "description": "Seven ways to hide photos on iPhone compared: Photo Vault, the Hidden album, Private Photo Vault, Keepsafe and more. Prices and privacy labels checked.",
     "llms": "Compares seven ways to hide photos on iPhone by price, App Store privacy label, account and cloud requirements and disguise options.",
     "answer": [
-        "To hide photos on iPhone without an account or a cloud copy, use a vault app that stores them only on the phone: Photo Vault and Safe Lock both have the App Store privacy label <em>Data Not Collected</em>. If you just want a few photos out of the main grid, the free Hidden album in Apple's Photos app is locked with Face ID, but it syncs to your other devices through iCloud Photos.",
+        "To hide photos on iPhone without an account or a cloud copy, use a vault app that stores them only on the phone: Safe Lock has the App Store privacy label <em>Data Not Collected</em>, and Photo Vault's label lists only purchases, not linked to you. If you just want a few photos out of the main grid, the free Hidden album in Apple's Photos app is locked with Face ID, but it syncs to your other devices through iCloud Photos.",
         "If you want an online backup of the vault, Private Photo Vault and Keepsafe offer encrypted cloud storage as a paid option, and both show <em>Data Used to Track You</em> on their privacy labels.",
     ],
     "columns": ["App", "Price (US)", "Account or cloud", "App Store privacy label", "Disguise", "Version (date)", "Rating (US)"],
-    "table_note": "Prices are the in-app purchases listed on each App Store page in the US on 11 October 2026; all of them are free to download. Ratings are the App Store average on that day.",
+    "table_note": "Prices are the in-app purchases listed on each App Store page in the US on 11 October 2026; all of them are free to download. Ratings are the App Store average on that day. Privacy labels rechecked on 9 November 2026.",
     "apps": [
         {
             "name": "Photo Vault: Hide Pics Video", "id": 1532670722, "ours": True, "anchor": "photo-vault",
             "developer": "Saga Ltd.", "rating": (4.17, 6),
-            "row": ["Free for 1 item; Premium $19.99 or $29.99 a year; lifetime $59.99", "No account; iCloud copy optional (encrypted, off by default)", "Data Not Collected",
+            "row": ["Free for 1 item; Premium $19.99 or $29.99 a year; lifetime $59.99", "No account; iCloud copy optional (encrypted, off by default)", "Data Not Linked to You (purchases)",
                     "Icon can look like Calculator, Notes or Weather; decoy code (Premium)", "1.3.0 (26 Oct 2026)", "4.2"],
             "best_for": "people who want photos only on their iPhone, with no account and nothing uploaded unless they turn on the optional encrypted iCloud copy.",
             "facts": [
@@ -99,7 +99,7 @@ EN = {
             "rating": (4.81, 24834),
             "row": ["Premium $4.99, $19.99 or $29.99", "On the device; Wi-Fi transfer", "Data Not Collected",
                     "App icon can be changed", "3.1 (17 Aug 2026)", "4.8"],
-            "best_for": "a local vault from a developer that, like Photo Vault's, declares no data collected.",
+            "best_for": "a local vault whose developer declares no data collected.",
             "facts": [
                 "PIN, pattern, numeric or alphabetic password, Touch ID and Face ID.",
                 "Hidden camera inside the app, secret folders for photos, videos and notes.",
@@ -125,7 +125,7 @@ EN = {
         {
             "name": "Privault - Private Photo Vault", "id": 1186436980, "anchor": "privault", "developer": "Binspir Technologies",
             "rating": (4.68, 76592),
-            "row": ["Pro $3.49 a month, $24.99 a year or $45.99 once; remove ads $2.99", "On the device", "Data Used to Track You; Data Linked to You",
+            "row": ["Pro $3.49 a month, $24.99 a year or $45.99 once; remove ads $2.99", "On the device", "Data Used to Track You; Data Linked to You; Data Not Linked to You",
                     "Keypad-style lock screen", "10.2 (28 Feb 2025)", "4.7"],
             "best_for": "people who need a second passcode that opens a different, harmless folder.",
             "facts": [
@@ -137,7 +137,7 @@ EN = {
         },
     ],
     "who": [
-        "<strong>Nothing should leave the phone:</strong> Photo Vault or Safe Lock. Both declare Data Not Collected.",
+        "<strong>Nothing should leave the phone:</strong> Safe Lock (Data Not Collected) or Photo Vault (only purchases, not linked to you, and no account).",
         "<strong>You want a backup online:</strong> Private Photo Vault (Cloud Vault) or Keepsafe (Private Cloud), both paid.",
         "<strong>You also use Android:</strong> Keepsafe, which syncs between its installs.",
         "<strong>You only want a few photos off the main grid:</strong> the Hidden album in Photos, free and already on your iPhone.",
@@ -157,7 +157,7 @@ EN = {
         ("Is the Hidden album on iPhone safe enough?",
          "It is locked with Face ID, Touch ID or the phone passcode since iOS 16, so it stops casual browsing. Anyone who knows your passcode can open it, and the photos still sync through iCloud Photos to your other devices."),
         ("Which photo vault apps do not upload my photos?",
-         "Photo Vault and Safe Lock keep photos on the iPhone and both have the App Store privacy label Data Not Collected. Private Photo Vault and Keepsafe offer optional cloud storage."),
+         "Safe Lock and Photo Vault keep photos on the iPhone. Safe Lock's App Store privacy label is Data Not Collected; Photo Vault's lists only purchases, not linked to you, and its encrypted iCloud copy is optional and off by default. Private Photo Vault and Keepsafe offer optional cloud storage."),
         ("Can I hide photos on iPhone without iCloud?",
          "Yes. A local vault such as Photo Vault keeps the photos on the device, leaves the vault out of iCloud backups and opens without internet."),
         ("What happens to hidden photos if I delete the vault app?",
@@ -175,22 +175,22 @@ ES = {
     "path": "es/mejores-apps-para-ocultar-fotos-iphone/",
     "ct": "rl-hide-photos-es", "store": "es",
     "category": "UtilitiesApplication",
-    "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
+    "published": CHECKED, "updated": "2026-11-09", "checked": CHECKED,
     "title": "Mejores apps para ocultar fotos en iPhone (2026)",
     "h1": "Mejores apps para ocultar fotos en iPhone en 2026",
     "description": "Siete formas de ocultar fotos en iPhone comparadas: Photo Vault, el álbum Oculto, Private Photo Vault, Keepsafe y más. Precios y privacidad comprobados.",
     "llms": "Compara siete formas de ocultar fotos en iPhone por precio en euros, etiqueta de privacidad del App Store, cuenta o nube y camuflaje.",
     "answer": [
-        "Para ocultar fotos en el iPhone sin cuenta y sin copia en la nube, usa una app bóveda que las guarde solo en el teléfono: Photo Vault y Safe Lock tienen las dos la etiqueta de privacidad <em>No se recopilan datos</em>. Si solo quieres sacar unas pocas fotos de la galería, el álbum Oculto de la app Fotos es gratis y se abre con Face ID, pero se sincroniza con tus otros dispositivos por Fotos de iCloud.",
+        "Para ocultar fotos en el iPhone sin cuenta y sin copia en la nube, usa una app bóveda que las guarde solo en el teléfono: Safe Lock tiene la etiqueta de privacidad <em>No se recopilan datos</em>, y la de Photo Vault solo lista compras, no vinculadas contigo. Si solo quieres sacar unas pocas fotos de la galería, el álbum Oculto de la app Fotos es gratis y se abre con Face ID, pero se sincroniza con tus otros dispositivos por Fotos de iCloud.",
         "Si quieres copia de la bóveda en internet, Private Photo Vault y Keepsafe tienen nube cifrada de pago, y las dos declaran datos utilizados para rastrearte en su etiqueta de privacidad.",
     ],
     "columns": ["App", "Precio (España)", "Cuenta o nube", "Etiqueta de privacidad", "Camuflaje", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Precios: compras dentro de la app que muestra cada ficha del App Store de España el 11 de octubre de 2026; todas se descargan gratis. Valoración: media en España ese día.",
+    "table_note": "Precios: compras dentro de la app que muestra cada ficha del App Store de España el 11 de octubre de 2026; todas se descargan gratis. Valoración: media en España ese día. Etiquetas de privacidad revisadas el 9 de noviembre de 2026.",
     "apps": [
         {
             "name": "Photo Vault (Bóveda: Ocultar Fotos y Video)", "id": 1532670722, "ours": True, "anchor": "photo-vault",
             "developer": "Saga Ltd.", "rating": (1.0, 1),
-            "row": ["Gratis con 1 elemento; Premium 22,99 € o 34,99 € al año; de por vida 69,99 €", "Sin cuenta; copia en iCloud opcional (cifrada, desactivada por defecto)", "No se recopilan datos",
+            "row": ["Gratis con 1 elemento; Premium 22,99 € o 34,99 € al año; de por vida 69,99 €", "Sin cuenta; copia en iCloud opcional (cifrada, desactivada por defecto)", "Datos no vinculados contigo (compras)",
                     "Icono como Calculadora, Notas o Tiempo; código señuelo (Premium)", "1.3.0 (26 oct 2026)", "Sin valoraciones suficientes en España"],
             "best_for": "quien quiere las fotos solo en su iPhone, sin cuenta y sin subir nada.",
             "facts": [
@@ -246,7 +246,7 @@ ES = {
             "rating": (4.71, 2013),
             "row": ["Premium 5,99 €, 22,99 € o 34,99 €", "En el dispositivo; transferencia por wifi", "No se recopilan datos",
                     "Se puede cambiar el icono", "3.1 (17 ago 2026)", "4,7"],
-            "best_for": "una bóveda local de un desarrollador que, como nosotros, declara no recoger datos.",
+            "best_for": "una bóveda local cuyo desarrollador declara no recoger datos.",
             "facts": [
                 "PIN, patrón, contraseña numérica o con letras, Touch ID y Face ID.",
                 "Cámara oculta dentro de la app y carpetas secretas para fotos, vídeos y notas.",
@@ -271,7 +271,7 @@ ES = {
         },
         {
             "name": "Privault (Privault-Esconder video foto)", "id": 1186436980, "anchor": "privault", "developer": "Binspir Technologies",
-            "row": ["PRO 3,99 € al mes, 29,99 € al año o 49,99 € para siempre; quitar anuncios 2,99 €", "En el dispositivo", "Datos utilizados para rastrearte; datos vinculados a ti",
+            "row": ["PRO 3,99 € al mes, 29,99 € al año o 49,99 € para siempre; quitar anuncios 2,99 €", "En el dispositivo", "Datos utilizados para rastrearte; datos vinculados a ti; datos no vinculados a ti",
                     "Pantalla de teclado", "10.2 (28 feb 2025)", "Sin valoraciones en España"],
             "best_for": "quien necesita un segundo código que abre otra carpeta inofensiva.",
             "facts": [
@@ -283,7 +283,7 @@ ES = {
         },
     ],
     "who": [
-        "<strong>Que nada salga del móvil:</strong> Photo Vault o Safe Lock. Las dos declaran que no recogen datos.",
+        "<strong>Que nada salga del móvil:</strong> Safe Lock (no se recopilan datos) o Photo Vault (solo compras no vinculadas contigo, y sin cuenta).",
         "<strong>Quieres copia en internet:</strong> Private Photo Vault o Keepsafe, las dos con nube de pago.",
         "<strong>También usas Android:</strong> Keepsafe, que sincroniza entre sus instalaciones.",
         "<strong>Solo quieres sacar unas fotos de la galería:</strong> el álbum Oculto de Fotos, gratis y ya instalado.",
@@ -303,7 +303,7 @@ ES = {
         ("¿Es seguro el álbum Oculto del iPhone?",
          "Desde iOS 16 se abre con Face ID, Touch ID o el código del iPhone, así que frena a quien cotillea. Pero quien sepa tu código lo abre, y las fotos siguen sincronizándose por Fotos de iCloud con tus otros dispositivos."),
         ("¿Qué apps para ocultar fotos no suben nada a internet?",
-         "Photo Vault y Safe Lock guardan las fotos en el iPhone y las dos tienen la etiqueta «No se recopilan datos». Private Photo Vault y Keepsafe tienen nube opcional."),
+         "Safe Lock y Photo Vault guardan las fotos en el iPhone. La etiqueta de Safe Lock es «No se recopilan datos»; la de Photo Vault solo lista compras, no vinculadas contigo, y su copia cifrada en iCloud es opcional y está desactivada por defecto. Private Photo Vault y Keepsafe tienen nube opcional."),
         ("¿Se pueden ocultar fotos en el iPhone sin iCloud?",
          "Sí. Una bóveda local como Photo Vault guarda las fotos en el teléfono, no entra en las copias de iCloud y se abre sin conexión."),
         ("¿Qué pasa con las fotos ocultas si borro la app?",

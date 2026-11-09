@@ -8,8 +8,9 @@ TRACK = "Data Used to Track You"
 LINKED = "Data Linked to You"
 NOTLINKED = "Data Not Linked to You"
 NONE = "Data Not Collected"
+PVLABEL = "Data Not Linked to You (purchases)"
 HIDE = '<a href="/best-apps-to-hide-photos-iphone/">apps to hide photos</a>'
-NODATA = '<a href="/best-photo-vault-apps-no-data-collection-iphone/">photo vaults that collect no data</a>'
+NODATA = '<a href="/best-photo-vault-apps-no-data-collection-iphone/">photo vaults compared by privacy label</a>'
 CALC = '<a href="/calculator-vault-alternatives-iphone/">Calculator# alternatives</a>'
 
 
@@ -29,7 +30,7 @@ APPS = [
     app("Private Photo Vault - Pic Safe", 417571834, "private-photo-vault", "Legendary Software Labs LLC", 4.82, 1018948, "26.0", "2 Nov 2026", label(TRACK, LINKED),
         "Premium from $6.99 to $39.99; Upgrade $39.99", "Cloud Vault: encrypted backup (paid)", "The company's cloud, locked with your own Cloud Vault password",
         "an automatic, encrypted backup from the best-known vault.",
-        ["Its listing says Cloud Vault is an encrypted backup with a separate Cloud Vault password, and that its staff cannot view your photos.", "Space Saver keeps originals in the cloud; about 1 million ratings."],
+        ["Its listing says Cloud Vault is an encrypted backup with a separate Cloud Vault password, and that its staff cannot view your photos.", "Space Saver keeps originals in the cloud; rated 4.8 stars."],
         "its listing says the free version does not back up to Cloud Vault, so on the free version a lost phone means lost photos."),
     app("Secret Photo Vault: Keepsafe", 510873505, "keepsafe", "KeepSafe Software, Inc", 4.75, 385566, "13.35.0", "26 Oct 2026", label(TRACK, NOTLINKED),
         "Premium $4.99 to $35.99 (yearly $23.99, monthly $9.99)", "Private Cloud, up to 10,000 items; syncs to your other installs", "The company's cloud",
@@ -41,7 +42,7 @@ APPS = [
         "choosing between its own cloud and Dropbox or Google Drive.",
         ["Its listing offers cloud sync for Super members and third-party cloud backup for Pro members, plus Wi-Fi transfer to a computer.", "Its listing warns that if you delete the app without a backup, the photos are gone."],
         "every backup option is paid, and the plans are many; its privacy label is the widest here."),
-    app("Photo Vault: Hide Pics Video", 1532670722, "photo-vault", "Saga Ltd.", 4.17, 6, "1.3.1", "1 Nov 2026", NONE,
+    app("Photo Vault: Hide Pics Video", 1532670722, "photo-vault", "Saga Ltd.", 4.17, 6, "1.3.1", "1 Nov 2026", PVLABEL,
         "Premium $19.99 or $29.99 a year; lifetime $14.99 or $29.99", "Your own iCloud, end-to-end encrypted (Premium); or an encrypted backup file", "You: your own iCloud or a file you keep",
         "a backup only you can open, in your own iCloud, with no account.",
         ["Its listing says the optional iCloud copy is end-to-end encrypted and lives in your own iCloud; to move to a new iPhone you turn it on and restore.", "Or export the whole vault to one password-locked file in Files, on a computer or in iCloud Drive.", "The vault is left out of regular iCloud backups, per its listing; no account and no server."],
@@ -61,7 +62,7 @@ APPS = [
 PAGES = [{
     "group": "vault-backup", "lang": "en", "store": "us", "path": "photo-vault-apps-with-backup-iphone/", "ct": "rl-vault-backup",
     "category": "PhotographyApplication", "cover": "hide-photos", "hide_from_related": True,
-    "published": DAY, "updated": DAY, "checked": DAY,
+    "published": DAY, "updated": "2026-11-09", "checked": DAY,
     "title": "Photo Vault Apps With Backup for a New iPhone (2026)", "h1": "Photo vault apps with a backup, so you don't lose them on a new iPhone",
     "description": "Where six iPhone photo vaults back up your hidden photos: the company's cloud, your own iCloud or Dropbox. Prices and privacy labels on 4 November 2026.",
     "llms": "Six iPhone photo vault apps compared by where the backup goes and who can open it: Private Photo Vault (Cloud Vault), Keepsafe (Private Cloud), PV (own cloud or Dropbox/Google Drive), Photo Vault (your own iCloud, end-to-end encrypted, or a file), Converter (your own iCloud), Calculator# (iCloud, Dropbox, Google Drive, OneDrive). Prices, privacy label, version and rating on 4 November 2026.",
@@ -71,7 +72,7 @@ PAGES = [{
         "In almost all of them the backup is a paid feature. Turn it on, or export the vault, before you reset or trade in the old phone.",
     ],
     "columns": ["App", "Price (US)", "Where the backup goes, per listing", "Who holds it", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "All six are free to download; prices are in-app purchases on each US App Store page on 4 November 2026 (pages list only some). Backup details are what each listing says; we did not test a restore.",
+    "table_note": "All six are free to download; prices are in-app purchases on each US App Store page on 4 November 2026 (pages list only some). Backup details are what each listing says; we did not test a restore. Privacy labels rechecked on 9 November 2026.",
     "apps": APPS,
     "who": ["<strong>Automatic backup, best-known app:</strong> Private Photo Vault.", "<strong>The same vault on several devices:</strong> Keepsafe.", "<strong>Dropbox or Google Drive:</strong> PV or Calculator#.",
             "<strong>Your own iCloud, no account, only you can open it:</strong> Photo Vault.", "<strong>Your own iCloud, paid once:</strong> Converter."],

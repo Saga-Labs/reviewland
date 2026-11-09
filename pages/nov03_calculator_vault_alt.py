@@ -11,9 +11,10 @@ TRACK = "Data Used to Track You"
 LINKED = "Data Linked to You"
 NOTLINKED = "Data Not Linked to You"
 NONE = "Data Not Collected"
+PVLABEL = "Data Not Linked to You (purchases)"
 HIDE = '<a href="/best-apps-to-hide-photos-iphone/">apps to hide photos</a>'
 PPV = '<a href="/private-photo-vault-alternatives-iphone/">Private Photo Vault alternatives</a>'
-NODATA = '<a href="/best-photo-vault-apps-no-data-collection-iphone/">photo vaults that collect no data</a>'
+NODATA = '<a href="/best-photo-vault-apps-no-data-collection-iphone/">photo vaults compared by privacy label</a>'
 
 
 def label(*x):
@@ -37,17 +38,17 @@ APPS = [
     app("Private Photo Vault - Pic Safe", 417571834, "private-photo-vault", "Legendary Software Labs LLC", 4.82, 1018919, "26.0", "2 Nov 2026", label(TRACK, LINKED),
         "Premium from $6.99 to $39.99; Upgrade $39.99", "Decoy password, face-down lock, break-in report with photo and GPS", "Encrypted Cloud Vault (paid)",
         "the best-known vault, with a decoy password and a report of who tried to get in.",
-        ["About 1 million ratings, the most of any vault here, and updated on 2 November 2026.", "Its listing names a decoy password, a face-down lock, a break-in report with a photo and GPS, and a private browser."],
+        ["Rated 4.8 stars and updated on 2 November 2026.", "Its listing names a decoy password, a face-down lock, a break-in report with a photo and GPS, and a private browser."],
         "the free version does not back up to its Cloud Vault, per its listing, and its privacy label includes data used to track you."),
     app("PV - Secret Photo Album", 867586326, "pv", "Haibin Jiao", 4.71, 30298, "7.7.9", "26 Oct 2026", label(TRACK, LINKED, NOTLINKED),
         "Pro $3.99 a month or $17.99 a year; lifetime $41.99; cloud backup from $12.99 a year", "Fake password, custom app icon, face-down jump to another app", "Paid cloud sync; third-party clouds with Pro",
         "the most features per dollar: fake password, custom icon and an emergency switch.",
         ["Its listing names a fake password, a custom app icon, and an Emergency Switch that jumps to another app when the phone faces down.", "Free unlimited storage on the phone, a trash folder and a photo editor; ads until you pay."],
         "the fake password needs a paid plan, per its listing, and the privacy label is the widest here."),
-    app("Photo Vault: Hide Pics Video", 1532670722, "photo-vault", "Saga Ltd.", 4.17, 6, "1.3.1", "1 Nov 2026", NONE,
+    app("Photo Vault: Hide Pics Video", 1532670722, "photo-vault", "Saga Ltd.", 4.17, 6, "1.3.1", "1 Nov 2026", PVLABEL,
         "Premium $19.99 or $29.99 a year; lifetime $14.99 or $29.99", "Icon that looks like Calculator, Notes or Weather; face-down exit", "Optional encrypted copy in your own iCloud",
         "a calculator-looking icon with no account, no ads and nothing uploaded unless you choose.",
-        ["Its listing says you can make the icon look like Calculator, Notes or Weather, and flipping the phone face down jumps to Safari, Calendar or Messages.", "A separate password for each album; no account and no server; privacy label Data Not Collected.", "Optional end-to-end encrypted copy in your own iCloud, or an encrypted backup file you keep."],
+        ["Its listing says you can make the icon look like Calculator, Notes or Weather, and flipping the phone face down jumps to Safari, Calendar or Messages.", "A separate password for each album; no account and no server; privacy label Data Not Linked to You, with purchases only (rechecked on 9 November 2026).", "Optional end-to-end encrypted copy in your own iCloud, or an encrypted backup file you keep."],
         "the icon looks like a calculator but the app does not work as one, and the free version is limited (Premium adds unlimited photos and the iCloud copy)."),
     app("Safe Lock - Hidden Photo Vault", 1195429570, "safe-lock", "Katerina Akhlebinina", 4.81, 24930, "3.1", "17 Aug 2026", NONE,
         "Premium $4.99, $19.99 or $29.99", "Fake password that opens a fake gallery; custom icon; shake or flip to lock", "Export to iCloud, Dropbox, Google Drive or Box",
@@ -64,7 +65,7 @@ APPS = [
 PAGES = [{
     "group": "calculator-vault-alternatives", "lang": "en", "store": "us", "path": "calculator-vault-alternatives-iphone/", "ct": "rl-calculator-vault-alt",
     "category": "PhotographyApplication", "cover": "hide-photos", "hide_from_related": True,
-    "published": DAY, "updated": DAY, "checked": DAY,
+    "published": DAY, "updated": "2026-11-09", "checked": DAY,
     "title": "Calculator# Alternatives: Photo Vaults for iPhone (2026)", "h1": "Calculator# alternatives for iPhone",
     "description": "Six iPhone photo vaults that hide or disguise themselves like Calculator#: decoy passwords, fake icons, fake crash screens. US prices, privacy labels and ratings on 3 November 2026.",
     "llms": "Six alternatives to Calculator# Hide Photos Videos on iPhone, each with a way to hide or disguise the vault: Converter: Hidden Photo Vault, Private Photo Vault, PV - Secret Photo Album, Photo Vault: Hide Pics Video, Safe Lock, Hide it Pro. Price, disguise, backup, privacy label, version, rating on 3 November 2026.",
@@ -74,7 +75,7 @@ PAGES = [{
         "If you only need photos out of your camera roll, iOS also has a locked Hidden album in Photos; see " + HIDE + ".",
     ],
     "columns": ["App", "Price (US)", "How it hides, per listing", "Backup", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "All six are free to download; prices are in-app purchases on each US App Store page on 3 November 2026 (pages list only some). For comparison, Calculator# 3.4.13 (30 October 2026): free with ads and limitations, Yearly Subscription $4.99 and Premium Features Pack $4.99; privacy label Data Used to Track You and Data Not Linked to You; rated 4.4 from 28,938 ratings.",
+    "table_note": "All six are free to download; prices are in-app purchases on each US App Store page on 3 November 2026 (pages list only some). For comparison, Calculator# 3.4.13 (30 October 2026): free with ads and limitations, Yearly Subscription $4.99 and Premium Features Pack $4.99; privacy label Data Used to Track You and Data Not Linked to You; rated 4.4 stars. Privacy labels rechecked on 9 November 2026.",
     "apps": APPS,
     "who": ["<strong>A vault inside a working-looking utility, paid once:</strong> Converter.", "<strong>Decoy password and break-in report:</strong> Private Photo Vault.", "<strong>Fake password and custom icon, cheapest yearly plan:</strong> PV - Secret Photo Album.",
             "<strong>Calculator-looking icon, no account, nothing uploaded:</strong> Photo Vault.", "<strong>A fake gallery behind a second password:</strong> Safe Lock.", "<strong>A fake crash screen:</strong> Hide it Pro."],
@@ -87,7 +88,7 @@ PAGES = [{
         ("What is the best alternative to Calculator#?", "For the same idea of a vault hidden inside an ordinary-looking app, Converter: Hidden Photo Vault. For the biggest, best-known vault, Private Photo Vault. For a calculator-looking icon with no account, Photo Vault."),
         ("Is there a calculator vault app without ads?", "Photo Vault shows no ads and can use a Calculator icon, but it does not work as a calculator. Converter works the same way with a currency converter and is paid once. Calculator# is free with ads until you pay $4.99 a year."),
         ("Which photo vault has a fake password?", "Private Photo Vault (decoy password), PV - Secret Photo Album (fake password, paid plan) and Safe Lock (fake password that opens a fake gallery), per their listings."),
-        ("Which of these collect no data?", "Converter, Photo Vault and Safe Lock show Data Not Collected on their App Store privacy labels on 3 November 2026."),
+        ("Which of these collect no data?", "Converter and Safe Lock show Data Not Collected on their App Store privacy labels. Photo Vault's label lists only purchases, not linked to you, with no tracking (rechecked on 9 November 2026)."),
     ],
     "sources": [(f"{a['name']} (App Store)", f"https://apps.apple.com/us/app/id{a['id']}") for a in APPS] + [
         ("Calculator# Hide Photos Videos (App Store)", "https://apps.apple.com/us/app/id1165276801"),

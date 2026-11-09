@@ -435,12 +435,12 @@ TR_CRYPTO = {
 
 # ---------------------------------------------------------------- vault-no-data
 TR_VAULT = {
-    "title": "Meilleures applis coffre-fort photo iPhone sans collecte de données",
-    "h1": "Meilleures applications coffre-fort photo sans collecte de données pour iPhone en 2026",
+    "title": "Applis coffre-fort photo iPhone comparées par étiquette de confidentialité",
+    "h1": "Applications coffre-fort photo pour iPhone comparées par étiquette de confidentialité (2026)",
     "description": "Six applis coffre-fort pour photos sur iPhone comparées selon l’étiquette de confidentialité de l’App Store : une seule déclare ne collecter aucune donnée. Safe Lock, Keepsafe et d’autres.",
     "llms": "Compare six applis coffre-fort photo pour iPhone (Photo Vault, Safe Lock, Keepsafe, Private Photo Vault, Privault, PV) : étiquette de confidentialité App Store, prix et sauvegarde cloud. Seule Safe Lock déclare aujourd’hui Aucune donnée collectée.",
     "answer": [
-        "Sur les six, une seule déclare <em>Aucune donnée collectée</em> sur son étiquette de confidentialité App Store au 9 novembre 2026 : Safe Lock. Les cinq autres listent des données utilisées pour vous suivre, des données liées à vous, ou les deux ; l’étiquette actuelle de Photo Vault: Hide Pics Video indique des données liées à vous. Une étiquette de confidentialité reflète ce que dit le développeur, pas un audit indépendant.",
+        "Sur les six, une seule déclare <em>Aucune donnée collectée</em> sur son étiquette de confidentialité App Store au 9 novembre 2026 : Safe Lock. Vient ensuite Photo Vault: Hide Pics Video, dont l’étiquette n’indique que des achats, en données non liées à vous, sans suivi. Les quatre autres listent des données utilisées pour vous suivre, des données liées à vous, ou les deux. Une étiquette de confidentialité reflète ce que dit le développeur, pas un audit indépendant.",
         "Si vous voulez aussi un cloud privé, Keepsafe est la seule option cloud sans données liées à vous ; Private Photo Vault a le plus de fonctionnalités mais aussi des données liées à vous et utilisées pour vous suivre.",
     ],
     "columns": ["App", "Prix (France)", "Sauvegarde cloud", "Étiquette de confidentialité App Store", "Version (date)", "Note (France)"],
@@ -450,7 +450,7 @@ TR_VAULT = {
             "row": [
                 "Gratuit au téléchargement ; Premium annuel 22,99 € ou 34,99 €, à vie 17,99 € ou 34,99 €",
                 "Sans compte ; copie chiffrée de bout en bout facultative dans votre propre iCloud (Premium, désactivée par défaut)",
-                "Données liées à vous",
+                "Données non liées à vous (achats)",
                 "1.4 (6 nov. 2026)",
                 "Pas encore de note",
             ],
@@ -460,7 +460,7 @@ TR_VAULT = {
                 "Icône déguisée (Calculatrice, Notes ou Météo) et sortie en retournant l’iPhone face vers le bas.",
                 "Pas de compte ; une copie chiffrée de bout en bout facultative dans votre propre iCloud (désactivée par défaut) ; pour passer à un nouvel iPhone, on exporte un fichier protégé par mot de passe. 19 langues, iOS 17 ou ultérieur.",
             ],
-            "limits": "son étiquette de confidentialité actuelle indique des données liées à vous ; pas de sauvegarde automatique sauf si vous activez la copie iCloud ; la version gratuite est limitée.",
+            "limits": "pas de sauvegarde automatique sauf si vous activez la copie iCloud ; la version gratuite est limitée.",
         },
         {
             "row": [
@@ -544,7 +544,7 @@ TR_VAULT = {
         },
     ],
     "who": [
-        "<strong>Vous voulez que rien ne soit collecté :</strong> Safe Lock.",
+        "<strong>Vous voulez que rien ne soit collecté :</strong> Safe Lock ; sans compte et avec une étiquette limitée aux achats, non liés à vous, Photo Vault: Hide Pics Video.",
         "<strong>Vous voulez un cloud privé avec une étiquette sans données liées à vous :</strong> Keepsafe.",
         "<strong>Vous voulez le plus de fonctions et acceptez une étiquette chargée :</strong> Private Photo Vault.",
         "<strong>Vous voulez un code leurre gratuit :</strong> Privault (Photo Vault en propose un avec Premium).",
@@ -561,7 +561,7 @@ TR_VAULT = {
     ],
     "faq": [
         ("Quelles applis coffre-fort photo affichent Aucune donnée collectée ?",
-         "Au 9 novembre 2026, Safe Lock (Photo Vault - Private Album dans l’App Store français). Photo Vault: Hide Pics Video, Keepsafe, Private Photo Vault, Privault et PV listent des données utilisées pour vous suivre ou des données liées à vous."),
+         "Au 9 novembre 2026, Safe Lock (Photo Vault - Private Album dans l’App Store français). Photo Vault: Hide Pics Video n’indique que des achats, non liés à vous. Keepsafe, Private Photo Vault, Privault et PV listent des données utilisées pour vous suivre ou des données liées à vous."),
         ("Une étiquette Aucune donnée collectée veut-elle dire que mes photos sont en sécurité ?",
          "Elle signifie que le développeur déclare à Apple ne collecter aucune donnée depuis l’appli. Ce n’est pas un audit, et cela ne dit rien de la qualité de protection de vos photos sur le téléphone."),
         ("Quel coffre-fort photo propose un cloud privé ?",

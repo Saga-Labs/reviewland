@@ -34,7 +34,7 @@ EN = {
     "path": "best-ai-chat-apps-iphone-no-account/",
     "ct": "rl-ai-chat",
     "category": "ProductivityApplication",
-    "published": CHECKED, "updated": "2026-10-30", "checked": CHECKED,
+    "published": CHECKED, "updated": "2026-11-09", "checked": CHECKED,
     "title": "Best AI Chat Apps for iPhone Without an Account (2026)",
     "h1": "Best AI chat apps for iPhone without an account in 2026",
     "description": "Seven AI chat apps for iPhone compared by account, free use, price and privacy: Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek and Ask AI.",
@@ -44,13 +44,13 @@ EN = {
         "If you want the most capable models, the official apps are better than Brainy: ChatGPT, Claude, Gemini and Perplexity give you their newest models, with paid plans from $8 (ChatGPT Go) to $20 a month.",
     ],
     "columns": ["App", "Price (US)", "Free use", "Account", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "Prices are the US App Store in-app purchases on 11 October 2026 (Ask AI and Brainy: 30 October 2026); all seven are free to download. \"Account\" is what the App Store listing says; where it does not say, we write so. Ratings are the App Store average that day.",
+    "table_note": "Prices are the US App Store in-app purchases on 11 October 2026 (Ask AI and Brainy: 30 October 2026); all seven are free to download. \"Account\" is what the App Store listing says; where it does not say, we write so. Ratings are the App Store average that day. Privacy labels rechecked on 9 November 2026.",
     "apps": [
         {
             "name": "Easy AI Assistant: Brainy", "id": 1667947372, "ours": True, "anchor": "brainy",
             "developer": "Saga Ltd.",
             "row": ["Pro $6.99 a week or $49.99 a year (3-day trial)", "A daily limit on chat", "None (anonymous sign-in you never see)",
-                    "Data Used to Track You; Data Not Linked to You", "1.5.0 (25 Oct 2026)", "4.7"],
+                    "Data Used to Track You; Data Linked to You; Data Not Linked to You", "1.5.0 (25 Oct 2026)", "4.7"],
             "best_for": "quick questions, homework and rewriting text without signing up for anything.",
             "facts": [
                 "Since version 1.5 the chat runs on Google Gemini (Gemini 3.1 Flash Lite), which also reads the photos you send.",
@@ -176,7 +176,7 @@ ES = {
     "path": "es/mejores-apps-chat-ia-sin-cuenta-iphone/",
     "ct": "rl-ai-chat-es",
     "category": "ProductivityApplication",
-    "published": CHECKED, "updated": "2026-10-30", "checked": CHECKED,
+    "published": CHECKED, "updated": "2026-11-09", "checked": CHECKED,
     "title": "Mejores apps de chat con IA sin cuenta para iPhone (2026)",
     "h1": "Mejores apps de chat con IA para iPhone sin cuenta en 2026",
     "description": "Siete apps de chat con IA para iPhone comparadas por cuenta, uso gratis, precio y privacidad: Brainy, ChatGPT, Gemini, Claude, Perplexity, DeepSeek y Ask AI.",
@@ -186,13 +186,13 @@ ES = {
         "Si quieres los modelos más potentes, las apps oficiales son mejores que Brainy: ChatGPT, Claude, Gemini y Perplexity dan sus modelos más nuevos, con planes desde 7,99 € (ChatGPT Go) hasta unos 23 € al mes.",
     ],
     "columns": ["App", "Precio (España)", "Uso gratis", "Cuenta", "Etiqueta de privacidad", "Versión (fecha)", "Valoración (España)"],
-    "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026 (Ask AI y Brainy: 30 de octubre de 2026); las siete se descargan gratis. «Cuenta» es lo que dice la ficha; si no lo dice, lo ponemos. Valoración: media en España ese día.",
+    "table_note": "Precios: compras dentro de la app del App Store de España el 11 de octubre de 2026 (Ask AI y Brainy: 30 de octubre de 2026); las siete se descargan gratis. «Cuenta» es lo que dice la ficha; si no lo dice, lo ponemos. Valoración: media en España ese día. Etiquetas de privacidad revisadas el 9 de noviembre de 2026.",
     "apps": [
         {
             "name": "Asistente IA fácil: Brainy", "id": 1667947372, "ours": True, "anchor": "brainy",
             "developer": "Saga Ltd.",
             "row": ["Pro 7,99 € a la semana o 59,99 € al año (prueba de 3 días)", "Un límite diario en el chat", "Ninguna (acceso anónimo que no ves)",
-                    "Datos utilizados para rastrearte; datos no vinculados a ti", "1.5.0 (25 oct 2026)", "5,0"],
+                    "Datos utilizados para rastrearte; datos vinculados a ti; datos no vinculados a ti", "1.5.0 (25 oct 2026)", "5,0"],
             "best_for": "preguntas rápidas, deberes y reescribir textos sin registrarte en nada.",
             "facts": [
                 "Desde la versión 1.5 el chat funciona con Google Gemini (Gemini 3.1 Flash Lite), que también lee las fotos que mandas.",
