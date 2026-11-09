@@ -657,7 +657,7 @@ FR = dict(
 <tr><td>USD1 (stablecoin)</td><td>US$ 0,998</td><td>US$ 0,998</td><td>a gardé son ancrage à 1 $</td><td>environ 3,44 milliards US$</td></tr>
 <tr><td>Bitcoin, pour comparaison</td><td>US$ 78 294</td><td>US$ 75 820</td><td>environ −3 %</td><td>environ 1,52 billion US$</td></tr>
 </tbody></table></div>
-<p class="note">Prix en dollars américains selon l’API CoinGecko : la colonne du 1er novembre correspond à la clôture de ce jour, celle du 8 novembre au prix de l’après-midi du 8 novembre (UTC). La plus forte baisse journalière de TRUMP de la semaine a eu lieu le 4 novembre, le lendemain de l’élection, de environ 1,59 $ à 1,27 $. Rien sur cette page ne constitue un conseil financier.</p>
+<p class="note">Prix en dollars américains selon l’API CoinGecko : la colonne du 1er novembre correspond à la clôture de ce jour, celle du 8 novembre au prix de l’après-midi du 8 novembre (UTC). La plus forte baisse journalière de TRUMP de la semaine a eu lieu le 4 novembre, le lendemain de l’élection, d’environ 1,59 $ à 1,27 $. Rien sur cette page ne constitue un conseil financier.</p>
 """,
     columns=["App", "Prix (US)", "Liste WLFI, TRUMP, USD1", "Alertes de prix", "Widget", "Compte requis", "Version (date)", "Note (US)"],
     table_note="Prix, versions et notes sont ceux des pages américaines de l’App Store au 8 novembre 2026 ; les cinq apps se téléchargent gratuitement. Alertes, widgets et compte sont décrits comme sur chaque fiche. La présence des jetons a été vérifiée sur le site de chaque société ou sur les données du 8 novembre.",
@@ -749,3 +749,121 @@ FR = dict(
 )
 
 PAGES.append(_translated("fr", "fr", "fr", FR))
+
+
+_AR_WIDGETS = '<a href="/best-crypto-price-widget-apps-iphone/">تطبيقات أدوات أسعار العملات المشفرة</a>'
+_AR_ALERTS = '<a href="/best-crypto-price-alert-apps-iphone/">تطبيقات تنبيهات أسعار العملات المشفرة</a>'
+_AR_NOCONNECT = '<a href="/crypto-portfolio-tracker-without-connecting-wallet-iphone/">متتبّعات لا تطلب محفظة أو منصة</a>'
+
+AR = dict(
+    kicker="5 تطبيقات · تصنيف · أخبار",
+    title="أفضل تطبيقات iPhone لتتبع أسعار WLFI وTRUMP وUSD1 (نوفمبر 2026)",
+    h1="أفضل تطبيقات iPhone لتتبع أسعار WLFI وTRUMP وUSD1 (نوفمبر 2026)",
+    description="خمسة تطبيقات iPhone تتابع World Liberty Financial (WLFI) وعملة TRUMP الميمية وUSD1، مقارنة حسب السعر والتنبيهات والأدوات والحساب في 8 نوفمبر 2026.",
+    llms="خمسة تطبيقات iPhone لمتابعة WLFI وTRUMP وUSD1 بعد الانتخابات النصفية الأمريكية في نوفمبر 2026: CoinGecko وCoinMarketCap وCoinStats وCrypton وDelta. أيها يدرج الرموز الثلاثة، والتنبيهات، والأدوات، والحساب، والسعر في الولايات المتحدة، والتقييم. مع أسعار CoinGecko من 1 إلى 8 نوفمبر 2026 وسياق أخبار مؤرخ. ليست توصية مالية.",
+    answer=[
+        "لمتابعة WLFI وTRUMP وUSD1 مع تنبيهات الأسعار، تُدرج <strong>CoinGecko</strong> و<strong>CoinMarketCap</strong> و<strong>CoinStats</strong> الرموز الثلاثة جميعها؛ وCoinStats يربط محفظتك أيضًا ويوفر أدوات على شاشة القفل.",
+        "لأداة مجانية على الشاشة الرئيسية دون حساب أو شراء، تجد <strong>Crypton</strong> الرموز الثلاثة بالبحث لكنها بلا تنبيهات؛ و<strong>Delta</strong> مناسب لمحفظة تجمع العملات المشفرة والأسهم.",
+    ],
+    context_html=f"""<h2 id="context">ما الذي حدث (8 نوفمبر 2026)</h2>
+<p>بعد الانتخابات النصفية في 3 نوفمبر، فاز الديمقراطيون بأغلبية في مجلس النواب وفق توقعات NBC News وMS NOW، ويخططون للتحقيق في الأنشطة المشفرة لعائلة ترامب، بما فيها World Liberty Financial (رمز WLFI والعملة المستقرة USD1) وعملة TRUMP الميمية. <a href="{CNEWS}">ذكر موقع crypto.news</a> أن التحقيقات قد تبدأ في فبراير 2027. رفض البيت الأبيض هذه الخطط؛ وقبل التصويت وصفت متحدثة جدول أعمال الديمقراطيين بأنه «مطاردة ساحرات» وفق التقرير نفسه. <a href="{CNBC}">وكتبت CNBC</a> أن النتيجة تضع صناعة العملات المشفرة في موقف دفاعي في واشنطن، ونشرت صحيفة Financial Times القصة في صفحتها الأولى في 8 نوفمبر تحت عنوان «Crypto industry braces for reckoning over Trump ties» (بالإنجليزية).</p>
+<div class="scroll"><table style="min-width:0">
+<thead><tr><th>الرمز</th><th>1 نوفمبر 2026</th><th>8 نوفمبر 2026</th><th>التغير</th><th>القيمة السوقية، 8 نوفمبر</th></tr></thead>
+<tbody>
+<tr><td>TRUMP (Official Trump)</td><td>$1.71</td><td>$1.16</td><td>نحو −32%</td><td>نحو 328 مليون $</td></tr>
+<tr><td>WLFI (World Liberty Financial)</td><td>$0.050</td><td>$0.046</td><td>نحو −8%</td><td>نحو 1.47 مليار $</td></tr>
+<tr><td>USD1 (عملة مستقرة)</td><td>$0.998</td><td>$0.998</td><td>حافظت على ربطها بالدولار</td><td>نحو 3.44 مليار $</td></tr>
+<tr><td>Bitcoin للمقارنة</td><td>$78,294</td><td>$75,820</td><td>نحو −3%</td><td>نحو 1.52 تريليون $</td></tr>
+</tbody></table></div>
+<p class="note">الأسعار بالدولار الأمريكي من واجهة CoinGecko: عمود 1 نوفمبر هو سعر إغلاق ذلك اليوم، وعمود 8 نوفمبر هو السعر بعد ظهر 8 نوفمبر (UTC). وكان أكبر انخفاض يومي لـ TRUMP في الأسبوع يوم 4 نوفمبر، أي اليوم التالي للانتخابات، من نحو 1.59 دولار إلى 1.27 دولار. لا شيء في هذه الصفحة نصيحة مالية.</p>
+""",
+    columns=["التطبيق", "السعر (الولايات المتحدة)", "يدرج WLFI وTRUMP وUSD1", "تنبيهات الأسعار", "أداة", "الحساب مطلوب", "الإصدار (التاريخ)", "التقييم (الولايات المتحدة)"],
+    table_note="الأسعار والإصدارات والتقييمات كما هي في صفحات App Store الأمريكية في 8 نوفمبر 2026؛ والتطبيقات الخمسة مجانية للتنزيل. التنبيهات والأدوات والحساب كما تصفها كل صفحة. وقد جرى التحقق من الرموز على موقع كل شركة أو من بيانات 8 نوفمبر.",
+    apps=[
+        dict(
+            row=["مجاني؛ Premium بسعر 9.90$ شهريًا أو 99.90$ سنويًا", "نعم، الثلاثة", "نعم: تنبيهات السعر وتنبيهات التحركات الكبيرة", "نعم، على الشاشة الرئيسية", "لا تذكر الصفحة أنه مطلوب", "3.60.0 (27 أكتوبر 2026)", "4.8"],
+            best_for="متابعة WLFI وTRUMP وUSD1 بالبيانات نفسها الموجودة في جدول الأسعار أعلاه، مع التنبيهات.",
+            facts=[
+                "تضم بيانات CoinGecko الرموز Official Trump وWorld Liberty Financial وUSD1، لذا يمكنك إضافتها جميعًا إلى قائمة المراقبة.",
+                "بحسب الصفحة: تنبيهات سعر مخصصة وتنبيهات للتحركات الكبيرة للعملات في قائمة المراقبة، ومحفظة بالأرباح والخسائر، وأداة على الشاشة الرئيسية.",
+                "تصنيف حسب فئات مثل العملات الميمية، وفيها TRUMP.",
+            ],
+            limits="باللغة الإنجليزية فقط، ولا تذكر الصفحة عدد التنبيهات المجانية.",
+        ),
+        dict(
+            row=["مجاني؛ Essential بسعر 11.99$ شهريًا أو 109.99$ سنويًا؛ Plus بسعر 23.99$ شهريًا أو 229.99$ سنويًا؛ Max بسعر 119.99$ شهريًا", "نعم، الثلاثة", "نعم: تنبيهات سعر قابلة للتخصيص", "لا تذكر الصفحة ذلك", "مطلوب للمحفظة؛ وضع التصفح الخاص بلا تسجيل دخول", "5.24.0 (1 نوفمبر 2026)", "4.8"],
+            best_for="المتتبّع الأكثر تقييمًا: تنبيهات لأي من الرموز الثلاثة.",
+            facts=[
+                "لدى CoinMarketCap صفحات لـ Official Trump وWorld Liberty Financial وWorld Liberty Financial USD (USD1).",
+                "تنبيهات سعر قابلة للتخصيص وقوائم مراقبة؛ بحسب الصفحة تتابع أكثر من 45,000 سوق نشط.",
+                "نحو 173,000 تقييم في الولايات المتحدة، وهو الأعلى في هذه القائمة، و21 لغة.",
+            ],
+            limits="تطلب الصفحة إنشاء حساب لإعداد المحفظة (وضع التصفح الخاص يُبقي البيانات على الهاتف)، ولا تذكر أداة، وخططها هي الأغلى في هذه القائمة.",
+        ),
+        dict(
+            row=["مجاني؛ Pro بسعر 4.99$ شهريًا أو 39.99$ سنويًا؛ Premium بسعر 15.99$ إلى 19.99$ شهريًا أو 65.99$ إلى 164.99$ سنويًا", "نعم، الثلاثة", "نعم: تنبيهات السعر والحجم والقيمة السوقية، إضافة إلى Auto Alerts", "نعم: الشاشة الرئيسية وشاشة القفل وApple Watch", "لا تذكر الصفحة أنه مطلوب", "5.31.1 (30 أكتوبر 2026)", "4.8"],
+            best_for="من يحتفظ بـ WLFI أو TRUMP في محفظة أو منصة تداول ويريد متابعتها تلقائيًا، مع تنبيهات وأدوات على شاشة القفل.",
+            facts=[
+                "لدى coinstats.app صفحات لـ Official Trump وWorld Liberty Financial وUSD1.",
+                "يتصل بأكثر من 300 محفظة ومنصة ويعرض الأرباح والخسائر فوريًا؛ وبحسب الصفحة يغطي أسعار أكثر من 20,000 عملة.",
+                "تنبيهات سعر أو حجم أو قيمة سوقية لأي عملة، وأدوات على الشاشة الرئيسية وشاشة القفل وApple Watch.",
+            ],
+            limits="خطط مدفوعة كثيرة تتداخل مع بعضها، ولا تكتمل التحليلات إلا بخطة Premium.",
+        ),
+        dict(
+            row=["مجاني، بلا مشتريات داخل التطبيق", "نعم، بالبحث (بيانات CoinGecko)", "لا", "نعم: الأسعار والمحفظة (الشاشة الرئيسية)", "لا (اختياري، فقط للمزامنة)", "2.0.8 (24 أكتوبر 2026)", "4.7"],
+            best_for="قائمة مراقبة مجانية لـ WLFI وTRUMP وUSD1 على الشاشة الرئيسية، دون حساب ودون دفع أي شيء.",
+            facts=[
+                "أسعار مباشرة لأكبر 250 عملة، والبحث عن أي عملة مدرجة في CoinGecko، لذا يمكن إضافة WLFI وTRUMP وUSD1 إلى المفضلة، بحسب الصفحة.",
+                "محفظة بالأرباح والخسائر لكل عملة، وأدوات على الشاشة الرئيسية للأسعار وللمحفظة.",
+                "بلا مشتريات داخل التطبيق؛ باللغة الإنجليزية فقط، ويتطلب iOS 18 أو أحدث.",
+            ],
+            limits="لا توجد تنبيهات أسعار في النسخة الحالية، ولا أداة لشاشة القفل ولا تطبيق لـ Apple Watch، ولا مزامنة مع المحافظ أو المنصات. للتنبيهات راجع " + _AR_ALERTS + ".",
+        ),
+        dict(
+            row=["مجاني حتى 10 أصول؛ PRO بسعر 6.99$ إلى 13.99$ شهريًا أو 58.99$ إلى 99.90$ سنويًا؛ PRO+ بسعر 13.99$ شهريًا أو 107.99$ سنويًا", "غير مُتحقَّق منه (الصفحة: أكثر من 10,000 عملة)", "نعم: أسعار مستهدفة وتحركات كبيرة", "لا تذكر الصفحة ذلك", "لا تذكر الصفحة ذلك", "2026.3.2 (5 نوفمبر 2026)", "4.7"],
+            best_for="متابعة العملات المشفرة والأسهم في محفظة واحدة مع التنبيهات.",
+            facts=[
+                "تتابع معًا العملات المشفرة والأسهم والصناديق المتداولة والسلع والعملات الأجنبية؛ أكثر من 10,000 عملة بحسب الصفحة.",
+                "تنبيهات ذكية للأسعار المستهدفة والتحركات الكبيرة، وإشعارات مخصصة لمعالم المحفظة.",
+                "الخطة المجانية تتابع حتى 10 أصول؛ وPRO حتى 40؛ وPRO+ بلا حد.",
+            ],
+            limits="لم نتمكن من التأكد من موقع Delta أنه يدرج WLFI وTRUMP وUSD1؛ والخطة المجانية تتوقف عند 10 أصول؛ وتضم ملصقة الخصوصية بيانات مستخدمة للتتبع.",
+        ),
+    ],
+    who=["<strong>تنبيهات عند تحرك TRUMP أو WLFI بقوة:</strong> CoinGecko (تنبيهات التحركات الكبيرة) أو CoinStats (Auto Alerts).",
+         "<strong>المتتبّع الأكثر استخدامًا:</strong> CoinMarketCap.",
+         "<strong>رموز في محفظة أو منصة:</strong> CoinStats.",
+         "<strong>نظرة سريعة على الأسعار الثلاثة دون حساب:</strong> Crypton.",
+         "<strong>العملات المشفرة والأسهم في مكان واحد:</strong> Delta."],
+    cases=["معرفة هل تبقى USD1 عند دولار واحد: أي تطبيق في القائمة يتابعها؛ وCoinGecko وCoinMarketCap تعرضان قيمتها السوقية أيضًا.",
+           "استلام إشعار إذا انخفض TRUMP 10% أخرى: CoinGecko أو CoinMarketCap أو CoinStats أو Delta (مع التنبيهات)؛ لا Crypton.",
+           "إبقاء WLFI وTRUMP على الشاشة الرئيسية: CoinGecko أو CoinStats أو Crypton. المزيد في تصنيفات " + _AR_WIDGETS + " و" + _AR_ALERTS + ".",
+           "متابعة الأرصدة دون ربط محفظة: راجع " + _AR_NOCONNECT + "."],
+    method=["في 8 نوفمبر 2026 قرأنا صفحة كل تطبيق الأمريكية في App Store وبيانات البحث من Apple (السعر والمشتريات داخل التطبيق والإصدار والتقييم ونص الوصف). وللتحقق مما إذا كان كل تطبيق يدرج WLFI وTRUMP وUSD1، راجعنا بيانات CoinGecko وصفحات العملات في CoinMarketCap وCoinStats وصفحة Crypton (الذي يبحث عبر CoinGecko)؛ ولم يسمح موقع Delta بالتحقق. لم نثبّت التطبيقات ولم نختبر سرعة وصول التنبيهات.",
+            "سياق الأخبار منسوب إلى المواقع المرتبطة أعلاه؛ ولا تتخذ هذه الصفحة موقفًا من التحقيقات. لا يُعد أي من هذه التطبيقات منصة تداول، ولا شيء هنا نصيحة مالية."],
+    faq=[
+        ("أي تطبيق يعرض سعر WLFI على iPhone؟", "تدرج CoinGecko وCoinMarketCap وCoinStats شركة World Liberty Financial (WLFI)، ويجدها Crypton بالبحث لأنه يستخدم بيانات CoinGecko."),
+        ("هل يمكنني تلقي تنبيه بسعر عملة TRUMP الميمية؟", "نعم، مع CoinGecko أو CoinMarketCap أو CoinStats أو Delta، وكلها تتيح تنبيهات الأسعار. Crypton لا يملك تنبيهات أسعار."),
+        ("هل ما زالت USD1 تساوي دولارًا واحدًا؟", "بحسب CoinGecko، تداولت بنحو 0.998 دولار من 1 إلى 8 نوفمبر 2026، وبلغت قيمتها السوقية نحو 3.44 مليار دولار."),
+        ("لماذا انخفض TRUMP وWLFI في نوفمبر 2026؟", "بحسب CoinGecko، انخفض TRUMP بنحو 32% وWLFI بنحو 8% من 1 إلى 8 نوفمبر، في الأسبوع الذي قال فيه الديمقراطيون، الذين فازوا بالأغلبية في المجلس، إنهم يخططون للتحقيق في الأنشطة المشفرة لعائلة ترامب، بحسب crypto.news وCNBC. لا تنسب هذه الصفحة تحرك الأسعار إلى سبب محدد، وليست نصيحة مالية."),
+        ("هل أحتاج إلى حساب لمتابعة هذه الرموز؟", "ليس في Crypton (الحساب للمزامنة فقط). تتطلب CoinMarketCap حسابًا للمحفظة لكن لديها وضع تصفح خاص؛ ولا تذكر الصفحات الأخرى أن الحساب مطلوب."),
+    ],
+    sources=["crypto.news، 4 نوفمبر 2026: الديمقراطيون يستعدون للتحقيق في World Liberty Financial بعد فوزهم في مجلس النواب",
+             "CNBC، 5 نوفمبر 2026: فوز الديمقراطيين يضع العملات المشفرة في موقف دفاعي في واشنطن",
+             "Financial Times، 8 نوفمبر 2026، الصفحة الأولى: «Crypto industry braces for reckoning over Trump ties» (العنوان فقط)",
+             "واجهة CoinGecko: أسعار TRUMP وWLFI وUSD1 وBTC",
+             "CoinMarketCap: Official Trump",
+             "CoinMarketCap: World Liberty Financial",
+             "CoinMarketCap: USD1",
+             "CoinStats: Official Trump",
+             "CoinStats: World Liberty Financial",
+             "CoinStats: USD1",
+             "CoinGecko: Crypto Tracker (App Store)",
+             "CoinMarketCap: Crypto Tracker (App Store)",
+             "CoinStats: Crypto Portfolio (App Store)",
+             "Crypto Tracker: Crypton (App Store)",
+             "Delta by eToro (App Store)"],
+)
+
+PAGES.append(_translated("ar", "ar", "ar", AR))
