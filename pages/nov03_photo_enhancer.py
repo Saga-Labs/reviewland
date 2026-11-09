@@ -21,7 +21,7 @@ APPS = [
     app("Remini - AI Photo Enhancer", 1470373330, "remini", "BENDING SPOONS OPERATIONS SPA", 4.61, 358448, "2.10.221", "10 Oct 2026", 17, label(TRACK, LINKED, NOTLINKED),
         "Lite weekly $4.99 to $7.99, Pro weekly $9.99, 1 month $9.99", "Old, blurry, scratched or low-resolution photos to HD",
         "faces in old or blurry photos, in one tap.",
-        ["Its listing says it turns grainy, pixelated, damaged and low-resolution photos into clear HD, and repairs old or scratched ones.", "One of the most-rated enhancers on the App Store, about 358,000 ratings."],
+        ["Its listing says it turns grainy, pixelated, damaged and low-resolution photos into clear HD, and repairs old or scratched ones.", "One of the most-rated enhancers on the App Store."],
         "the plans listed are weekly, and its privacy label includes Data Used to Track You."),
     app("Citrus 1 Tap Photo Enhancer AI", 1589210147, "citrus", "Wemagine.ai LLP", 4.77, 18953, "2.5.9", "17 Oct 2026", 1, label(TRACK, NOTLINKED),
         "Weekly $2.99 to $5.99, yearly $39.99 to $69.99; 3-day trial", "One-tap unblur, sharpen and denoise, kept natural",

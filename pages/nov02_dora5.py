@@ -60,7 +60,7 @@ def runway(best, facts, limits):
 
 
 COLS = ["App", "Price (US)", "What it does", "Languages", "App Store privacy label", "Version (date)", "Rating (US)"]
-NOTE = "Prices are in-app purchases listed on each US App Store page on 2 November 2026, and pages list only some. Ratings are that day's App Store average and count."
+NOTE = "Prices are in-app purchases listed on each US App Store page on 2 November 2026, and pages list only some. Ratings are that day's App Store average."
 METHOD = ["On 2 November 2026 we read each app's US App Store page and Apple's lookup data. What each app does comes from its own listing. We ran no quality test, so we do not say which one looks best.", "Prices change often. Check inside each app before paying."]
 
 
@@ -83,7 +83,7 @@ CAPCUT = page(
         app("Filmora: AI Video Editor&Maker", 1019382747, "filmora", "Shenzhen Wondershare Software Co., Ltd", 4.68, 90136, "15.7.62", "26 Oct 2026", 20, label(TRACK, LINKED, NOTLINKED), "Free to download; Pro $9.99 a month or $45.99 a year; AI credit packs from $8.99", "Editor with text to video, image to video and AI captions", "one app that both edits and generates.", ["Lists Image to Video, Text to Video, AI Auto Cut and Dynamic Captions."], "AI credits are sold separately, and its privacy label lists all three data categories."),
         dora("Text or photo to a short video, several models", "generating the clip you would otherwise film, then finishing it in an editor.", ["About two minutes a video, up to 1080p, no watermark, per its listing.", "Shows the coin cost before you generate."], "it is not an editor: no timeline, so it does not replace CapCut's editing. No free video."),
     ],
-    ["Which alternative fits depends on what you use CapCut for. To edit clips you filmed, start with Edits or VN, both free according to their listings. To make video from a sentence, CapCut's own listing does not describe that, so look at Canva, Filmora or Dora.", "For reference, CapCut itself is at version 19.9.0 (27 October 2026), rated 4.6 from 1,125,712 ratings, with Standard at $9.99 a month and Pro at $19.99."],
+    ["Which alternative fits depends on what you use CapCut for. To edit clips you filmed, start with Edits or VN, both free according to their listings. To make video from a sentence, CapCut's own listing does not describe that, so look at Canva, Filmora or Dora.", "For reference, CapCut itself is at version 19.9.0 (27 October 2026), rated 4.6 from over 1.1 million ratings, with Standard at $9.99 a month and Pro at $19.99."],
     ["<strong>Free editing for Instagram:</strong> Edits.", "<strong>A free timeline:</strong> VN.", "<strong>Pay once:</strong> InShot.", "<strong>Text to video with design tools:</strong> Canva.", "<strong>Editing and generating together:</strong> Filmora.", "<strong>A generated clip to finish elsewhere:</strong> Dora."],
     ["Replacing CapCut for captions and quick cuts.", "Avoiding a monthly plan.", "Adding generated shots to a video you filmed."],
     [("What is the best free alternative to CapCut on iPhone?", "Edits and VN both describe themselves as free with no watermark on their listings. Edits lists no purchases; VN sells a Pro plan and credits."),

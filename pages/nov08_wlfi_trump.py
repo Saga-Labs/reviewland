@@ -55,7 +55,7 @@ APPS = [
         "the most-rated tracker, with alerts on any of the three tokens.",
         ["CoinMarketCap has pages for Official Trump, World Liberty Financial and World Liberty Financial USD (USD1).",
          "Customisable price alerts and watchlists; tracks 45,000+ active markets, per its listing.",
-         "About 173,000 US ratings, the most here, and 21 languages."],
+         "The most ratings here, and 21 languages."],
         "its listing says to sign up to make a portfolio (incognito mode keeps data on the phone), it does not mention a widget, and its plans are the most expensive here."),
     app("CoinStats: Crypto Portfolio", 1247849330, "coinstats", "COINSTATSAPP LLC", 4.76, 86114, "5.31.1", "30 Oct 2026",
         "Free; Pro $4.99 a month or $39.99 a year; Premium $15.99 to $19.99 a month or $65.99 to $164.99 a year", "Yes, all three",
@@ -206,7 +206,7 @@ RU = dict(
             facts=[
                 "У CoinMarketCap есть страницы Official Trump, World Liberty Financial и World Liberty Financial USD (USD1).",
                 "Настраиваемые оповещения о цене и списки наблюдения; по описанию, отслеживает более 45 000 активных рынков.",
-                "Около 173 000 оценок в США, больше всех в этой подборке, и 21 язык.",
+                "Больше всего оценок в этой подборке и 21 язык.",
             ],
             limits="в описании сказано зарегистрироваться, чтобы составить портфель (режим инкогнито хранит данные на телефоне), виджет не упомянут, а тарифы здесь самые дорогие.",
         ),
@@ -324,7 +324,7 @@ DE = dict(
             facts=[
                 "CoinMarketCap hat Seiten für Official Trump, World Liberty Financial und World Liberty Financial USD (USD1).",
                 "Anpassbare Kursalarme und Beobachtungslisten; laut Beschreibung über 45.000 aktive Märkte.",
-                "Rund 173.000 Bewertungen in den USA, die meisten in dieser Liste, und 21 Sprachen.",
+                "Die meisten Bewertungen in dieser Liste und 21 Sprachen.",
             ],
             limits="Die Beschreibung verlangt eine Anmeldung für ein Portfolio (der Inkognitomodus hält die Daten auf dem Telefon), ein Widget wird nicht erwähnt, und die Tarife sind hier die teuersten.",
         ),
@@ -442,7 +442,7 @@ JA = dict(
             facts=[
                 "CoinMarketCapにはOfficial Trump、World Liberty Financial、World Liberty Financial USD（USD1）のページがあります。",
                 "カスタマイズ可能な価格アラートとウォッチリスト。説明文によれば、45,000以上のアクティブな市場を追跡します。",
-                "米国で約17万3,000件の評価があり、この一覧で最多。21言語対応。",
+                "評価の数はこの一覧で最多。21言語対応。",
             ],
             limits="説明文ではポートフォリオを作るにはサインアップが必要とされ（シークレットモードなら端末にデータが残る）、ウィジェットには触れておらず、料金プランはここで最も高額です。",
         ),
@@ -560,7 +560,7 @@ PT = dict(
             facts=[
                 "A CoinMarketCap tem páginas de Official Trump, World Liberty Financial e World Liberty Financial USD (USD1).",
                 "Alertas de preço personalizáveis e listas de acompanhamento; segundo a ficha, acompanha mais de 45.000 mercados ativos.",
-                "Cerca de 173.000 avaliações nos EUA, as mais numerosas aqui, e 21 idiomas.",
+                "O maior número de avaliações aqui e 21 idiomas.",
             ],
             limits="a ficha diz para criar conta para montar uma carteira (o modo anônimo mantém os dados no celular), não menciona widget, e os planos são os mais caros desta lista.",
         ),
@@ -678,7 +678,7 @@ FR = dict(
             facts=[
                 "CoinMarketCap a des pages pour Official Trump, World Liberty Financial et World Liberty Financial USD (USD1).",
                 "Alertes de prix personnalisables et listes de suivi ; selon la fiche, plus de 45 000 marchés actifs.",
-                "Environ 173 000 notes aux États-Unis, le plus grand nombre ici, et 21 langues.",
+                "Le plus grand nombre de notes ici, et 21 langues.",
             ],
             limits="la fiche indique qu’il faut créer un compte pour établir un portefeuille (le mode incognito garde les données sur le téléphone), ne mentionne pas de widget, et ses formules sont les plus chères de cette liste.",
         ),
@@ -796,7 +796,7 @@ AR = dict(
             facts=[
                 "لدى CoinMarketCap صفحات لـ Official Trump وWorld Liberty Financial وWorld Liberty Financial USD (USD1).",
                 "تنبيهات سعر قابلة للتخصيص وقوائم مراقبة؛ بحسب الصفحة تتابع أكثر من 45,000 سوق نشط.",
-                "نحو 173,000 تقييم في الولايات المتحدة، وهو الأعلى في هذه القائمة، و21 لغة.",
+                "أكبر عدد من التقييمات في هذه القائمة، و21 لغة.",
             ],
             limits="تطلب الصفحة إنشاء حساب لإعداد المحفظة (وضع التصفح الخاص يُبقي البيانات على الهاتف)، ولا تذكر أداة، وخططها هي الأغلى في هذه القائمة.",
         ),
@@ -914,7 +914,7 @@ ES = dict(
             facts=[
                 "CoinMarketCap tiene páginas de Official Trump, World Liberty Financial y World Liberty Financial USD (USD1).",
                 "Alertas de precio personalizables y listas de seguimiento; según su ficha, sigue más de 45.000 mercados activos.",
-                "Unas 173.000 valoraciones en EE. UU., las más de esta lista, y 21 idiomas.",
+                "La que más valoraciones tiene de esta lista, y 21 idiomas.",
             ],
             limits="la ficha pide crear una cuenta para hacer una cartera (el modo incógnito mantiene los datos en el teléfono), no menciona widget y sus planes son los más caros de la lista.",
         ),

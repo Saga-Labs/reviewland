@@ -72,7 +72,7 @@ PAGES = [{
         "All have a free way to start and sell subscriptions. If you leave DeepSeek over where your data goes, read each app's privacy label: every one here lists data linked to you or used to track you.",
     ],
     "columns": ["App", "Price (US)", "Free", "What it adds, per listing", "Languages", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "Prices are those listed on each US App Store page on 3 November 2026; pages list only some purchases. For comparison, DeepSeek 2.7.2 (2 November 2026) is free with no in-app purchases, 71 languages, privacy label Data Linked to You, rated 3.9 from 12,484 ratings.",
+    "table_note": "Prices are those listed on each US App Store page on 3 November 2026; pages list only some purchases. For comparison, DeepSeek 2.7.2 (2 November 2026) is free with no in-app purchases, 71 languages, privacy label Data Linked to You, rated 3.9.",
     "apps": APPS,
     "who": ["<strong>One app for everything:</strong> ChatGPT.", "<strong>Reasoning, writing and code:</strong> Claude.", "<strong>Google apps and a cheap plan:</strong> Gemini.",
             "<strong>Answers with sources:</strong> Perplexity.", "<strong>DeepSeek's model plus others:</strong> Ask AI.", "<strong>A European company:</strong> Vibe by Mistral.", "<strong>Agents that build things:</strong> Kimi."],

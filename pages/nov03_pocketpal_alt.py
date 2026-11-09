@@ -31,7 +31,7 @@ APPS = [
     app("Locally AI by LM Studio", 6741426692, "locally", "Element Labs Inc", 4.7, 1903, "1.66.0", "15 Oct 2026", NONE,
         "Free (no in-app purchases)", "Llama 3.2, Gemma 2 and 3, Qwen 3, DeepSeek and more", "No, a curated list", "18.1",
         "a free, polished app from the LM Studio team that just works.",
-        ["Its listing says it runs on iPhone and iPad with Apple MLX, with no login and no data collection.", "Reads images as well as text; the most ratings here, about 1,900."],
+        ["Its listing says it runs on iPhone and iPad with Apple MLX, with no login and no data collection.", "Reads images as well as text; the most-rated app here."],
         "you cannot load your own model files as in PocketPal, and the listed families are not the newest."),
     app("Enclave - Local AI Assistant", 6476614556, "enclave", "Piotr Gorzelany", 4.69, 1116, "1.77.0", "1 Oct 2026", NOTLINKED,
         "Free; Pro $9.99", "\"Hundreds\": Llama, DeepSeek, Gemma, Qwen, Phi, Mistral, SmolLM", "Yes, from a large catalog", "27.0",

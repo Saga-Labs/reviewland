@@ -53,7 +53,7 @@ APPS = [
     app("Zoomerang - Ai Video Maker", 1361030006, "zoomerang", "Zoomerang, Inc.", 4.62, 174093, "3.4.19", "28 Sep 2026", 8, label(TRACK, NOTLINKED),
         "Weekly $5.99 to $7.99, monthly $4.99, yearly $19.99 to $34.99", "TikTok challenge templates with step-by-step tutorials", "You film yourself",
         "copying a TikTok challenge you film yourself, step by step.",
-        ["Its listing says you can send a TikTok challenge and its team makes a template for it; tutorials show each shot.", "Templates with famous songs by hashtag, from 200,000 template creators. The most ratings here, about 174,000."],
+        ["Its listing says you can send a TikTok challenge and its team makes a template for it; tutorials show each shot.", "Templates with famous songs by hashtag, from 200,000 template creators. The most-rated app here."],
         "you film the trend yourself; it does not generate you into a scene from one photo."),
 ]
 
