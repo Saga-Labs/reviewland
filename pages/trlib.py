@@ -28,7 +28,7 @@ def make(group, lang, tr, ct_suffix, store=None):
     en = find_en(group)
     L = LANGS[lang]
     cc = store or L["store"]
-    keep = tr.get("keep", list(range(len(en["apps"]))))  # English indices of the apps sold in this country
+    keep = tr.get("keep", list(range(len(tr["apps"]))))  # default: the first N English apps (EN may add apps at the end)  # English indices of the apps sold in this country
     assert len(tr["apps"]) == len(keep), (group, lang)
     p = copy.deepcopy(en)
     p["apps"] = [p["apps"][i] for i in keep]

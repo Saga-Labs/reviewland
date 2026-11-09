@@ -8,8 +8,8 @@ released yet; when it ships, update price and features here).
 CHECKED = "2026-10-11"
 
 
-def src(cc):
-    return [
+def src(cc, extra=False):
+    base = [
         ("3 Tasks (App Store)", f"https://apps.apple.com/{cc}/app/id1553693943"),
         ("Do! (App Store)", f"https://apps.apple.com/{cc}/app/id421819675"),
         ("MinimaList (App Store)", f"https://apps.apple.com/{cc}/app/id993066159"),
@@ -17,6 +17,10 @@ def src(cc):
         ("Microsoft To Do (App Store)", f"https://apps.apple.com/{cc}/app/id1212616790"),
         ("Todoist (App Store)", f"https://apps.apple.com/{cc}/app/id572688855"),
     ]
+    if extra:
+        base += [("TickTick (App Store)", f"https://apps.apple.com/{cc}/app/id626144601"),
+                 ("Things 3 (App Store)", f"https://apps.apple.com/{cc}/app/id904237743")]
+    return base
 
 
 EN = {
@@ -24,76 +28,76 @@ EN = {
     "path": "best-simple-to-do-list-apps-iphone/",
     "ct": "rl-simple-todo",
     "category": "ProductivityApplication",
-    "published": CHECKED, "updated": CHECKED, "checked": CHECKED,
-    "title": "Best Simple To-Do List Apps for iPhone (2026)",
-    "h1": "Best simple to-do list apps for iPhone in 2026",
-    "description": "Six simple to-do apps for iPhone compared: 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do and Todoist. Price, account and privacy checked.",
-    "llms": "Compares six simple to-do list apps for iPhone (3 Tasks, Do!, MinimaList, Clear, Microsoft To Do, Todoist) by price, whether they need an account, reminders and widgets, and privacy label.",
+    "published": "2026-10-11", "updated": "2026-11-09", "checked": "2026-11-09",
+    "title": "Best To-Do List Apps for iPhone (2026)",
+    "h1": "Best To-Do List Apps for iPhone (2026)",
+    "description": "The best to-do list apps for iPhone, free and paid: Things 3, Microsoft To Do, TickTick, Todoist, 3 Tasks, Do!, MinimaList and Clear. Price, account and privacy checked 9 November 2026.",
+    "llms": "Compares eight to-do list apps for iPhone (Things 3, TickTick, 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do, Todoist) by price, whether they need an account, reminders and widgets, and privacy label.",
     "answer": [
-        "The simplest to-do list on iPhone is one that limits you: 3 Tasks lets you write only three priorities a day and times each one, free, with no account and no subscription (an optional Pro is a one-time purchase). If you want a normal list that stays simple, Do! and MinimaList add reminders and widgets, and Microsoft To Do is completely free with sync through a Microsoft account.",
-        "Todoist is the most complete of the six, but its Pro plan is a subscription ($6.99 a month or $59.99 a year in the US).",
+        "The best to-do list app for iPhone is Things 3 if you want a polished paid one ($9.99, once), Microsoft To Do if you want a free one that syncs through a Microsoft account, and TickTick or Todoist if you also want calendar views and shared lists. For the simplest list there is, 3 Tasks limits you to three priorities a day and times each one, free, with no account.",
+        "If you want a normal list that stays simple, Do! and MinimaList add reminders and widgets. Todoist is the most complete of the eight, but its Pro plan is a subscription ($6.99 a month or $59.99 a year in the US, checked 9 November 2026).",
     ],
     "columns": ["App", "Price (US)", "What makes it simple", "Account", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "Prices are the US App Store in-app purchases on 11 October 2026; all six are free to download. Ratings are the App Store average that day.",
+    "table_note": "Prices (download and in-app purchases), version, date and rating are from the US App Store on 9 November 2026. Seven of the eight are free to download; Things 3 is a paid app.",
     "apps": [
         {
-            "name": "To Do List & Focus: 3 Tasks", "id": 1553693943, "ours": True, "anchor": "3-tasks",
-            "developer": "Saga Ltd.", "rating": (5.0, 5),
+            "name": "3 Tasks a Day: To Do List", "id": 1553693943, "ours": True, "anchor": "3-tasks",
+            "developer": "Saga Ltd.", "rating": (5.0, 6),
             "row": ["Free; 3 Tasks Pro is a one-time purchase (listed at $4.99 and $9.99)", "Only 3 tasks a day, one screen, a timer per task", "No account",
-                    "Data Used to Track You; Data Not Linked to You", "1.4.3 (26 Oct 2026)", "5.0"],
+                    "Data Used to Track You; Data Not Linked to You", "1.4.6 (5 Nov 2026)", "5.0"],
             "best_for": "people who drown in long lists and want to pick the three things that matter today.",
             "facts": [
                 "Write down three daily priorities; nothing else to configure.",
                 "Start and pause each task, Pomodoro-style, and see the time spent on it.",
                 "No ads and no account. The app uses Firebase Analytics to count how tasks and timers are used, which is why its privacy label lists tracking data.",
-                "33 languages, iOS 18 or later, 21 MB.",
+                "33 languages, iOS 18 or later, 24 MB.",
             ],
             "limits": "no reminders and no sync between devices: it is deliberately a one-day list of three (it does have Repeat Daily and a Home Screen widget, free).",
         },
         {
             "name": "Do! – Simple To Do List", "id": 421819675, "anchor": "do",
-            "developer": "SIMPLERION", "rating": (4.73, 26187),
+            "developer": "SIMPLERION", "rating": (4.73, 26203),
             "row": ["Free with ads; remove ads $20.00 once; tip $0.99", "Add a task, double-tap when done; groups and colours", "Not stated",
-                    "Data Used to Track You; Data Linked to You; Data Not Linked to You", "7.7.2 (1 Oct 2026)", "4.7"],
+                    "Data Used to Track You; Data Linked to You; Data Not Linked to You", "7.9.0 (22 Oct 2026)", "4.7"],
             "best_for": "a paper-like daily list with reminders and repeating tasks.",
             "facts": [
                 "Themes, fonts and pen-and-paper sounds.",
                 "Groups for work, study and shopping; pinned tasks.",
                 "Repeating tasks (daily to yearly) and reminders.",
-                "5 languages, iOS 13 or later, 157 MB.",
+                "5 languages, iOS 15 or later, 159 MB.",
             ],
             "limits": "shows ads unless you pay $20 once, and its privacy label includes data used to track you.",
         },
         {
             "name": "To Do List MinimaList & Widget", "id": 993066159, "anchor": "minimalist",
-            "developer": "Inner Grow Limited", "rating": (4.77, 48222),
+            "developer": "Inner Grow Limited", "rating": (4.77, 49032),
             "row": ["Lifetime from $5.99 (offers) to $9.99; family $14.99; or $2.99 a month", "Coloured lists, smart input that detects times", "Not stated",
-                    "Data Not Linked to You", "2.27.3 (11 Oct 2026)", "4.8"],
+                    "Data Not Linked to You", "2.27.9 (30 Oct 2026)", "4.8"],
             "best_for": "a minimal-looking list that still has widgets, shared lists and location reminders.",
             "facts": [
                 "Home Screen and Lock Screen widgets.",
                 "Time- and location-based reminders, sub-tasks and shared lists.",
                 "Works with Siri; on iPhone, iPad and Mac according to the developer.",
-                "10 languages, iOS 15 or later, 126 MB.",
+                "10 languages, iOS 15 or later, 130 MB.",
             ],
             "limits": "several overlapping prices for the same lifetime upgrade, which makes it hard to know what you will pay.",
         },
         {
             "name": "Clear: To Dos & Reminders", "id": 493136154, "anchor": "clear",
-            "developer": "Impending, Inc.", "rating": (4.6, 5144),
+            "developer": "Impending, Inc.", "rating": (4.6, 5240),
             "row": ["Clear Pro $3.99; legacy Pro $2.99 a month or $24.99 a year; sound packs", "Gesture-only lists, colour heatmap of priority", "Not stated",
-                    "Data Used to Track You; Data Not Linked to You", "2.8.0 (30 Sep 2026)", "4.6"],
+                    "Data Used to Track You; Data Not Linked to You", "2.8.7 (31 Oct 2026)", "4.6"],
             "best_for": "people who like swiping lists with no buttons on screen.",
             "facts": [
                 "Swipe to complete, pinch and drag to reorder; a heatmap shows priority.",
                 "Daily kanban (Today, Tomorrow, Next Day), routines and reminders.",
-                "2 languages, iOS 16 or later, 203 MB.",
+                "2 languages, iOS 16 or later, 206 MB.",
             ],
             "limits": "gestures take a few minutes to learn, and its privacy label includes data used to track you.",
         },
         {
             "name": "Microsoft To Do", "id": 1212616790, "anchor": "microsoft-to-do",
-            "developer": "Microsoft", "rating": (4.72, 268432),
+            "developer": "Microsoft", "rating": (4.72, 269935),
             "row": ["Free, no in-app purchases", "My Day with suggested tasks", "Microsoft account for sync",
                     "Data Linked to You", "2.177 (6 Jul 2026)", "4.7"],
             "best_for": "a free list that syncs everywhere, especially if you use Outlook or Microsoft 365.",
@@ -107,16 +111,43 @@ EN = {
         },
         {
             "name": "Todoist: To Do List & Calendar", "id": 572688855, "anchor": "todoist",
-            "developer": "Doist", "rating": (4.8, 129694),
+            "developer": "Doist", "rating": (4.8, 130607),
             "row": ["Pro $6.99 a month or $59.99 a year", "Natural-language quick add and voice capture", "Yes",
-                    "Data Linked to You", "26.10.8 (8 Oct 2026)", "4.8"],
+                    "Data Linked to You", "26.10.35 (2 Nov 2026)", "4.8"],
             "best_for": "people whose list is outgrowing a simple app and who want projects, dates and teams.",
             "facts": [
                 "Quick Add understands dates in plain language; Ramble turns speech into tasks.",
                 "Projects, calendar view and team workspaces.",
-                "Works with Siri. 19 languages, iOS 17 or later, 384 MB.",
+                "Works with Siri. 19 languages, iOS 17 or later, 394 MB.",
             ],
-            "limits": "Pro is a subscription, and it is the least simple app in this list.",
+            "limits": "Pro is a subscription, and it is a full project manager rather than a simple list.",
+        },
+        {
+            "name": "TickTick:To-Do List & Calendar", "id": 626144601, "anchor": "ticktick",
+            "developer": "Appest Limited", "rating": (4.86, 46891),
+            "row": ["Free to download; Premium $4.99 a month or $49.99 a year", "Calendar views, four priority levels, reminders, Pomo timer", "Not stated",
+                    "Data Linked to You; Data Not Linked to You", "8.3.00 (9 Nov 2026)", "4.9"],
+            "best_for": "a free list that also has calendar views, habits and shared lists.",
+            "facts": [
+                "Sync across devices, multiple reminders and flexible calendar views.",
+                "Recurring tasks, checklists, tags and four priority levels.",
+                "Share task lists, add tasks by email, Siri and voice entry with AI.",
+                "Pomo timer and habit goals; 41 languages, iOS 15.5 or later, 329 MB.",
+            ],
+            "limits": "its page says it is always free, but Premium raises the limits (for example 299 lists and 5 reminders per task), and it is far from the simplest app here.",
+        },
+        {
+            "name": "Things 3", "id": 904237743, "anchor": "things-3",
+            "developer": "Cultured Code GmbH & Co. KG", "rating": (4.82, 28083),
+            "row": ["$9.99 once to download", "To-dos, projects and areas; Today and Upcoming lists", "Not stated",
+                    "Data Linked to You; Data Not Linked to You", "3.25.2 (2 Nov 2026)", "4.8"],
+            "best_for": "people who want a polished planner with projects and areas and are happy to pay once.",
+            "facts": [
+                "Projects, areas, headings, tags and deadlines.",
+                "Today and Upcoming lists that show to-dos and calendar events; a This Evening section.",
+                "Reminders and repeaters. 9 languages, iOS 16.4 or later, 126 MB.",
+            ],
+            "limits": "it costs $9.99 up front, and it is a full planner, not a simple list.",
         },
     ],
     "who": [
@@ -124,7 +155,8 @@ EN = {
         "<strong>You want reminders and repeating tasks but a calm design:</strong> Do! or MinimaList.",
         "<strong>You want everything free and synced:</strong> Microsoft To Do.",
         "<strong>You like gestures and no buttons:</strong> Clear.",
-        "<strong>You need projects, dates and shared work:</strong> Todoist.",
+        "<strong>You need projects, dates and shared work:</strong> Todoist or TickTick.",
+        "<strong>You want a polished planner and prefer paying once:</strong> Things 3.",
     ],
     "cases": [
         "Picking the three things that must happen today before opening email.",
@@ -133,21 +165,25 @@ EN = {
         "Timing focused work blocks on each priority (3 Tasks).",
     ],
     "method": [
-        "On 11 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. Features are the ones each developer lists on its App Store page. \"Not stated\" means the listing does not say whether an account is needed. We did not invent ratings or reviews.",
+        "On 9 November 2026 we rechecked each app's US App Store page and Apple's lookup data: download and in-app purchase prices, version and release date, rating, size, minimum iOS and the privacy label. The first six were first checked on 11 October 2026 and no price had changed; TickTick and Things 3 were added on 9 November. Features are the ones each developer lists on its App Store page. \"Not stated\" means the listing does not say whether an account is needed. We did not invent ratings or reviews.",
     ],
     "faq": [
-        ("What is the simplest to-do list app for iPhone?",
-         "3 Tasks only lets you write three tasks a day on one screen. Among classic list apps, Do! and Clear are the most minimal."),
+        ("What is the best to-do list app for iPhone?",
+         "Things 3 for a polished paid planner ($9.99 once), Microsoft To Do for a free list that syncs, TickTick or Todoist for calendar views and shared lists, and 3 Tasks for the simplest list. Prices and versions checked on 9 November 2026."),
+        ("What is the best free to-do list app for iPhone?",
+         "Microsoft To Do is free with no in-app purchases. TickTick, Todoist and 3 Tasks are free to download with optional paid upgrades; Do! is free with ads."),
+        ("What is the best iPhone todo list app if I only want a few tasks?",
+         "3 Tasks, which lets you write three tasks a day on one screen. Among classic list apps, Do! and Clear are the most minimal."),
         ("Is there a free to-do list app with no subscription?",
          "Microsoft To Do is free with no in-app purchases, and 3 Tasks is free with an optional one-time Pro (no subscription). Do! is free with ads and a one-time $20 to remove them; MinimaList and Clear also offer one-time upgrades."),
         ("Which to-do app works without an account?",
-         "3 Tasks needs no account. Microsoft To Do uses a Microsoft account to sync, and Todoist uses its own account."),
+         "3 Tasks needs no account. Microsoft To Do uses a Microsoft account to sync, and Todoist uses its own account. TickTick and Things 3 do not say on their App Store pages."),
         ("Why limit yourself to three tasks a day?",
          "A short list forces you to choose what matters most, so the list gets finished instead of growing. That is the idea behind 3 Tasks."),
         ("Which simple to-do app has widgets?",
          "MinimaList has Home Screen and Lock Screen widgets. 3 Tasks has a free Home Screen widget."),
     ],
-    "sources": src("us"),
+    "sources": src("us", True),
 }
 
 ES = {
