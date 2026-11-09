@@ -277,3 +277,121 @@ RU = dict(
 )
 
 PAGES.append(_translated("ru", "ru", "ru", RU))
+
+
+_DE_WIDGETS = '<a href="/best-crypto-price-widget-apps-iphone/">Krypto-Widget-Apps</a>'
+_DE_ALERTS = '<a href="/best-crypto-price-alert-apps-iphone/">Krypto-Kursalarm-Apps</a>'
+_DE_NOCONNECT = '<a href="/crypto-portfolio-tracker-without-connecting-wallet-iphone/">Tracker ohne Wallet- oder Börsenverbindung</a>'
+
+DE = dict(
+    kicker="5 Apps · Ranking · Nachrichten",
+    title="Beste iPhone-Apps für die Kurse von WLFI, TRUMP und USD1 (November 2026)",
+    h1="Beste iPhone-Apps für die Kurse von WLFI, TRUMP und USD1 (November 2026)",
+    description="Fünf iPhone-Apps, die World Liberty Financial (WLFI), die Meme-Münze TRUMP und USD1 verfolgen: Vergleich nach Preis, Warnungen, Widgets und Konto am 8. November 2026.",
+    llms="Fünf iPhone-Apps, um WLFI, TRUMP und USD1 nach den US-Zwischenwahlen im November 2026 zu verfolgen: CoinGecko, CoinMarketCap, CoinStats, Crypton, Delta. Welche die drei Token führen, Warnungen, Widgets, Konto, US-Preis und Bewertung. Mit CoinGecko-Kursen vom 1. bis 8. November 2026 und datiertem Nachrichtenkontext. Keine Finanzberatung.",
+    answer=[
+        "Um WLFI, TRUMP und USD1 mit Kursalarmen zu verfolgen, führen <strong>CoinGecko</strong>, <strong>CoinMarketCap</strong> und <strong>CoinStats</strong> alle drei Token auf. CoinStats verbindet zusätzlich Ihre Wallet und hat Widgets für den Sperrbildschirm.",
+        "Für ein kostenloses Widget auf dem Home-Bildschirm ohne Konto und ohne Kauf findet <strong>Crypton</strong> alle drei Token per Suche, hat aber keine Warnungen. <strong>Delta</strong> passt, wenn das Depot Krypto und Aktien mischt.",
+    ],
+    context_html=f"""<h2 id="context">Was passiert ist (8. November 2026)</h2>
+<p>Nach den Zwischenwahlen am 3. November hat die Demokratische Partei laut Prognosen von NBC News und MS NOW die Mehrheit im Repräsentantenhaus gewonnen und plant, die Krypto-Geschäfte der Familie Trump zu untersuchen, darunter World Liberty Financial (der WLFI-Token und der Stablecoin USD1) und die Meme-Münze TRUMP. <a href="{CNEWS}">crypto.news berichtet</a>, die Ermittlungen könnten schon im Februar 2027 beginnen. Das Weiße Haus lehnt die Pläne ab; vor der Wahl hatte eine Sprecherin die Agenda der Demokraten laut demselben Bericht als „Hexenjagd“ bezeichnet. <a href="{CNBC}">CNBC schreibt</a>, das Ergebnis bringe die Kryptobranche in Washington in die Defensive, und am 8. November brachte die Financial Times die Geschichte auf die Titelseite unter der Überschrift „Crypto industry braces for reckoning over Trump ties“ (englische Überschrift).</p>
+<div class="scroll"><table style="min-width:0">
+<thead><tr><th>Token</th><th>1. Nov. 2026</th><th>8. Nov. 2026</th><th>Veränderung</th><th>Marktkapitalisierung, 8. Nov.</th></tr></thead>
+<tbody>
+<tr><td>TRUMP (Official Trump)</td><td>$1.71</td><td>$1.16</td><td>etwa −32 %</td><td>etwa 328 Mio. $</td></tr>
+<tr><td>WLFI (World Liberty Financial)</td><td>$0.050</td><td>$0.046</td><td>etwa −8 %</td><td>etwa 1,47 Mrd. $</td></tr>
+<tr><td>USD1 (Stablecoin)</td><td>$0.998</td><td>$0.998</td><td>hielt die Bindung an 1 $</td><td>etwa 3,44 Mrd. $</td></tr>
+<tr><td>Bitcoin, zum Vergleich</td><td>$78.294</td><td>$75.820</td><td>etwa −3 %</td><td>etwa 1,52 Bio. $</td></tr>
+</tbody></table></div>
+<p class="note">Preise in US-Dollar laut CoinGecko-API: Die Spalte vom 1. November zeigt den Schlusskurs dieses Tages, die Spalte vom 8. November den Kurs am Nachmittag des 8. November (UTC). Der größte Tagesverlust von TRUMP in dieser Woche war am 4. November, dem Tag nach der Wahl, von etwa 1,59 $ auf 1,27 $. Nichts auf dieser Seite ist Finanzberatung.</p>
+""",
+    columns=["App", "Preis (USA)", "Führt WLFI, TRUMP, USD1", "Kurswarnungen", "Widget", "Konto nötig", "Version (Datum)", "Bewertung (USA)"],
+    table_note="Preise, Versionen und Bewertungen wie auf den US-Seiten im App Store am 8. November 2026; alle fünf Apps sind kostenlos. Warnungen, Widgets und Konto so, wie es die jeweilige Store-Seite beschreibt. Die Token-Abdeckung wurde auf der Website jedes Anbieters bzw. anhand der Daten vom 8. November geprüft.",
+    apps=[
+        dict(
+            row=["Kostenlos; Premium 9,90 $ im Monat oder 99,90 $ im Jahr", "Ja, alle drei", "Ja: Kurs- und Warnungen bei großen Bewegungen", "Ja, auf dem Home-Bildschirm", "In der Beschreibung nicht verlangt", "3.60.0 (27. Okt. 2026)", "4.8"],
+            best_for="das Verfolgen von WLFI, TRUMP und USD1 mit denselben Daten wie in der Kurstabelle oben, mit Warnungen.",
+            facts=[
+                "Die CoinGecko-Daten führen Official Trump, World Liberty Financial und USD1, sodass Sie alle drei auf eine Beobachtungsliste setzen können.",
+                "Laut Beschreibung gibt es persönliche Kursalarme und Warnungen bei starken Bewegungen für Coins auf der Beobachtungsliste, ein Portfolio mit Gewinn und Verlust und ein Widget auf dem Home-Bildschirm.",
+                "Es gibt Kategorien wie Meme-Coins, zu denen TRUMP gehört.",
+            ],
+            limits="nur Englisch; in der Beschreibung steht nicht, wie viele Warnungen kostenlos sind.",
+        ),
+        dict(
+            row=["Kostenlos; Essential 11,99 $ im Monat oder 109,99 $ im Jahr; Plus 23,99 $ im Monat oder 229,99 $ im Jahr; Max 119,99 $ im Monat", "Ja, alle drei", "Ja: anpassbare Kursalarme", "In der Beschreibung nicht erwähnt", "Für das Portfolio nötig; Inkognitomodus ohne Anmeldung", "5.24.0 (1. Nov. 2026)", "4.8"],
+            best_for="den meistbewerteten Tracker: Warnungen für jeden der drei Token.",
+            facts=[
+                "CoinMarketCap hat Seiten für Official Trump, World Liberty Financial und World Liberty Financial USD (USD1).",
+                "Anpassbare Kursalarme und Beobachtungslisten; laut Beschreibung über 45.000 aktive Märkte.",
+                "Rund 173.000 Bewertungen in den USA, die meisten in dieser Liste, und 21 Sprachen.",
+            ],
+            limits="Die Beschreibung verlangt eine Anmeldung für ein Portfolio (der Inkognitomodus hält die Daten auf dem Telefon), ein Widget wird nicht erwähnt, und die Tarife sind hier die teuersten.",
+        ),
+        dict(
+            row=["Kostenlos; Pro 4,99 $ im Monat oder 39,99 $ im Jahr; Premium 15,99–19,99 $ im Monat oder 65,99–164,99 $ im Jahr", "Ja, alle drei", "Ja: Kurs-, Volumen- und Marktkapitalisierungswarnungen, dazu Auto Alerts", "Ja: Home-Bildschirm, Sperrbildschirm und Apple Watch", "In der Beschreibung nicht verlangt", "5.31.1 (30. Okt. 2026)", "4.8"],
+            best_for="wenn Sie WLFI oder TRUMP in einer Wallet oder an einer Börse halten und sie automatisch mitlaufen lassen möchten, mit Warnungen und Widgets für den Sperrbildschirm.",
+            facts=[
+                "coinstats.app hat Seiten für Official Trump, World Liberty Financial und USD1.",
+                "Verbindet über 300 Wallets und Börsen und zeigt Gewinn und Verlust in Echtzeit; laut Beschreibung Kurse für über 20.000 Coins.",
+                "Kurs-, Volumen- oder Marktkapitalisierungswarnungen für jeden Coin und Widgets auf dem Home-Bildschirm, dem Sperrbildschirm und der Apple Watch.",
+            ],
+            limits="viele sich überschneidende kostenpflichtige Tarife; für die vollständigen Auswertungen braucht man Premium.",
+        ),
+        dict(
+            row=["Kostenlos, keine In-App-Käufe", "Ja, per Suche (CoinGecko-Daten)", "Nein", "Ja: Kurse und Portfolio (Home-Bildschirm)", "Nein (optional, nur zum Synchronisieren)", "2.0.8 (24. Okt. 2026)", "4.7"],
+            best_for="eine kostenlose Beobachtungsliste von WLFI, TRUMP und USD1 auf dem Home-Bildschirm, ohne Konto und ohne Kosten.",
+            facts=[
+                "Live-Kurse für die 250 größten Coins und Suche nach jedem auf CoinGecko gelisteten Coin, sodass sich WLFI, TRUMP und USD1 als Favoriten speichern lassen, laut Beschreibung.",
+                "Portfolio mit Gewinn und Verlust für jeden Coin sowie Widgets auf dem Home-Bildschirm für Kurse und für das Portfolio.",
+                "Keine In-App-Käufe; nur Englisch, iOS 18 oder neuer.",
+            ],
+            limits="In der Live-Version gibt es keine Kursalarme, kein Widget für den Sperrbildschirm und keine App für die Apple Watch, und keine Synchronisierung mit Wallets oder Börsen. Für Warnungen siehe die " + _DE_ALERTS + ".",
+        ),
+        dict(
+            row=["Kostenlos bis 10 Assets; PRO 6,99–13,99 $ im Monat oder 58,99–99,90 $ im Jahr; PRO+ 13,99 $ im Monat oder 107,99 $ im Jahr", "Nicht geprüft (Beschreibung: über 10.000 Coins)", "Ja: Zielkurse und große Bewegungen", "In der Beschreibung nicht erwähnt", "In der Beschreibung nicht angegeben", "2026.3.2 (5. Nov. 2026)", "4.7"],
+            best_for="Krypto und Aktien in einem Portfolio, mit Warnungen.",
+            facts=[
+                "Verfolgt Krypto, Aktien, ETFs, Rohstoffe und Devisen zusammen; laut Beschreibung über 10.000 Coins.",
+                "Intelligente Kursalarme für Zielkurse und deutliche Bewegungen sowie eigene Mitteilungen bei Portfolio-Meilensteinen.",
+                "Der kostenlose Tarif umfasst bis zu 10 Assets; PRO bis zu 40; PRO+ unbegrenzt.",
+            ],
+            limits="Auf der Website von Delta konnten wir nicht bestätigen, dass WLFI, TRUMP und USD1 dort gelistet sind; der kostenlose Tarif endet bei 10 Assets; und das Datenschutzlabel nennt „Für Tracking verwendete Daten“.",
+        ),
+    ],
+    who=["<strong>Warnungen, wenn TRUMP oder WLFI stark ausschlagen:</strong> CoinGecko (Warnungen bei großen Bewegungen) oder CoinStats (Auto Alerts).",
+         "<strong>Der meistgenutzte Tracker:</strong> CoinMarketCap.",
+         "<strong>Token in einer Wallet oder an einer Börse:</strong> CoinStats.",
+         "<strong>Nur ein Blick auf die drei Kurse, ohne Konto:</strong> Crypton.",
+         "<strong>Krypto und Aktien an einem Ort:</strong> Delta."],
+    cases=["Prüfen, ob USD1 bei 1 $ bleibt: jede App aus der Liste, die ihn führt; CoinGecko und CoinMarketCap zeigen auch seine Marktkapitalisierung.",
+           "Eine Benachrichtigung, falls TRUMP noch einmal 10 % fällt: CoinGecko, CoinMarketCap, CoinStats oder Delta (mit Warnungen); nicht Crypton.",
+           "WLFI und TRUMP auf dem Home-Bildschirm halten: CoinGecko, CoinStats oder Crypton. Mehr in den Rankings " + _DE_WIDGETS + " und " + _DE_ALERTS + ".",
+           "Bestände ohne Verbindung einer Wallet verfolgen: siehe " + _DE_NOCONNECT + "."],
+    method=["Am 8. November 2026 haben wir die US-Seite jeder App im App Store und die Apple-Lookup-Daten gelesen (Preis, In-App-Käufe, Version, Bewertung und Beschreibungstext). Ob eine App WLFI, TRUMP und USD1 führt, haben wir anhand der CoinGecko-Daten, der Münzseiten von CoinMarketCap und CoinStats sowie der Beschreibung von Crypton geprüft (die Suche läuft über CoinGecko); die Website von Delta ließ sich nicht prüfen. Die Apps haben wir nicht installiert und nicht getestet, wie schnell Warnungen ankommen.",
+            "Der Nachrichtenkontext ist den oben verlinkten Medien zugeschrieben; diese Seite bezieht keine Position zu den Ermittlungen. Keine dieser Apps ist eine Börse, und nichts hier ist Finanzberatung."],
+    faq=[
+        ("Welche App zeigt den WLFI-Kurs auf dem iPhone?", "CoinGecko, CoinMarketCap und CoinStats führen World Liberty Financial (WLFI); Crypton findet ihn per Suche, weil es CoinGecko-Daten nutzt."),
+        ("Kann ich eine Warnung für den Kurs der Meme-Münze TRUMP bekommen?", "Ja, mit CoinGecko, CoinMarketCap, CoinStats oder Delta, die Kursalarme anbieten. Crypton hat keine Kursalarme."),
+        ("Ist USD1 noch einen Dollar wert?", "Laut CoinGecko lag er vom 1. bis 8. November 2026 bei etwa 0,998 $, mit einer Marktkapitalisierung von etwa 3,44 Mrd. $."),
+        ("Warum sind TRUMP und WLFI im November 2026 gefallen?", "Laut CoinGecko fiel TRUMP vom 1. bis 8. November um etwa 32 % und WLFI um etwa 8 %, in der Woche, in der die Demokraten, die das Repräsentantenhaus gewonnen haben, Ermittlungen zu den Krypto-Geschäften der Familie Trump ankündigten, laut crypto.news und CNBC. Diese Seite führt keine Kursbewegung auf eine Ursache zurück und ist keine Finanzberatung."),
+        ("Brauche ich ein Konto, um diese Token zu verfolgen?", "Bei Crypton nicht (das Konto dient nur der Synchronisierung). CoinMarketCap braucht eines für das Portfolio, hat aber einen Inkognitomodus; bei den anderen Angaben steht nicht, dass ein Konto nötig ist."),
+    ],
+    sources=["crypto.news, 4. Nov. 2026: Demokraten bereiten Untersuchung von World Liberty Financial nach Wahlsieg im Repräsentantenhaus vor",
+             "CNBC, 5. Nov. 2026: Demokraten-Sieg bringt Kryptobranche in Washington in die Defensive",
+             "Financial Times, 8. Nov. 2026, Titelseite: „Crypto industry braces for reckoning over Trump ties“ (nur Überschrift)",
+             "CoinGecko-API: Kurse von TRUMP, WLFI, USD1 und BTC",
+             "CoinMarketCap: Official Trump",
+             "CoinMarketCap: World Liberty Financial",
+             "CoinMarketCap: USD1",
+             "CoinStats: Official Trump",
+             "CoinStats: World Liberty Financial",
+             "CoinStats: USD1",
+             "CoinGecko: Crypto Tracker (App Store)",
+             "CoinMarketCap: Crypto Tracker (App Store)",
+             "CoinStats: Crypto Portfolio (App Store)",
+             "Crypto Tracker: Crypton (App Store)",
+             "Delta by eToro (App Store)"],
+)
+
+PAGES.append(_translated("de", "de", "de", DE))
