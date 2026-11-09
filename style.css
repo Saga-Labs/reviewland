@@ -81,3 +81,7 @@ h1{font-size:32px;margin:6px 0 12px}
 .hero .meta{font-size:13px;padding:4px 8px}
 .answer{font-size:18px;margin-top:18px}
 }
+
+/* right-to-left languages (ar) */
+[dir=rtl] th,[dir=rtl] td{text-align:right}
+[dir=rtl] .facts,[dir=rtl] article>ul{padding-left:0;padding-right:20px}

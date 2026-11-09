@@ -28,46 +28,27 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt", "nov03_videogpt_alt", "nov03_calculator_vault_alt", "nov03_pocketpal_alt", "nov03_crypto_no_connect", "nov04_higgsfield_alt", "nov04_vault_backup", "nov04_pdf_offline", "nov04_pollo_alt", "nov04_hide_it_pro_alt", "nov04_binaural", "nov08_wlfi_trump"]
+                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt", "nov03_videogpt_alt", "nov03_calculator_vault_alt", "nov03_pocketpal_alt", "nov03_crypto_no_connect", "nov04_higgsfield_alt", "nov04_vault_backup", "nov04_pdf_offline", "nov04_pollo_alt", "nov04_hide_it_pro_alt", "nov04_binaural", "nov08_wlfi_trump",
+                "tr_ru", "tr_de", "tr_ja", "tr_ptbr", "tr_fr", "tr_ar"]
 
-T = {
-    "en": {
-        "updated": "Updated", "checked": "Data checked on the App Store on",
-                "table": "At a glance", "app": "App", "best_for": "Best for",
-        "limits": "Limits", "get": "Get it on the App Store",
-        "faq": "Frequently asked questions", "sources": "Sources",
-        "who": "Who should use what", "cases": "Use cases",
-        "method": "How we checked",
-        "footer": "Rankings of iPhone apps. Every price, version and privacy label is copied from the App Store on the date shown. Reviewland is run by Saga Labs, which also makes some of the apps listed.",
-        "about": "About and method", "home": "All rankings",
-        "ratings": "ratings", "store_page": "App Store page",
-    },
-    "es": {
-        "updated": "Actualizado el", "checked": "Datos comprobados en el App Store el",
-                "table": "Resumen", "app": "App", "best_for": "Mejor para",
-        "limits": "Límites", "get": "Descargar en el App Store",
-        "faq": "Preguntas frecuentes", "sources": "Fuentes",
-        "who": "Cuál elegir según tu caso", "cases": "Casos de uso",
-        "method": "Cómo lo comprobamos",
-        "footer": "Rankings de apps de iPhone. Cada precio, versión y etiqueta de privacidad está copiado del App Store en la fecha indicada. Reviewland es de Saga Labs, que también hace algunas de las apps de las listas.",
-        "about": "Quiénes somos y método", "home": "Todos los rankings",
-        "ratings": "valoraciones", "store_page": "Ficha en el App Store",
-    },
-}
+from langs import LANGS  # one table of languages: prefix, html lang, dir, date format, UI strings
+
+T = {code: L["ui"] for code, L in LANGS.items()}
+ACTIVE = []  # languages that have pages, in LANGS order (filled in main)
+
+
+def prefix_of(lang):
+    """URL folder of a language with a trailing slash ("" for English)."""
+    pre = LANGS[lang]["prefix"]
+    return f"{pre}/" if pre else ""
+
+
+def about_path(lang):
+    return {"en": "about/", "es": "es/acerca/"}.get(lang) or f"{prefix_of(lang)}about/"
 
 
 # Home page sections: every ranking group must be in one of them (build fails otherwise).
-HOME_SECTIONS = [
-    ("photos", {"en": "Hide photos and photo vaults", "es": "Ocultar fotos y bóvedas de fotos"}),
-    ("ai", {"en": "AI chat and AI models", "es": "Chat con IA y modelos de IA"}),
-    ("study", {"en": "Homework help", "es": "Ayuda con los deberes"}),
-    ("ai-video", {"en": "AI video", "es": "Vídeo con IA"}),
-    ("photo-editing", {"en": "AI photo editing", "es": "Edición de fotos con IA"}),
-    ("sleep", {"en": "Sleep, calm and white noise", "es": "Dormir, calma y ruido blanco"}),
-    ("tasks", {"en": "To-do lists", "es": "Listas de tareas"}),
-    ("habits", {"en": "Habit trackers", "es": "Seguimiento de hábitos"}),
-    ("crypto", {"en": "Crypto prices and portfolio trackers", "es": "Precios y carteras de criptomonedas"}),
-]
+HOME_SECTIONS = [(sec, sec) for sec in ("photos", "ai", "study", "ai-video", "photo-editing", "sleep", "tasks", "habits", "crypto")]
 HOME_GROUPS = {
     "photos": {"hide-photos", "photo-vault-alternatives", "vault-no-data", "calculator-vault-alternatives", "vault-backup", "hide-it-pro-alternatives"},
     "ai": {"ai-chat", "local-models", "chatgpt-apps", "chatgpt-video", "deepseek-alternatives", "poe-alternatives", "pocketpal-alternatives", "pdf-offline"},
@@ -169,26 +150,26 @@ def lastmod(url, updated):
 
 def human_date(iso, lang):
     y, m, d = iso.split("-")
-    months_en = ["January", "February", "March", "April", "May", "June", "July",
-                 "August", "September", "October", "November", "December"]
-    months_es = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
-                 "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
-    if lang == "es":
-        return f"{int(d)} de {months_es[int(m) - 1]} de {y}"
-    return f"{int(d)} {months_en[int(m) - 1]} {y}"
+    L = LANGS[lang]
+    return L["date"].format(d=int(d), m=L["months"][int(m) - 1], y=y)
+
+
+def hl(code):
+    """hreflang / html lang value for a language code (x-default stays as is)."""
+    return LANGS[code]["html"] if code in LANGS else code
 
 
 def head(p, alternates, extra_ld):
     t = T[p["lang"]]
     alt = "".join(
-        f'<link rel="alternate" hreflang="{l}" href="{esc(u)}">' for l, u in alternates
+        f'<link rel="alternate" hreflang="{hl(l)}" href="{esc(u)}">' for l, u in alternates
     )
     lds = "".join(
         f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
         for ld in extra_ld
     )
     return f"""<!doctype html>
-<html lang="{p['lang']}">
+<html lang="{hl(p['lang'])}"{' dir="rtl"' if LANGS[p['lang']]['dir'] == 'rtl' else ''}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -211,17 +192,21 @@ def head(p, alternates, extra_ld):
 {lds}
 </head>
 <body>
-<header class="top"><a class="brand" href="/{'es/' if p['lang'] == 'es' else ''}"><img src="/favicon.svg" alt="" width="28" height="28">{NAME}</a>
-<nav><a href="/{'es/' if p['lang'] == 'es' else ''}">{t['home']}</a> · <a href="/{'es/acerca/' if p['lang'] == 'es' else 'about/'}">{t['about']}</a></nav></header>
+<header class="top"><a class="brand" href="/{prefix_of(p['lang'])}"><img src="/favicon.svg" alt="" width="28" height="28">{NAME}</a>
+<nav><a href="/{prefix_of(p['lang'])}">{t['home']}</a> · <a href="/{about_path(p['lang'])}">{t['about']}</a></nav></header>
 <main>
 """
+
+
+def lang_switch():
+    return " · ".join(f'<a href="/{prefix_of(c)}">{LANGS[c]["name"]}</a>' for c in ACTIVE)
 
 
 def foot(lang):
     t = T[lang]
     return f"""</main>
 <footer><p>{esc(t['footer'])}</p>
-<p><a href="/">English</a> · <a href="/es/">Español</a> · <a href="/{'es/acerca/' if lang == 'es' else 'about/'}">{t['about']}</a> · <a href="/llms.txt">llms.txt</a></p></footer>
+<p>{lang_switch()} · <a href="/{about_path(lang)}">{t['about']}</a> · <a href="/llms.txt">llms.txt</a></p></footer>
 </body>
 </html>
 """
@@ -256,7 +241,7 @@ def ranking_html(p, alternates):
     article = {
         "@context": "https://schema.org", "@type": "Article",
         "headline": p["h1"], "description": p["description"], **({"image": f"{SITE}/img/{cover_of(p)}.jpg"} if cover_of(p) else {}),
-        "inLanguage": lang, "datePublished": p["published"], "dateModified": p["updated"],
+        "inLanguage": hl(lang), "datePublished": p["published"], "dateModified": p["updated"],
         "mainEntityOfPage": page_url(p),
         "author": {"@type": "Organization", "name": NAME, "url": SITE},
         "publisher": {"@type": "Organization", "name": NAME, "url": SITE},
@@ -271,7 +256,7 @@ def ranking_html(p, alternates):
     crumbs = {
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": NAME, "item": f"{SITE}/{'es/' if lang == 'es' else ''}"},
+            {"@type": "ListItem", "position": 1, "name": NAME, "item": f"{SITE}/{prefix_of(lang)}"},
             {"@type": "ListItem", "position": 2, "name": p["h1"], "item": page_url(p)},
         ],
     }
@@ -338,7 +323,7 @@ def related_html(p):
     rel = [q for q in ALL_PAGES if q["lang"] == p["lang"] and q["group"] in groups and q["path"] != p["path"] and not q.get("hide_from_related")]
     if not rel:
         return ""
-    h = "Related rankings" if p["lang"] == "en" else "Rankings relacionados"
+    h = T[p["lang"]]["related"]
     items = "".join(f'<li><a href="/{q["path"]}">{esc(q["h1"])}</a></li>' for q in rel[:5])
     return f'<h2 id="related">{h}</h2>\n<ul>{items}</ul>\n'
 
@@ -347,7 +332,7 @@ def guide_links_html(p):
     links = GUIDE_LINKS.get(p["path"])
     if not links:
         return ""
-    h = "Step-by-step guides" if p["lang"] == "en" else "Guías paso a paso"
+    h = T[p["lang"]]["guides"]
     items = "".join(f'<li><a href="{esc(u)}">{esc(t)}</a> ({u.split("/")[2]})</li>' for t, u in links)
     return f'<h2 id="guides">{h}</h2>\n<ul>{items}</ul>\n'
 
@@ -370,8 +355,9 @@ def write(path, text):
 
 
 def write_404():
+    links = " · ".join(f'<a href="/{prefix_of(c)}">{T[c]["home"]}</a>' for c in ACTIVE)
     body = ('<div class="hero home"><h1>Page not found</h1><p>That page does not exist or has moved. '
-            '<a href="/">All rankings</a> · <a href="/es/">Todos los rankings</a></p></div>')
+            + links + '</p></div>')
     html_404 = simple_page("en", "", "Page not found: Reviewland", "This page does not exist.", body)
     html_404 = html_404.replace('content="index, follow, max-snippet:-1"', 'content="noindex"')
     html_404 = re.sub(r'<link rel="canonical"[^>]*>\n', "", html_404)
@@ -383,32 +369,30 @@ def main():
     for mod in PAGE_MODULES:
         pages += importlib.import_module(f"pages.{mod}").PAGES
     ALL_PAGES[:] = pages
+    ACTIVE[:] = [c for c in LANGS if any(p["lang"] == c for p in pages)]
+    for p in pages:
+        assert p["lang"] in LANGS, p["path"]
+        assert len(p["ct"]) <= 40, f"ct too long: {p['ct']}"
+        assert p["path"].startswith(prefix_of(p["lang"])), f"{p['path']} is not under /{prefix_of(p['lang'])}"
     by_group = {}
     for p in pages:
         by_group.setdefault(p["group"], []).append(p)
 
     for p in pages:
         alts = [(q["lang"], page_url(q)) for q in by_group[p["group"]]]
+        assert len({l for l, _ in alts}) == len(alts), f"duplicate language in group {p['group']}"
         alts.append(("x-default", page_url(next(q for q in by_group[p["group"]] if q["lang"] == "en"))))
         write(p["path"], ranking_html(p, alts))
 
     # Home pages
-    for lang, path in (("en", ""), ("es", "es/")):
+    home_alts = [(c, f"{SITE}/{prefix_of(c)}") for c in ACTIVE] + [("x-default", f"{SITE}/")]
+    for lang in ACTIVE:
+        path = prefix_of(lang)
         own = [p for p in pages if p["lang"] == lang]
-        if lang == "en":
-            title = "Best iPhone apps for every task (2026): Reviewland rankings"
-            desc = "Best iPhone apps by task: hide photos, AI chat, sleep sounds, to-do lists and crypto trackers. Prices and privacy labels checked on the App Store."
-            intro = ("<h1>Rankings of iPhone apps, checked on the App Store</h1>"
-                     "<p>One page per question people ask: which app to hide photos, to fall asleep, to keep a simple to-do list. "
-                     "Every price, version and privacy label is copied from the App Store on the date shown on each page.</p>")
-        else:
-            title = "Mejores apps de iPhone para cada tarea (2026): Reviewland"
-            desc = "Mejores apps de iPhone por tarea: ocultar fotos, chat con IA, sonidos para dormir, tareas y cripto. Precios y privacidad comprobados en el App Store."
-            intro = ("<h1>Rankings de apps de iPhone, comprobados en el App Store</h1>"
-                     "<p>Una página por cada pregunta: qué app usar para ocultar fotos, para dormir o para una lista de tareas sencilla. "
-                     "Cada precio, versión y etiqueta de privacidad está copiado del App Store en la fecha que pone cada página.</p>")
+        title, desc = T[lang]["home_title"], T[lang]["home_desc"]
+        intro = f'<h1>{T[lang]["home_h1"]}</h1><p>{T[lang]["home_p"]}</p>'
         sections = ""
-        for sec_id, names in HOME_SECTIONS:
+        for sec_id, _ in HOME_SECTIONS:
             group_pages = [p for p in own if p["group"] in HOME_GROUPS[sec_id]]
             if not group_pages:
                 continue
@@ -416,12 +400,12 @@ def main():
                 f'<li><a href="/{p["path"]}">{card_img(p)}<span class="cardtitle">{esc(p["h1"])}</span><span class="meta">{len(p["apps"])} {p.get("count_word", "apps")} · {T[lang]["updated"]} {human_date(p["updated"], lang)}</span></a></li>'
                 for p in group_pages
             )
-            sections += f'<h2 id="{sec_id}">{esc(names[lang])} <span class="meta">({len(group_pages)})</span></h2><ul class="cards">{cards}</ul>'
+            sections += f'<h2 id="{sec_id}">{esc(LANGS[lang]["sections"][sec_id])} <span class="meta">({len(group_pages)})</span></h2><ul class="cards">{cards}</ul>'
         missing = [p["path"] for p in own if not any(p["group"] in g for g in HOME_GROUPS.values())]
         assert not missing, f"home: add these groups to HOME_GROUPS: {missing}"
         write(path, simple_page(lang, path, title, desc, '<div class="hero home">' + intro + f'</div>{sections}',
-                                [("en", f"{SITE}/"), ("es", f"{SITE}/es/"), ("x-default", f"{SITE}/")],
-                                [{"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": f"{SITE}/", "inLanguage": lang,
+                                home_alts,
+                                [{"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": f"{SITE}/", "inLanguage": hl(lang),
                                   "publisher": {"@type": "Organization", "name": NAME, "url": SITE, "parentOrganization": {"@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com"}}}]))
 
     about_en = """<h1>About Reviewland and how we check</h1>
@@ -446,17 +430,17 @@ def main():
 <h2>Actualizaciones</h2>
 <p>Revisamos cada página más o menos una vez al mes. La fecha de "Actualizado" solo cambia cuando de verdad se han vuelto a comprobar los datos.</p>
 """
-    about_alts = [("en", f"{SITE}/about/"), ("es", f"{SITE}/es/acerca/")]
-    write("about/", simple_page("en", "about/", "About Reviewland and how we check apps",
-                                "Who runs Reviewland, how apps are checked and how our own apps are disclosed.", about_en, about_alts))
-    write("es/acerca/", simple_page("es", "es/acerca/", "Quiénes somos y cómo comprobamos las apps",
-                                    "Quién hace Reviewland, cómo comprobamos las apps y cómo avisamos de las nuestras.", about_es, about_alts))
+    about_alts = [(c, f"{SITE}/{about_path(c)}") for c in ACTIVE] + [("x-default", f"{SITE}/about/")]
+    about_html = {"en": about_en, "es": about_es}
+    for c in ACTIVE:
+        body = about_html[c] if c in about_html else LANGS[c]["about_html"]
+        write(about_path(c), simple_page(c, about_path(c), T[c]["about_title"], T[c]["about_desc"], body, about_alts))
 
     write_404()
 
     # sitemap
-    urls = [(f"{SITE}/", max(p["updated"] for p in pages)), (f"{SITE}/es/", max(p["updated"] for p in pages)),
-            (f"{SITE}/about/", None), (f"{SITE}/es/acerca/", None)]
+    urls = [(f"{SITE}/{prefix_of(c)}", max(p["updated"] for p in pages)) for c in ACTIVE]
+    urls += [(f"{SITE}/{about_path(c)}", None) for c in ACTIVE]
     urls += [(page_url(p), p["updated"]) for p in pages]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
