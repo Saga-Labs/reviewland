@@ -254,7 +254,7 @@ VAULT = {
     "group": "vault-no-data", "cover": "hide-photos", "category": "PhotographyApplication",
     "path": {"en": "best-photo-vault-apps-no-data-collection-iphone/", "es": "es/mejores-apps-bovedas-fotos-sin-recoger-datos-iphone/"},
     "ct": {"en": "rl-vault-nodata", "es": "rl-vault-nodata-es"},
-    "cols": (2, 3, 4), "updated": "2026-11-09", "ours_rank": 2,
+    "cols": (2, 3, 4), "updated": "2026-11-10", "ours_rank": 2,
     "apps": [
         {"id": 1532670722, "anchor": "photo-vault", "ours": True, "src": "Photo Vault: Hide Pics Video",
          "en": {"row": ["Free to download; Premium yearly $19.99 or $29.99, lifetime from $14.99", "No account; optional end-to-end encrypted copy in your own iCloud (Premium, off by default)", "", "", ""],
@@ -327,6 +327,7 @@ VAULT = {
                 ("Does a Data Not Collected label mean my photos are safe?", "It means the developer declares to Apple that it does not collect data from the app. It is not an audit, and it says nothing about how well your photos are protected on the phone."),
                 ("Which photo vault has a private cloud?", "Keepsafe (Private Cloud, Premium), Private Photo Vault (Cloud Vault) and PV (cloud plans). Photo Vault: Hide Pics Video keeps photos on the device and offers an optional end-to-end encrypted copy in your own iCloud (Premium, off by default); Safe Lock keeps them on the device."),
                 ("Is Photo Vault: Hide Pics Video the same as Private Photo Vault?", "No. They are different apps by different developers. Photo Vault: Hide Pics Video is by Saga Ltd.; Private Photo Vault - Pic Safe is by Legendary Software Labs."),
+                ("Which photo vault apps have no subscription?", "On 10 November 2026 the US App Store pages list a one-time purchase in two of the six: Photo Vault: Hide Pics Video (Premium Lifetime at $14.99 or $29.99, next to Premium Yearly at $19.99 or $29.99) and Privault (Pro at $45.99, next to $3.49 a month or $24.99 a year). Safe Lock lists Premium Account at $4.99, $19.99 and $29.99 without saying which is one-time in the listing, so check the plan before you buy."),
                 ("Do I need a vault app at all?", "Not always. iPhone has a Hidden album in Photos you can lock with Face ID or a passcode on recent iOS versions; a vault app adds separate albums, disguised icons and other features.")],
     },
     "es": {
