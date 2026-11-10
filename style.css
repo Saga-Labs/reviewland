@@ -29,7 +29,9 @@ h3{font:600 18px/1.35 var(--sans);margin:24px 0 4px}
 
 /* Respuesta primero; la portada de imagen va después (solo orden visual) */
 article{display:flex;flex-direction:column}
-article>.hero,article>.answer{order:-1}
+article>.hero,article>.answer,article>.cta-box{order:-1}
+.cta-box{margin:4px 0 18px;max-width:68ch}
+.cta-box p{margin:0 0 10px}
 .answer{max-width:68ch;font-size:20px;line-height:1.5;margin:26px 0 8px}
 .answer p{margin:0 0 14px}
 .cover{margin:18px 0 4px}

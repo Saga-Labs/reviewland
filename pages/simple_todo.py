@@ -28,17 +28,43 @@ EN = {
     "path": "best-simple-to-do-list-apps-iphone/",
     "ct": "rl-simple-todo",
     "category": "ProductivityApplication",
-    "published": "2026-10-11", "updated": "2026-11-09", "checked": "2026-11-09",
-    "title": "Best To-Do List Apps for iPhone (2026)",
-    "h1": "Best To-Do List Apps for iPhone (2026)",
-    "description": "The best to-do list apps for iPhone, free and paid: Things 3, Microsoft To Do, TickTick, Todoist, 3 Tasks, Do!, MinimaList and Clear. Price, account and privacy checked 9 November 2026.",
-    "llms": "Compares eight to-do list apps for iPhone (Things 3, TickTick, 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do, Todoist) by price, whether they need an account, reminders and widgets, and privacy label.",
+    "published": "2026-10-11", "updated": "2026-11-10", "checked": "2026-11-10",
+    "title": "Best Free To-Do List App for iPhone: No Paywall, No Lost Tasks (2026)",
+    "h1": "Best Free To-Do List App for iPhone: No Paywall, No Lost Tasks (2026)",
+    "description": "The best free to-do list apps for iPhone, and the fix for what 1-2 star reviews complain about most: crashes, tasks that vanish, reminders that never fire, paywalls. Checked 10 November 2026.",
+    "llms": "Answers the most common 1-2 star complaints about to-do apps (crashes, lost tasks, reminders, paywalls, widgets) and compares eight to-do list apps for iPhone (Things 3, TickTick, 3 Tasks, Do!, MinimaList, Clear, Microsoft To Do, Todoist) by price, whether they need an account, reminders and widgets, and privacy label.",
     "answer": [
-        "The best to-do list app for iPhone is Things 3 if you want a polished paid one ($9.99, once), Microsoft To Do if you want a free one that syncs through a Microsoft account, and TickTick or Todoist if you also want calendar views and shared lists. For the simplest list there is, 3 Tasks limits you to three priorities a day and times each one, free, with no account.",
-        "If you want a normal list that stays simple, Do! and MinimaList add reminders and widgets. Todoist is the most complete of the eight, but its Pro plan is a subscription ($6.99 a month or $59.99 a year in the US, checked 9 November 2026).",
+        "The best free to-do list app for iPhone is Microsoft To Do: free, no in-app purchases, and it syncs through a Microsoft account. If you are searching because your current app crashes, loses tasks or put its features behind a subscription, pick a simpler app that keeps the list on your phone: 3 Tasks (free, no account, three tasks a day) or Things 3 ($9.99 once). If reminders are what fail, check iOS first: Settings > Notifications, then your Focus settings.",
+        "Below are the five complaints that repeat most in 1-2 star reviews of eight to-do apps, each with its fix. Todoist is the most complete app of the eight, but its Pro plan is a subscription ($6.99 a month or $59.99 a year in the US, checked 10 November 2026).",
+    ],
+    "cta": {
+        "line": "3 Tasks is free, needs no account and keeps its list on your phone, so there is no sync to break and no subscription to cancel (its Pro is an optional one-time purchase). It has no reminders; for a free list that syncs, Microsoft To Do needs no purchase.",
+        "buttons": [("Download 3 Tasks (free)", 1553693943), ("Download Microsoft To Do (free)", 1212616790)],
+    },
+    "complaints": [
+        {"id": "crashes", "h2": "\"Crashes every time I open it\": 158 of 775 low reviews", "body": [
+            "We read 775 one- and two-star US App Store reviews of the eight apps below (taken from the latest 500 reviews of each). 158 of them are about crashes, freezing or an app that stopped working after an update. Typical wording: \"crashes every time I open it\" (Do!, 1 star) and \"always crashes without an error message\" (Microsoft To Do, 1 star).",
+            "The fix: update the app and iOS first. Then, before deleting anything, make sure the list is somewhere else (open it on another device or on the web). If it still crashes, use Settings > General > iPhone Storage > the app > Offload App, which removes the app but keeps its data, and reinstall. If it keeps happening, the cause is usually size: an app with fewer parts has fewer things to break, which is why 3 Tasks (one screen, no account) and Things 3 (one purchase, no ads) suit people who left a bigger app because of crashes.",
+        ]},
+        {"id": "lost-tasks", "h2": "\"Lost all my tasks\" and \"doesn't sync\": 130 reviews", "body": [
+            "The second-biggest group is tasks that disappear or lists that do not match between devices (130 reviews; Clear 58, Microsoft To Do 37). In the words of reviewers: \"My set of 15 plus reminders disappeared twice\" (MinimaList, 1 star) and \"Not syncing across devices is crazy\" (Clear, 1 star).",
+            "The fix: sign in with the same account on every device, check in Settings > your name > iCloud that the app is allowed to use iCloud if it uses it, and do not reinstall before you have seen the list on a second device. If you only need today's list, you do not need sync at all: 3 Tasks is a one-day list of three, so nothing important lives in it for long. For a list you keep for years, use an app with its own cloud account (Things 3, Todoist, TickTick, Microsoft To Do) and look at the list on the web once to confirm it is saved.",
+        ]},
+        {"id": "reminders", "h2": "\"Reminders don't go off\": 75 reviews", "body": [
+            "75 reviews say reminders or notifications never arrive, arrive on the wrong day or cannot be deleted (Todoist 22, Things 3 16, Clear 14). Example: \"Reoccurring reminders show up on the wrong days and can't be deleted\" (Do!, 2 stars).",
+            "The fix is often in iOS, not the app. Check Settings > Notifications > the app (Allow Notifications on, Time Sensitive on), Settings > Notifications > Scheduled Summary (it can hold alerts until the evening) and Settings > Focus (each Focus has an allowed-apps list). If a repeating reminder is wrong, delete the whole series and create it again. For reminders you cannot miss, Apple's own Reminders app is a good second layer.",
+        ]},
+        {"id": "paywall", "h2": "\"Now it wants a subscription\": 66 reviews", "body": [
+            "66 reviews are about paywalls and subscriptions, most about features that used to be free (Todoist 21, Clear 18, MinimaList 13). Example: \"Needlessly added subscriptions as a means to nickel and dime functionality like widgets\" (Clear, 1 star).",
+            "The fix: pick an app whose free version is complete. On 10 November 2026 Microsoft To Do lists no in-app purchases, 3 Tasks is free with an optional one-time Pro ($4.99 or $9.99), and Things 3 costs $9.99 once. If you already pay and want to stop, cancel in Settings > your name > Subscriptions.",
+        ]},
+        {"id": "widget", "h2": "\"The widget is blank or won't update\": 51 reviews", "body": [
+            "51 reviews are about widgets that show nothing or do not update (Microsoft To Do 20, Do! 9, Things 3 7). Example: \"The widget would not update the list\" (Do!, 1 star).",
+            "The fix: remove the widget and add it again, open the app once after each update, and keep Background App Refresh on for it (Settings > General > Background App Refresh). For a widget that has little to refresh, 3 Tasks has a free Home Screen widget that shows the day's three.",
+        ]},
     ],
     "columns": ["App", "Price (US)", "What makes it simple", "Account", "App Store privacy label", "Version (date)", "Rating (US)"],
-    "table_note": "Prices (download and in-app purchases), version, date and rating are from the US App Store on 9 November 2026. Seven of the eight are free to download; Things 3 is a paid app.",
+    "table_note": "Prices (download and in-app purchases), version, date and rating are from the US App Store on 10 November 2026. Seven of the eight are free to download; Things 3 is a paid app.",
     "apps": [
         {
             "name": "3 Tasks a Day: To Do List", "id": 1553693943, "ours": True, "anchor": "3-tasks",
@@ -85,8 +111,8 @@ EN = {
         {
             "name": "Clear: To Dos & Reminders", "id": 493136154, "anchor": "clear",
             "developer": "Impending, Inc.", "rating": (4.6, 5240),
-            "row": ["Clear Pro $3.99; legacy Pro $2.99 a month or $24.99 a year; sound packs", "Gesture-only lists, colour heatmap of priority", "Not stated",
-                    "Data Used to Track You; Data Not Linked to You", "2.8.7 (31 Oct 2026)", "4.6"],
+            "row": ["Clear Pro $3.99 or $29.99 a year; legacy Pro $2.99 a month or $24.99 a year; sound packs", "Gesture-only lists, colour heatmap of priority", "Not stated",
+                    "Data Used to Track You; Data Not Linked to You", "2.8.8 (9 Nov 2026)", "4.6"],
             "best_for": "people who like swiping lists with no buttons on screen.",
             "facts": [
                 "Swipe to complete, pinch and drag to reorder; a heatmap shows priority.",
@@ -113,7 +139,7 @@ EN = {
             "name": "Todoist: To Do List & Calendar", "id": 572688855, "anchor": "todoist",
             "developer": "Doist", "rating": (4.8, 130607),
             "row": ["Pro $6.99 a month or $59.99 a year", "Natural-language quick add and voice capture", "Yes",
-                    "Data Linked to You", "26.10.35 (2 Nov 2026)", "4.8"],
+                    "Data Linked to You", "26.11.5 (9 Nov 2026)", "4.8"],
             "best_for": "people whose list is outgrowing a simple app and who want projects, dates and teams.",
             "facts": [
                 "Quick Add understands dates in plain language; Ramble turns speech into tasks.",
@@ -155,6 +181,7 @@ EN = {
         "<strong>You want reminders and repeating tasks but a calm design:</strong> Do! or MinimaList.",
         "<strong>You want everything free and synced:</strong> Microsoft To Do.",
         "<strong>You like gestures and no buttons:</strong> Clear.",
+        "<strong>Your app crashed, lost tasks or went behind a paywall:</strong> see the five fixes above, then 3 Tasks, Microsoft To Do or Things 3.",
         "<strong>You need projects, dates and shared work:</strong> Todoist or TickTick.",
         "<strong>You want a polished planner and prefer paying once:</strong> Things 3.",
     ],
@@ -165,11 +192,12 @@ EN = {
         "Timing focused work blocks on each priority (3 Tasks).",
     ],
     "method": [
-        "On 9 November 2026 we rechecked each app's US App Store page and Apple's lookup data: download and in-app purchase prices, version and release date, rating, size, minimum iOS and the privacy label. The first six were first checked on 11 October 2026 and no price had changed; TickTick and Things 3 were added on 9 November. Features are the ones each developer lists on its App Store page. \"Not stated\" means the listing does not say whether an account is needed. We did not invent ratings or reviews.",
+        "On 10 November 2026 we rechecked each app's US App Store page and Apple's lookup data: download and in-app purchase prices, version and release date, rating, size, minimum iOS and the privacy label. The first six were first checked on 11 October 2026 and no price had changed; TickTick and Things 3 were added on 9 November. Features are the ones each developer lists on its App Store page. \"Not stated\" means the listing does not say whether an account is needed. We did not invent ratings or reviews.",
+        "Complaint counts: on 10 November 2026 we downloaded the latest 500 US App Store reviews of each app (3,502 in all) and read the 775 with one or two stars. Each review was counted once per complaint by matching its words (for example crash, freez, sync, disappear, reminder, subscri, widget); a review can count in more than one group. Counts show how often a complaint comes up in the sample, not how often an app fails.",
     ],
     "faq": [
         ("What is the best to-do list app for iPhone?",
-         "Things 3 for a polished paid planner ($9.99 once), Microsoft To Do for a free list that syncs, TickTick or Todoist for calendar views and shared lists, and 3 Tasks for the simplest list. Prices and versions checked on 9 November 2026."),
+         "Things 3 for a polished paid planner ($9.99 once), Microsoft To Do for a free list that syncs, TickTick or Todoist for calendar views and shared lists, and 3 Tasks for the simplest list. Prices and versions checked on 10 November 2026."),
         ("What is the best free to-do list app for iPhone?",
          "Microsoft To Do is free with no in-app purchases. TickTick, Todoist and 3 Tasks are free to download with optional paid upgrades; Do! is free with ads."),
         ("What is the best iPhone todo list app if I only want a few tasks?",
@@ -178,6 +206,10 @@ EN = {
          "Microsoft To Do is free with no in-app purchases, and 3 Tasks is free with an optional one-time Pro (no subscription). Do! is free with ads and a one-time $20 to remove them; MinimaList and Clear also offer one-time upgrades."),
         ("Which to-do app works without an account?",
          "3 Tasks needs no account. Microsoft To Do uses a Microsoft account to sync, and Todoist uses its own account. TickTick and Things 3 do not say on their App Store pages."),
+        ("Why do to-do apps lose my tasks?",
+         "Most reports come after an update, a reinstall or a new phone, when the list lived only on one device or the sign-in differed. Sign in with the same account everywhere and check the list on a second device before you reinstall."),
+        ("Why aren't my to-do list reminders going off on iPhone?",
+         "Check Settings > Notifications for the app (Allow Notifications and Time Sensitive), the Scheduled Summary setting and the allowed apps of each Focus. If a repeating reminder is wrong, delete the series and create it again."),
         ("Why limit yourself to three tasks a day?",
          "A short list forces you to choose what matters most, so the list gets finished instead of growing. That is the idea behind 3 Tasks."),
         ("Which simple to-do app has widgets?",

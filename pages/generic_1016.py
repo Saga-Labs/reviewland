@@ -37,6 +37,14 @@ def build(spec, cc):
         "apps": apps, "who": t["who"], "cases": t["cases"], "method": t["method"], "faq": t["faq"],
         "sources": src(cc, [(a["src"], a["id"]) for a in spec["apps"]]),
     }
+    if L == "en":
+        for k in ("cta", "complaints"):
+            if k in t:
+                p[k] = t[k]
+        if spec.get("updated_en"):
+            p["updated"] = spec["updated_en"]
+        if spec.get("checked_en"):
+            p["checked"] = spec["checked_en"]
     if spec.get("ours_rank"):
         p["ours_rank"] = spec["ours_rank"]
     refresh(p, cc, priv_col=spec["cols"][0], ver_col=spec["cols"][1], rating_col=spec["cols"][2])
@@ -48,7 +56,7 @@ SLEEP = {
     "group": "free-sleep-sounds", "cover": "sleep-sounds", "category": "HealthApplication",
     "path": {"en": "best-free-sleep-sound-apps-iphone/", "es": "es/mejores-apps-gratis-sonidos-para-dormir-iphone/"},
     "ct": {"en": "rl-free-sleep", "es": "rl-free-sleep-es"},
-    "cols": (2, 3, 4),
+    "cols": (2, 3, 4), "updated_en": "2026-11-10", "checked_en": "2026-11-10",
     "apps": [
         {"id": 1462269642, "anchor": "drop", "ours": True, "src": "Drop", "name": "Sleep Sounds & Focus: Drop",
          "en": {"row": ["Free: 9 of 53 sounds, no ads; Drop Pro monthly $4.99 or lifetime options", "White noise, crackling fire, forest, heartbeat, lake, coffee shop, falling snow, desert wind and dolphins; sleep timer with 30-second fade", "", "", ""],
@@ -112,21 +120,48 @@ SLEEP = {
                 "limits": "pide iOS 26 o posterior, así que muchos iPhone no pueden instalarla, y es la descarga más grande de la lista."}},
     ],
     "en": {
-        "title": "Best Free Sleep Sound Apps for iPhone (2026)",
-        "h1": "Best free sleep sound apps for iPhone in 2026",
-        "description": "Six sleep sound and white noise apps for iPhone compared by what is really free: Drop, White Noise Lite, Rain Rain and more. Checked on the App Store.",
+        "title": "Best Free White Noise & Sleep Sounds App for iPhone, No Paywall (2026)",
+        "h1": "Best free white noise and sleep sounds app for iPhone: no paywall, no surprise charges (2026)",
+        "description": "Best free white noise and sleep sounds app for iPhone, and the fix for the top 1-2 star complaints: paywalls, surprise charges, sound that stops. Six apps checked 10 Nov 2026.",
         "llms": "Compares six sleep sound apps for iPhone (Drop, White Noise Lite, Rain Rain, White Noise Deep Sleep Sounds, Sleep Pillow, Dark Noise) by how much is free, ads, timers, price of the paid tier and App Store privacy label.",
-        "answer": ["For the most sound for free, White Noise Lite (50+ sounds, no purchases listed) and Rain Rain (50+ sounds, one small banner ad) are the strongest. For white, pink and brown noise on a free plan, White Noise Lite and White Noise Deep Sleep Sounds both list them. If you want free sounds with no ads at all and a sleep timer, Drop gives you 9 of its 53 sounds free, including white noise; pink and brown noise need Drop Pro.",
-                   "All six are free to download. What differs is how much stays free, whether there are ads, and how long the sound plays; all of that is in the table."],
+        "answer": ["The best free white noise app for iPhone is White Noise Lite: 50+ sounds including white, pink and brown noise, with no in-app purchases listed (reviewers report ads since a recent update). For free sounds with no ads and a sleep timer, Drop gives you 9 of its 53 sounds; Rain Rain has 50+ free sounds with one small banner ad. The most repeated complaint in 1-2 star reviews of the six apps is \"now you gotta pay\", so the table shows what stays free. iPhone also has free Background Sounds built in (Settings > Accessibility > Audio & Visual).",
+                   "All six are free to download. What differs is how much stays free, whether there are ads, and how long the sound plays; the five repeated complaints and their fixes follow."],
+        "cta": {"line": "For the paywall complaint: White Noise Lite lists no in-app purchases, and Drop shows no ads and keeps 9 sounds free (Drop Pro is optional).",
+                "buttons": [("Download White Noise Lite (free)", 292987597), ("Download Drop (free)", 1462269642)]},
+        "complaints": [
+            {"id": "paywall", "h2": "\"Now you gotta pay monthly\": 65 of 245 low reviews", "body": [
+                "We read the 245 one- and two-star US App Store reviews of the six apps below (from the latest 500 reviews of each). 65 are about paying to unlock sounds, mostly White Noise Deep Sleep Sounds (23), Dark Noise (18), Sleep Pillow (12) and Rain Rain (11). One Rain Rain reviewer wrote \"Forced to pay for year without trying\" (1 star).",
+                "The fix: use an app whose free part is complete. On 10 November 2026 White Noise Lite lists no in-app purchases, Rain Rain gives 50+ sounds free with a banner ad, and Drop gives 9 free sounds without ads. Or skip the app: Settings > Accessibility > Audio & Visual > Background Sounds plays rain, ocean, stream and noise colours for free, with no account and no ads.",
+            ]},
+            {"id": "crashes", "h2": "\"Crashing upon opening\": 24 reviews", "body": [
+                "24 reviews say the app crashes or does not work (Sleep Pillow 12, Dark Noise 5, White Noise Lite 4, Rain Rain 3). \"Crashing upon opening\" is a 1-star Rain Rain review; Sleep Pillow reviewers say a version \"no longer works\".",
+                "The fix: check the date in the table. Sleep Pillow was last updated in October 2023, while White Noise Lite (7 November 2026) and Drop (9 November 2026) are current. Update iOS, restart the phone and, if a paid pack is missing after a reinstall, use Restore Purchases inside the app before paying again. Dark Noise needs iOS 26 and Drop needs iOS 18.",
+            ]},
+            {"id": "charged", "h2": "\"Charged us without signing up\": 23 reviews", "body": [
+                "23 reviews are about unexpected charges or subscriptions that are hard to cancel (White Noise Deep Sleep Sounds 13, Dark Noise 5). One 1-star review reads \"Charged us without signing up and making it very difficult to unsubscribe\".",
+                "The fix: open Settings > your name > Subscriptions to see and cancel anything active, and cancel a free trial at least a day before it ends. If you were billed by mistake, ask Apple for a refund at reportaproblem.apple.com. Apps with no subscription to start, such as White Noise Lite, give you nothing to forget to cancel.",
+            ]},
+            {"id": "stops", "h2": "\"It shuts off on its own\": 19 reviews", "body": [
+                "19 reviews say the sound stops by itself, after a minute or ten (White Noise Lite 8, Rain Rain 5, Dark Noise 4). \"It shuts off on its own\" is a 1-star White Noise Lite review.",
+                "The fix: check the app's own timer and fade-out first, then see whether another sound interrupts it (an alarm, a call, Siri). To make it stop on purpose, use the Clock app: Timer > When Timer Ends > Stop Playing. Drop has a sleep timer of 15, 30 or 45 minutes, 1, 2 or 8 hours with a 30-second fade-out.",
+            ]},
+            {"id": "battery", "h2": "\"Kills your battery\" and background activity: 18 reviews", "body": [
+                "18 reviews complain about battery drain, the screen or the app doing things in the background (White Noise Lite 8, Dark Noise 5). One White Noise Deep Sleep Sounds reviewer says the app \"kills your battery and overheats the phone\" (1 star).",
+                "The fix: see which app used the battery in Settings > Battery, and close apps that show ads. For an app that works offline, such as Drop, Airplane Mode keeps the sound playing without ad requests. The built-in Background Sounds are part of iOS and need no separate app.",
+            ]},
+        ],
         "columns": ["App", "Price (US)", "What is free", "App Store privacy label", "Version (date)", "Rating (US)"],
-        "table_note": "Prices are the US App Store in-app purchases on 16 October 2026 (an app can list several price points for the same plan). Ratings are the App Store average that day.",
+        "table_note": "Prices are the US App Store in-app purchases on 10 November 2026 (an app can list several price points for the same plan). Ratings are the App Store average that day.",
         "who": ["<strong>You want the most free sound:</strong> White Noise Lite or Rain Rain.", "<strong>You need white, pink or brown noise:</strong> White Noise Lite or White Noise Deep Sleep Sounds.", "<strong>You want no ads and a good sleep timer:</strong> Drop.", "<strong>You like a polished design and Siri Shortcuts, and have iOS 26:</strong> Dark Noise.", "<strong>You want a classic app with alarm and mixes:</strong> Sleep Pillow, keeping in mind it was last updated in 2023."],
         "cases": ["Falling asleep to rain or a fan with a timer that fades out (any of the six).", "Masking street noise all night (White Noise Lite or Rain Rain, with no time limit).", "Soothing a baby with white noise (White Noise Deep Sleep Sounds lists baby sounds and shushers).", "Focus or study with a coffee shop sound (Drop, White Noise Lite)."],
-        "method": ["On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. What is free comes from each developer's description; for Drop, from the app itself (version 2.10, updated 24 October 2026). We did not invent ratings or reviews and did not test audio quality or battery use."],
+        "method": ["On 10 November 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label. What is free comes from each developer's description; for Drop, from the app itself. We did not invent ratings or reviews and did not test audio quality or battery use.",
+                   "Complaint counts: we downloaded the latest 500 US App Store reviews of each app (2,311 in all) and read the 245 with one or two stars. Each was counted once per complaint by matching its words (for example subscri, unlock, crash, charged, shuts off, battery); a review can count in more than one group. The counts show how often a complaint comes up, not how often an app fails."],
         "faq": [("What is the best free sleep sound app for iPhone?", "It depends on what you need free. White Noise Lite has 50+ sounds and no listed purchases; Rain Rain has 50+ free sounds with a small banner ad; Drop has 9 free sounds with no ads and a sleep timer."),
                 ("Which free app has white noise, pink noise and brown noise?", "White Noise Lite lists white, pink, brown, blue and violet noise; White Noise Deep Sleep Sounds lists white, pink and brown noise among its free sounds. Drop has white noise free; its pink and brown noise need Drop Pro."),
                 ("Does the free version of a sleep sound app stop after a few hours?", "White Noise Deep Sleep Sounds says its free version plays for eight hours and continuous play needs a subscription. Rain Rain lists no limit on playback time in its free version."),
                 ("Is there a sleep sound app with no ads?", "Drop has no ads. Rain Rain says it has no audio or video ads, only a small image banner. White Noise Lite lists no purchases; check its ads when you install it."),
+                ("Is there a free white noise app for iPhone with no ads and no subscription?",
+                 "Drop has no ads and 9 free sounds, including white noise, but its other sounds need Drop Pro. White Noise Lite lists no in-app purchases, though reviewers report ads. iPhone's built-in Background Sounds are free, with no ads or account."),
                 ("Which sleep sound app works on older iPhones?", "Rain Rain and Sleep Pillow ask for iOS 12 or later, White Noise Lite iOS 14. Dark Noise needs iOS 26 and Drop needs iOS 18.")],
     },
     "es": {
@@ -254,7 +289,7 @@ VAULT = {
     "group": "vault-no-data", "cover": "hide-photos", "category": "PhotographyApplication",
     "path": {"en": "best-photo-vault-apps-no-data-collection-iphone/", "es": "es/mejores-apps-bovedas-fotos-sin-recoger-datos-iphone/"},
     "ct": {"en": "rl-vault-nodata", "es": "rl-vault-nodata-es"},
-    "cols": (2, 3, 4), "updated": "2026-11-10", "ours_rank": 2,
+    "cols": (2, 3, 4), "updated": "2026-11-10", "checked_en": "2026-11-10", "ours_rank": 2,
     "apps": [
         {"id": 1532670722, "anchor": "photo-vault", "ours": True, "src": "Photo Vault: Hide Pics Video",
          "en": {"row": ["Free to download; Premium yearly $19.99 or $29.99, lifetime from $14.99", "No account; optional end-to-end encrypted copy in your own iCloud (Premium, off by default)", "", "", ""],
@@ -312,17 +347,42 @@ VAULT = {
                 "limits": "la versión gratis muestra anuncios, y su etiqueta tiene datos de rastreo, vinculados y no vinculados."}},
     ],
     "en": {
-        "title": "Photo Vault Apps for iPhone Compared by Privacy Label (2026)",
-        "h1": "Photo vault apps for iPhone compared by App Store privacy label (2026)",
-        "description": "Six photo vault apps for iPhone compared by App Store privacy label: only Safe Lock says Data Not Collected; Photo Vault lists only purchases, not linked to you.",
+        "title": "Best Photo Vault App: No Subscription Trap, No Lost Photos (2026)",
+        "h1": "Best photo vault app for iPhone: no subscription trap, no lost photos (2026)",
+        "description": "Best photo vault app for iPhone with no subscription trap and no lost photos: six apps by price and App Store privacy label, plus fixes for the top 1-2 star complaints. Checked 10 Nov 2026.",
         "llms": "Compares six photo vault apps for iPhone (Photo Vault, Safe Lock, Keepsafe, Private Photo Vault, Privault, PV) by App Store privacy label, price and cloud backup. Only Safe Lock declares Data Not Collected; Photo Vault declares only purchases, not linked to you, and no tracking.",
-        "answer": ["Of the six, only Safe Lock declares <em>Data Not Collected</em> on its App Store privacy label. Photo Vault: Hide Pics Video comes next: its label lists only purchases, not linked to you, with nothing linked to you and nothing used to track you. The other four list data used to track you, data linked to you, or both. A privacy label is what the developer says, not an independent audit.",
+        "answer": ["For a photo vault with no subscription trap, pick one that lists a one-time purchase and keeps photos on your phone. On 10 November 2026 that is Photo Vault: Hide Pics Video (Premium Lifetime from $14.99) and Privault (Pro $45.99 once); Safe Lock is the only one of the six whose label says <em>Data Not Collected</em>. In 1-2 star reviews the most repeated complaints are being pushed to pay (66) and photos lost after a crash, update or new phone, so test a restore with one photo first. A privacy label is what the developer says, not an audit.",
                    "If you also want a private cloud, Keepsafe has the smallest label of the cloud options (usage data only); Private Photo Vault has the most features and the longest label."],
+        "cta": {"line": "Photo Vault: Hide Pics Video has no account to be locked out of and keeps photos on the device, with an optional end-to-end encrypted copy in your own iCloud (Premium). Safe Lock declares Data Not Collected.",
+                "buttons": [("Download Photo Vault (free)", 1532670722), ("Download Safe Lock (free)", 1195429570)]},
+        "complaints": [
+            {"id": "paywall", "h2": "\"Unless you pay\": photo vaults that charge after you add photos (66 of 395 low reviews)", "body": [
+                "We read the 395 one- and two-star US App Store reviews of the six apps below (from the latest 500 reviews of each). 66 are about being pushed to pay (Keepsafe 30, Safe Lock 13, Private Photo Vault 11, Privault 6). A Safe Lock reviewer wrote \"Until your trial runs out..then, ANYONE can get your pics...unless you pay\" (1 star).",
+                "The fix: before you move private photos in, look at what the free version protects and what the lock needs. On 10 November 2026 the listings show a one-time purchase in two of the six: Photo Vault: Hide Pics Video (Premium Lifetime $14.99 or $29.99) and Privault (Pro $45.99). A free option with no app at all is the Hidden album in Photos, locked with Face ID or a passcode on recent iOS versions.",
+            ]},
+            {"id": "crashes", "h2": "\"The app keeps crashing\": 63 reviews", "body": [
+                "63 reviews say the vault crashes or no longer opens, 44 of them about Keepsafe, the biggest app here. \"The app keeps crashing\" and \"Doesn't work with latest iOS version\" (Keepsafe and Safe Lock, 1 star each) are typical.",
+                "The fix: update iOS and the app, restart the phone, and do not delete the app yet. Deleting a vault app can delete the vault with it. Use Settings > General > iPhone Storage > the app > Offload App, which keeps its data. Check the version date in the table: a vault that has not been updated for several iOS versions is the risky kind.",
+            ]},
+            {"id": "lost-photos", "h2": "\"Lost all my photos\": 60 reviews", "body": [
+                "60 reviews say photos were lost after an update, a reinstall or a new phone (Keepsafe 36, PV 18). One Keepsafe reviewer wrote \"Lost all my photos by using this as backup\" (1 star); a Safe Lock reviewer says their folders were deleted after paying for lifetime.",
+                "The fix: never move the only copy. Keep the original in Photos until you have opened the vault copy on the phone, and test a restore with one photo. Make sure the vault is in your iPhone backup, or use an app with its own backup: Photo Vault: Hide Pics Video keeps photos on the device and offers an optional end-to-end encrypted copy in your own iCloud (Premium, off by default); Keepsafe, Private Photo Vault and PV have cloud plans.",
+            ]},
+            {"id": "new-phone", "h2": "\"No backup\" and \"can't move to a new phone\": 56 reviews", "body": [
+                "56 reviews are about backups that do not finish or a vault that does not come across to a new phone (Keepsafe 34, PV 12). Reviewers write that photos \"do not back up\" (Keepsafe, 2 stars).",
+                "The fix: move the vault with an iPhone-to-iPhone transfer or an encrypted backup, then open the vault on the new phone before you erase the old one. An app with no cloud copy, such as Safe Lock, only moves if the transfer includes app data, so check on the new phone first.",
+            ]},
+            {"id": "locked-out", "h2": "\"Can't recover my password\" and locked out: 41 reviews", "body": [
+                "41 reviews are about lost passwords, resets or accounts that cannot be recovered (Keepsafe 25, Safe Lock 5, Privault 5). \"I can't recover or delete my account\" is a 1-star Keepsafe review.",
+                "The fix depends on the trade-off: an app with an account can reset a password by email (set the recovery email now), while an app with no account has nothing to reset, so choose a code you will remember. Photo Vault: Hide Pics Video has no account and opens with Face ID, Touch ID or a passcode.",
+            ]},
+        ],
         "columns": ["App", "Price (US)", "Cloud backup", "App Store privacy label", "Version (date)", "Rating (US)"],
-        "table_note": "All six are free to download. Prices are the in-app purchases listed on the US App Store on 16 October 2026 (apps list several price points for the same plan). Ratings are the App Store average that day. The privacy label is what each developer declares to Apple; privacy labels rechecked on 9 November 2026.",
+        "table_note": "All six are free to download. Prices are the in-app purchases listed on the US App Store on 10 November 2026 (apps list several price points for the same plan). Ratings are the App Store average that day. The privacy label is what each developer declares to Apple; privacy labels rechecked on 9 November 2026.",
         "who": ["<strong>You want nothing collected and no account:</strong> Safe Lock; Photo Vault: Hide Pics Video if you accept a label with only purchases, not linked to you.", "<strong>You want a private cloud with the smallest label:</strong> Keepsafe.", "<strong>You want the most features and accept a long label:</strong> Private Photo Vault.", "<strong>You want a decoy passcode for free:</strong> Privault (Photo Vault has one with Premium).", "<strong>You want the cheapest subscription:</strong> PV."],
         "cases": ["Keeping private photos off the shared camera roll and out of the cloud (Photo Vault, Safe Lock).", "Handing your phone to someone without them seeing the app (disguised icons, decoy passcodes).", "Backing up a vault so a lost phone does not lose photos (Keepsafe, Private Photo Vault, PV with their cloud).", "Checking what an app says it collects before you put private photos in it (the privacy label in the table)."],
-        "method": ["On 16 October 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label exactly as declared. Features are the ones each developer lists on its page; we did not verify encryption or audit data practices. We did not invent ratings or reviews."],
+        "method": ["On 10 November 2026 we opened each app's US App Store page and Apple's lookup data: in-app purchases, version and release date, rating, languages, size, minimum iOS and the privacy label exactly as declared. Features are the ones each developer lists on its page; we did not verify encryption or audit data practices. We did not invent ratings or reviews.",
+                   "Complaint counts: we downloaded the latest 500 US App Store reviews of each app (2,501 in all) and read the 395 with one or two stars. Each was counted once per complaint by matching its words (for example subscri, pay, crash, lost, back up, password); a review can count in more than one group. The counts show how often a complaint comes up, not how often an app fails."],
         "faq": [("Which photo vault apps say Data Not Collected?", "On 9 November 2026, only Safe Lock - Hidden Photo Vault. Photo Vault: Hide Pics Video lists only purchases, not linked to you. Keepsafe, Private Photo Vault, Privault and PV list data used to track you or data linked to you."),
                 ("Does a Data Not Collected label mean my photos are safe?", "It means the developer declares to Apple that it does not collect data from the app. It is not an audit, and it says nothing about how well your photos are protected on the phone."),
                 ("Which photo vault has a private cloud?", "Keepsafe (Private Cloud, Premium), Private Photo Vault (Cloud Vault) and PV (cloud plans). Photo Vault: Hide Pics Video keeps photos on the device and offers an optional end-to-end encrypted copy in your own iCloud (Premium, off by default); Safe Lock keeps them on the device."),

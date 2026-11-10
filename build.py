@@ -267,6 +267,15 @@ def ranking_html(p, alternates):
     if cover_of(p):
         out.append(f'<figure class="cover"><img src="/img/{cover_of(p)}.jpg" alt="" width="1200" height="675" fetchpriority="high"></figure>\n')
     out.append('<div class="answer">' + "".join(f"<p>{x}</p>\n" for x in p["answer"]) + "</div>\n")
+    if p.get("cta"):  # download button(s) right after the answer, with one line on which complaint they fix
+        c = p["cta"]
+        btns = ""
+        for label, app_id in c["buttons"]:
+            href = store_link(app_id, p["ct"]) if str(app_id) in OUR_IDS else f"https://apps.apple.com/{p['store']}/app/id{app_id}"
+            btns += f'<a class="cta" href="{esc(href)}">{esc(label)}</a> '
+        out.append(f'<div class="cta-box"><p>{c["line"]}</p><p>{btns}</p></div>\n')
+    for cp in p.get("complaints", []):  # one section per repeated 1-2 star complaint, with the fix
+        out.append(f'<h2 id="{cp["id"]}">{esc(cp["h2"])}</h2>\n' + "".join(f"<p>{x}</p>\n" for x in cp["body"]))
     if p.get("context_html"):  # news pages: dated context and a small data table before the ranking
         out.append(p["context_html"])
 

@@ -31,6 +31,7 @@ def make(group, lang, tr, ct_suffix, store=None):
     keep = tr.get("keep", list(range(len(tr["apps"]))))  # default: the first N English apps (EN may add apps at the end)  # English indices of the apps sold in this country
     assert len(tr["apps"]) == len(keep), (group, lang)
     p = copy.deepcopy(en)
+    p.pop("cta", None); p.pop("complaints", None)  # complaint sections exist only in English (10 Nov 2026)
     p["apps"] = [p["apps"][i] for i in keep]
     for k in ("title", "h1", "description", "llms", "answer", "columns", "table_note", "who", "cases", "method", "faq"):
         p[k] = tr[k]
