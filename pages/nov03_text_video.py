@@ -16,6 +16,8 @@ def label(*x):
 
 
 def app(name, i, anchor, dev, r, n, ver, date, labels, price, does, length, best, facts, limits, ours=False):
+    if anchor in ("kling", "runway", "invideo"):
+        facts = list(facts) + ["Also works inside ChatGPT as an app, per its ChatGPT listing."]
     d = {"name": name, "id": i, "anchor": anchor, "developer": dev, "rating": (r, n), "best_for": best, "facts": facts, "limits": limits,
          "row": [price, does, length, labels, f"{ver} ({date})", f"{round(r, 1)}"]}
     if ours:
@@ -48,7 +50,7 @@ APPS = [
         "one short clip from a description, with the coin cost shown before you tap.",
         ["Type what happens in the shot, choose 9:16 and generate; the coin cost shows before you tap. In version 1.4.2 the default model is still named \"SeeDance 1.5 Pro\" in the picker; Dora's site says those requests now run on Seedance 2 Mini, at 31 coins for 8 seconds with sound.",
          "At the 300-coin pack price that is about $0.52 per 8-second clip.",
-         "Videos up to 1080p on some models, no watermark, about two minutes per video, per its listing.", "The same account also works in a browser at <a href=\"https://doravideo.com/?utm_source=reviewland&amp;utm_medium=guide&amp;utm_campaign=best-text-to-video-ai-apps-iphone\">doravideo.com</a>."],
+         "Videos up to 1080p on some models, no watermark, about two minutes per video, per its listing.", "The same account also works in a browser at <a href=\"https://doravideo.com/?utm_source=reviewland&amp;utm_medium=guide&amp;utm_campaign=best-text-to-video-ai-apps-iphone\">doravideo.com</a>.", "Dora also works inside ChatGPT as an app: <a href=\"https://doravideo.com/chatgpt?utm_source=reviewland&amp;utm_campaign=chatgpt_cta\">how to connect it</a>."],
         "short clips only, and no free video.", True),
     app("invideo: AI Video Editor", 6471394316, "invideo", "Invideo Inc", 4.55, 28062, "4.5.63", "27 Oct 2026", label(TRACK, LINKED, NOTLINKED),
         "Plus $24 to $30, Max $72, Generative $143.99; add-ons from $12",
