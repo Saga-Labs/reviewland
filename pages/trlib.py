@@ -14,7 +14,7 @@ TODAY = "2026-11-09"
 
 
 def find_en(group):
-    for mod in ("simple_todo", "generic_1016"):
+    for mod in ("simple_todo", "generic_1016", "nov14_carplay"):
         for p in importlib.import_module(f"pages.{mod}").PAGES:
             if p["group"] == group and p["lang"] == "en":
                 return p
