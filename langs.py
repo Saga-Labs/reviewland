@@ -41,7 +41,7 @@ LANGS = {
                sections={
                    "photos": "Hide photos and photo vaults", "ai": "AI chat and AI models", "study": "Homework help",
                    "ai-video": "AI video", "photo-editing": "AI photo editing", "sleep": "Sleep, calm and white noise",
-                   "tasks": "To-do lists", "habits": "Habit trackers", "crypto": "Crypto prices and portfolio trackers", "car": "Car screen and CarPlay apps"}),
+                   "tasks": "To-do lists", "habits": "Habit trackers", "crypto": "Crypto prices and portfolio trackers", "car": "Car screen and CarPlay apps", "companions": "Private AI companions"}),
     "es": dict(prefix="es", html="es", dir="ltr", name="Español", store="es", date="{d} de {m} de {y}", months=ES_MONTHS,
                ui={
                    "updated": "Actualizado el", "checked": "Datos comprobados en el App Store el",
@@ -65,7 +65,7 @@ LANGS = {
                sections={
                    "photos": "Ocultar fotos y bóvedas de fotos", "ai": "Chat con IA y modelos de IA", "study": "Ayuda con los deberes",
                    "ai-video": "Vídeo con IA", "photo-editing": "Edición de fotos con IA", "sleep": "Dormir, calma y ruido blanco",
-                   "tasks": "Listas de tareas", "habits": "Seguimiento de hábitos", "crypto": "Precios y carteras de criptomonedas", "car": "Apps para la pantalla del coche y CarPlay"}),
+                   "tasks": "Listas de tareas", "habits": "Seguimiento de hábitos", "crypto": "Precios y carteras de criptomonedas", "car": "Apps para la pantalla del coche y CarPlay", "companions": "Compañeros de IA privados"}),
 }
 
 
@@ -98,7 +98,7 @@ LANGS["ru"] = dict(
     },
     sections={"photos": "Скрыть фото и хранилища фото", "ai": "ИИ-чаты и модели ИИ", "study": "Помощь с домашними заданиями",
               "ai-video": "ИИ-видео", "photo-editing": "Редактирование фото с ИИ", "sleep": "Сон, спокойствие и белый шум",
-              "tasks": "Списки дел", "habits": "Трекеры привычек", "crypto": "Курсы и портфели криптовалют", "car": "Приложения для экрана автомобиля и CarPlay"},
+              "tasks": "Списки дел", "habits": "Трекеры привычек", "crypto": "Курсы и портфели криптовалют", "car": "Приложения для экрана автомобиля и CarPlay", "companions": "Приватные ИИ-компаньоны"},
     about_html=_about("О Reviewland и о том, как мы проверяем",
                       "Reviewland делает небольшая команда, которая сама разрабатывает приложения для iPhone.",
                       "Наши приложения — всего лишь один из вариантов",
@@ -134,7 +134,7 @@ LANGS["de"] = dict(
     },
     sections={"photos": "Fotos verstecken und Foto-Tresore", "ai": "KI-Chat und KI-Modelle", "study": "Hilfe bei den Hausaufgaben",
               "ai-video": "KI-Video", "photo-editing": "KI-Fotobearbeitung", "sleep": "Schlaf, Ruhe und weißes Rauschen",
-              "tasks": "To-do-Listen", "habits": "Gewohnheits-Tracker", "crypto": "Kryptokurse und Portfolio-Tracker", "car": "Apps für den Autobildschirm und CarPlay"},
+              "tasks": "To-do-Listen", "habits": "Gewohnheits-Tracker", "crypto": "Kryptokurse und Portfolio-Tracker", "car": "Apps für den Autobildschirm und CarPlay", "companions": "Private KI-Begleiter"},
     about_html=_about("Über Reviewland und wie wir prüfen",
                       "Reviewland wird von einem kleinen Team betrieben, das selbst iPhone-Apps entwickelt.",
                       "Unsere Apps sind nur eine Option unter mehreren",
@@ -170,7 +170,7 @@ LANGS["ja"] = dict(
     },
     sections={"photos": "写真を隠す・写真ロッカー", "ai": "AIチャットとAIモデル", "study": "宿題のサポート",
               "ai-video": "AI動画", "photo-editing": "AI写真編集", "sleep": "睡眠・リラックス・ホワイトノイズ",
-              "tasks": "ToDoリスト", "habits": "習慣トラッカー", "crypto": "仮想通貨の価格とポートフォリオ管理", "car": "カーナビ画面とCarPlayのアプリ"},
+              "tasks": "ToDoリスト", "habits": "習慣トラッカー", "crypto": "仮想通貨の価格とポートフォリオ管理", "car": "カーナビ画面とCarPlayのアプリ", "companions": "プライベートAIコンパニオン"},
     about_html=_about("Reviewlandについてと、アプリの調べ方",
                       "Reviewlandは、自分たちでもiPhoneアプリを作っている小さなチームが運営しています。",
                       "自社アプリは選択肢のひとつ",
@@ -206,7 +206,7 @@ LANGS["pt-BR"] = dict(
     },
     sections={"photos": "Esconder fotos e cofres de fotos", "ai": "Chat com IA e modelos de IA", "study": "Ajuda com a lição de casa",
               "ai-video": "Vídeo com IA", "photo-editing": "Edição de fotos com IA", "sleep": "Dormir, calma e ruído branco",
-              "tasks": "Listas de tarefas", "habits": "Acompanhamento de hábitos", "crypto": "Preços e carteiras de criptomoedas", "car": "Apps para a tela do carro e CarPlay"},
+              "tasks": "Listas de tarefas", "habits": "Acompanhamento de hábitos", "crypto": "Preços e carteiras de criptomoedas", "car": "Apps para a tela do carro e CarPlay", "companions": "Companheiros de IA privados"},
     about_html=_about("Quem somos e como conferimos",
                       "O Reviewland é feito por uma equipe pequena que também faz apps de iPhone.",
                       "Os nossos apps são só mais uma opção",
@@ -242,7 +242,7 @@ LANGS["fr"] = dict(
     },
     sections={"photos": "Cacher des photos et coffres-forts photo", "ai": "Chat IA et modèles d'IA", "study": "Aide aux devoirs",
               "ai-video": "Vidéo IA", "photo-editing": "Retouche photo IA", "sleep": "Sommeil, calme et bruit blanc",
-              "tasks": "Listes de tâches", "habits": "Suivi d'habitudes", "crypto": "Cours et portefeuilles de cryptomonnaies", "car": "Applications pour l'écran de la voiture et CarPlay"},
+              "tasks": "Listes de tâches", "habits": "Suivi d'habitudes", "crypto": "Cours et portefeuilles de cryptomonnaies", "car": "Applications pour l'écran de la voiture et CarPlay", "companions": "Compagnons IA privés"},
     about_html=_about("À propos de Reviewland et de notre méthode",
                       "Reviewland est fait par une petite équipe qui développe aussi des apps iPhone.",
                       "Nos apps ne sont qu'une option parmi d'autres",
@@ -278,7 +278,7 @@ LANGS["ar"] = dict(
     },
     sections={"photos": "إخفاء الصور وخزائن الصور", "ai": "الدردشة بالذكاء الاصطناعي ونماذجه", "study": "مساعدة في الواجبات",
               "ai-video": "فيديو بالذكاء الاصطناعي", "photo-editing": "تعديل الصور بالذكاء الاصطناعي", "sleep": "النوم والهدوء والضوضاء البيضاء",
-              "tasks": "قوائم المهام", "habits": "متتبعات العادات", "crypto": "أسعار العملات الرقمية ومحافظها", "car": "تطبيقات شاشة السيارة وCarPlay"},
+              "tasks": "قوائم المهام", "habits": "متتبعات العادات", "crypto": "أسعار العملات الرقمية ومحافظها", "car": "تطبيقات شاشة السيارة وCarPlay", "companions": "رفاق الذكاء الاصطناعي الخاصون"},
     about_html=_about("عن Reviewland وكيف نتحقق",
                       "يقف وراء Reviewland فريق صغير يصنع أيضًا تطبيقات iPhone.",
                       "تطبيقاتنا مجرد خيار إضافي",
