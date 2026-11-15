@@ -14,7 +14,7 @@ TODAY = "2026-11-09"
 
 
 def find_en(group):
-    for mod in ("simple_todo", "generic_1016", "nov14_carplay"):
+    for mod in ("simple_todo", "generic_1016", "nov14_carplay", "nov14_private_companions"):
         for p in importlib.import_module(f"pages.{mod}").PAGES:
             if p["group"] == group and p["lang"] == "en":
                 return p
@@ -49,7 +49,8 @@ def make(group, lang, tr, ct_suffix, store=None):
     p["store"] = cc
     p["path"] = f"{L['prefix']}/{en['path']}"
     p["ct"] = f"{en['ct']}-{ct_suffix}"
-    p["published"] = p["updated"] = p["checked"] = TODAY
+    day = tr.get("day", TODAY)  # per-translation date when its store data was looked up that day
+    p["published"] = p["updated"] = p["checked"] = day
     ids = {str(a["id"]) for a in p["apps"]}
     p["sources"] = [(label, url.replace("/us/app/", f"/{cc}/app/")) for label, url in en["sources"] if url.rsplit("/id", 1)[1] in ids]
     p.pop("hide_from_related", None)
