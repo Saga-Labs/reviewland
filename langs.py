@@ -41,7 +41,7 @@ LANGS = {
                sections={
                    "photos": "Hide photos and photo vaults", "ai": "AI chat and AI models", "study": "Homework help",
                    "ai-video": "AI video", "photo-editing": "AI photo editing", "sleep": "Sleep, calm and white noise",
-                   "tasks": "To-do lists", "habits": "Habit trackers", "crypto": "Crypto prices and portfolio trackers", "car": "Car screen and CarPlay apps", "companions": "Private AI companions"}),
+                   "tasks": "To-do lists", "habits": "Habit trackers", "crypto": "Crypto prices and portfolio trackers", "car": "Car screen and CarPlay apps", "companions": "Private AI companions", "tcg": "Trading card scanners"}),
     "es": dict(prefix="es", html="es", dir="ltr", name="Español", store="es", date="{d} de {m} de {y}", months=ES_MONTHS,
                ui={
                    "updated": "Actualizado el", "checked": "Datos comprobados en el App Store el",
