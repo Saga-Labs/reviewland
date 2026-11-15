@@ -16,7 +16,7 @@ def src(cc="us"):
         ("APTV - Car TV Player & Cast (App Store)", f"https://apps.apple.com/{cc}/app/id6476621657"),
         ("CarTV - M3U IPTV Player & Cast (App Store)", f"https://apps.apple.com/{cc}/app/id6800211040"),
         ("CarPlay Screen Mirroring (App Store)", f"https://apps.apple.com/{cc}/app/id6740481525"),
-        ("CarScreen: Car Widgets & Video (App Store)", f"https://apps.apple.com/{cc}/app/id6833951195"),
+        ("Car Widgets & Video: CarScreen (App Store)", f"https://apps.apple.com/{cc}/app/id6833951195"),
         ("myCar: Car Widgets・Play Themes (App Store)", f"https://apps.apple.com/{cc}/app/id6755033589"),
         ("Car Connect, Play, Widgets (App Store)", f"https://apps.apple.com/{cc}/app/id1665625393"),
     ]
@@ -41,7 +41,7 @@ EN = {
     "table_note": "Price, in-app purchases and rating are from the US App Store as of Nov 14, 2026; all seven are free to download. The other columns are what each app's own App Store description says; \"Not mentioned\" means the description does not say. CarScreen is new (on sale 13 Nov 2026), so it has no rating yet.",
     "apps": [
         {
-            "name": "CarScreen: Car Widgets & Video", "id": 6833951195, "ours": True, "anchor": "carscreen",
+            "name": "Car Widgets & Video: CarScreen", "id": 6833951195, "ours": True, "anchor": "carscreen",
             "developer": "Saga Ltd.",
             "row": ["Free; one-time Pro purchase, listed from $4.99 to $14.99", "Yes: your own videos from Photos and Files over AirPlay, parked only, in cars whose maker supports it",
                     "Yes: photo, clock and date, countdown, car name and plate, parking place and time, your own message", "Yes (it includes no channels)", "New"],
