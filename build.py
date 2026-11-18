@@ -28,7 +28,7 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt", "nov03_videogpt_alt", "nov03_calculator_vault_alt", "nov03_pocketpal_alt", "nov03_crypto_no_connect", "nov04_higgsfield_alt", "nov04_vault_backup", "nov04_pdf_offline", "nov04_pollo_alt", "nov04_hide_it_pro_alt", "nov04_binaural", "nov08_wlfi_trump", "nov14_carplay", "nov14_private_companions", "nov15_pokemon_scanner", "nov16_dance_ranking", "nov17_bible_videos_ranking",
+                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_habits", "nov03_crypto_alerts", "nov03_photo_enhancer", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt", "nov03_videogpt_alt", "nov03_calculator_vault_alt", "nov03_pocketpal_alt", "nov03_crypto_no_connect", "nov04_higgsfield_alt", "nov04_vault_backup", "nov04_pdf_offline", "nov04_pollo_alt", "nov04_hide_it_pro_alt", "nov04_binaural", "nov08_wlfi_trump", "nov14_carplay", "nov14_private_companions", "nov15_pokemon_scanner", "nov16_dance_ranking", "nov17_bible_videos_ranking", "nov18_offline_translator_ranking",
                 "tr_ru", "tr_de", "tr_ja", "tr_ptbr", "tr_fr", "tr_ar", "tr_carplay", "tr_companions", "tr_pokemon", "tr_dance", "tr_bible"]
 
 from langs import LANGS  # one table of languages: prefix, html lang, dir, date format, UI strings
@@ -57,7 +57,7 @@ HOME_GROUPS = {
     "sleep": {"calm-alternatives", "free-sleep-sounds", "binaural-beats"},
     "tasks": {"simple-todo", "todoist-alternatives"},
     "habits": {"habit-trackers"},
-    "study": {"homework-helpers", "bible-video"},
+    "study": {"homework-helpers", "bible-video", "offline-translators"},
     "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers", "crypto-alerts", "crypto-no-connect", "wlfi-trump-trackers"},
     "car": {"carplay-apps"},
     "companions": {"private-ai-companions"},
