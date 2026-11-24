@@ -73,6 +73,22 @@ OUR_IDS = {"1667947372", "6754878073", "1143691286", "6754180384",
            "1553693943", "1462269642", "1662608035", "1532670722", "6833951195"}
 
 
+PLAY = {"6754180384": "com.sagalabs.aivideo", "1532670722": "com.sagalabs.photovault"}  # Android (24 nov 2026)
+
+
+def play_url(app_id, p, medium="article", slug=None):
+    pk = PLAY.get(str(app_id))
+    if not pk:
+        return None
+    slug = slug or p["path"].strip("/").split("/")[-1]
+    return f"https://play.google.com/store/apps/details?id={pk}&referrer=utm_source%3Dreviewland%26utm_medium%3D{medium}%26utm_campaign%3D{slug}"
+
+
+def play_p(app_id, p):
+    u = play_url(app_id, p)
+    return f'<p><a class="link" href="{esc(u)}">Google Play →</a></p>\n' if u else ""
+
+
 def place_ours(p):
     """Our app goes where it honestly fits: the middle of the list unless the page sets ours_rank (1-based)."""
     apps = list(p["apps"])
@@ -225,7 +241,7 @@ def ranking_html(p, alternates):
                 "@type": "ListItem", "position": i + 1,
                 "item": {
                     "@type": "SoftwareApplication", "name": a["name"],
-                    "operatingSystem": p.get("os", "iOS"),
+                    "operatingSystem": ("iOS, Android" if str(a.get("id")) in PLAY else p.get("os", "iOS")),
                     "applicationCategory": p.get("category", "UtilitiesApplication"),
                     **({"url": a["url"]} if a.get("url") else {"url": f"https://apps.apple.com/app/id{a['id']}"} if a.get("id") else {}),
                     **({"author": {"@type": "Organization", "name": a["developer"]}} if a.get("developer") else {}),
@@ -271,6 +287,8 @@ def ranking_html(p, alternates):
         for label, app_id in c["buttons"]:
             href = store_link(app_id, p["ct"]) if str(app_id) in OUR_IDS else f"https://apps.apple.com/{p['store']}/app/id{app_id}"
             btns += f'<a class="cta" href="{esc(href)}">{esc(label)}</a> '
+            if play_url(app_id, p):
+                btns += f'<a class="cta" href="{esc(play_url(app_id, p))}">Google Play</a> '
         out.append(f'<div class="cta-box"><p>{c["line"]}</p><p>{btns}</p></div>\n')
     for cp in p.get("complaints", []):  # one section per repeated 1-2 star complaint, with the fix
         out.append(f'<h2 id="{cp["id"]}">{esc(cp["h2"])}</h2>\n' + "".join(f"<p>{x}</p>\n" for x in cp["body"]))
@@ -295,7 +313,7 @@ def ranking_html(p, alternates):
         if a.get("url"):
             out.append(f'<p><a class="link" href="{esc(a["url"])}">{esc(p.get("link_label", t["store_page"]))} →</a></p>\n')
         elif a.get("ours"):
-            out.append(f'<p><a class="link" href="{esc(store_link(a["id"], p["ct"]))}">{t["store_page"]} →</a></p>\n')
+            out.append(f'<p><a class="link" href="{esc(store_link(a["id"], p["ct"]))}">{t["store_page"]} →</a></p>\n' + play_p(a["id"], p))
         elif a.get("id"):
             out.append(f'<p><a class="link" href="{esc(tag_ours(f"https://apps.apple.com/{p['store']}/app/id{a['id']}", p["ct"]))}">{t["store_page"]} →</a></p>\n')
         out.append("</section>\n")
@@ -310,7 +328,9 @@ def ranking_html(p, alternates):
     out.append(guide_links_html(p))
     out.append(f'<h2 id="sources">{t["sources"]}</h2>\n<ul class="sources">')
     for label, url, *_ in p["sources"]:
-        out.append(f'<li>{esc(label)}: <a href="{esc(tag_ours(url, p["ct"]))}">{esc(url)}</a> ({chk})</li>')
+        m = re.search(r"/id(\d+)", url)
+        gp = play_url(m.group(1), p) if m else None
+        out.append(f'<li>{esc(label)}: <a href="{esc(tag_ours(url, p["ct"]))}">{esc(url)}</a>' + (f' · <a href="{esc(gp)}">Google Play</a>' if gp else "") + f' ({chk})</li>')
     out.append("</ul>\n</article>\n")
     out.append(foot(lang))
     return "".join(out)
@@ -465,6 +485,9 @@ def main():
         ours = next((a for a in p["apps"] if a.get("ours")), None)
         tail = f" Our app on this page: {ours['name']}." if ours else (" " + p["llms_note"] if p.get("llms_note") else "")
         lines.append(f"- [{p['h1']}]({page_url(p)}) ({p['lang']}, updated {p['updated']}): {p['llms']}{tail}")
+    lines += ["", "## Saga Labs apps on Android (Google Play)", "",
+              f"- [Dora (AI video and image generator)]({play_url(6754180384, None, 'llms', 'llms')})",
+              f"- [Photo Vault (encrypted photos and videos)]({play_url(1532670722, None, 'llms', 'llms')})"]
     lines += ["", "## About", "", f"- [How we check and disclose]({SITE}/about/)", ""]
     (ROOT / "llms.txt").write_text("\n".join(lines), encoding="utf-8")
 

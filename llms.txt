@@ -100,6 +100,11 @@
 - [Meilleures applis de widgets et de vidéo pour CarPlay sur iPhone (2026)](https://reviewland.io/fr/best-carplay-widget-and-video-apps-iphone/) (fr, updated 2026-11-09): Compare sept applis iPhone pour l’écran CarPlay (CarDash, APTV, CarTV, CarPlay Screen Mirroring, CarScreen, myCar, Car Connect) selon la vidéo à l’arrêt, les widgets, les listes M3U, le prix et la note. Indique que la vidéo en voiture ne fonctionne qu’à l’arrêt et seulement dans les voitures dont le constructeur la permet. Our app on this page: Car Widgets & Video: CarScreen.
 - [أفضل تطبيقات الأدوات والفيديو لـ CarPlay على آيفون (2026)](https://reviewland.io/ar/best-carplay-widget-and-video-apps-iphone/) (ar, updated 2026-11-09): يقارن سبعة تطبيقات لآيفون لشاشة CarPlay (CarDash وAPTV وCarTV وCarPlay Screen Mirroring وCarScreen وmyCar وCar Connect) حسب الفيديو والسيارة متوقفة، والأدوات، وقوائم M3U، والسعر والتقييم. يذكر أن الفيديو في السيارة لا يعمل إلا والسيارة متوقفة، وفي السيارات التي يدعمها مصنعها فقط. Our app on this page: Car Widgets & Video: CarScreen.
 
+## Saga Labs apps on Android (Google Play)
+
+- [Dora (AI video and image generator)](https://play.google.com/store/apps/details?id=com.sagalabs.aivideo&referrer=utm_source%3Dreviewland%26utm_medium%3Dllms%26utm_campaign%3Dllms)
+- [Photo Vault (encrypted photos and videos)](https://play.google.com/store/apps/details?id=com.sagalabs.photovault&referrer=utm_source%3Dreviewland%26utm_medium%3Dllms%26utm_campaign%3Dllms)
+
 ## About
 
 - [How we check and disclose](https://reviewland.io/about/)
