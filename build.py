@@ -373,7 +373,50 @@ def card_img(p):
     return f'<img src="/img/{cover_of(p)}.jpg" alt="" width="1200" height="675" loading="lazy">' if cover_of(p) else ""
 
 
+# Un solo ct por web y app (Growth, 24 nov 2026): {site}-dora, {site}-photovault... Apple oculta las campanas por
+# articulo (<5 descargas/dia); la atribucion por pagina sale del evento store_click de umami.js.
+CT_SLUG = {"6754180384": "dora", "1532670722": "photovault", "6754878073": "pinku", "6833951195": "carscreen",
+           "1662608035": "askai", "1667947372": "brainy", "1462269642": "drop", "1143691286": "crypton",
+           "1553693943": "3tasks"}
+_CT_URL = re.compile(r'https://apps\.apple\.com/[^"\'\s<>()]*?/id(\d+)[^"\'\s<>()]*')
+
+
+def unify_ct(text, site):
+    def sub(m):
+        u = m.group(0)
+        if m.group(1) not in CT_SLUG or "ct=" not in u:
+            return u
+        return re.sub(r"ct=[^&\s\"'<>#]*", "ct=%s-%s" % (site, CT_SLUG[m.group(1)]), u, count=1)
+    return _CT_URL.sub(sub, text)
+
+
+def add_banner(html, site):
+    """Smart App Banner: Dora en las paginas de IA video; Photo Vault si la pagina va de fotos privadas. Una meta por pagina."""
+    html = re.sub(r'<meta name="apple-itunes-app"[^>]*>\n?', "", html)
+    if '<meta property="og:type" content="article">' not in html:
+        return html
+    body = re.sub(r'<script type="application/ld\+json">.*?</script>', "", html, flags=re.S)
+    dora = len(re.findall(r"apps\.apple\.com/[^\"'\s<>]*id6754180384", body))
+    pv = len(re.findall(r"apps\.apple\.com/[^\"'\s<>]*id1532670722", body))
+    if pv > dora:
+        app, tag = "1532670722", "pv"
+    elif dora:
+        app, tag = "6754180384", "dora"
+    else:
+        return html
+    meta = f'<meta name="apple-itunes-app" content="app-id={app}, affiliate-data=ct={site}-{tag}-banner&amp;pt={PT}">\n'
+    return html.replace('<link rel="canonical"', meta + '<link rel="canonical"', 1)
+
+
+def finalize(text, path, banner):
+    text = unify_ct(text, "reviewland")
+    if banner and path.endswith(("/", ".html")):
+        text = add_banner(text, "reviewland")
+    return text
+
+
 def write(path, text):
+    text = finalize(text, path, True)
     f = ROOT / path
     if path.endswith("/") or path == "":
         f = f / "index.html"
@@ -489,7 +532,7 @@ def main():
               f"- [Dora (AI video and image generator)]({play_url(6754180384, None, 'llms', 'llms')})",
               f"- [Photo Vault (encrypted photos and videos)]({play_url(1532670722, None, 'llms', 'llms')})"]
     lines += ["", "## About", "", f"- [How we check and disclose]({SITE}/about/)", ""]
-    (ROOT / "llms.txt").write_text("\n".join(lines), encoding="utf-8")
+    (ROOT / "llms.txt").write_text(unify_ct("\n".join(lines), "reviewland"), encoding="utf-8")
 
     (ROOT / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
 
