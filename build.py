@@ -28,7 +28,7 @@ PT = "118348020"  # App Store provider token for campaign links
 
 PAGE_MODULES = ["hide_photos", "simple_todo", "ai_chat", "crypto_widgets",
                 "calm_alternatives", "todoist_alternatives", "coinstats_alternatives", "photo_vault_alternatives",
-                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_crypto_alerts", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt", "nov03_videogpt_alt", "nov03_calculator_vault_alt", "nov03_pocketpal_alt", "nov03_crypto_no_connect", "nov04_higgsfield_alt", "nov04_vault_backup", "nov04_pdf_offline", "nov04_pollo_alt", "nov04_hide_it_pro_alt", "nov04_binaural", "nov08_wlfi_trump", "nov14_carplay", "nov23_image_to_video", "nov17_bible_videos_ranking", "tr_ru", "tr_de", "tr_ja", "tr_ptbr", "tr_fr", "tr_ar", "tr_carplay", "tr_bible"]
+                "es_alternativas", "generic_1016", "local_models", "chatgpt_apps", "nov02_video", "nov02_dora5", "nov02_chatgpt_video", "nov03_video_models", "nov03_text_video", "nov03_crypto_alerts", "nov03_homework", "nov03_video_sound", "nov03_deepseek_alt", "nov03_video_ipad", "nov03_trend_video", "nov03_video_sound_es", "nov03_poe_alt", "nov03_grok_alt", "nov03_videogpt_alt", "nov03_calculator_vault_alt", "nov03_pocketpal_alt", "nov03_crypto_no_connect", "nov04_higgsfield_alt", "nov04_vault_backup", "nov04_pdf_offline", "nov04_pollo_alt", "nov04_hide_it_pro_alt", "nov04_binaural", "nov08_wlfi_trump", "nov14_carplay", "nov23_image_to_video", "nov17_bible_videos_ranking", "nov25_offline_bible", "tr_ru", "tr_de", "tr_ja", "tr_ptbr", "tr_fr", "tr_ar", "tr_carplay", "tr_bible"]
 
 from langs import LANGS  # one table of languages: prefix, html lang, dir, date format, UI strings
 
@@ -54,7 +54,7 @@ HOME_GROUPS = {
     "ai-video": {"make-video", "free-video", "capcut-alt", "reels-apps", "photo-talk-family", "sora-alt", "text-video", "video-models", "text-video-list", "video-sound", "video-ipad", "trend-video", "image-to-video", "grok-imagine-alternatives", "videogpt-alternatives", "higgsfield-alternatives", "pollo-alternatives"},
     "sleep": {"calm-alternatives", "free-sleep-sounds", "binaural-beats"},
     "tasks": {"simple-todo", "todoist-alternatives"},
-    "study": {"homework-helpers", "bible-video"},
+    "study": {"homework-helpers", "bible-video", "bible-offline"},
     "crypto": {"crypto-widgets", "coinstats-alternatives", "free-crypto-trackers", "crypto-alerts", "crypto-no-connect", "wlfi-trump-trackers"},
     "car": {"carplay-apps"},
 }
